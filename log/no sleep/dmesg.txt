@@ -1,0 +1,2734 @@
+[    9.788787] sdhci-tegra 3400000.sdhci: wakeup init done, cdirq 303
+[    9.857144] input: Compx 2.4G Receiver System Control as /devices/platform/3610000.xhci/usb1/1-4/1-4.1/1-4.1:1.1/0003:25A7:FA61.0002/input/input4
+[    9.865307] tegra194-pcie 141a0000.pcie: host bridge /pcie@141a0000 ranges:
+[    9.872147] hid-generic 0003:25A7:FA61.0002: input,hiddev96,hidraw1: USB HID v1.10 Mouse [Compx 2.4G Receiver] on usb-3610000.xhci-4.1/input1
+[    9.879788] tegra194-pcie 141a0000.pcie:       IO 0x003a100000..0x003a1fffff -> 0x003a100000
+[    9.903646] tegra194-pcie 141a0000.pcie:      MEM 0x2b28000000..0x2b2fffffff -> 0x0040000000
+[    9.913368] tegra194-pcie 141a0000.pcie:      MEM 0x2740000000..0x2b27ffffff -> 0x2740000000
+[   10.000984] usb 1-4.2: new full-speed USB device number 5 using tegra-xusb
+[   10.118832] usb 1-4.2: New USB device found, idVendor=2717, idProduct=503a, bcdDevice= 2.05
+[   10.128450] usb 1-4.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[   10.137000] usb 1-4.2: Product: Xiaomi Wireless Mouse Lite 2
+[   10.143854] usb 1-4.2: Manufacturer: Telink
+[   10.155014] input: Telink Xiaomi Wireless Mouse Lite 2 Mouse as /devices/platform/3610000.xhci/usb1/1-4/1-4.2/1-4.2:1.0/0003:2717:503A.0003/input/input6
+[   10.170367] input: Telink Xiaomi Wireless Mouse Lite 2 Consumer Control as /devices/platform/3610000.xhci/usb1/1-4/1-4.2/1-4.2:1.0/0003:2717:503A.0003/input/input7
+[   10.245151] input: Telink Xiaomi Wireless Mouse Lite 2 System Control as /devices/platform/3610000.xhci/usb1/1-4/1-4.2/1-4.2:1.0/0003:2717:503A.0003/input/input8
+[   10.261660] hid-generic 0003:2717:503A.0003: input,hidraw2: USB HID v1.11 Mouse [Telink Xiaomi Wireless Mouse Lite 2] on usb-3610000.xhci-4.2/input0
+[   10.843349] mmc1: SDHCI controller on 3400000.sdhci [3400000.sdhci] using ADMA 64-bit
+[   11.028153] tegra194-pcie 141a0000.pcie: Phy link never came up
+[   11.035400] tegra194-pcie 141a0000.pcie: PCI host bridge to bus 0005:00
+[   11.043311] pci_bus 0005:00: root bus resource [bus 00-ff]
+[   11.050031] pci_bus 0005:00: root bus resource [io  0x200000-0x2fffff] (bus address [0x3a100000-0x3a1fffff])
+[   11.061218] pci_bus 0005:00: root bus resource [mem 0x2b28000000-0x2b2fffffff] (bus address [0x40000000-0x47ffffff])
+[   11.073145] pci_bus 0005:00: root bus resource [mem 0x2740000000-0x2b27ffffff pref]
+[   11.082166] pci 0005:00:00.0: [10de:229a] type 01 class 0x060400
+[   11.089588] pci 0005:00:00.0: PME# supported from D0 D3hot
+[   11.104765] pci 0005:00:00.0: PCI bridge to [bus 01-ff]
+[   11.111263] pci 0005:00:00.0: Max Payload Size set to  256/ 256 (was  256), Max Read Rq  512
+[   11.121318] pcieport 0005:00:00.0: Adding to iommu group 11
+[   11.128416] pcieport 0005:00:00.0: PME: Signaling with IRQ 68
+[   11.135974] pcieport 0005:00:00.0: AER: enabled with IRQ 68
+[   11.143037] pci_bus 0005:01: busn_res: [bus 01-ff] is released
+[   11.150215] pci 0005:00:00.0: Removing from iommu group 11
+[   11.156955] pci_bus 0005:00: busn_res: [bus 00-ff] is released
+[   11.165847] nvethernet 6810000.ethernet: Adding to iommu group 51
+[   11.173537] nvethernet 6810000.ethernet: failed to read skip mac reset flag, default 0
+[   11.182793] nvethernet 6810000.ethernet: failed to read MDIO address
+[   11.190431] nvethernet 6810000.ethernet: setting to default DMA bit mask
+[   11.198437] nvethernet 6810000.ethernet: failed to read UPHY GBE mode- default to 10G
+[   11.594568] nvethernet 6810000.ethernet: Ethernet MAC address: 48:b0:2d:7f:55:68
+[   11.603629] -->macsec_probe()
+[   11.603643] nvethernet 6810000.ethernet: macsec param in DT is missing or disabled
+[   11.612525] <--macsec_probe()
+[   11.612527] nvethernet 6810000.ethernet: Macsec not supported/Not enabled in DT
+[   11.625415] nvethernet 6810000.ethernet: eth0 (HW ver: 31) created with 10 DMA channels
+[   11.635254] irq: IRQ305: trimming hierarchy from :pmc@c360000
+[   11.642315] irq: IRQ306: trimming hierarchy from :interrupt-controller@f400000-1
+[   11.651073] irq: IRQ307: trimming hierarchy from :pmc@c360000
+[   11.658111] input: gpio-keys as /devices/platform/gpio-keys/input/input10
+[   11.666896] tegra-se-nvhost 15810000.se: Adding to iommu group 52
+[   11.674608] tegra-se-nvhost 15810000.se: initialized
+[   11.691503] tegra-se-nvhost 15810000.se: tegra_se_probe: complete
+[   11.698948] tegra-se-nvhost 15820000.se: Adding to iommu group 53
+[   11.706692] tegra-se-nvhost 15820000.se: initialized
+[   11.713986] tegra-se-nvhost 15820000.se: tegra_se_probe: complete
+[   11.721412] tegra-se-nvhost 15840000.se: Adding to iommu group 54
+[   11.728989] tegra-se-nvhost 15840000.se: initialized
+[   11.736326] tegra-se-nvhost 15840000.se: tegra_se_probe: complete
+[   11.744257] tegra_actmon d230000.actmon: in actmon_register()...
+[   11.751640] tegra_actmon d230000.actmon: bwmgr_disable = 1
+[   11.758690] tegra_actmon d230000.actmon: initialization Completed for the device mc_all
+[   11.768109] hvc_sysfs: hypervisor is not present
+[   11.903743] ALSA device list:
+[   11.907842]   No soundcards found.
+[   11.912962] Freeing unused kernel memory: 3968K
+[   11.918731] Run /init as init process
+[   11.923523]   with arguments:
+[   11.923524]     /init
+[   11.923525]   with environment:
+[   11.923526]     HOME=/
+[   11.923526]     TERM=linux
+[   11.923527]     mminit_loglevel=4
+[   11.935232] Root device found: mmcblk0p1
+[   11.946682] Found dev node: /dev/mmcblk0p1
+[   11.977728] EXT4-fs (mmcblk0p1): mounted filesystem with ordered data mode. Opts: (null)
+[   11.990425] Rootfs mounted over mmcblk0p1
+[   12.005036] Switching from initrd to actual rootfs
+[   12.129895] systemd[1]: System time before build time, advancing clock.
+[   12.158718] x_tables: module verification failed: signature and/or required key missing - tainting kernel
+[   12.200214] systemd[1]: systemd 245.4-4ubuntu3.22 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)
+[   12.224946] systemd[1]: Detected architecture arm64.
+[   12.261504] systemd[1]: Set hostname to <neu-desktop>.
+[   12.440497] systemd[1]: system-modprobe.slice: unit configures an IP firewall, but the local system does not support BPF/cgroup firewalling.
+[   12.454677] systemd[1]: (This warning is only shown for the first unit using IP firewalling.)
+[   12.465414] systemd[1]: Created slice system-modprobe.slice.
+[   12.473833] systemd[1]: Created slice system-serial\x2dgetty.slice.
+[   12.482763] systemd[1]: Created slice User and Session Slice.
+[   12.490960] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[   12.501233] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[   12.513157] systemd[1]: Reached target User and Group Name Lookups.
+[   12.521773] systemd[1]: Reached target Slices.
+[   12.528458] systemd[1]: Reached target Mounting snaps.
+[   12.535879] systemd[1]: Reached target Mounted snaps.
+[   12.543201] systemd[1]: Reached target Swap.
+[   12.549939] systemd[1]: Listening on RPCbind Server Activation Socket.
+[   12.558865] systemd[1]: Listening on Syslog Socket.
+[   12.566019] systemd[1]: Listening on fsck to fsckd communication Socket.
+[   12.575002] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[   12.583951] systemd[1]: Listening on Journal Audit Socket.
+[   12.591720] systemd[1]: Listening on Journal Socket (/dev/log).
+[   12.599960] systemd[1]: Listening on Journal Socket.
+[   12.607221] systemd[1]: Listening on udev Control Socket.
+[   12.614880] systemd[1]: Listening on udev Kernel Socket.
+[   12.623405] systemd[1]: Mounting Huge Pages File System...
+[   12.632025] systemd[1]: Mounting POSIX Message Queue File System...
+[   12.641422] systemd[1]: Mounting RPC Pipe File System...
+[   12.649901] systemd[1]: Mounting Kernel Debug File System...
+[   12.658770] systemd[1]: Mounting Kernel Trace File System...
+[   12.667860] systemd[1]: Starting Journal Service...
+[   12.682429] systemd[1]: Starting Set the console keyboard layout...
+[   12.691966] systemd[1]: Starting Create list of static device nodes for the current kernel...
+[   12.704284] systemd[1]: Starting Load Kernel Module chromeos_pstore...
+[   12.713379] systemd[1]: Condition check resulted in Load Kernel Module drm being skipped.
+[   12.714409] systemd[1]: Starting Load Kernel Module efi_pstore...
+[   12.732596] systemd[1]: Starting Load Kernel Module pstore_blk...
+[   12.742156] systemd[1]: Starting Load Kernel Module pstore_zone...
+[   12.751716] systemd[1]: Starting Load Kernel Module ramoops...
+[   12.760952] systemd[1]: Starting NVIDIA specific first-boot udev script...
+[   12.771251] systemd[1]: Started Nameserver information manager.
+[   12.779815] systemd[1]: Reached target Network (Pre).
+[   12.788052] systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+[   12.798594] systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+[   12.818073] systemd[1]: Starting Load Kernel Modules...
+[   12.826609] systemd[1]: Starting Remount Root and Kernel File Systems...
+[   12.834286] EXT4-fs (mmcblk0p1): re-mounted. Opts: (null)
+[   12.842369] nvmap_heap_init: nvmap_heap_init: created heap block cache
+[   12.842734] tegra-carveouts tegra-carveouts: fsi :dma coherent mem declare 0x0000001038e00000,16777216
+[   12.861213] tegra-carveouts tegra-carveouts: assigned reserved memory node fsi-carveout
+[   12.861219] tegra-carveouts tegra-carveouts: vpr :dma coherent mem declare 0x0000001049800000,914358272
+[   12.881452] tegra-carveouts tegra-carveouts: assigned reserved memory node vpr-carveout
+[   12.881456] nvmap_page_pool_init: Total RAM pages: 16071774
+[   12.897680] nvmap_page_pool_init: nvmap page pool size: 2008971 pages (3751 MB)
+[   12.897997] nvmap_background_zero_thread: PP zeroing thread starting.
+[   12.898267] misc nvmap: created heap vpr base 0x0000001049800000 size (892928KiB)
+[   12.901371] misc nvmap: created heap fsi base 0x0000001038e00000 size (16384KiB)
+[   12.907407] systemd[1]: Starting udev Coldplug all Devices...
+[   12.941330] systemd[1]: Started Journal Service.
+[   12.966086] nvgpu: 17000000.ga10b          nvgpu_nvhost_syncpt_init:135  [INFO]  syncpt_unit_base 60000000 syncpt_unit_size 4000000 size 10000
+
+[   13.002111] systemd-journald[307]: Received client request to flush runtime journal.
+[   13.035686] optee_supp_recv()---start
+[   13.040425] optee_supp_recv()---before while
+[   13.040426] optee_supp_recv()---after mutex_lock1
+[   13.040427] optee_supp_recv()---after supp_pop_entry
+[   13.040430] optee_supp_recv()---after mutex_unlock2
+[   13.040432] optee_supp_recv()---befroe wait
+[   13.248786] nvidia: loading out-of-tree module taints kernel.
+[   13.259840] nv_platform 13800000.display: Adding to iommu group 55
+[   13.266550] platform 13800000.display:nvdisplay-niso: Adding to iommu group 56
+[   13.268545] NVRM: loading NVIDIA UNIX Open Kernel Module for aarch64  35.5.0  Release Build  (buildbrain@mobile-u64-6519-d7000)  Mon Feb 19 20:34:12 PST 2024
+[   13.274941] spi-tegra114 3210000.spi: Adding to iommu group 2
+[   13.282880] spi-tegra114 3230000.spi: Adding to iommu group 2
+[   13.309839] irq: IRQ308: trimming hierarchy from :pmc@c360000
+[   13.311461] irq: IRQ309: trimming hierarchy from :pmc@c360000
+[   13.311608] nct1008_nct72 4-004c: starting parse dt
+[   13.311651] nct1008_nct72 4-004c: !!!Found deprecated property!!!
+[   13.311653] nct1008_nct72 4-004c: success parsing dt
+[   13.311756] nct1008_nct72 4-004c: success in enabling tmp451 VDD rail
+[   13.311927] nvvrs11 4-0020: NVVRS11 Vendor ID: 0x11 
+[   13.312146] cpu-throttle-alert cooling device registered.
+[   13.312679] gpu-throttle-alert cooling device registered.
+[   13.313431] cv0-throttle-alert cooling device registered.
+[   13.313605] nvvrs11 4-0020: NVVRS11 Model Rev: 0x81
+[   13.313609] nvvrs11 4-0020: NVVRS11 probe successful
+[   13.313901] cv1-throttle-alert cooling device registered.
+[   13.314352] cv2-throttle-alert cooling device registered.
+[   13.314754] tegra-adma 2930000.adma: Tegra210 ADMA driver registered 16 channels
+[   13.315042] soc0-throttle-alert cooling device registered.
+[   13.315382] soc1-throttle-alert cooling device registered.
+[   13.315499] nvvrs11 4-0022: NVVRS11 Vendor ID: 0x11 
+[   13.315832] soc2-throttle-alert cooling device registered.
+[   13.318471] nvvrs11 4-0022: NVVRS11 Model Rev: 0x81
+[   13.318477] nvvrs11 4-0022: NVVRS11 probe successful
+[   13.319503] hot-surface-alert cooling device registered.
+[   13.352242] nct1008_nct72 4-004c: LOC shutdown limit 107
+[   13.352862] nct1008_nct72 4-004c: EXT shutdown limit 107
+[   13.371200] tegra-hda 3510000.hda: Adding to iommu group 57
+[   13.389255] nct1008_nct72 4-004c: initial LOC temp: 35000 
+[   13.389733] nct1008_nct72 4-004c: initial EXT temp: 37000 
+[   13.390735] nct1008_nct72 4-004c: hi_b:-4, lo_b:0
+[   13.391485] nct1008_nct72 4-004c: nct1008_probe: initialized
+[   13.445358] nvadsp 2993000.adsp: Adding to iommu group 58
+[   13.445509] nvadsp 2993000.adsp: in probe()...
+[   13.449237] nvadsp 2993000.adsp: nvadsp_app_module_probe
+[   13.463467] input: NVIDIA Jetson AGX Orin HDA HDMI/DP,pcm=3 as /devices/platform/3510000.hda/sound/card0/input11
+[   13.463538] input: NVIDIA Jetson AGX Orin HDA HDMI/DP,pcm=7 as /devices/platform/3510000.hda/sound/card0/input12
+[   13.463595] input: NVIDIA Jetson AGX Orin HDA HDMI/DP,pcm=8 as /devices/platform/3510000.hda/sound/card0/input13
+[   13.463647] input: NVIDIA Jetson AGX Orin HDA HDMI/DP,pcm=9 as /devices/platform/3510000.hda/sound/card0/input14
+[   13.525368] tegra-asoc: sound: Adding to iommu group 58
+[   13.533083] irq: IRQ311: trimming hierarchy from :pmc@c360000
+[   13.562796] OF: graph: no port node found in /i2c@c240000/ucsi_ccg@8/connector@0
+[   13.571196] ucsi_ccg 1-0008: Port-0: no role switch found
+[   13.615352] using random self ethernet address
+[   13.620799] using random host ethernet address
+[   13.632032] tegra210-adsp aconnect@2a41000:adsp_audio: Adding to iommu group 58
+[   13.632057] tegra210_adsp_audio_probe: platform probe started
+[   13.632573] tegra210-adsp tegra210-adsp: Default param-type to BYTE for mp3-dec1
+[   13.632819] tegra210-adsp tegra210-adsp: Default param-type to BYTE for spkprot
+[   13.633051] tegra210-adsp tegra210-adsp: Default param-type to BYTE for src
+[   13.633278] tegra210-adsp tegra210-adsp: Default param-type to BYTE for aac-dec1
+[   13.633500] tegra210-adsp tegra210-adsp: Default param-type to BYTE for aec
+[   13.633724] tegra210-adsp tegra210-adsp: Default param-type to BYTE for wire
+[   13.633727] tegra210-adsp tegra210-adsp: adma channel page address dt entry not found
+[   13.633728] tegra210-adsp tegra210-adsp: using adma channel page 0
+[   13.633768] nvadsp 2993000.adsp: ADSP OS firmware already loaded
+[   13.640836] cdi_tsc c6a0000.tsc_sig_gen: CDI TSC probing...
+[   13.640944] cdi_tsc_probe: Initializing the driver
+[   13.641070] cdi_tsc_probe: Successfully initialized the tsc char driver
+[   13.657722] OF: graph: no port node found in /i2c@c240000/ucsi_ccg@8/connector@0
+[   13.666297] OF: graph: no port node found in /i2c@c240000/ucsi_ccg@8/connector@0
+[   13.765310] rtl88x2ce 0001:01:00.0: Adding to iommu group 9
+[   13.765707] rtl88x2ce 0001:01:00.0: enabling device (0000 -> 0003)
+[   13.812360] cryptd: max_cpu_qlen set to 1000
+[   13.816147] usbcore: registered new interface driver btusb
+[   13.836644] loop: module loaded
+[   13.839999] rtk_btusb: Realtek Bluetooth USB driver ver 3.1
+[   13.840004] rtk_btcoex: rtk_btcoex_init: version: 1.2
+[   13.840005] rtk_btcoex: create workqueue
+[   13.840075] rtk_btcoex: alloc buffers 1792, 2432 for ev and l2
+[   13.840114] rtk_btusb: btusb_probe intf->cur_altsetting->desc.bInterfaceNumber 0
+[   13.840116] rtk_btusb: btusb_probe can_wakeup 1, may wakeup 0
+[   13.840117] rtk_btusb: patch_add
+[   13.840118] rtk_btusb: auto suspend is disabled
+[   13.840119] rtk_btusb: pid = 0x3549
+[   13.840121] rtk_btusb: patch_add: Reset gEVersion to 0xff
+[   13.840127] rtk_btusb: set_bit(HCI_QUIRK_RESET_ON_CLOSE, &hdev->quirks);
+[   13.840231] rtk_btusb: btusb_probe: done
+[   13.840264] usbcore: registered new interface driver rtk_btusb
+[   13.840479] rtk_btusb: btusb_open start
+[   13.840482] rtk_btusb: btusb_open hdev->promisc ==0
+[   13.840483] rtk_btusb: download_patch start
+[   13.840485] rtk_btusb: chip type value: 0x73
+[   13.840488] rtk_btusb: HCI reset.
+[   13.851358] rtk_btusb: read_ver_rsp->lmp_subver = 0x8822
+[   13.851363] rtk_btusb: read_ver_rsp->hci_rev = 0xc
+[   13.851365] rtk_btusb: patch_entry->lmp_sub = 0x8822
+[   13.851366] rtk_btusb: load_firmware start
+[   13.851368] rtk_btusb: lmp_version = 0x8822
+[   13.851369] rtk_btusb: config filename rtl8822cu_config
+[   13.858827] rtk_btusb: no bdaddr file /opt/bdaddr
+[   13.858835] rtk_btusb: 55 ab 23 87 00 00
+[   13.858845] rtk_btusb: Config file length 6, new length 6
+[   13.858847] rtk_btusb: fw name is  rtl8822cu_fw
+[   13.862195] rtk_btusb: This is not 8723a, use new patch style!
+[   13.862202] rtk_btusb: rtk_get_eversion: gEVersion 255
+[   13.863340] rtk_btusb: eversion->status = 0x0, eversion->version = 0x3
+[   13.863345] rtk_btusb: load_firmware: New gEVersion 3
+[   13.863348] rtk_btusb: rtk_get_fw_project_id: opcode 0, len 1, data 13
+[   13.863349] rtk_btusb: lmp_version is 8822, project_id is 8822, match!
+[   13.863351] rtk_btusb: fw_version = 0x9a8cbc9
+[   13.863352] rtk_btusb: number_of_total_patch = 3
+[   13.863353] rtk_btusb: chipID 4
+[   13.863354] rtk_btusb: patch_length 0x8590
+[   13.863355] rtk_btusb: start_offset 0x00005d00
+[   13.863357] rtk_btusb: Svn version: 1940234490
+[   13.863358] rtk_btusb: Coexistence: BTCOEX_20210106-2020
+[   13.863360] rtk_btusb: buf_len = 0x8596
+[   13.863371] rtk_btusb: fw: exists, config file: exists
+[   13.863373] rtk_btusb: load_firmware done
+[   13.863388] rtk_btusb: download_data start
+[   13.933251] tegra210-adsp tegra210-adsp: Loaded app wire
+[   13.933254] tegra210-adsp tegra210-adsp: Loaded app apm
+[   13.933255] tegra210-adsp tegra210-adsp: Loaded app adma
+[   13.933257] tegra210-adsp tegra210-adsp: Loaded app adma_tx
+[   13.933259] nvadsp_set_adma_dump_reg: callback for adma reg dump is sent to 0000000081110ee2
+[   13.954397] input: NVIDIA Jetson AGX Orin APE Headset Jack as /devices/platform/sound/sound/card1/input15
+[   13.954770] tegra210-adsp tegra210-adsp: Tegra210 ADSP driver successfully registered
+[   14.036365] rtk_btusb: download_data done
+[   14.036369] rtk_btusb: HCI reset.
+[   14.047348] rtk_btusb: read_ver_rsp->lmp_subver = 0xcbc9
+[   14.047354] rtk_btusb: read_ver_rsp->hci_rev = 0x9a8
+[   14.047355] rtk_btusb: patch_entry->lmp_sub = 0x8822
+[   14.047363] rtk_btusb: Rtk patch end 0
+[   14.047366] rtk_btusb: btusb_open set HCI_RUNNING
+[   14.047384] rtk_btcoex: Open BTCOEX
+[   14.047385] rtk_btusb: btusb_open end
+[   14.049359] rtk_btcoex: BTCOEX hci_rev 0x09a8
+[   14.049362] rtk_btcoex: BTCOEX lmp_subver 0xcbc9
+[   14.056828] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[   14.056844] Bluetooth: BNEP socket layer initialized
+[   14.069370] rtk_btusb: btusb_notify: hci0 evt 3
+[   14.104369] rtk_btusb: btusb_flush add delay 
+[   14.107945] Mass Storage Function, version: 2009/09/11
+[   14.107953] LUN: removable file: (no medium)
+[   14.110401] using random self ethernet address
+[   14.115798] using random host ethernet address
+[   14.124389] rtk_btusb: btusb_close
+[   14.134810] rtk_btcoex: Close BTCOEX
+[   14.134816] rtk_btcoex: -x
+[   14.148918] rndis0: HOST MAC fe:29:15:12:25:dc
+[   14.148923] rndis0: MAC fe:29:15:12:25:dd
+[   14.149988] usb0: HOST MAC fe:29:15:12:25:de
+[   14.149993] usb0: MAC fe:29:15:12:25:df
+[   14.158190] tegra-xudc 3550000.xudc: EP 0 (type: ctrl, dir: out) enabled
+[   14.161176] l4tbr0: port 1(rndis0) entered blocking state
+[   14.161188] l4tbr0: port 1(rndis0) entered disabled state
+[   14.161351] device rndis0 entered promiscuous mode
+[   14.168463] l4tbr0: port 2(usb0) entered blocking state
+[   14.168475] l4tbr0: port 2(usb0) entered disabled state
+[   14.168613] device usb0 entered promiscuous mode
+[   14.365367] pstore: Using crash dump compression: deflate
+[   14.365414] printk: console [ramoops-1] enabled
+[   14.365417] pstore: Registered ramoops as persistent store backend
+[   14.365418] ramoops: using 0x200000@0x102d370000, ecc: 0
+[   14.505490] CPU8: shutdown
+[   14.509863] psci: CPU8 killed (polled 0 ms)
+[   14.590887] irq: IRQ313: trimming hierarchy from :interrupt-controller@f400000-1
+[   14.591702] hwmon hwmon7: temp1_input not attached to any thermal zone
+[   14.604004] nvvrs_pseq 4-003c: CAUTION: interrupt status reg:0x10 set to 0x8
+[   14.604008] nvvrs_pseq 4-003c: Clearing interrupts
+[   14.689352] CPU9: shutdown
+[   14.692947] psci: CPU9 killed (polled 0 ms)
+[   14.817664] CPU10: shutdown
+[   14.822815] psci: CPU10 killed (polled 0 ms)
+[   14.986205] IRQ 124: no longer affine to CPU11
+[   14.991276] CPU11: shutdown
+[   14.996097] psci: CPU11 killed (polled 0 ms)
+[   15.294543] nvgpu: 17000000.ga10b                  gk20a_scale_init:541  [INFO]  enabled scaling for GPU
+
+[   15.305461] Aquantia AQR113C 6810000.ethernet:00: No AQR phy_mode setting in DT
+[   17.158020] zram: Added device: zram0
+[   17.158263] zram: Added device: zram1
+[   17.158465] zram: Added device: zram2
+[   17.158628] zram: Added device: zram3
+[   17.158813] zram: Added device: zram4
+[   17.158964] zram: Added device: zram5
+[   17.159125] zram: Added device: zram6
+[   17.161528] zram: Added device: zram7
+[   17.203188] zram0: detected capacity change from 0 to 4114374656
+[   17.264857] Adding 4017940k swap on /dev/zram0.  Priority:5 extents:1 across:4017940k SS
+[   17.269368] zram1: detected capacity change from 0 to 4114374656
+[   17.300893] Adding 4017940k swap on /dev/zram1.  Priority:5 extents:1 across:4017940k SS
+[   17.306361] zram2: detected capacity change from 0 to 4114374656
+[   17.348898] Adding 4017940k swap on /dev/zram2.  Priority:5 extents:1 across:4017940k SS
+[   17.354543] zram3: detected capacity change from 0 to 4114374656
+[   17.401051] Adding 4017940k swap on /dev/zram3.  Priority:5 extents:1 across:4017940k SS
+[   17.406769] zram4: detected capacity change from 0 to 4114374656
+[   17.452868] Adding 4017940k swap on /dev/zram4.  Priority:5 extents:1 across:4017940k SS
+[   17.458469] zram5: detected capacity change from 0 to 4114374656
+[   17.516900] Adding 4017940k swap on /dev/zram5.  Priority:5 extents:1 across:4017940k SS
+[   17.522600] zram6: detected capacity change from 0 to 4114374656
+[   17.568836] Adding 4017940k swap on /dev/zram6.  Priority:5 extents:1 across:4017940k SS
+[   17.574617] zram7: detected capacity change from 0 to 4114374656
+[   17.620918] Adding 4017940k swap on /dev/zram7.  Priority:5 extents:1 across:4017940k SS
+[   17.962317] fuse: init (API version 7.32)
+[   18.243581] nvidia-modeset: Loading NVIDIA UNIX Open Kernel Mode Setting Driver for aarch64  35.5.0  Release Build  (buildbrain@mobile-u64-6519-d7000)  Mon Feb 19 20:34:14 PST 2024
+[   18.519229] NVRM rpcRmApiControl_dce: NVRM_RPC_DCE: Failed RM ctrl call cmd:0x731341 result 0xffff:
+[   20.866552] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[   23.450007] exfat: Deprecated parameter 'namecase'
+[   23.455685] exFAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[   42.428836] vdd-12v-sys: disabling
+[   42.428859] vdd-3v3-ftdi: disabling
+[  192.350152] optee_supp_recv()---start
+[  192.350160] optee_supp_recv()---before while
+[  192.350163] optee_supp_recv()---after mutex_lock1
+[  192.350164] optee_supp_recv()---after supp_pop_entry
+[  192.350165] optee_supp_recv()---after mutex_unlock2
+[  192.350166] optee_supp_recv()---befroe wait
+[  203.211530] optee_supp_thrd_req()---start
+[  203.211537] optee_supp_thrd_req()---before init_completion
+[  203.211539] optee_supp_thrd_req()---after init_completion
+[  203.211541] optee_supp_thrd_req()---after mutex_lock1
+[  203.211542] optee_supp_thrd_req()---after list_add_tail
+[  203.211543] optee_supp_thrd_req()---after mutex_unlock1
+[  203.211547] optee_supp_thrd_req()---after complete
+[  203.211548] optee_supp_thrd_req()---before wait
+[  203.211571] optee_supp_recv()---after wait
+[  203.211581] optee_supp_recv()---after mutex_lock1
+[  203.211595] optee_supp_recv()---after supp_pop_entry
+[  203.211599] optee_supp_recv()---after mutex_unlock2
+[  203.211604] optee_supp_recv()---out while
+[  203.211608] optee_supp_recv()---after while
+[  203.211612] optee_supp_recv()---num_meta != 0
+[  203.211617] optee_supp_recv()---end
+[  203.213492] optee_supp_recv()---start
+[  203.213497] optee_supp_recv()---before while
+[  203.213499] optee_supp_recv()---after mutex_lock1
+[  203.213500] optee_supp_recv()---after supp_pop_entry
+[  203.213501] optee_supp_recv()---after mutex_unlock2
+[  203.213502] optee_supp_recv()---befroe wait
+[  203.213870] optee_supp_send()---start
+[  203.213877] optee_supp_send()---after mutex_lock1
+[  203.213884] optee_supp_send()---after supp_pop_req
+[  203.213889] optee_supp_send()---after mutex_unlock1
+[  203.213895] optee_supp_send()---req->num_params : 1
+[  203.213900] optee_supp_send()---TYPE_VALUE
+[  203.213903] optee_supp_send()---before complete
+[  203.213912] optee_supp_send()---end
+[  203.213924] optee_supp_thrd_req()---end
+[  203.214008] optee_supp_thrd_req()---start
+[  203.214013] optee_supp_thrd_req()---before init_completion
+[  203.214018] optee_supp_thrd_req()---after init_completion
+[  203.214022] optee_supp_thrd_req()---after mutex_lock1
+[  203.214026] optee_supp_thrd_req()---after list_add_tail
+[  203.214031] optee_supp_thrd_req()---after mutex_unlock1
+[  203.214039] optee_supp_thrd_req()---after complete
+[  203.214043] optee_supp_thrd_req()---before wait
+[  203.214060] optee_supp_recv()---after wait
+[  203.214062] optee_supp_recv()---after mutex_lock1
+[  203.214067] optee_supp_recv()---after supp_pop_entry
+[  203.214068] optee_supp_recv()---after mutex_unlock2
+[  203.214070] optee_supp_recv()---out while
+[  203.214071] optee_supp_recv()---after while
+[  203.214079] optee_supp_recv()---num_meta != 0
+[  203.214080] optee_supp_recv()---end
+[  203.214264] optee_supp_recv()---start
+[  203.214296] optee_supp_recv()---before while
+[  203.214301] optee_supp_recv()---after mutex_lock1
+[  203.214304] optee_supp_recv()---after supp_pop_entry
+[  203.214306] optee_supp_recv()---after mutex_unlock2
+[  203.214309] optee_supp_recv()---befroe wait
+[  203.214851] optee_supp_recv()---start
+[  203.214857] optee_supp_recv()---before while
+[  203.214862] optee_supp_recv()---after mutex_lock1
+[  203.214866] optee_supp_recv()---after supp_pop_entry
+[  203.214871] optee_supp_recv()---after mutex_unlock2
+[  203.214873] optee_supp_recv()---befroe wait
+[  203.228369] optee_supp_send()---start
+[  203.228372] optee_supp_send()---after mutex_lock1
+[  203.228375] optee_supp_send()---after supp_pop_req
+[  203.228376] optee_supp_send()---after mutex_unlock1
+[  203.228378] optee_supp_send()---req->num_params : 3
+[  203.228379] optee_supp_send()---TYPE_VALUE
+[  203.228380] optee_supp_send()---before complete
+[  203.228386] optee_supp_send()---end
+[  203.228393] optee_supp_thrd_req()---end
+[  203.228408] optee_supp_recv()---start
+[  203.228409] optee_supp_recv()---before while
+[  203.228410] optee_supp_recv()---after mutex_lock1
+[  203.228411] optee_supp_recv()---after supp_pop_entry
+[  203.228412] optee_supp_recv()---after mutex_unlock2
+[  203.228413] optee_supp_recv()---befroe wait
+[  203.228444] optee_supp_thrd_req()---start
+[  203.228447] optee_supp_thrd_req()---before init_completion
+[  203.228450] optee_supp_thrd_req()---after init_completion
+[  203.228452] optee_supp_thrd_req()---after mutex_lock1
+[  203.228453] optee_supp_thrd_req()---after list_add_tail
+[  203.228455] optee_supp_thrd_req()---after mutex_unlock1
+[  203.228460] optee_supp_thrd_req()---after complete
+[  203.228461] optee_supp_thrd_req()---before wait
+[  203.228469] optee_supp_recv()---after wait
+[  203.228473] optee_supp_recv()---after mutex_lock1
+[  203.228478] optee_supp_recv()---after supp_pop_entry
+[  203.228480] optee_supp_recv()---after mutex_unlock2
+[  203.228483] optee_supp_recv()---out while
+[  203.228485] optee_supp_recv()---after while
+[  203.228487] optee_supp_recv()---num_meta != 0
+[  203.228489] optee_supp_recv()---end
+[  203.228910] optee_supp_send()---start
+[  203.228912] optee_supp_send()---after mutex_lock1
+[  203.228915] optee_supp_send()---after supp_pop_req
+[  203.228917] optee_supp_send()---after mutex_unlock1
+[  203.228919] optee_supp_send()---req->num_params : 2
+[  203.228921] optee_supp_send()---TYPE_MEMREF
+[  203.228922] optee_supp_send()---before complete
+[  203.228925] optee_supp_send()---end
+[  203.228934] optee_supp_thrd_req()---end
+[  203.228936] optee_supp_recv()---start
+[  203.228939] optee_supp_recv()---before while
+[  203.228942] optee_supp_recv()---after mutex_lock1
+[  203.228943] optee_supp_recv()---after supp_pop_entry
+[  203.228944] optee_supp_recv()---after mutex_unlock2
+[  203.228945] optee_supp_recv()---befroe wait
+[  203.228949] optee_supp_thrd_req()---start
+[  203.228951] optee_supp_thrd_req()---before init_completion
+[  203.228952] optee_supp_thrd_req()---after init_completion
+[  203.228954] optee_supp_thrd_req()---after mutex_lock1
+[  203.228955] optee_supp_thrd_req()---after list_add_tail
+[  203.228956] optee_supp_thrd_req()---after mutex_unlock1
+[  203.228962] optee_supp_thrd_req()---after complete
+[  203.228962] optee_supp_thrd_req()---before wait
+[  203.228965] optee_supp_recv()---after wait
+[  203.228967] optee_supp_recv()---after mutex_lock1
+[  203.228970] optee_supp_recv()---after supp_pop_entry
+[  203.228971] optee_supp_recv()---after mutex_unlock2
+[  203.228973] optee_supp_recv()---out while
+[  203.228975] optee_supp_recv()---after while
+[  203.228976] optee_supp_recv()---num_meta != 0
+[  203.228978] optee_supp_recv()---end
+[  203.229593] optee_supp_send()---start
+[  203.229595] optee_supp_send()---after mutex_lock1
+[  203.229597] optee_supp_send()---after supp_pop_req
+[  203.229598] optee_supp_send()---after mutex_unlock1
+[  203.229600] optee_supp_send()---req->num_params : 2
+[  203.229601] optee_supp_send()---TYPE_MEMREF
+[  203.229602] optee_supp_send()---before complete
+[  203.229604] optee_supp_send()---end
+[  203.229606] optee_supp_thrd_req()---end
+[  203.229614] optee_supp_thrd_req()---start
+[  203.229615] optee_supp_thrd_req()---before init_completion
+[  203.229616] optee_supp_thrd_req()---after init_completion
+[  203.229618] optee_supp_thrd_req()---after mutex_lock1
+[  203.229619] optee_supp_thrd_req()---after list_add_tail
+[  203.229620] optee_supp_thrd_req()---after mutex_unlock1
+[  203.229622] optee_supp_thrd_req()---after complete
+[  203.229624] optee_supp_thrd_req()---before wait
+[  203.229625] optee_supp_recv()---after wait
+[  203.229626] optee_supp_recv()---after mutex_lock1
+[  203.229636] optee_supp_recv()---after supp_pop_entry
+[  203.229637] optee_supp_recv()---after mutex_unlock2
+[  203.229638] optee_supp_recv()---out while
+[  203.229639] optee_supp_recv()---after while
+[  203.229640] optee_supp_recv()---num_meta != 0
+[  203.229641] optee_supp_recv()---end
+[  203.229659] optee_supp_send()---start
+[  203.229665] optee_supp_send()---after mutex_lock1
+[  203.229667] optee_supp_send()---after supp_pop_req
+[  203.229669] optee_supp_send()---after mutex_unlock1
+[  203.229671] optee_supp_send()---req->num_params : 2
+[  203.229672] optee_supp_send()---TYPE_MEMREF
+[  203.229672] optee_supp_send()---before complete
+[  203.229676] optee_supp_send()---end
+[  203.229685] optee_supp_thrd_req()---end
+[  203.229688] optee_supp_recv()---start
+[  203.229689] optee_supp_recv()---before while
+[  203.229690] optee_supp_recv()---after mutex_lock1
+[  203.229691] optee_supp_recv()---after supp_pop_entry
+[  203.229692] optee_supp_recv()---after mutex_unlock2
+[  203.229693] optee_supp_recv()---befroe wait
+[  203.229776] optee_supp_thrd_req()---start
+[  203.229779] optee_supp_thrd_req()---before init_completion
+[  203.229781] optee_supp_thrd_req()---after init_completion
+[  203.229784] optee_supp_thrd_req()---after mutex_lock1
+[  203.229786] optee_supp_thrd_req()---after list_add_tail
+[  203.229788] optee_supp_thrd_req()---after mutex_unlock1
+[  203.229795] optee_supp_thrd_req()---after complete
+[  203.229798] optee_supp_thrd_req()---before wait
+[  203.229805] optee_supp_recv()---after wait
+[  203.229808] optee_supp_recv()---after mutex_lock1
+[  203.229813] optee_supp_recv()---after supp_pop_entry
+[  203.229815] optee_supp_recv()---after mutex_unlock2
+[  203.229817] optee_supp_recv()---out while
+[  203.229819] optee_supp_recv()---after while
+[  203.229821] optee_supp_recv()---num_meta != 0
+[  203.229823] optee_supp_recv()---end
+[  203.230139] optee_supp_send()---start
+[  203.230145] optee_supp_send()---after mutex_lock1
+[  203.230157] optee_supp_send()---after supp_pop_req
+[  203.230163] optee_supp_send()---after mutex_unlock1
+[  203.230169] optee_supp_send()---req->num_params : 2
+[  203.230180] optee_supp_send()---TYPE_MEMREF
+[  203.230189] optee_supp_send()---before complete
+[  203.230196] optee_supp_send()---end
+[  203.230202] optee_supp_thrd_req()---end
+[  203.230208] optee_supp_recv()---start
+[  203.230216] optee_supp_recv()---before while
+[  203.230221] optee_supp_recv()---after mutex_lock1
+[  203.230226] optee_supp_recv()---after supp_pop_entry
+[  203.230232] optee_supp_recv()---after mutex_unlock2
+[  203.230237] optee_supp_recv()---befroe wait
+[  203.230317] optee_supp_thrd_req()---start
+[  203.230320] optee_supp_thrd_req()---before init_completion
+[  203.230321] optee_supp_thrd_req()---after init_completion
+[  203.230324] optee_supp_thrd_req()---after mutex_lock1
+[  203.230327] optee_supp_thrd_req()---after list_add_tail
+[  203.230328] optee_supp_thrd_req()---after mutex_unlock1
+[  203.230331] optee_supp_thrd_req()---after complete
+[  203.230332] optee_supp_thrd_req()---before wait
+[  203.230336] optee_supp_recv()---after wait
+[  203.230338] optee_supp_recv()---after mutex_lock1
+[  203.230342] optee_supp_recv()---after supp_pop_entry
+[  203.230347] optee_supp_recv()---after mutex_unlock2
+[  203.230349] optee_supp_recv()---out while
+[  203.230351] optee_supp_recv()---after while
+[  203.230353] optee_supp_recv()---num_meta != 0
+[  203.230356] optee_supp_recv()---end
+[  203.230414] optee_supp_send()---start
+[  203.230437] optee_supp_send()---after mutex_lock1
+[  203.230461] optee_supp_send()---after supp_pop_req
+[  203.230488] optee_supp_send()---after mutex_unlock1
+[  203.230490] optee_supp_send()---req->num_params : 2
+[  203.230492] optee_supp_send()---TYPE_MEMREF
+[  203.230509] optee_supp_send()---before complete
+[  203.230510] optee_supp_recv()---start
+[  203.230512] optee_supp_recv()---before while
+[  203.230514] optee_supp_recv()---after mutex_lock1
+[  203.230515] optee_supp_recv()---after supp_pop_entry
+[  203.230515] optee_supp_send()---end
+[  203.230517] optee_supp_recv()---after mutex_unlock2
+[  203.230519] optee_supp_recv()---befroe wait
+[  203.230527] optee_supp_recv()---start
+[  203.230528] optee_supp_recv()---before while
+[  203.230529] optee_supp_recv()---after mutex_lock1
+[  203.230530] optee_supp_recv()---after supp_pop_entry
+[  203.230531] optee_supp_recv()---after mutex_unlock2
+[  203.230531] optee_supp_recv()---befroe wait
+[  203.230808] optee_supp_thrd_req()---end
+[  203.230914] optee_supp_thrd_req()---start
+[  203.230916] optee_supp_thrd_req()---before init_completion
+[  203.230922] optee_supp_thrd_req()---after init_completion
+[  203.230924] optee_supp_thrd_req()---after mutex_lock1
+[  203.230926] optee_supp_thrd_req()---after list_add_tail
+[  203.230928] optee_supp_thrd_req()---after mutex_unlock1
+[  203.230932] optee_supp_thrd_req()---after complete
+[  203.230934] optee_supp_thrd_req()---before wait
+[  203.230938] optee_supp_recv()---after wait
+[  203.230941] optee_supp_recv()---after mutex_lock1
+[  203.230943] optee_supp_recv()---after supp_pop_entry
+[  203.230944] optee_supp_recv()---after mutex_unlock2
+[  203.230945] optee_supp_recv()---out while
+[  203.230946] optee_supp_recv()---after while
+[  203.230947] optee_supp_recv()---num_meta != 0
+[  203.230948] optee_supp_recv()---end
+[  203.230967] optee_supp_send()---start
+[  203.230969] optee_supp_send()---after mutex_lock1
+[  203.230970] optee_supp_send()---after supp_pop_req
+[  203.230971] optee_supp_send()---after mutex_unlock1
+[  203.230973] optee_supp_send()---req->num_params : 2
+[  203.230974] optee_supp_send()---TYPE_MEMREF
+[  203.230975] optee_supp_send()---before complete
+[  203.230980] optee_supp_send()---end
+[  203.230987] optee_supp_thrd_req()---end
+[  203.230987] optee_supp_recv()---start
+[  203.230989] optee_supp_recv()---before while
+[  203.230990] optee_supp_recv()---after mutex_lock1
+[  203.230991] optee_supp_recv()---after supp_pop_entry
+[  203.230992] optee_supp_recv()---after mutex_unlock2
+[  203.230993] optee_supp_recv()---befroe wait
+[  203.231115] optee_supp_thrd_req()---start
+[  203.231118] optee_supp_thrd_req()---before init_completion
+[  203.231121] optee_supp_thrd_req()---after init_completion
+[  203.231123] optee_supp_thrd_req()---after mutex_lock1
+[  203.231125] optee_supp_thrd_req()---after list_add_tail
+[  203.231128] optee_supp_thrd_req()---after mutex_unlock1
+[  203.231133] optee_supp_thrd_req()---after complete
+[  203.231135] optee_supp_thrd_req()---before wait
+[  203.231140] optee_supp_recv()---after wait
+[  203.231143] optee_supp_recv()---after mutex_lock1
+[  203.231147] optee_supp_recv()---after supp_pop_entry
+[  203.231150] optee_supp_recv()---after mutex_unlock2
+[  203.231153] optee_supp_recv()---out while
+[  203.231156] optee_supp_recv()---after while
+[  203.231158] optee_supp_recv()---num_meta != 0
+[  203.231160] optee_supp_recv()---end
+[  203.231645] optee_supp_send()---start
+[  203.231650] optee_supp_send()---after mutex_lock1
+[  203.231652] optee_supp_send()---after supp_pop_req
+[  203.231654] optee_supp_send()---after mutex_unlock1
+[  203.231656] optee_supp_send()---req->num_params : 2
+[  203.231658] optee_supp_send()---TYPE_MEMREF
+[  203.231659] optee_supp_send()---before complete
+[  203.231665] optee_supp_send()---end
+[  203.231671] optee_supp_thrd_req()---end
+[  203.231794] optee_supp_thrd_req()---start
+[  203.231800] optee_supp_thrd_req()---before init_completion
+[  203.231802] optee_supp_thrd_req()---after init_completion
+[  203.231804] optee_supp_thrd_req()---after mutex_lock1
+[  203.231806] optee_supp_thrd_req()---after list_add_tail
+[  203.231808] optee_supp_thrd_req()---after mutex_unlock1
+[  203.231816] optee_supp_thrd_req()---after complete
+[  203.231818] optee_supp_thrd_req()---before wait
+[  203.231824] optee_supp_recv()---after wait
+[  203.231827] optee_supp_recv()---after mutex_lock1
+[  203.231832] optee_supp_recv()---after supp_pop_entry
+[  203.231834] optee_supp_recv()---after mutex_unlock2
+[  203.231836] optee_supp_recv()---out while
+[  203.231839] optee_supp_recv()---after while
+[  203.231841] optee_supp_recv()---num_meta != 0
+[  203.231843] optee_supp_recv()---end
+[  203.232039] optee_supp_send()---start
+[  203.232042] optee_supp_send()---after mutex_lock1
+[  203.232045] optee_supp_send()---after supp_pop_req
+[  203.232047] optee_supp_send()---after mutex_unlock1
+[  203.232050] optee_supp_send()---req->num_params : 2
+[  203.232052] optee_supp_send()---TYPE_MEMREF
+[  203.232055] optee_supp_send()---before complete
+[  203.232059] optee_supp_recv()---start
+[  203.232062] optee_supp_send()---end
+[  203.232066] optee_supp_recv()---before while
+[  203.232068] optee_supp_thrd_req()---end
+[  203.232071] optee_supp_recv()---after mutex_lock1
+[  203.232075] optee_supp_recv()---start
+[  203.232077] optee_supp_recv()---after supp_pop_entry
+[  203.232080] optee_supp_recv()---after mutex_unlock2
+[  203.232085] optee_supp_recv()---before while
+[  203.232087] optee_supp_recv()---befroe wait
+[  203.232091] optee_supp_recv()---after mutex_lock1
+[  203.232094] optee_supp_recv()---after supp_pop_entry
+[  203.232096] optee_supp_recv()---after mutex_unlock2
+[  203.232097] optee_supp_recv()---befroe wait
+[  203.232169] optee_supp_thrd_req()---start
+[  203.232174] optee_supp_thrd_req()---before init_completion
+[  203.232176] optee_supp_thrd_req()---after init_completion
+[  203.232178] optee_supp_thrd_req()---after mutex_lock1
+[  203.232181] optee_supp_thrd_req()---after list_add_tail
+[  203.232183] optee_supp_thrd_req()---after mutex_unlock1
+[  203.232188] optee_supp_thrd_req()---after complete
+[  203.232191] optee_supp_thrd_req()---before wait
+[  203.232194] optee_supp_recv()---after wait
+[  203.232198] optee_supp_recv()---after mutex_lock1
+[  203.232202] optee_supp_recv()---after supp_pop_entry
+[  203.232203] optee_supp_recv()---after mutex_unlock2
+[  203.232204] optee_supp_recv()---out while
+[  203.232205] optee_supp_recv()---after while
+[  203.232207] optee_supp_recv()---num_meta != 0
+[  203.232208] optee_supp_recv()---end
+[  203.232332] optee_supp_send()---start
+[  203.232345] optee_supp_send()---after mutex_lock1
+[  203.232356] optee_supp_send()---after supp_pop_req
+[  203.232367] optee_supp_send()---after mutex_unlock1
+[  203.232377] optee_supp_send()---req->num_params : 3
+[  203.232389] optee_supp_send()---TYPE_VALUE
+[  203.232400] optee_supp_send()---before complete
+[  203.232410] optee_supp_send()---end
+[  203.232417] optee_supp_thrd_req()---end
+[  203.232421] optee_supp_recv()---start
+[  203.232426] optee_supp_recv()---before while
+[  203.232435] optee_supp_thrd_req()---start
+[  203.232438] optee_supp_recv()---after mutex_lock1
+[  203.232442] optee_supp_recv()---after supp_pop_entry
+[  203.232447] optee_supp_thrd_req()---before init_completion
+[  203.232455] optee_supp_recv()---after mutex_unlock2
+[  203.232460] optee_supp_thrd_req()---after init_completion
+[  203.232466] optee_supp_recv()---befroe wait
+[  203.232471] optee_supp_thrd_req()---after mutex_lock1
+[  203.232477] optee_supp_thrd_req()---after list_add_tail
+[  203.232480] optee_supp_thrd_req()---after mutex_unlock1
+[  203.232485] optee_supp_thrd_req()---after complete
+[  203.232488] optee_supp_recv()---after wait
+[  203.232490] optee_supp_thrd_req()---before wait
+[  203.232497] optee_supp_recv()---after mutex_lock1
+[  203.232501] optee_supp_recv()---after supp_pop_entry
+[  203.232504] optee_supp_recv()---after mutex_unlock2
+[  203.232507] optee_supp_recv()---out while
+[  203.232511] optee_supp_recv()---after while
+[  203.232517] optee_supp_recv()---num_meta != 0
+[  203.232520] optee_supp_recv()---end
+[  203.233649] optee_supp_send()---start
+[  203.233651] optee_supp_send()---after mutex_lock1
+[  203.233653] optee_supp_send()---after supp_pop_req
+[  203.233654] optee_supp_send()---after mutex_unlock1
+[  203.233656] optee_supp_send()---req->num_params : 2
+[  203.233659] optee_supp_send()---TYPE_MEMREF
+[  203.233662] optee_supp_send()---before complete
+[  203.233664] optee_supp_send()---end
+[  203.233668] optee_supp_thrd_req()---end
+[  203.233683] optee_supp_thrd_req()---start
+[  203.233684] optee_supp_thrd_req()---before init_completion
+[  203.233686] optee_supp_thrd_req()---after init_completion
+[  203.233687] optee_supp_thrd_req()---after mutex_lock1
+[  203.233688] optee_supp_thrd_req()---after list_add_tail
+[  203.233690] optee_supp_thrd_req()---after mutex_unlock1
+[  203.233696] optee_supp_thrd_req()---after complete
+[  203.233698] optee_supp_thrd_req()---before wait
+[  203.233699] optee_supp_recv()---after wait
+[  203.233701] optee_supp_recv()---after mutex_lock1
+[  203.233703] optee_supp_recv()---after supp_pop_entry
+[  203.233704] optee_supp_recv()---after mutex_unlock2
+[  203.233705] optee_supp_recv()---out while
+[  203.233706] optee_supp_recv()---after while
+[  203.233707] optee_supp_recv()---num_meta != 0
+[  203.233708] optee_supp_recv()---end
+[  203.233728] optee_supp_send()---start
+[  203.233731] optee_supp_send()---after mutex_lock1
+[  203.233734] optee_supp_send()---after supp_pop_req
+[  203.233735] optee_supp_send()---after mutex_unlock1
+[  203.233737] optee_supp_send()---req->num_params : 2
+[  203.233738] optee_supp_send()---TYPE_MEMREF
+[  203.233739] optee_supp_send()---before complete
+[  203.233743] optee_supp_send()---end
+[  203.233752] optee_supp_thrd_req()---end
+[  203.233752] optee_supp_recv()---start
+[  203.233754] optee_supp_recv()---before while
+[  203.233755] optee_supp_recv()---after mutex_lock1
+[  203.233756] optee_supp_recv()---after supp_pop_entry
+[  203.233757] optee_supp_recv()---after mutex_unlock2
+[  203.233758] optee_supp_recv()---befroe wait
+[  203.233764] optee_supp_thrd_req()---start
+[  203.233768] optee_supp_thrd_req()---before init_completion
+[  203.233769] optee_supp_thrd_req()---after init_completion
+[  203.233770] optee_supp_thrd_req()---after mutex_lock1
+[  203.233771] optee_supp_thrd_req()---after list_add_tail
+[  203.233773] optee_supp_thrd_req()---after mutex_unlock1
+[  203.233776] optee_supp_thrd_req()---after complete
+[  203.233777] optee_supp_thrd_req()---before wait
+[  203.233782] optee_supp_recv()---after wait
+[  203.233784] optee_supp_recv()---after mutex_lock1
+[  203.233786] optee_supp_recv()---after supp_pop_entry
+[  203.233788] optee_supp_recv()---after mutex_unlock2
+[  203.233788] optee_supp_recv()---out while
+[  203.233790] optee_supp_recv()---after while
+[  203.233791] optee_supp_recv()---num_meta != 0
+[  203.233792] optee_supp_recv()---end
+[  203.234109] optee_supp_send()---start
+[  203.234111] optee_supp_send()---after mutex_lock1
+[  203.234113] optee_supp_send()---after supp_pop_req
+[  203.234115] optee_supp_send()---after mutex_unlock1
+[  203.234116] optee_supp_send()---req->num_params : 2
+[  203.234117] optee_supp_send()---TYPE_MEMREF
+[  203.234119] optee_supp_send()---before complete
+[  203.234123] optee_supp_send()---end
+[  203.234130] optee_supp_thrd_req()---end
+[  203.234133] optee_supp_recv()---start
+[  203.234138] optee_supp_recv()---before while
+[  203.234142] optee_supp_recv()---after mutex_lock1
+[  203.234143] optee_supp_recv()---after supp_pop_entry
+[  203.234144] optee_supp_recv()---after mutex_unlock2
+[  203.234145] optee_supp_recv()---befroe wait
+[  203.234197] optee_supp_thrd_req()---start
+[  203.234202] optee_supp_thrd_req()---before init_completion
+[  203.234204] optee_supp_thrd_req()---after init_completion
+[  203.234206] optee_supp_thrd_req()---after mutex_lock1
+[  203.234208] optee_supp_thrd_req()---after list_add_tail
+[  203.234210] optee_supp_thrd_req()---after mutex_unlock1
+[  203.234218] optee_supp_thrd_req()---after complete
+[  203.234220] optee_supp_thrd_req()---before wait
+[  203.234221] optee_supp_recv()---after wait
+[  203.234223] optee_supp_recv()---after mutex_lock1
+[  203.234228] optee_supp_recv()---after supp_pop_entry
+[  203.234230] optee_supp_recv()---after mutex_unlock2
+[  203.234233] optee_supp_recv()---out while
+[  203.234236] optee_supp_recv()---after while
+[  203.234237] optee_supp_recv()---num_meta != 0
+[  203.234238] optee_supp_recv()---end
+[  203.234406] optee_supp_send()---start
+[  203.234408] optee_supp_send()---after mutex_lock1
+[  203.234410] optee_supp_send()---after supp_pop_req
+[  203.234412] optee_supp_send()---after mutex_unlock1
+[  203.234413] optee_supp_send()---req->num_params : 1
+[  203.234414] optee_supp_send()---before complete
+[  203.234419] optee_supp_send()---end
+[  203.234423] optee_supp_thrd_req()---end
+[  203.234426] optee_supp_recv()---start
+[  203.234427] optee_supp_recv()---before while
+[  203.234428] optee_supp_recv()---after mutex_lock1
+[  203.234429] optee_supp_recv()---after supp_pop_entry
+[  203.234430] optee_supp_recv()---after mutex_unlock2
+[  203.234431] optee_supp_recv()---befroe wait
+[  203.234436] optee_supp_thrd_req()---start
+[  203.234438] optee_supp_thrd_req()---before init_completion
+[  203.234439] optee_supp_thrd_req()---after init_completion
+[  203.234441] optee_supp_thrd_req()---after mutex_lock1
+[  203.234443] optee_supp_thrd_req()---after list_add_tail
+[  203.234445] optee_supp_thrd_req()---after mutex_unlock1
+[  203.234449] optee_supp_thrd_req()---after complete
+[  203.234451] optee_supp_thrd_req()---before wait
+[  203.234456] optee_supp_recv()---after wait
+[  203.234458] optee_supp_recv()---after mutex_lock1
+[  203.234461] optee_supp_recv()---after supp_pop_entry
+[  203.234462] optee_supp_recv()---after mutex_unlock2
+[  203.234463] optee_supp_recv()---out while
+[  203.234464] optee_supp_recv()---after while
+[  203.234464] optee_supp_recv()---num_meta != 0
+[  203.234465] optee_supp_recv()---end
+[  203.234471] optee_supp_recv()---start
+[  203.234473] optee_supp_recv()---before while
+[  203.234475] optee_supp_recv()---after mutex_lock1
+[  203.234476] optee_supp_recv()---after supp_pop_entry
+[  203.234477] optee_supp_recv()---after mutex_unlock2
+[  203.234478] optee_supp_recv()---befroe wait
+[  203.234486] optee_supp_send()---start
+[  203.234488] optee_supp_send()---after mutex_lock1
+[  203.234489] optee_supp_send()---after supp_pop_req
+[  203.234491] optee_supp_send()---after mutex_unlock1
+[  203.234492] optee_supp_send()---req->num_params : 1
+[  203.234493] optee_supp_send()---before complete
+[  203.234496] optee_supp_send()---end
+[  203.234502] optee_supp_thrd_req()---end
+[  203.234504] optee_supp_recv()---start
+[  203.234507] optee_supp_recv()---before while
+[  203.234511] optee_supp_recv()---after mutex_lock1
+[  203.234513] optee_supp_recv()---after supp_pop_entry
+[  203.234514] optee_supp_recv()---after mutex_unlock2
+[  203.234516] optee_supp_recv()---befroe wait
+[  203.234527] optee_supp_thrd_req()---start
+[  203.234531] optee_supp_thrd_req()---before init_completion
+[  203.234532] optee_supp_thrd_req()---after init_completion
+[  203.234534] optee_supp_thrd_req()---after mutex_lock1
+[  203.234535] optee_supp_thrd_req()---after list_add_tail
+[  203.234536] optee_supp_thrd_req()---after mutex_unlock1
+[  203.234540] optee_supp_thrd_req()---after complete
+[  203.234542] optee_supp_thrd_req()---before wait
+[  203.234544] optee_supp_recv()---after wait
+[  203.234547] optee_supp_recv()---after mutex_lock1
+[  203.234550] optee_supp_recv()---after supp_pop_entry
+[  203.234551] optee_supp_recv()---after mutex_unlock2
+[  203.234552] optee_supp_recv()---out while
+[  203.234553] optee_supp_recv()---after while
+[  203.234554] optee_supp_recv()---num_meta != 0
+[  203.234555] optee_supp_recv()---end
+[  203.235332] optee_supp_send()---start
+[  203.235334] optee_supp_send()---after mutex_lock1
+[  203.235336] optee_supp_send()---after supp_pop_req
+[  203.235337] optee_supp_send()---after mutex_unlock1
+[  203.235338] optee_supp_send()---req->num_params : 2
+[  203.235339] optee_supp_send()---TYPE_MEMREF
+[  203.235340] optee_supp_send()---before complete
+[  203.235343] optee_supp_send()---end
+[  203.235347] optee_supp_thrd_req()---end
+[  203.235350] optee_supp_recv()---start
+[  203.235351] optee_supp_recv()---before while
+[  203.235352] optee_supp_recv()---after mutex_lock1
+[  203.235353] optee_supp_recv()---after supp_pop_entry
+[  203.235354] optee_supp_recv()---after mutex_unlock2
+[  203.235355] optee_supp_recv()---befroe wait
+[  203.235358] optee_supp_thrd_req()---start
+[  203.235359] optee_supp_thrd_req()---before init_completion
+[  203.235361] optee_supp_thrd_req()---after init_completion
+[  203.235364] optee_supp_thrd_req()---after mutex_lock1
+[  203.235367] optee_supp_thrd_req()---after list_add_tail
+[  203.235369] optee_supp_thrd_req()---after mutex_unlock1
+[  203.235371] optee_supp_thrd_req()---after complete
+[  203.235372] optee_supp_thrd_req()---before wait
+[  203.235374] optee_supp_recv()---after wait
+[  203.235375] optee_supp_recv()---after mutex_lock1
+[  203.235377] optee_supp_recv()---after supp_pop_entry
+[  203.235378] optee_supp_recv()---after mutex_unlock2
+[  203.235379] optee_supp_recv()---out while
+[  203.235381] optee_supp_recv()---after while
+[  203.235384] optee_supp_recv()---num_meta != 0
+[  203.235385] optee_supp_recv()---end
+[  203.235896] optee_supp_send()---start
+[  203.235898] optee_supp_send()---after mutex_lock1
+[  203.235903] optee_supp_send()---after supp_pop_req
+[  203.235904] optee_supp_send()---after mutex_unlock1
+[  203.235905] optee_supp_send()---req->num_params : 1
+[  203.235906] optee_supp_send()---TYPE_VALUE
+[  203.235907] optee_supp_send()---before complete
+[  203.235911] optee_supp_send()---end
+[  203.235916] optee_supp_thrd_req()---end
+[  203.235971] optee_supp_thrd_req()---start
+[  203.235974] optee_supp_thrd_req()---before init_completion
+[  203.235976] optee_supp_thrd_req()---after init_completion
+[  203.235978] optee_supp_thrd_req()---after mutex_lock1
+[  203.235980] optee_supp_thrd_req()---after list_add_tail
+[  203.235982] optee_supp_thrd_req()---after mutex_unlock1
+[  203.235988] optee_supp_thrd_req()---after complete
+[  203.235991] optee_supp_thrd_req()---before wait
+[  203.235994] optee_supp_recv()---after wait
+[  203.235996] optee_supp_recv()---after mutex_lock1
+[  203.235998] optee_supp_recv()---after supp_pop_entry
+[  203.236000] optee_supp_recv()---after mutex_unlock2
+[  203.236001] optee_supp_recv()---out while
+[  203.236002] optee_supp_recv()---after while
+[  203.236003] optee_supp_recv()---num_meta != 0
+[  203.236004] optee_supp_recv()---end
+[  203.236602] optee_supp_recv()---start
+[  203.236605] optee_supp_recv()---before while
+[  203.236606] optee_supp_recv()---after mutex_lock1
+[  203.236607] optee_supp_recv()---after supp_pop_entry
+[  203.236608] optee_supp_recv()---after mutex_unlock2
+[  203.236609] optee_supp_recv()---befroe wait
+[  203.236770] optee_supp_send()---start
+[  203.236773] optee_supp_send()---after mutex_lock1
+[  203.236775] optee_supp_send()---after supp_pop_req
+[  203.236776] optee_supp_send()---after mutex_unlock1
+[  203.236778] optee_supp_send()---req->num_params : 2
+[  203.236779] optee_supp_send()---TYPE_MEMREF
+[  203.236780] optee_supp_send()---before complete
+[  203.236785] optee_supp_send()---end
+[  203.236791] optee_supp_thrd_req()---end
+[  203.236794] optee_supp_recv()---start
+[  203.236797] optee_supp_recv()---before while
+[  203.236799] optee_supp_recv()---after mutex_lock1
+[  203.236800] optee_supp_recv()---after supp_pop_entry
+[  203.236801] optee_supp_recv()---after mutex_unlock2
+[  203.236802] optee_supp_recv()---befroe wait
+[  203.238175] optee_supp_thrd_req()---start
+[  203.238179] optee_supp_thrd_req()---before init_completion
+[  203.238183] optee_supp_thrd_req()---after init_completion
+[  203.238185] optee_supp_thrd_req()---after mutex_lock1
+[  203.238188] optee_supp_thrd_req()---after list_add_tail
+[  203.238190] optee_supp_thrd_req()---after mutex_unlock1
+[  203.238200] optee_supp_recv()---after wait
+[  203.238202] optee_supp_recv()---after mutex_lock1
+[  203.238205] optee_supp_recv()---after supp_pop_entry
+[  203.238206] optee_supp_recv()---after mutex_unlock2
+[  203.238207] optee_supp_recv()---out while
+[  203.238208] optee_supp_recv()---after while
+[  203.238211] optee_supp_recv()---num_meta != 0
+[  203.238218] optee_supp_recv()---end
+[  203.238230] optee_supp_thrd_req()---after complete
+[  203.238239] optee_supp_thrd_req()---before wait
+[  203.238257] optee_supp_send()---start
+[  203.238262] optee_supp_send()---after mutex_lock1
+[  203.238266] optee_supp_send()---after supp_pop_req
+[  203.238270] optee_supp_send()---after mutex_unlock1
+[  203.238278] optee_supp_send()---req->num_params : 3
+[  203.238282] optee_supp_send()---TYPE_VALUE
+[  203.238284] optee_supp_send()---before complete
+[  203.238287] optee_supp_send()---end
+[  203.238292] optee_supp_thrd_req()---end
+[  203.238295] optee_supp_recv()---start
+[  203.238296] optee_supp_recv()---before while
+[  203.238297] optee_supp_recv()---after mutex_lock1
+[  203.238298] optee_supp_recv()---after supp_pop_entry
+[  203.238299] optee_supp_recv()---after mutex_unlock2
+[  203.238300] optee_supp_recv()---befroe wait
+[  203.238303] optee_supp_thrd_req()---start
+[  203.238305] optee_supp_thrd_req()---before init_completion
+[  203.238306] optee_supp_thrd_req()---after init_completion
+[  203.238308] optee_supp_thrd_req()---after mutex_lock1
+[  203.238311] optee_supp_thrd_req()---after list_add_tail
+[  203.238312] optee_supp_thrd_req()---after mutex_unlock1
+[  203.238315] optee_supp_thrd_req()---after complete
+[  203.238316] optee_supp_thrd_req()---before wait
+[  203.238318] optee_supp_recv()---after wait
+[  203.238319] optee_supp_recv()---after mutex_lock1
+[  203.238321] optee_supp_recv()---after supp_pop_entry
+[  203.238322] optee_supp_recv()---after mutex_unlock2
+[  203.238323] optee_supp_recv()---out while
+[  203.238325] optee_supp_recv()---after while
+[  203.238327] optee_supp_recv()---num_meta != 0
+[  203.238331] optee_supp_recv()---end
+[  203.238896] optee_supp_send()---start
+[  203.238901] optee_supp_send()---after mutex_lock1
+[  203.238903] optee_supp_send()---after supp_pop_req
+[  203.238904] optee_supp_send()---after mutex_unlock1
+[  203.238905] optee_supp_send()---req->num_params : 2
+[  203.238906] optee_supp_send()---TYPE_MEMREF
+[  203.238907] optee_supp_send()---before complete
+[  203.238909] optee_supp_send()---end
+[  203.238914] optee_supp_thrd_req()---end
+[  203.238933] optee_supp_thrd_req()---start
+[  203.238938] optee_supp_thrd_req()---before init_completion
+[  203.238940] optee_supp_thrd_req()---after init_completion
+[  203.238943] optee_supp_thrd_req()---after mutex_lock1
+[  203.238945] optee_supp_thrd_req()---after list_add_tail
+[  203.238947] optee_supp_thrd_req()---after mutex_unlock1
+[  203.238952] optee_supp_thrd_req()---after complete
+[  203.238956] optee_supp_thrd_req()---before wait
+[  203.238965] optee_supp_recv()---after wait
+[  203.238967] optee_supp_recv()---after mutex_lock1
+[  203.238970] optee_supp_recv()---after supp_pop_entry
+[  203.238971] optee_supp_recv()---after mutex_unlock2
+[  203.238972] optee_supp_recv()---out while
+[  203.238973] optee_supp_recv()---after while
+[  203.238975] optee_supp_recv()---num_meta != 0
+[  203.238976] optee_supp_recv()---end
+[  203.238995] optee_supp_send()---start
+[  203.239000] optee_supp_send()---after mutex_lock1
+[  203.239007] optee_supp_send()---after supp_pop_req
+[  203.239018] optee_supp_send()---after mutex_unlock1
+[  203.239025] optee_supp_send()---req->num_params : 2
+[  203.239037] optee_supp_send()---TYPE_MEMREF
+[  203.239048] optee_supp_send()---before complete
+[  203.239058] optee_supp_send()---end
+[  203.239064] optee_supp_thrd_req()---end
+[  203.239073] optee_supp_recv()---start
+[  203.239083] optee_supp_recv()---before while
+[  203.239088] optee_supp_thrd_req()---start
+[  203.239094] optee_supp_recv()---after mutex_lock1
+[  203.239100] optee_supp_thrd_req()---before init_completion
+[  203.239106] optee_supp_recv()---after supp_pop_entry
+[  203.239112] optee_supp_thrd_req()---after init_completion
+[  203.239118] optee_supp_recv()---after mutex_unlock2
+[  203.239124] optee_supp_thrd_req()---after mutex_lock1
+[  203.239130] optee_supp_recv()---befroe wait
+[  203.239135] optee_supp_thrd_req()---after list_add_tail
+[  203.239142] optee_supp_thrd_req()---after mutex_unlock1
+[  203.239147] optee_supp_thrd_req()---after complete
+[  203.239148] optee_supp_thrd_req()---before wait
+[  203.239162] optee_supp_recv()---after wait
+[  203.239164] optee_supp_recv()---after mutex_lock1
+[  203.239168] optee_supp_recv()---after supp_pop_entry
+[  203.239172] optee_supp_recv()---after mutex_unlock2
+[  203.239174] optee_supp_recv()---out while
+[  203.239176] optee_supp_recv()---after while
+[  203.239178] optee_supp_recv()---num_meta != 0
+[  203.239180] optee_supp_recv()---end
+[  203.239227] optee_supp_send()---start
+[  203.239235] optee_supp_send()---after mutex_lock1
+[  203.239242] optee_supp_send()---after supp_pop_req
+[  203.239246] optee_supp_send()---after mutex_unlock1
+[  203.239250] optee_supp_send()---req->num_params : 2
+[  203.239258] optee_supp_send()---TYPE_MEMREF
+[  203.239261] optee_supp_send()---before complete
+[  203.239291] optee_supp_send()---end
+[  203.239296] optee_supp_thrd_req()---end
+[  203.239304] optee_supp_recv()---start
+[  203.239306] optee_supp_recv()---before while
+[  203.239308] optee_supp_recv()---after mutex_lock1
+[  203.239310] optee_supp_recv()---after supp_pop_entry
+[  203.239311] optee_supp_recv()---after mutex_unlock2
+[  203.239313] optee_supp_recv()---befroe wait
+[  203.239356] optee_supp_thrd_req()---start
+[  203.239359] optee_supp_thrd_req()---before init_completion
+[  203.239361] optee_supp_thrd_req()---after init_completion
+[  203.239363] optee_supp_thrd_req()---after mutex_lock1
+[  203.239366] optee_supp_thrd_req()---after list_add_tail
+[  203.239370] optee_supp_thrd_req()---after mutex_unlock1
+[  203.239377] optee_supp_thrd_req()---after complete
+[  203.239380] optee_supp_recv()---after wait
+[  203.239387] optee_supp_thrd_req()---before wait
+[  203.239393] optee_supp_recv()---after mutex_lock1
+[  203.239401] optee_supp_recv()---after supp_pop_entry
+[  203.239406] optee_supp_recv()---after mutex_unlock2
+[  203.239416] optee_supp_recv()---out while
+[  203.239424] optee_supp_recv()---after while
+[  203.239433] optee_supp_recv()---num_meta != 0
+[  203.239442] optee_supp_recv()---end
+[  203.239463] optee_supp_send()---start
+[  203.239465] optee_supp_send()---after mutex_lock1
+[  203.239467] optee_supp_send()---after supp_pop_req
+[  203.239469] optee_supp_send()---after mutex_unlock1
+[  203.239471] optee_supp_send()---req->num_params : 2
+[  203.239472] optee_supp_send()---TYPE_MEMREF
+[  203.239473] optee_supp_send()---before complete
+[  203.239476] optee_supp_send()---end
+[  203.239482] optee_supp_recv()---start
+[  203.239486] optee_supp_thrd_req()---end
+[  203.239495] optee_supp_recv()---before while
+[  203.239504] optee_supp_recv()---after mutex_lock1
+[  203.239514] optee_supp_recv()---after supp_pop_entry
+[  203.239519] optee_supp_recv()---after mutex_unlock2
+[  203.239528] optee_supp_recv()---befroe wait
+[  203.239584] optee_supp_thrd_req()---start
+[  203.239586] optee_supp_thrd_req()---before init_completion
+[  203.239588] optee_supp_thrd_req()---after init_completion
+[  203.239589] optee_supp_thrd_req()---after mutex_lock1
+[  203.239591] optee_supp_thrd_req()---after list_add_tail
+[  203.239592] optee_supp_thrd_req()---after mutex_unlock1
+[  203.239597] optee_supp_thrd_req()---after complete
+[  203.239598] optee_supp_thrd_req()---before wait
+[  203.239645] optee_supp_recv()---after wait
+[  203.239648] optee_supp_recv()---after mutex_lock1
+[  203.239651] optee_supp_recv()---after supp_pop_entry
+[  203.239653] optee_supp_recv()---after mutex_unlock2
+[  203.239655] optee_supp_recv()---out while
+[  203.239660] optee_supp_recv()---after while
+[  203.239662] optee_supp_recv()---num_meta != 0
+[  203.239664] optee_supp_recv()---end
+[  203.239762] optee_supp_send()---start
+[  203.239765] optee_supp_send()---after mutex_lock1
+[  203.239769] optee_supp_send()---after supp_pop_req
+[  203.239771] optee_supp_send()---after mutex_unlock1
+[  203.239774] optee_supp_send()---req->num_params : 2
+[  203.239776] optee_supp_send()---TYPE_MEMREF
+[  203.239778] optee_supp_send()---before complete
+[  203.239784] optee_supp_send()---end
+[  203.239786] optee_supp_thrd_req()---end
+[  203.239798] optee_supp_recv()---start
+[  203.239802] optee_supp_recv()---before while
+[  203.239803] optee_supp_recv()---after mutex_lock1
+[  203.239804] optee_supp_recv()---after supp_pop_entry
+[  203.239805] optee_supp_recv()---after mutex_unlock2
+[  203.239806] optee_supp_recv()---befroe wait
+[  203.239889] optee_supp_thrd_req()---start
+[  203.239891] optee_supp_thrd_req()---before init_completion
+[  203.239894] optee_supp_thrd_req()---after init_completion
+[  203.239897] optee_supp_thrd_req()---after mutex_lock1
+[  203.239897] optee_supp_thrd_req()---after list_add_tail
+[  203.239898] optee_supp_thrd_req()---after mutex_unlock1
+[  203.239901] optee_supp_thrd_req()---after complete
+[  203.239902] optee_supp_thrd_req()---before wait
+[  203.239907] optee_supp_recv()---after wait
+[  203.239909] optee_supp_recv()---after mutex_lock1
+[  203.239912] optee_supp_recv()---after supp_pop_entry
+[  203.239913] optee_supp_recv()---after mutex_unlock2
+[  203.239914] optee_supp_recv()---out while
+[  203.239915] optee_supp_recv()---after while
+[  203.239917] optee_supp_recv()---num_meta != 0
+[  203.239918] optee_supp_recv()---end
+[  203.239934] optee_supp_send()---start
+[  203.239935] optee_supp_send()---after mutex_lock1
+[  203.239936] optee_supp_send()---after supp_pop_req
+[  203.239937] optee_supp_send()---after mutex_unlock1
+[  203.239938] optee_supp_send()---req->num_params : 2
+[  203.239940] optee_supp_send()---TYPE_MEMREF
+[  203.239942] optee_supp_send()---before complete
+[  203.239944] optee_supp_send()---end
+[  203.239951] optee_supp_thrd_req()---end
+[  203.240011] optee_supp_recv()---start
+[  203.240013] optee_supp_recv()---before while
+[  203.240014] optee_supp_recv()---after mutex_lock1
+[  203.240015] optee_supp_recv()---after supp_pop_entry
+[  203.240017] optee_supp_recv()---after mutex_unlock2
+[  203.240019] optee_supp_recv()---befroe wait
+[  203.240042] optee_supp_thrd_req()---start
+[  203.240044] optee_supp_thrd_req()---before init_completion
+[  203.240045] optee_supp_thrd_req()---after init_completion
+[  203.240046] optee_supp_thrd_req()---after mutex_lock1
+[  203.240049] optee_supp_thrd_req()---after list_add_tail
+[  203.240053] optee_supp_thrd_req()---after mutex_unlock1
+[  203.240056] optee_supp_thrd_req()---after complete
+[  203.240057] optee_supp_thrd_req()---before wait
+[  203.240078] optee_supp_recv()---after wait
+[  203.240082] optee_supp_recv()---after mutex_lock1
+[  203.240088] optee_supp_recv()---after supp_pop_entry
+[  203.240090] optee_supp_recv()---after mutex_unlock2
+[  203.240092] optee_supp_recv()---out while
+[  203.240094] optee_supp_recv()---after while
+[  203.240096] optee_supp_recv()---num_meta != 0
+[  203.240098] optee_supp_recv()---end
+[  203.240126] optee_supp_send()---start
+[  203.240128] optee_supp_send()---after mutex_lock1
+[  203.240132] optee_supp_send()---after supp_pop_req
+[  203.240134] optee_supp_send()---after mutex_unlock1
+[  203.240135] optee_supp_recv()---start
+[  203.240137] optee_supp_recv()---before while
+[  203.240140] optee_supp_send()---req->num_params : 2
+[  203.240141] optee_supp_recv()---after mutex_lock1
+[  203.240143] optee_supp_send()---TYPE_MEMREF
+[  203.240145] optee_supp_recv()---after supp_pop_entry
+[  203.240148] optee_supp_send()---before complete
+[  203.240152] optee_supp_recv()---after mutex_unlock2
+[  203.240154] optee_supp_recv()---befroe wait
+[  203.240157] optee_supp_send()---end
+[  203.240161] optee_supp_thrd_req()---end
+[  203.240168] optee_supp_recv()---start
+[  203.240169] optee_supp_recv()---before while
+[  203.240171] optee_supp_recv()---after mutex_lock1
+[  203.240172] optee_supp_recv()---after supp_pop_entry
+[  203.240173] optee_supp_recv()---after mutex_unlock2
+[  203.240174] optee_supp_recv()---befroe wait
+[  203.240269] optee_supp_thrd_req()---start
+[  203.240274] optee_supp_thrd_req()---before init_completion
+[  203.240276] optee_supp_thrd_req()---after init_completion
+[  203.240278] optee_supp_thrd_req()---after mutex_lock1
+[  203.240280] optee_supp_thrd_req()---after list_add_tail
+[  203.240282] optee_supp_thrd_req()---after mutex_unlock1
+[  203.240287] optee_supp_thrd_req()---after complete
+[  203.240305] optee_supp_recv()---after wait
+[  203.240308] optee_supp_recv()---after mutex_lock1
+[  203.240316] optee_supp_thrd_req()---before wait
+[  203.240321] optee_supp_recv()---after supp_pop_entry
+[  203.240326] optee_supp_recv()---after mutex_unlock2
+[  203.240338] optee_supp_recv()---out while
+[  203.240348] optee_supp_recv()---after while
+[  203.240358] optee_supp_recv()---num_meta != 0
+[  203.240370] optee_supp_recv()---end
+[  203.240396] optee_supp_send()---start
+[  203.240401] optee_supp_send()---after mutex_lock1
+[  203.240406] optee_supp_send()---after supp_pop_req
+[  203.240414] optee_supp_send()---after mutex_unlock1
+[  203.240424] optee_supp_send()---req->num_params : 2
+[  203.240433] optee_supp_send()---TYPE_MEMREF
+[  203.240442] optee_supp_send()---before complete
+[  203.240454] optee_supp_send()---end
+[  203.240460] optee_supp_thrd_req()---end
+[  203.240469] optee_supp_recv()---start
+[  203.240479] optee_supp_recv()---before while
+[  203.240485] optee_supp_recv()---after mutex_lock1
+[  203.240494] optee_supp_recv()---after supp_pop_entry
+[  203.240499] optee_supp_recv()---after mutex_unlock2
+[  203.240508] optee_supp_recv()---befroe wait
+[  203.240555] optee_supp_thrd_req()---start
+[  203.240558] optee_supp_thrd_req()---before init_completion
+[  203.240559] optee_supp_thrd_req()---after init_completion
+[  203.240562] optee_supp_thrd_req()---after mutex_lock1
+[  203.240565] optee_supp_thrd_req()---after list_add_tail
+[  203.240566] optee_supp_thrd_req()---after mutex_unlock1
+[  203.240569] optee_supp_thrd_req()---after complete
+[  203.240570] optee_supp_thrd_req()---before wait
+[  203.240573] optee_supp_recv()---after wait
+[  203.240574] optee_supp_recv()---after mutex_lock1
+[  203.240577] optee_supp_recv()---after supp_pop_entry
+[  203.240578] optee_supp_recv()---after mutex_unlock2
+[  203.240581] optee_supp_recv()---out while
+[  203.240584] optee_supp_recv()---after while
+[  203.240585] optee_supp_recv()---num_meta != 0
+[  203.240585] optee_supp_recv()---end
+[  203.241162] optee_supp_send()---start
+[  203.241164] optee_supp_send()---after mutex_lock1
+[  203.241166] optee_supp_send()---after supp_pop_req
+[  203.241169] optee_supp_send()---after mutex_unlock1
+[  203.241173] optee_supp_send()---req->num_params : 2
+[  203.241175] optee_supp_send()---TYPE_MEMREF
+[  203.241176] optee_supp_send()---before complete
+[  203.241179] optee_supp_send()---end
+[  203.241185] optee_supp_thrd_req()---end
+[  203.241294] optee_supp_thrd_req()---start
+[  203.241296] optee_supp_thrd_req()---before init_completion
+[  203.241299] optee_supp_thrd_req()---after init_completion
+[  203.241301] optee_supp_thrd_req()---after mutex_lock1
+[  203.241303] optee_supp_thrd_req()---after list_add_tail
+[  203.241305] optee_supp_thrd_req()---after mutex_unlock1
+[  203.241313] optee_supp_thrd_req()---after complete
+[  203.241316] optee_supp_thrd_req()---before wait
+[  203.241317] optee_supp_recv()---after wait
+[  203.241319] optee_supp_recv()---after mutex_lock1
+[  203.241325] optee_supp_recv()---after supp_pop_entry
+[  203.241326] optee_supp_recv()---after mutex_unlock2
+[  203.241328] optee_supp_recv()---out while
+[  203.241330] optee_supp_recv()---after while
+[  203.241332] optee_supp_recv()---num_meta != 0
+[  203.241334] optee_supp_recv()---end
+[  203.241429] optee_supp_send()---start
+[  203.241433] optee_supp_send()---after mutex_lock1
+[  203.241436] optee_supp_send()---after supp_pop_req
+[  203.241437] optee_supp_send()---after mutex_unlock1
+[  203.241439] optee_supp_send()---req->num_params : 3
+[  203.241441] optee_supp_send()---TYPE_VALUE
+[  203.241443] optee_supp_send()---before complete
+[  203.241448] optee_supp_send()---end
+[  203.241451] optee_supp_thrd_req()---end
+[  203.241460] optee_supp_thrd_req()---start
+[  203.241462] optee_supp_thrd_req()---before init_completion
+[  203.241463] optee_supp_recv()---start
+[  203.241465] optee_supp_thrd_req()---after init_completion
+[  203.241469] optee_supp_recv()---before while
+[  203.241474] optee_supp_thrd_req()---after mutex_lock1
+[  203.241475] optee_supp_thrd_req()---after list_add_tail
+[  203.241476] optee_supp_thrd_req()---after mutex_unlock1
+[  203.241478] optee_supp_recv()---after mutex_lock1
+[  203.241479] optee_supp_thrd_req()---after complete
+[  203.241480] optee_supp_thrd_req()---before wait
+[  203.241482] optee_supp_recv()---after supp_pop_entry
+[  203.241484] optee_supp_recv()---after mutex_unlock2
+[  203.241485] optee_supp_recv()---after wait
+[  203.241489] optee_supp_recv()---out while
+[  203.241496] optee_supp_recv()---after mutex_lock1
+[  203.241500] optee_supp_recv()---after while
+[  203.241504] optee_supp_recv()---after supp_pop_entry
+[  203.241507] optee_supp_recv()---num_meta != 0
+[  203.241511] optee_supp_recv()---after mutex_unlock2
+[  203.241517] optee_supp_recv()---end
+[  203.241521] optee_supp_recv()---befroe wait
+[  203.241701] optee_supp_recv()---start
+[  203.241703] optee_supp_recv()---before while
+[  203.241705] optee_supp_recv()---after mutex_lock1
+[  203.241707] optee_supp_recv()---after supp_pop_entry
+[  203.241710] optee_supp_recv()---after mutex_unlock2
+[  203.241713] optee_supp_recv()---befroe wait
+[  203.241916] optee_supp_send()---start
+[  203.241918] optee_supp_send()---after mutex_lock1
+[  203.241921] optee_supp_send()---after supp_pop_req
+[  203.241923] optee_supp_send()---after mutex_unlock1
+[  203.241926] optee_supp_send()---req->num_params : 2
+[  203.241930] optee_supp_send()---TYPE_MEMREF
+[  203.241932] optee_supp_send()---before complete
+[  203.241938] optee_supp_send()---end
+[  203.241942] optee_supp_thrd_req()---end
+[  203.241959] optee_supp_thrd_req()---start
+[  203.241962] optee_supp_thrd_req()---before init_completion
+[  203.241966] optee_supp_thrd_req()---after init_completion
+[  203.241969] optee_supp_thrd_req()---after mutex_lock1
+[  203.241973] optee_supp_thrd_req()---after list_add_tail
+[  203.241975] optee_supp_thrd_req()---after mutex_unlock1
+[  203.241980] optee_supp_thrd_req()---after complete
+[  203.241982] optee_supp_thrd_req()---before wait
+[  203.241984] optee_supp_recv()---after wait
+[  203.241988] optee_supp_recv()---start
+[  203.241994] optee_supp_recv()---after mutex_lock1
+[  203.241999] optee_supp_recv()---before while
+[  203.242001] optee_supp_recv()---after supp_pop_entry
+[  203.242004] optee_supp_recv()---after mutex_unlock2
+[  203.242007] optee_supp_recv()---after mutex_lock1
+[  203.242012] optee_supp_recv()---out while
+[  203.242018] optee_supp_recv()---after supp_pop_entry
+[  203.242022] optee_supp_recv()---after while
+[  203.242026] optee_supp_recv()---after mutex_unlock2
+[  203.242029] optee_supp_recv()---num_meta != 0
+[  203.242035] optee_supp_recv()---befroe wait
+[  203.242037] optee_supp_recv()---end
+[  203.242340] optee_supp_send()---start
+[  203.242342] optee_supp_send()---after mutex_lock1
+[  203.242345] optee_supp_send()---after supp_pop_req
+[  203.242346] optee_supp_send()---after mutex_unlock1
+[  203.242348] optee_supp_send()---req->num_params : 2
+[  203.242349] optee_supp_send()---TYPE_MEMREF
+[  203.242350] optee_supp_send()---before complete
+[  203.242354] optee_supp_send()---end
+[  203.242361] optee_supp_thrd_req()---end
+[  203.242364] optee_supp_recv()---start
+[  203.242367] optee_supp_recv()---before while
+[  203.242368] optee_supp_recv()---after mutex_lock1
+[  203.242370] optee_supp_recv()---after supp_pop_entry
+[  203.242371] optee_supp_recv()---after mutex_unlock2
+[  203.242372] optee_supp_recv()---befroe wait
+[  203.242408] optee_supp_thrd_req()---start
+[  203.242410] optee_supp_thrd_req()---before init_completion
+[  203.242413] optee_supp_thrd_req()---after init_completion
+[  203.242415] optee_supp_thrd_req()---after mutex_lock1
+[  203.242416] optee_supp_thrd_req()---after list_add_tail
+[  203.242417] optee_supp_thrd_req()---after mutex_unlock1
+[  203.242422] optee_supp_thrd_req()---after complete
+[  203.242424] optee_supp_thrd_req()---before wait
+[  203.242426] optee_supp_recv()---after wait
+[  203.242427] optee_supp_recv()---after mutex_lock1
+[  203.242432] optee_supp_recv()---after supp_pop_entry
+[  203.242434] optee_supp_recv()---after mutex_unlock2
+[  203.242435] optee_supp_recv()---out while
+[  203.242436] optee_supp_recv()---after while
+[  203.242436] optee_supp_recv()---num_meta != 0
+[  203.242437] optee_supp_recv()---end
+[  203.242842] optee_supp_send()---start
+[  203.242845] optee_supp_send()---after mutex_lock1
+[  203.242847] optee_supp_send()---after supp_pop_req
+[  203.242848] optee_supp_send()---after mutex_unlock1
+[  203.242850] optee_supp_send()---req->num_params : 2
+[  203.242852] optee_supp_send()---TYPE_MEMREF
+[  203.242856] optee_supp_send()---before complete
+[  203.242862] optee_supp_send()---end
+[  203.242867] optee_supp_thrd_req()---end
+[  203.242970] optee_supp_thrd_req()---start
+[  203.242972] optee_supp_thrd_req()---before init_completion
+[  203.242974] optee_supp_thrd_req()---after init_completion
+[  203.242977] optee_supp_thrd_req()---after mutex_lock1
+[  203.242980] optee_supp_thrd_req()---after list_add_tail
+[  203.242982] optee_supp_thrd_req()---after mutex_unlock1
+[  203.242988] optee_supp_thrd_req()---after complete
+[  203.242990] optee_supp_thrd_req()---before wait
+[  203.243010] optee_supp_recv()---after wait
+[  203.243013] optee_supp_recv()---after mutex_lock1
+[  203.243017] optee_supp_recv()---after supp_pop_entry
+[  203.243020] optee_supp_recv()---after mutex_unlock2
+[  203.243022] optee_supp_recv()---out while
+[  203.243024] optee_supp_recv()---after while
+[  203.243026] optee_supp_recv()---num_meta != 0
+[  203.243028] optee_supp_recv()---end
+[  203.243055] optee_supp_send()---start
+[  203.243057] optee_supp_send()---after mutex_lock1
+[  203.243059] optee_supp_send()---after supp_pop_req
+[  203.243061] optee_supp_send()---after mutex_unlock1
+[  203.243063] optee_supp_send()---req->num_params : 2
+[  203.243065] optee_supp_send()---TYPE_MEMREF
+[  203.243068] optee_supp_send()---before complete
+[  203.243074] optee_supp_send()---end
+[  203.243081] optee_supp_thrd_req()---end
+[  203.243169] optee_supp_thrd_req()---start
+[  203.243171] optee_supp_thrd_req()---before init_completion
+[  203.243172] optee_supp_thrd_req()---after init_completion
+[  203.243173] optee_supp_thrd_req()---after mutex_lock1
+[  203.243173] optee_supp_thrd_req()---after list_add_tail
+[  203.243175] optee_supp_thrd_req()---after mutex_unlock1
+[  203.243180] optee_supp_thrd_req()---after complete
+[  203.243180] optee_supp_thrd_req()---before wait
+[  203.243184] optee_supp_recv()---after wait
+[  203.243186] optee_supp_recv()---after mutex_lock1
+[  203.243188] optee_supp_recv()---after supp_pop_entry
+[  203.243190] optee_supp_recv()---after mutex_unlock2
+[  203.243191] optee_supp_recv()---out while
+[  203.243192] optee_supp_recv()---after while
+[  203.243193] optee_supp_recv()---num_meta != 0
+[  203.243194] optee_supp_recv()---end
+[  203.243270] optee_supp_recv()---start
+[  203.243274] optee_supp_recv()---before while
+[  203.243276] optee_supp_recv()---after mutex_lock1
+[  203.243277] optee_supp_recv()---after supp_pop_entry
+[  203.243278] optee_supp_recv()---after mutex_unlock2
+[  203.243280] optee_supp_recv()---befroe wait
+[  203.243283] optee_supp_send()---start
+[  203.243285] optee_supp_send()---after mutex_lock1
+[  203.243286] optee_supp_send()---after supp_pop_req
+[  203.243287] optee_supp_send()---after mutex_unlock1
+[  203.243289] optee_supp_send()---req->num_params : 2
+[  203.243291] optee_supp_send()---TYPE_MEMREF
+[  203.243293] optee_supp_send()---before complete
+[  203.243299] optee_supp_send()---end
+[  203.243306] optee_supp_recv()---start
+[  203.243307] optee_supp_recv()---before while
+[  203.243311] optee_supp_thrd_req()---end
+[  203.243314] optee_supp_recv()---after mutex_lock1
+[  203.243317] optee_supp_recv()---after supp_pop_entry
+[  203.243318] optee_supp_recv()---after mutex_unlock2
+[  203.243319] optee_supp_recv()---befroe wait
+[  203.243418] optee_supp_thrd_req()---start
+[  203.243422] optee_supp_thrd_req()---before init_completion
+[  203.243424] optee_supp_recv()---start
+[  203.243427] optee_supp_recv()---before while
+[  203.243430] optee_supp_thrd_req()---after init_completion
+[  203.243433] optee_supp_recv()---after mutex_lock1
+[  203.243439] optee_supp_recv()---after supp_pop_entry
+[  203.243443] optee_supp_recv()---after mutex_unlock2
+[  203.243445] optee_supp_thrd_req()---after mutex_lock1
+[  203.243448] optee_supp_thrd_req()---after list_add_tail
+[  203.243451] optee_supp_recv()---befroe wait
+[  203.243455] optee_supp_thrd_req()---after mutex_unlock1
+[  203.243463] optee_supp_thrd_req()---after complete
+[  203.243465] optee_supp_thrd_req()---before wait
+[  203.243466] optee_supp_recv()---after wait
+[  203.243468] optee_supp_recv()---after mutex_lock1
+[  203.243472] optee_supp_recv()---after supp_pop_entry
+[  203.243474] optee_supp_recv()---after mutex_unlock2
+[  203.243478] optee_supp_recv()---out while
+[  203.243482] optee_supp_recv()---after while
+[  203.243484] optee_supp_recv()---num_meta != 0
+[  203.243486] optee_supp_recv()---end
+[  203.243517] optee_supp_send()---start
+[  203.243519] optee_supp_send()---after mutex_lock1
+[  203.243522] optee_supp_send()---after supp_pop_req
+[  203.243524] optee_supp_send()---after mutex_unlock1
+[  203.243527] optee_supp_send()---req->num_params : 1
+[  203.243529] optee_supp_send()---before complete
+[  203.243534] optee_supp_send()---end
+[  203.243538] optee_supp_thrd_req()---end
+[  203.243544] optee_supp_recv()---start
+[  203.243546] optee_supp_recv()---before while
+[  203.243547] optee_supp_recv()---after mutex_lock1
+[  203.243548] optee_supp_recv()---after supp_pop_entry
+[  203.243549] optee_supp_recv()---after mutex_unlock2
+[  203.243552] optee_supp_thrd_req()---start
+[  203.243557] optee_supp_thrd_req()---before init_completion
+[  203.243559] optee_supp_recv()---befroe wait
+[  203.243560] optee_supp_thrd_req()---after init_completion
+[  203.243562] optee_supp_thrd_req()---after mutex_lock1
+[  203.243564] optee_supp_thrd_req()---after list_add_tail
+[  203.243565] optee_supp_thrd_req()---after mutex_unlock1
+[  203.243569] optee_supp_thrd_req()---after complete
+[  203.243570] optee_supp_thrd_req()---before wait
+[  203.243573] optee_supp_recv()---after wait
+[  203.243576] optee_supp_recv()---after mutex_lock1
+[  203.243578] optee_supp_recv()---after supp_pop_entry
+[  203.243579] optee_supp_recv()---after mutex_unlock2
+[  203.243581] optee_supp_recv()---out while
+[  203.243582] optee_supp_recv()---after while
+[  203.243583] optee_supp_recv()---num_meta != 0
+[  203.243584] optee_supp_recv()---end
+[  203.243637] optee_supp_send()---start
+[  203.243638] optee_supp_send()---after mutex_lock1
+[  203.243640] optee_supp_send()---after supp_pop_req
+[  203.243642] optee_supp_send()---after mutex_unlock1
+[  203.243644] optee_supp_send()---req->num_params : 1
+[  203.243646] optee_supp_send()---before complete
+[  203.243649] optee_supp_send()---end
+[  203.243656] optee_supp_thrd_req()---end
+[  203.243658] optee_supp_recv()---start
+[  203.243661] optee_supp_recv()---before while
+[  203.243668] optee_supp_recv()---after mutex_lock1
+[  203.243669] optee_supp_recv()---after supp_pop_entry
+[  203.243670] optee_supp_recv()---after mutex_unlock2
+[  203.243671] optee_supp_recv()---befroe wait
+[  203.243709] optee_supp_thrd_req()---start
+[  203.243711] optee_supp_thrd_req()---before init_completion
+[  203.243712] optee_supp_thrd_req()---after init_completion
+[  203.243713] optee_supp_thrd_req()---after mutex_lock1
+[  203.243714] optee_supp_thrd_req()---after list_add_tail
+[  203.243715] optee_supp_thrd_req()---after mutex_unlock1
+[  203.243720] optee_supp_thrd_req()---after complete
+[  203.243721] optee_supp_thrd_req()---before wait
+[  203.243725] optee_supp_recv()---after wait
+[  203.243728] optee_supp_recv()---after mutex_lock1
+[  203.243731] optee_supp_recv()---after supp_pop_entry
+[  203.243733] optee_supp_recv()---after mutex_unlock2
+[  203.243733] optee_supp_recv()---out while
+[  203.243734] optee_supp_recv()---after while
+[  203.243736] optee_supp_recv()---num_meta != 0
+[  203.243737] optee_supp_recv()---end
+[  203.244066] optee_supp_send()---start
+[  203.244068] optee_supp_send()---after mutex_lock1
+[  203.244069] optee_supp_send()---after supp_pop_req
+[  203.244071] optee_supp_send()---after mutex_unlock1
+[  203.244073] optee_supp_send()---req->num_params : 1
+[  203.244074] optee_supp_send()---TYPE_VALUE
+[  203.244076] optee_supp_send()---before complete
+[  203.244081] optee_supp_send()---end
+[  203.244085] optee_supp_thrd_req()---end
+[  203.244210] optee_supp_thrd_req()---start
+[  203.244215] optee_supp_thrd_req()---before init_completion
+[  203.244217] optee_supp_thrd_req()---after init_completion
+[  203.244219] optee_supp_thrd_req()---after mutex_lock1
+[  203.244221] optee_supp_thrd_req()---after list_add_tail
+[  203.244223] optee_supp_thrd_req()---after mutex_unlock1
+[  203.244231] optee_supp_thrd_req()---after complete
+[  203.244234] optee_supp_thrd_req()---before wait
+[  203.244259] optee_supp_recv()---after wait
+[  203.244261] optee_supp_recv()---after mutex_lock1
+[  203.244281] optee_supp_recv()---after supp_pop_entry
+[  203.244283] optee_supp_recv()---after mutex_unlock2
+[  203.244286] optee_supp_recv()---out while
+[  203.244322] optee_supp_recv()---after while
+[  203.244330] optee_supp_recv()---num_meta != 0
+[  203.244336] optee_supp_recv()---end
+[  203.244366] optee_supp_send()---start
+[  203.244369] optee_supp_send()---after mutex_lock1
+[  203.244371] optee_supp_send()---after supp_pop_req
+[  203.244375] optee_supp_send()---after mutex_unlock1
+[  203.244378] optee_supp_send()---req->num_params : 1
+[  203.244384] optee_supp_send()---TYPE_VALUE
+[  203.244389] optee_supp_send()---before complete
+[  203.244396] optee_supp_send()---end
+[  203.244402] optee_supp_thrd_req()---end
+[  203.244407] optee_supp_recv()---start
+[  203.244413] optee_supp_recv()---before while
+[  203.244416] optee_supp_recv()---after mutex_lock1
+[  203.244419] optee_supp_recv()---after supp_pop_entry
+[  203.244422] optee_supp_recv()---after mutex_unlock2
+[  203.244425] optee_supp_recv()---befroe wait
+[  203.244549] tee_ioctl_invoke()---before invoke_func
+[  203.244628] optee_supp_thrd_req()---start
+[  203.244630] optee_supp_thrd_req()---before init_completion
+[  203.244632] optee_supp_thrd_req()---after init_completion
+[  203.244632] optee_supp_thrd_req()---after mutex_lock1
+[  203.244635] optee_supp_thrd_req()---after list_add_tail
+[  203.244636] optee_supp_thrd_req()---after mutex_unlock1
+[  203.244642] optee_supp_thrd_req()---after complete
+[  203.244644] optee_supp_thrd_req()---before wait
+[  203.244649] optee_supp_recv()---after wait
+[  203.244651] optee_supp_recv()---after mutex_lock1
+[  203.244654] optee_supp_recv()---after supp_pop_entry
+[  203.244656] optee_supp_recv()---after mutex_unlock2
+[  203.244658] optee_supp_recv()---out while
+[  203.244659] optee_supp_recv()---after while
+[  203.244660] optee_supp_recv()---num_meta != 0
+[  203.244661] optee_supp_recv()---end
+[  203.244708] optee_supp_send()---start
+[  203.244716] optee_supp_send()---after mutex_lock1
+[  203.244725] optee_supp_send()---after supp_pop_req
+[  203.244736] optee_supp_send()---after mutex_unlock1
+[  203.244744] optee_supp_send()---req->num_params : 1
+[  203.244754] optee_supp_send()---TYPE_VALUE
+[  203.244763] optee_supp_send()---before complete
+[  203.244773] optee_supp_send()---end
+[  203.244781] optee_supp_thrd_req()---end
+[  203.244787] optee_supp_recv()---start
+[  203.244797] optee_supp_recv()---before while
+[  203.244806] optee_supp_recv()---after mutex_lock1
+[  203.244808] optee_supp_thrd_req()---start
+[  203.244814] optee_supp_thrd_req()---before init_completion
+[  203.244819] optee_supp_recv()---after supp_pop_entry
+[  203.244826] optee_supp_thrd_req()---after init_completion
+[  203.244831] optee_supp_recv()---after mutex_unlock2
+[  203.244836] optee_supp_thrd_req()---after mutex_lock1
+[  203.244841] optee_supp_recv()---befroe wait
+[  203.244848] optee_supp_thrd_req()---after list_add_tail
+[  203.244853] optee_supp_thrd_req()---after mutex_unlock1
+[  203.244858] optee_supp_thrd_req()---after complete
+[  203.244861] optee_supp_thrd_req()---before wait
+[  203.244865] optee_supp_recv()---after wait
+[  203.244872] optee_supp_recv()---after mutex_lock1
+[  203.244875] optee_supp_recv()---after supp_pop_entry
+[  203.244878] optee_supp_recv()---after mutex_unlock2
+[  203.244881] optee_supp_recv()---out while
+[  203.244884] optee_supp_recv()---after while
+[  203.244893] optee_supp_recv()---num_meta != 0
+[  203.244896] optee_supp_recv()---end
+[  203.244939] optee_supp_send()---start
+[  203.244942] optee_supp_send()---after mutex_lock1
+[  203.244943] optee_supp_send()---after supp_pop_req
+[  203.244944] optee_supp_send()---after mutex_unlock1
+[  203.244946] optee_supp_send()---req->num_params : 3
+[  203.244947] optee_supp_send()---TYPE_VALUE
+[  203.244948] optee_supp_send()---before complete
+[  203.244954] optee_supp_send()---end
+[  203.244964] optee_supp_recv()---start
+[  203.244965] optee_supp_recv()---before while
+[  203.244966] optee_supp_recv()---after mutex_lock1
+[  203.244966] optee_supp_recv()---after supp_pop_entry
+[  203.244967] optee_supp_recv()---after mutex_unlock2
+[  203.244971] optee_supp_recv()---befroe wait
+[  203.245004] optee_supp_recv()---start
+[  203.245005] optee_supp_recv()---before while
+[  203.245007] optee_supp_recv()---after mutex_lock1
+[  203.245008] optee_supp_recv()---after supp_pop_entry
+[  203.245009] optee_supp_recv()---after mutex_unlock2
+[  203.245010] optee_supp_recv()---befroe wait
+[  203.245427] optee_supp_thrd_req()---end
+[  203.245445] optee_supp_thrd_req()---start
+[  203.245447] optee_supp_thrd_req()---before init_completion
+[  203.245449] optee_supp_thrd_req()---after init_completion
+[  203.245450] optee_supp_thrd_req()---after mutex_lock1
+[  203.245452] optee_supp_thrd_req()---after list_add_tail
+[  203.245455] optee_supp_thrd_req()---after mutex_unlock1
+[  203.245461] optee_supp_thrd_req()---after complete
+[  203.245462] optee_supp_thrd_req()---before wait
+[  203.245467] optee_supp_recv()---after wait
+[  203.245469] optee_supp_recv()---after mutex_lock1
+[  203.245471] optee_supp_recv()---after supp_pop_entry
+[  203.245473] optee_supp_recv()---after mutex_unlock2
+[  203.245474] optee_supp_recv()---out while
+[  203.245477] optee_supp_recv()---after while
+[  203.245478] optee_supp_recv()---num_meta != 0
+[  203.245479] optee_supp_recv()---end
+[  203.245499] optee_supp_send()---start
+[  203.245500] optee_supp_send()---after mutex_lock1
+[  203.245501] optee_supp_send()---after supp_pop_req
+[  203.245502] optee_supp_send()---after mutex_unlock1
+[  203.245504] optee_supp_send()---req->num_params : 2
+[  203.245505] optee_supp_send()---TYPE_MEMREF
+[  203.245506] optee_supp_send()---before complete
+[  203.245509] optee_supp_send()---end
+[  203.245516] optee_supp_thrd_req()---end
+[  203.245519] optee_supp_recv()---start
+[  203.245523] optee_supp_recv()---before while
+[  203.245526] optee_supp_recv()---after mutex_lock1
+[  203.245528] optee_supp_recv()---after supp_pop_entry
+[  203.245529] optee_supp_recv()---after mutex_unlock2
+[  203.245530] optee_supp_recv()---befroe wait
+[  203.245534] optee_supp_thrd_req()---start
+[  203.245538] optee_supp_thrd_req()---before init_completion
+[  203.245541] optee_supp_thrd_req()---after init_completion
+[  203.245543] optee_supp_thrd_req()---after mutex_lock1
+[  203.245543] optee_supp_thrd_req()---after list_add_tail
+[  203.245544] optee_supp_thrd_req()---after mutex_unlock1
+[  203.245548] optee_supp_thrd_req()---after complete
+[  203.245549] optee_supp_thrd_req()---before wait
+[  203.245551] optee_supp_recv()---after wait
+[  203.245552] optee_supp_recv()---after mutex_lock1
+[  203.245553] optee_supp_recv()---after supp_pop_entry
+[  203.245554] optee_supp_recv()---after mutex_unlock2
+[  203.245555] optee_supp_recv()---out while
+[  203.245557] optee_supp_recv()---after while
+[  203.245558] optee_supp_recv()---num_meta != 0
+[  203.245562] optee_supp_recv()---end
+[  203.245615] optee_supp_send()---start
+[  203.245616] optee_supp_send()---after mutex_lock1
+[  203.245620] optee_supp_send()---after supp_pop_req
+[  203.245624] optee_supp_send()---after mutex_unlock1
+[  203.245625] optee_supp_send()---req->num_params : 2
+[  203.245626] optee_supp_send()---TYPE_MEMREF
+[  203.245627] optee_supp_send()---before complete
+[  203.245631] optee_supp_send()---end
+[  203.245633] optee_supp_thrd_req()---end
+[  203.245637] optee_supp_recv()---start
+[  203.245640] optee_supp_recv()---before while
+[  203.245640] optee_supp_thrd_req()---start
+[  203.245644] optee_supp_thrd_req()---before init_completion
+[  203.245645] optee_supp_recv()---after mutex_lock1
+[  203.245646] optee_supp_thrd_req()---after init_completion
+[  203.245647] optee_supp_recv()---after supp_pop_entry
+[  203.245648] optee_supp_recv()---after mutex_unlock2
+[  203.245649] optee_supp_thrd_req()---after mutex_lock1
+[  203.245650] optee_supp_thrd_req()---after list_add_tail
+[  203.245651] optee_supp_recv()---befroe wait
+[  203.245652] optee_supp_thrd_req()---after mutex_unlock1
+[  203.245656] optee_supp_thrd_req()---after complete
+[  203.245657] optee_supp_thrd_req()---before wait
+[  203.245661] optee_supp_recv()---after wait
+[  203.245665] optee_supp_recv()---after mutex_lock1
+[  203.245670] optee_supp_recv()---after supp_pop_entry
+[  203.245672] optee_supp_recv()---after mutex_unlock2
+[  203.245674] optee_supp_recv()---out while
+[  203.245676] optee_supp_recv()---after while
+[  203.245678] optee_supp_recv()---num_meta != 0
+[  203.245681] optee_supp_recv()---end
+[  203.246117] optee_supp_send()---start
+[  203.246118] optee_supp_send()---after mutex_lock1
+[  203.246120] optee_supp_send()---after supp_pop_req
+[  203.246121] optee_supp_send()---after mutex_unlock1
+[  203.246123] optee_supp_send()---req->num_params : 2
+[  203.246126] optee_supp_send()---TYPE_MEMREF
+[  203.246129] optee_supp_send()---before complete
+[  203.246133] optee_supp_send()---end
+[  203.246137] optee_supp_thrd_req()---end
+[  203.246181] optee_supp_thrd_req()---start
+[  203.246184] optee_supp_thrd_req()---before init_completion
+[  203.246189] optee_supp_thrd_req()---after init_completion
+[  203.246191] optee_supp_thrd_req()---after mutex_lock1
+[  203.246193] optee_supp_thrd_req()---after list_add_tail
+[  203.246196] optee_supp_thrd_req()---after mutex_unlock1
+[  203.246200] optee_supp_thrd_req()---after complete
+[  203.246203] optee_supp_thrd_req()---before wait
+[  203.246205] optee_supp_recv()---after wait
+[  203.246210] optee_supp_recv()---after mutex_lock1
+[  203.246215] optee_supp_recv()---after supp_pop_entry
+[  203.246216] optee_supp_recv()---after mutex_unlock2
+[  203.246217] optee_supp_recv()---out while
+[  203.246218] optee_supp_recv()---after while
+[  203.246219] optee_supp_recv()---num_meta != 0
+[  203.246221] optee_supp_recv()---end
+[  203.246238] optee_supp_send()---start
+[  203.246239] optee_supp_send()---after mutex_lock1
+[  203.246241] optee_supp_send()---after supp_pop_req
+[  203.246242] optee_supp_send()---after mutex_unlock1
+[  203.246244] optee_supp_send()---req->num_params : 2
+[  203.246246] optee_supp_send()---TYPE_MEMREF
+[  203.246248] optee_supp_send()---before complete
+[  203.246252] optee_supp_send()---end
+[  203.246259] optee_supp_recv()---start
+[  203.246260] optee_supp_recv()---before while
+[  203.246263] optee_supp_thrd_req()---end
+[  203.246266] optee_supp_recv()---after mutex_lock1
+[  203.246269] optee_supp_recv()---after supp_pop_entry
+[  203.246274] optee_supp_recv()---after mutex_unlock2
+[  203.246275] optee_supp_recv()---befroe wait
+[  203.246359] optee_supp_thrd_req()---start
+[  203.246362] optee_supp_thrd_req()---before init_completion
+[  203.246366] optee_supp_thrd_req()---after init_completion
+[  203.246368] optee_supp_thrd_req()---after mutex_lock1
+[  203.246369] optee_supp_thrd_req()---after list_add_tail
+[  203.246370] optee_supp_thrd_req()---after mutex_unlock1
+[  203.246375] optee_supp_thrd_req()---after complete
+[  203.246376] optee_supp_thrd_req()---before wait
+[  203.246377] optee_supp_recv()---after wait
+[  203.246379] optee_supp_recv()---after mutex_lock1
+[  203.246380] optee_supp_recv()---after supp_pop_entry
+[  203.246381] optee_supp_recv()---after mutex_unlock2
+[  203.246382] optee_supp_recv()---out while
+[  203.246383] optee_supp_recv()---after while
+[  203.246384] optee_supp_recv()---num_meta != 0
+[  203.246387] optee_supp_recv()---end
+[  203.246406] optee_supp_send()---start
+[  203.246407] optee_supp_send()---after mutex_lock1
+[  203.246411] optee_supp_send()---after supp_pop_req
+[  203.246412] optee_supp_send()---after mutex_unlock1
+[  203.246414] optee_supp_send()---req->num_params : 2
+[  203.246414] optee_supp_send()---TYPE_MEMREF
+[  203.246415] optee_supp_send()---before complete
+[  203.246419] optee_supp_send()---end
+[  203.246426] optee_supp_thrd_req()---end
+[  203.246427] optee_supp_recv()---start
+[  203.246431] optee_supp_recv()---before while
+[  203.246432] optee_supp_recv()---after mutex_lock1
+[  203.246433] optee_supp_recv()---after supp_pop_entry
+[  203.246434] optee_supp_recv()---after mutex_unlock2
+[  203.246435] optee_supp_recv()---befroe wait
+[  203.246534] optee_supp_thrd_req()---start
+[  203.246537] optee_supp_thrd_req()---before init_completion
+[  203.246539] optee_supp_thrd_req()---after init_completion
+[  203.246542] optee_supp_thrd_req()---after mutex_lock1
+[  203.246546] optee_supp_thrd_req()---after list_add_tail
+[  203.246550] optee_supp_thrd_req()---after mutex_unlock1
+[  203.246555] optee_supp_thrd_req()---after complete
+[  203.246557] optee_supp_thrd_req()---before wait
+[  203.246569] optee_supp_recv()---after wait
+[  203.246570] optee_supp_recv()---after mutex_lock1
+[  203.246573] optee_supp_recv()---after supp_pop_entry
+[  203.246578] optee_supp_recv()---after mutex_unlock2
+[  203.246579] optee_supp_recv()---out while
+[  203.246586] optee_supp_recv()---after while
+[  203.246590] optee_supp_recv()---num_meta != 0
+[  203.246595] optee_supp_recv()---end
+[  203.246615] optee_supp_send()---start
+[  203.246619] optee_supp_send()---after mutex_lock1
+[  203.246626] optee_supp_send()---after supp_pop_req
+[  203.246630] optee_supp_send()---after mutex_unlock1
+[  203.246635] optee_supp_send()---req->num_params : 2
+[  203.246639] optee_supp_recv()---start
+[  203.246645] optee_supp_send()---TYPE_MEMREF
+[  203.246656] optee_supp_recv()---before while
+[  203.246659] optee_supp_send()---before complete
+[  203.246667] optee_supp_send()---end
+[  203.246669] optee_supp_recv()---after mutex_lock1
+[  203.246673] optee_supp_thrd_req()---end
+[  203.246676] optee_supp_recv()---after supp_pop_entry
+[  203.246686] optee_supp_recv()---after mutex_unlock2
+[  203.246690] optee_supp_recv()---start
+[  203.246695] optee_supp_recv()---before while
+[  203.246700] optee_supp_recv()---befroe wait
+[  203.246706] optee_supp_recv()---after mutex_lock1
+[  203.246711] optee_supp_recv()---after supp_pop_entry
+[  203.246715] optee_supp_recv()---after mutex_unlock2
+[  203.246720] optee_supp_recv()---befroe wait
+[  203.246765] optee_supp_thrd_req()---start
+[  203.246771] optee_supp_thrd_req()---before init_completion
+[  203.246782] optee_supp_thrd_req()---after init_completion
+[  203.246790] optee_supp_thrd_req()---after mutex_lock1
+[  203.246798] optee_supp_thrd_req()---after list_add_tail
+[  203.246810] optee_supp_thrd_req()---after mutex_unlock1
+[  203.246818] optee_supp_thrd_req()---after complete
+[  203.246821] optee_supp_recv()---after wait
+[  203.246825] optee_supp_recv()---after mutex_lock1
+[  203.246829] optee_supp_thrd_req()---before wait
+[  203.246836] optee_supp_recv()---after supp_pop_entry
+[  203.246844] optee_supp_recv()---after mutex_unlock2
+[  203.246854] optee_supp_recv()---out while
+[  203.246863] optee_supp_recv()---after while
+[  203.246872] optee_supp_recv()---num_meta != 0
+[  203.246881] optee_supp_recv()---end
+[  203.246923] optee_supp_send()---start
+[  203.246924] optee_supp_send()---after mutex_lock1
+[  203.246926] optee_supp_send()---after supp_pop_req
+[  203.246927] optee_supp_send()---after mutex_unlock1
+[  203.246930] optee_supp_send()---req->num_params : 2
+[  203.246934] optee_supp_send()---TYPE_MEMREF
+[  203.246935] optee_supp_send()---before complete
+[  203.246938] optee_supp_send()---end
+[  203.246942] optee_supp_thrd_req()---end
+[  203.246944] optee_supp_recv()---start
+[  203.246945] optee_supp_recv()---before while
+[  203.246946] optee_supp_recv()---after mutex_lock1
+[  203.246949] optee_supp_recv()---after supp_pop_entry
+[  203.246950] optee_supp_recv()---after mutex_unlock2
+[  203.246952] optee_supp_recv()---befroe wait
+[  203.247032] optee_supp_thrd_req()---start
+[  203.247034] optee_supp_thrd_req()---before init_completion
+[  203.247036] optee_supp_thrd_req()---after init_completion
+[  203.247039] optee_supp_thrd_req()---after mutex_lock1
+[  203.247042] optee_supp_thrd_req()---after list_add_tail
+[  203.247043] optee_supp_thrd_req()---after mutex_unlock1
+[  203.247049] optee_supp_thrd_req()---after complete
+[  203.247050] optee_supp_thrd_req()---before wait
+[  203.247055] optee_supp_recv()---after wait
+[  203.247058] optee_supp_recv()---after mutex_lock1
+[  203.247062] optee_supp_recv()---after supp_pop_entry
+[  203.247066] optee_supp_recv()---after mutex_unlock2
+[  203.247068] optee_supp_recv()---out while
+[  203.247070] optee_supp_recv()---after while
+[  203.247073] optee_supp_recv()---num_meta != 0
+[  203.247075] optee_supp_recv()---end
+[  203.250139] optee_supp_send()---start
+[  203.250141] optee_supp_send()---after mutex_lock1
+[  203.250143] optee_supp_send()---after supp_pop_req
+[  203.250145] optee_supp_send()---after mutex_unlock1
+[  203.250146] optee_supp_send()---req->num_params : 3
+[  203.250147] optee_supp_send()---TYPE_VALUE
+[  203.250148] optee_supp_send()---before complete
+[  203.250153] optee_supp_send()---end
+[  203.250157] optee_supp_thrd_req()---end
+[  203.250228] optee_supp_thrd_req()---start
+[  203.250232] optee_supp_thrd_req()---before init_completion
+[  203.250236] optee_supp_thrd_req()---after init_completion
+[  203.250238] optee_supp_thrd_req()---after mutex_lock1
+[  203.250240] optee_supp_thrd_req()---after list_add_tail
+[  203.250243] optee_supp_thrd_req()---after mutex_unlock1
+[  203.250247] optee_supp_thrd_req()---after complete
+[  203.250251] optee_supp_thrd_req()---before wait
+[  203.250256] optee_supp_recv()---after wait
+[  203.250258] optee_supp_recv()---after mutex_lock1
+[  203.250260] optee_supp_recv()---after supp_pop_entry
+[  203.250261] optee_supp_recv()---after mutex_unlock2
+[  203.250263] optee_supp_recv()---out while
+[  203.250264] optee_supp_recv()---after while
+[  203.250265] optee_supp_recv()---num_meta != 0
+[  203.250266] optee_supp_recv()---end
+[  203.250474] optee_supp_recv()---start
+[  203.250476] optee_supp_recv()---before while
+[  203.250478] optee_supp_recv()---after mutex_lock1
+[  203.250479] optee_supp_recv()---after supp_pop_entry
+[  203.250480] optee_supp_recv()---after mutex_unlock2
+[  203.250481] optee_supp_recv()---befroe wait
+[  203.251720] optee_supp_send()---start
+[  203.251724] optee_supp_send()---after mutex_lock1
+[  203.251726] optee_supp_send()---after supp_pop_req
+[  203.251728] optee_supp_send()---after mutex_unlock1
+[  203.251730] optee_supp_send()---req->num_params : 2
+[  203.251731] optee_supp_send()---before complete
+[  203.251734] optee_supp_send()---end
+[  203.251742] optee_supp_thrd_req()---end
+[  203.251745] optee_supp_recv()---start
+[  203.251749] optee_supp_recv()---before while
+[  203.251754] optee_supp_recv()---after mutex_lock1
+[  203.251755] optee_supp_recv()---after supp_pop_entry
+[  203.251757] optee_supp_recv()---after mutex_unlock2
+[  203.251758] optee_supp_recv()---befroe wait
+[  203.251785] optee_supp_thrd_req()---start
+[  203.251789] optee_supp_thrd_req()---before init_completion
+[  203.251793] optee_supp_thrd_req()---after init_completion
+[  203.251795] optee_supp_thrd_req()---after mutex_lock1
+[  203.251796] optee_supp_thrd_req()---after list_add_tail
+[  203.251797] optee_supp_thrd_req()---after mutex_unlock1
+[  203.251802] optee_supp_thrd_req()---after complete
+[  203.251803] optee_supp_thrd_req()---before wait
+[  203.251807] optee_supp_recv()---after wait
+[  203.251813] optee_supp_recv()---after mutex_lock1
+[  203.251816] optee_supp_recv()---after supp_pop_entry
+[  203.251819] optee_supp_recv()---after mutex_unlock2
+[  203.251821] optee_supp_recv()---out while
+[  203.251823] optee_supp_recv()---after while
+[  203.251825] optee_supp_recv()---num_meta != 0
+[  203.251828] optee_supp_recv()---end
+[  203.253141] optee_supp_send()---start
+[  203.253143] optee_supp_send()---after mutex_lock1
+[  203.253146] optee_supp_send()---after supp_pop_req
+[  203.253150] optee_supp_send()---after mutex_unlock1
+[  203.253152] optee_supp_send()---req->num_params : 2
+[  203.253154] optee_supp_send()---before complete
+[  203.253158] optee_supp_send()---end
+[  203.253163] optee_supp_thrd_req()---end
+[  203.253167] optee_supp_recv()---start
+[  203.253171] optee_supp_recv()---before while
+[  203.253172] optee_supp_recv()---after mutex_lock1
+[  203.253173] optee_supp_recv()---after supp_pop_entry
+[  203.253174] optee_supp_recv()---after mutex_unlock2
+[  203.253175] optee_supp_recv()---befroe wait
+[  203.253180] optee_supp_thrd_req()---start
+[  203.253182] optee_supp_thrd_req()---before init_completion
+[  203.253183] optee_supp_thrd_req()---after init_completion
+[  203.253184] optee_supp_thrd_req()---after mutex_lock1
+[  203.253185] optee_supp_thrd_req()---after list_add_tail
+[  203.253188] optee_supp_thrd_req()---after mutex_unlock1
+[  203.253196] optee_supp_thrd_req()---after complete
+[  203.253197] optee_supp_thrd_req()---before wait
+[  203.253198] optee_supp_recv()---after wait
+[  203.253199] optee_supp_recv()---after mutex_lock1
+[  203.253201] optee_supp_recv()---after supp_pop_entry
+[  203.253202] optee_supp_recv()---after mutex_unlock2
+[  203.253203] optee_supp_recv()---out while
+[  203.253204] optee_supp_recv()---after while
+[  203.253205] optee_supp_recv()---num_meta != 0
+[  203.253208] optee_supp_recv()---end
+[  203.254887] optee_supp_send()---start
+[  203.254888] optee_supp_send()---after mutex_lock1
+[  203.254891] optee_supp_send()---after supp_pop_req
+[  203.254892] optee_supp_send()---after mutex_unlock1
+[  203.254893] optee_supp_send()---req->num_params : 2
+[  203.254894] optee_supp_send()---before complete
+[  203.254898] optee_supp_send()---end
+[  203.254904] optee_supp_thrd_req()---end
+[  203.255026] optee_supp_thrd_req()---start
+[  203.255031] optee_supp_thrd_req()---before init_completion
+[  203.255033] optee_supp_thrd_req()---after init_completion
+[  203.255035] optee_supp_thrd_req()---after mutex_lock1
+[  203.255037] optee_supp_thrd_req()---after list_add_tail
+[  203.255039] optee_supp_thrd_req()---after mutex_unlock1
+[  203.255044] optee_supp_thrd_req()---after complete
+[  203.255046] optee_supp_thrd_req()---before wait
+[  203.255051] optee_supp_recv()---after wait
+[  203.255054] optee_supp_recv()---after mutex_lock1
+[  203.255058] optee_supp_recv()---after supp_pop_entry
+[  203.255059] optee_supp_recv()---after mutex_unlock2
+[  203.255060] optee_supp_recv()---out while
+[  203.255061] optee_supp_recv()---after while
+[  203.255062] optee_supp_recv()---num_meta != 0
+[  203.255064] optee_supp_recv()---end
+[  203.255216] optee_supp_recv()---start
+[  203.255219] optee_supp_recv()---before while
+[  203.255223] optee_supp_recv()---after mutex_lock1
+[  203.255224] optee_supp_recv()---after supp_pop_entry
+[  203.255225] optee_supp_recv()---after mutex_unlock2
+[  203.255226] optee_supp_recv()---befroe wait
+[  203.256373] optee_supp_send()---start
+[  203.256375] optee_supp_send()---after mutex_lock1
+[  203.256377] optee_supp_send()---after supp_pop_req
+[  203.256378] optee_supp_send()---after mutex_unlock1
+[  203.256380] optee_supp_send()---req->num_params : 2
+[  203.256382] optee_supp_send()---before complete
+[  203.256385] optee_supp_send()---end
+[  203.256392] optee_supp_thrd_req()---end
+[  203.256413] optee_supp_thrd_req()---start
+[  203.256418] optee_supp_thrd_req()---before init_completion
+[  203.256420] optee_supp_thrd_req()---after init_completion
+[  203.256422] optee_supp_thrd_req()---after mutex_lock1
+[  203.256424] optee_supp_thrd_req()---after list_add_tail
+[  203.256426] optee_supp_thrd_req()---after mutex_unlock1
+[  203.256429] optee_supp_recv()---start
+[  203.256431] optee_supp_recv()---before while
+[  203.256432] optee_supp_recv()---after mutex_lock1
+[  203.256434] optee_supp_thrd_req()---after complete
+[  203.256437] optee_supp_thrd_req()---before wait
+[  203.256441] optee_supp_recv()---after wait
+[  203.256443] optee_supp_recv()---after supp_pop_entry
+[  203.256447] optee_supp_recv()---after mutex_unlock2
+[  203.256453] optee_supp_recv()---after mutex_lock1
+[  203.256455] optee_supp_recv()---out while
+[  203.256457] optee_supp_recv()---after while
+[  203.256460] optee_supp_recv()---after supp_pop_entry
+[  203.256463] optee_supp_recv()---num_meta != 0
+[  203.256468] optee_supp_recv()---after mutex_unlock2
+[  203.256473] optee_supp_recv()---end
+[  203.256479] optee_supp_recv()---befroe wait
+[  203.258127] optee_supp_send()---start
+[  203.258129] optee_supp_send()---after mutex_lock1
+[  203.258131] optee_supp_send()---after supp_pop_req
+[  203.258132] optee_supp_send()---after mutex_unlock1
+[  203.258134] optee_supp_send()---req->num_params : 2
+[  203.258135] optee_supp_send()---before complete
+[  203.258137] optee_supp_send()---end
+[  203.258144] optee_supp_thrd_req()---end
+[  203.258146] optee_supp_recv()---start
+[  203.258149] optee_supp_recv()---before while
+[  203.258150] optee_supp_recv()---after mutex_lock1
+[  203.258152] optee_supp_recv()---after supp_pop_entry
+[  203.258153] optee_supp_recv()---after mutex_unlock2
+[  203.258154] optee_supp_recv()---befroe wait
+[  203.258176] optee_supp_thrd_req()---start
+[  203.258179] optee_supp_thrd_req()---before init_completion
+[  203.258182] optee_supp_thrd_req()---after init_completion
+[  203.258184] optee_supp_thrd_req()---after mutex_lock1
+[  203.258185] optee_supp_thrd_req()---after list_add_tail
+[  203.258186] optee_supp_thrd_req()---after mutex_unlock1
+[  203.258190] optee_supp_thrd_req()---after complete
+[  203.258191] optee_supp_thrd_req()---before wait
+[  203.258196] optee_supp_recv()---after wait
+[  203.258200] optee_supp_recv()---after mutex_lock1
+[  203.258203] optee_supp_recv()---after supp_pop_entry
+[  203.258206] optee_supp_recv()---after mutex_unlock2
+[  203.258208] optee_supp_recv()---out while
+[  203.258210] optee_supp_recv()---after while
+[  203.258212] optee_supp_recv()---num_meta != 0
+[  203.258215] optee_supp_recv()---end
+[  203.259232] optee_supp_send()---start
+[  203.259235] optee_supp_send()---after mutex_lock1
+[  203.259237] optee_supp_send()---after supp_pop_req
+[  203.259238] optee_supp_send()---after mutex_unlock1
+[  203.259239] optee_supp_send()---req->num_params : 2
+[  203.259241] optee_supp_send()---before complete
+[  203.259245] optee_supp_send()---end
+[  203.259252] optee_supp_thrd_req()---end
+[  203.259273] optee_supp_thrd_req()---start
+[  203.259276] optee_supp_thrd_req()---before init_completion
+[  203.259279] optee_supp_thrd_req()---after init_completion
+[  203.259281] optee_supp_thrd_req()---after mutex_lock1
+[  203.259283] optee_supp_thrd_req()---after list_add_tail
+[  203.259286] optee_supp_thrd_req()---after mutex_unlock1
+[  203.259292] optee_supp_thrd_req()---after complete
+[  203.259294] optee_supp_thrd_req()---before wait
+[  203.259301] optee_supp_recv()---after wait
+[  203.259303] optee_supp_recv()---after mutex_lock1
+[  203.259306] optee_supp_recv()---after supp_pop_entry
+[  203.259309] optee_supp_recv()---after mutex_unlock2
+[  203.259311] optee_supp_recv()---out while
+[  203.259313] optee_supp_recv()---after while
+[  203.259315] optee_supp_recv()---num_meta != 0
+[  203.259318] optee_supp_recv()---end
+[  203.259346] optee_supp_send()---start
+[  203.259348] optee_supp_send()---after mutex_lock1
+[  203.259351] optee_supp_send()---after supp_pop_req
+[  203.259353] optee_supp_send()---after mutex_unlock1
+[  203.259355] optee_supp_send()---req->num_params : 2
+[  203.259357] optee_supp_send()---TYPE_MEMREF
+[  203.259359] optee_supp_send()---before complete
+[  203.259363] optee_supp_send()---end
+[  203.259368] optee_supp_thrd_req()---end
+[  203.259372] optee_supp_recv()---start
+[  203.259373] optee_supp_recv()---before while
+[  203.259375] optee_supp_recv()---after mutex_lock1
+[  203.259376] optee_supp_recv()---after supp_pop_entry
+[  203.259377] optee_supp_recv()---after mutex_unlock2
+[  203.259378] optee_supp_recv()---befroe wait
+[  203.259507] optee_supp_thrd_req()---start
+[  203.259509] optee_supp_thrd_req()---before init_completion
+[  203.259511] optee_supp_thrd_req()---after init_completion
+[  203.259512] optee_supp_thrd_req()---after mutex_lock1
+[  203.259513] optee_supp_thrd_req()---after list_add_tail
+[  203.259514] optee_supp_thrd_req()---after mutex_unlock1
+[  203.259517] optee_supp_thrd_req()---after complete
+[  203.259518] optee_supp_thrd_req()---before wait
+[  203.259520] optee_supp_recv()---after wait
+[  203.259522] optee_supp_recv()---after mutex_lock1
+[  203.259523] optee_supp_recv()---after supp_pop_entry
+[  203.259524] optee_supp_recv()---after mutex_unlock2
+[  203.259525] optee_supp_recv()---out while
+[  203.259527] optee_supp_recv()---after while
+[  203.259527] optee_supp_recv()---num_meta != 0
+[  203.259528] optee_supp_recv()---end
+[  203.259543] optee_supp_send()---start
+[  203.259544] optee_supp_send()---after mutex_lock1
+[  203.259546] optee_supp_send()---after supp_pop_req
+[  203.259547] optee_supp_send()---after mutex_unlock1
+[  203.259548] optee_supp_send()---req->num_params : 2
+[  203.259549] optee_supp_send()---TYPE_MEMREF
+[  203.259550] optee_supp_send()---before complete
+[  203.259553] optee_supp_send()---end
+[  203.259560] optee_supp_thrd_req()---end
+[  203.259561] optee_supp_recv()---start
+[  203.259563] optee_supp_recv()---before while
+[  203.259566] optee_supp_recv()---after mutex_lock1
+[  203.259567] optee_supp_recv()---after supp_pop_entry
+[  203.259568] optee_supp_recv()---after mutex_unlock2
+[  203.259569] optee_supp_recv()---befroe wait
+[  203.259665] optee_supp_thrd_req()---start
+[  203.259667] optee_supp_thrd_req()---before init_completion
+[  203.259668] optee_supp_thrd_req()---after init_completion
+[  203.259669] optee_supp_thrd_req()---after mutex_lock1
+[  203.259670] optee_supp_thrd_req()---after list_add_tail
+[  203.259671] optee_supp_thrd_req()---after mutex_unlock1
+[  203.259676] optee_supp_thrd_req()---after complete
+[  203.259677] optee_supp_thrd_req()---before wait
+[  203.259678] optee_supp_recv()---after wait
+[  203.259679] optee_supp_recv()---after mutex_lock1
+[  203.259690] optee_supp_recv()---after supp_pop_entry
+[  203.259691] optee_supp_recv()---after mutex_unlock2
+[  203.259692] optee_supp_recv()---out while
+[  203.259693] optee_supp_recv()---after while
+[  203.259694] optee_supp_recv()---num_meta != 0
+[  203.259695] optee_supp_recv()---end
+[  203.259716] optee_supp_send()---start
+[  203.259717] optee_supp_send()---after mutex_lock1
+[  203.259723] optee_supp_send()---after supp_pop_req
+[  203.259724] optee_supp_send()---after mutex_unlock1
+[  203.259726] optee_supp_send()---req->num_params : 2
+[  203.259727] optee_supp_send()---TYPE_MEMREF
+[  203.259728] optee_supp_send()---before complete
+[  203.259733] optee_supp_thrd_req()---end
+[  203.259734] optee_supp_send()---end
+[  203.259741] optee_supp_recv()---start
+[  203.259742] optee_supp_recv()---before while
+[  203.259743] optee_supp_recv()---after mutex_lock1
+[  203.259744] optee_supp_recv()---after supp_pop_entry
+[  203.259745] optee_supp_recv()---after mutex_unlock2
+[  203.259746] optee_supp_recv()---befroe wait
+[  203.259823] optee_supp_thrd_req()---start
+[  203.259825] optee_supp_thrd_req()---before init_completion
+[  203.259826] optee_supp_thrd_req()---after init_completion
+[  203.259827] optee_supp_thrd_req()---after mutex_lock1
+[  203.259828] optee_supp_thrd_req()---after list_add_tail
+[  203.259829] optee_supp_thrd_req()---after mutex_unlock1
+[  203.259831] optee_supp_thrd_req()---after complete
+[  203.259832] optee_supp_thrd_req()---before wait
+[  203.259836] optee_supp_recv()---after wait
+[  203.259837] optee_supp_recv()---after mutex_lock1
+[  203.259838] optee_supp_recv()---after supp_pop_entry
+[  203.259840] optee_supp_recv()---after mutex_unlock2
+[  203.259841] optee_supp_recv()---out while
+[  203.259842] optee_supp_recv()---after while
+[  203.259843] optee_supp_recv()---num_meta != 0
+[  203.259844] optee_supp_recv()---end
+[  203.259854] optee_supp_recv()---start
+[  203.259856] optee_supp_recv()---before while
+[  203.259858] optee_supp_recv()---after mutex_lock1
+[  203.259859] optee_supp_recv()---after supp_pop_entry
+[  203.259861] optee_supp_recv()---after mutex_unlock2
+[  203.259862] optee_supp_recv()---befroe wait
+[  203.259884] optee_supp_send()---start
+[  203.259886] optee_supp_send()---after mutex_lock1
+[  203.259888] optee_supp_send()---after supp_pop_req
+[  203.259889] optee_supp_send()---after mutex_unlock1
+[  203.259890] optee_supp_send()---req->num_params : 2
+[  203.259891] optee_supp_send()---TYPE_MEMREF
+[  203.259893] optee_supp_send()---before complete
+[  203.259895] optee_supp_send()---end
+[  203.259900] optee_supp_thrd_req()---end
+[  203.259902] optee_supp_recv()---start
+[  203.259903] optee_supp_recv()---before while
+[  203.259905] optee_supp_recv()---after mutex_lock1
+[  203.259906] optee_supp_recv()---after supp_pop_entry
+[  203.259907] optee_supp_recv()---after mutex_unlock2
+[  203.259908] optee_supp_recv()---befroe wait
+[  203.260092] optee_supp_thrd_req()---start
+[  203.260094] optee_supp_thrd_req()---before init_completion
+[  203.260095] optee_supp_thrd_req()---after init_completion
+[  203.260096] optee_supp_thrd_req()---after mutex_lock1
+[  203.260097] optee_supp_thrd_req()---after list_add_tail
+[  203.260098] optee_supp_thrd_req()---after mutex_unlock1
+[  203.260101] optee_supp_thrd_req()---after complete
+[  203.260101] optee_supp_thrd_req()---before wait
+[  203.260103] optee_supp_recv()---after wait
+[  203.260104] optee_supp_recv()---after mutex_lock1
+[  203.260105] optee_supp_recv()---after supp_pop_entry
+[  203.260106] optee_supp_recv()---after mutex_unlock2
+[  203.260107] optee_supp_recv()---out while
+[  203.260108] optee_supp_recv()---after while
+[  203.260109] optee_supp_recv()---num_meta != 0
+[  203.260110] optee_supp_recv()---end
+[  203.261450] optee_supp_send()---start
+[  203.261453] optee_supp_send()---after mutex_lock1
+[  203.261456] optee_supp_send()---after supp_pop_req
+[  203.261458] optee_supp_send()---after mutex_unlock1
+[  203.261460] optee_supp_send()---req->num_params : 2
+[  203.261462] optee_supp_send()---before complete
+[  203.261471] optee_supp_thrd_req()---end
+[  203.261488] optee_supp_send()---end
+[  203.261497] optee_supp_thrd_req()---start
+[  203.261498] optee_supp_thrd_req()---before init_completion
+[  203.261499] optee_supp_thrd_req()---after init_completion
+[  203.261500] optee_supp_recv()---start
+[  203.261502] optee_supp_recv()---before while
+[  203.261503] optee_supp_thrd_req()---after mutex_lock1
+[  203.261506] optee_supp_thrd_req()---after list_add_tail
+[  203.261509] optee_supp_thrd_req()---after mutex_unlock1
+[  203.261510] optee_supp_recv()---after mutex_lock1
+[  203.261514] optee_supp_recv()---after supp_pop_entry
+[  203.261517] optee_supp_recv()---after mutex_unlock2
+[  203.261518] optee_supp_thrd_req()---after complete
+[  203.261520] optee_supp_thrd_req()---before wait
+[  203.261525] optee_supp_recv()---out while
+[  203.261530] optee_supp_recv()---after while
+[  203.261531] optee_supp_recv()---after wait
+[  203.261534] optee_supp_recv()---after mutex_lock1
+[  203.261537] optee_supp_recv()---num_meta != 0
+[  203.261540] optee_supp_recv()---after supp_pop_entry
+[  203.261543] optee_supp_recv()---end
+[  203.261548] optee_supp_recv()---after mutex_unlock2
+[  203.261553] optee_supp_recv()---befroe wait
+[  203.262809] optee_supp_send()---start
+[  203.262811] optee_supp_send()---after mutex_lock1
+[  203.262813] optee_supp_send()---after supp_pop_req
+[  203.262814] optee_supp_send()---after mutex_unlock1
+[  203.262815] optee_supp_send()---req->num_params : 2
+[  203.262817] optee_supp_send()---before complete
+[  203.262820] optee_supp_send()---end
+[  203.262824] optee_supp_thrd_req()---end
+[  203.262829] optee_supp_recv()---start
+[  203.262830] optee_supp_recv()---before while
+[  203.262832] optee_supp_recv()---after mutex_lock1
+[  203.262833] optee_supp_recv()---after supp_pop_entry
+[  203.262834] optee_supp_recv()---after mutex_unlock2
+[  203.262835] optee_supp_recv()---befroe wait
+[  203.262856] optee_supp_thrd_req()---start
+[  203.262859] optee_supp_thrd_req()---before init_completion
+[  203.262860] optee_supp_thrd_req()---after init_completion
+[  203.262861] optee_supp_thrd_req()---after mutex_lock1
+[  203.262862] optee_supp_thrd_req()---after list_add_tail
+[  203.262863] optee_supp_thrd_req()---after mutex_unlock1
+[  203.262866] optee_supp_thrd_req()---after complete
+[  203.262867] optee_supp_thrd_req()---before wait
+[  203.262875] optee_supp_recv()---after wait
+[  203.262879] optee_supp_recv()---after mutex_lock1
+[  203.262882] optee_supp_recv()---after supp_pop_entry
+[  203.262884] optee_supp_recv()---after mutex_unlock2
+[  203.262887] optee_supp_recv()---out while
+[  203.262889] optee_supp_recv()---after while
+[  203.262891] optee_supp_recv()---num_meta != 0
+[  203.262894] optee_supp_recv()---end
+[  203.263245] optee_supp_send()---start
+[  203.263247] optee_supp_send()---after mutex_lock1
+[  203.263249] optee_supp_send()---after supp_pop_req
+[  203.263251] optee_supp_send()---after mutex_unlock1
+[  203.263253] optee_supp_send()---req->num_params : 2
+[  203.263255] optee_supp_send()---before complete
+[  203.263259] optee_supp_send()---end
+[  203.263264] optee_supp_thrd_req()---end
+[  203.263268] optee_supp_recv()---start
+[  203.263270] optee_supp_recv()---before while
+[  203.263272] optee_supp_recv()---after mutex_lock1
+[  203.263273] optee_supp_recv()---after supp_pop_entry
+[  203.263275] optee_supp_recv()---after mutex_unlock2
+[  203.263277] optee_supp_thrd_req()---start
+[  203.263279] optee_supp_thrd_req()---before init_completion
+[  203.263282] optee_supp_recv()---befroe wait
+[  203.263284] optee_supp_thrd_req()---after init_completion
+[  203.263286] optee_supp_thrd_req()---after mutex_lock1
+[  203.263288] optee_supp_thrd_req()---after list_add_tail
+[  203.263291] optee_supp_thrd_req()---after mutex_unlock1
+[  203.263294] optee_supp_thrd_req()---after complete
+[  203.263295] optee_supp_thrd_req()---before wait
+[  203.263300] optee_supp_recv()---after wait
+[  203.263303] optee_supp_recv()---after mutex_lock1
+[  203.263307] optee_supp_recv()---after supp_pop_entry
+[  203.263309] optee_supp_recv()---after mutex_unlock2
+[  203.263312] optee_supp_recv()---out while
+[  203.263314] optee_supp_recv()---after while
+[  203.263317] optee_supp_recv()---num_meta != 0
+[  203.263319] optee_supp_recv()---end
+[  203.264361] optee_supp_send()---start
+[  203.264363] optee_supp_send()---after mutex_lock1
+[  203.264365] optee_supp_send()---after supp_pop_req
+[  203.264366] optee_supp_send()---after mutex_unlock1
+[  203.264368] optee_supp_send()---req->num_params : 2
+[  203.264369] optee_supp_send()---before complete
+[  203.264372] optee_supp_send()---end
+[  203.264379] optee_supp_thrd_req()---end
+[  203.264414] optee_supp_thrd_req()---start
+[  203.264417] optee_supp_thrd_req()---before init_completion
+[  203.264419] optee_supp_thrd_req()---after init_completion
+[  203.264420] optee_supp_thrd_req()---after mutex_lock1
+[  203.264422] optee_supp_thrd_req()---after list_add_tail
+[  203.264424] optee_supp_thrd_req()---after mutex_unlock1
+[  203.264429] optee_supp_thrd_req()---after complete
+[  203.264431] optee_supp_thrd_req()---before wait
+[  203.264610] optee_supp_recv()---after wait
+[  203.264613] optee_supp_recv()---after mutex_lock1
+[  203.264617] optee_supp_recv()---after supp_pop_entry
+[  203.264619] optee_supp_recv()---after mutex_unlock2
+[  203.264621] optee_supp_recv()---out while
+[  203.264624] optee_supp_recv()---after while
+[  203.264626] optee_supp_recv()---num_meta != 0
+[  203.264628] optee_supp_recv()---end
+[  203.264664] optee_supp_send()---start
+[  203.264666] optee_supp_send()---after mutex_lock1
+[  203.264669] optee_supp_send()---after supp_pop_req
+[  203.264671] optee_supp_send()---after mutex_unlock1
+[  203.264674] optee_supp_send()---req->num_params : 2
+[  203.264676] optee_supp_send()---TYPE_MEMREF
+[  203.264678] optee_supp_send()---before complete
+[  203.264683] optee_supp_send()---end
+[  203.264689] optee_supp_thrd_req()---end
+[  203.264730] optee_supp_recv()---start
+[  203.264732] optee_supp_recv()---before while
+[  203.264733] optee_supp_recv()---after mutex_lock1
+[  203.264735] optee_supp_recv()---after supp_pop_entry
+[  203.264736] optee_supp_recv()---after mutex_unlock2
+[  203.264737] optee_supp_recv()---befroe wait
+[  203.264914] optee_supp_thrd_req()---start
+[  203.264916] optee_supp_thrd_req()---before init_completion
+[  203.264918] optee_supp_thrd_req()---after init_completion
+[  203.264920] optee_supp_thrd_req()---after mutex_lock1
+[  203.264922] optee_supp_thrd_req()---after list_add_tail
+[  203.264924] optee_supp_thrd_req()---after mutex_unlock1
+[  203.264927] optee_supp_thrd_req()---after complete
+[  203.264929] optee_supp_thrd_req()---before wait
+[  203.264936] optee_supp_recv()---after wait
+[  203.264938] optee_supp_recv()---after mutex_lock1
+[  203.264940] optee_supp_recv()---after supp_pop_entry
+[  203.264941] optee_supp_recv()---after mutex_unlock2
+[  203.264942] optee_supp_recv()---out while
+[  203.264943] optee_supp_recv()---after while
+[  203.264944] optee_supp_recv()---num_meta != 0
+[  203.264945] optee_supp_recv()---end
+[  203.265117] optee_supp_recv()---start
+[  203.265119] optee_supp_recv()---before while
+[  203.265120] optee_supp_recv()---after mutex_lock1
+[  203.265121] optee_supp_recv()---after supp_pop_entry
+[  203.265122] optee_supp_recv()---after mutex_unlock2
+[  203.265123] optee_supp_recv()---befroe wait
+[  203.266649] optee_supp_send()---start
+[  203.266651] optee_supp_send()---after mutex_lock1
+[  203.266653] optee_supp_send()---after supp_pop_req
+[  203.266654] optee_supp_send()---after mutex_unlock1
+[  203.266655] optee_supp_send()---req->num_params : 2
+[  203.266656] optee_supp_send()---before complete
+[  203.266659] optee_supp_send()---end
+[  203.266665] optee_supp_recv()---start
+[  203.266666] optee_supp_recv()---before while
+[  203.266667] optee_supp_recv()---after mutex_lock1
+[  203.266668] optee_supp_recv()---after supp_pop_entry
+[  203.266669] optee_supp_recv()---after mutex_unlock2
+[  203.266671] optee_supp_recv()---befroe wait
+[  203.266676] optee_supp_thrd_req()---end
+[  203.266802] optee_supp_thrd_req()---start
+[  203.266805] optee_supp_thrd_req()---before init_completion
+[  203.266806] optee_supp_thrd_req()---after init_completion
+[  203.266809] optee_supp_thrd_req()---after mutex_lock1
+[  203.266812] optee_supp_thrd_req()---after list_add_tail
+[  203.266814] optee_supp_thrd_req()---after mutex_unlock1
+[  203.266819] optee_supp_thrd_req()---after complete
+[  203.266821] optee_supp_thrd_req()---before wait
+[  203.266825] optee_supp_recv()---after wait
+[  203.266830] optee_supp_recv()---after mutex_lock1
+[  203.266834] optee_supp_recv()---after supp_pop_entry
+[  203.266836] optee_supp_recv()---after mutex_unlock2
+[  203.266839] optee_supp_recv()---out while
+[  203.266841] optee_supp_recv()---after while
+[  203.266846] optee_supp_recv()---num_meta != 0
+[  203.266848] optee_supp_recv()---end
+[  203.268253] optee_supp_send()---start
+[  203.268255] optee_supp_send()---after mutex_lock1
+[  203.268257] optee_supp_send()---after supp_pop_req
+[  203.268258] optee_supp_send()---after mutex_unlock1
+[  203.268260] optee_supp_send()---req->num_params : 2
+[  203.268261] optee_supp_send()---before complete
+[  203.268264] optee_supp_send()---end
+[  203.268269] optee_supp_thrd_req()---end
+[  203.268273] optee_supp_recv()---start
+[  203.268274] optee_supp_recv()---before while
+[  203.268275] optee_supp_recv()---after mutex_lock1
+[  203.268276] optee_supp_recv()---after supp_pop_entry
+[  203.268277] optee_supp_recv()---after mutex_unlock2
+[  203.268279] optee_supp_recv()---befroe wait
+[  203.268284] optee_supp_thrd_req()---start
+[  203.268286] optee_supp_thrd_req()---before init_completion
+[  203.268307] optee_supp_thrd_req()---after init_completion
+[  203.268309] optee_supp_thrd_req()---after mutex_lock1
+[  203.268310] optee_supp_thrd_req()---after list_add_tail
+[  203.268311] optee_supp_thrd_req()---after mutex_unlock1
+[  203.268315] optee_supp_thrd_req()---after complete
+[  203.268319] optee_supp_thrd_req()---before wait
+[  203.268322] optee_supp_recv()---after wait
+[  203.268328] optee_supp_recv()---after mutex_lock1
+[  203.268333] optee_supp_recv()---after supp_pop_entry
+[  203.268337] optee_supp_recv()---after mutex_unlock2
+[  203.268341] optee_supp_recv()---out while
+[  203.268345] optee_supp_recv()---after while
+[  203.268350] optee_supp_recv()---num_meta != 0
+[  203.268353] optee_supp_recv()---end
+[  203.270151] optee_supp_send()---start
+[  203.270153] optee_supp_send()---after mutex_lock1
+[  203.270155] optee_supp_send()---after supp_pop_req
+[  203.270156] optee_supp_send()---after mutex_unlock1
+[  203.270157] optee_supp_send()---req->num_params : 2
+[  203.270158] optee_supp_send()---before complete
+[  203.270162] optee_supp_send()---end
+[  203.270167] optee_supp_thrd_req()---end
+[  203.270187] optee_supp_thrd_req()---start
+[  203.270190] optee_supp_thrd_req()---before init_completion
+[  203.270192] optee_supp_thrd_req()---after init_completion
+[  203.270195] optee_supp_thrd_req()---after mutex_lock1
+[  203.270197] optee_supp_thrd_req()---after list_add_tail
+[  203.270199] optee_supp_thrd_req()---after mutex_unlock1
+[  203.270204] optee_supp_thrd_req()---after complete
+[  203.270206] optee_supp_thrd_req()---before wait
+[  203.270208] optee_supp_recv()---after wait
+[  203.270210] optee_supp_recv()---after mutex_lock1
+[  203.270212] optee_supp_recv()---after supp_pop_entry
+[  203.270213] optee_supp_recv()---after mutex_unlock2
+[  203.270214] optee_supp_recv()---out while
+[  203.270215] optee_supp_recv()---after while
+[  203.270216] optee_supp_recv()---num_meta != 0
+[  203.270217] optee_supp_recv()---end
+[  203.270528] optee_supp_send()---start
+[  203.270530] optee_supp_send()---after mutex_lock1
+[  203.270531] optee_supp_send()---after supp_pop_req
+[  203.270532] optee_supp_send()---after mutex_unlock1
+[  203.270533] optee_supp_send()---req->num_params : 2
+[  203.270534] optee_supp_send()---before complete
+[  203.270537] optee_supp_send()---end
+[  203.270544] optee_supp_thrd_req()---end
+[  203.270545] optee_supp_recv()---start
+[  203.270547] optee_supp_recv()---before while
+[  203.270550] optee_supp_recv()---after mutex_lock1
+[  203.270551] optee_supp_recv()---after supp_pop_entry
+[  203.270552] optee_supp_recv()---after mutex_unlock2
+[  203.270552] optee_supp_recv()---befroe wait
+[  203.270581] optee_supp_recv()---start
+[  203.270583] optee_supp_recv()---before while
+[  203.270585] optee_supp_thrd_req()---start
+[  203.270587] optee_supp_recv()---after mutex_lock1
+[  203.270588] optee_supp_thrd_req()---before init_completion
+[  203.270590] optee_supp_thrd_req()---after init_completion
+[  203.270594] optee_supp_recv()---after supp_pop_entry
+[  203.270596] optee_supp_recv()---after mutex_unlock2
+[  203.270597] optee_supp_thrd_req()---after mutex_lock1
+[  203.270598] optee_supp_thrd_req()---after list_add_tail
+[  203.270599] optee_supp_recv()---befroe wait
+[  203.270602] optee_supp_thrd_req()---after mutex_unlock1
+[  203.270607] optee_supp_thrd_req()---after complete
+[  203.270611] optee_supp_recv()---after wait
+[  203.270612] optee_supp_thrd_req()---before wait
+[  203.270615] optee_supp_recv()---after mutex_lock1
+[  203.270619] optee_supp_recv()---after supp_pop_entry
+[  203.270621] optee_supp_recv()---after mutex_unlock2
+[  203.270624] optee_supp_recv()---out while
+[  203.270627] optee_supp_recv()---after while
+[  203.270629] optee_supp_recv()---num_meta != 0
+[  203.270631] optee_supp_recv()---end
+[  203.270983] optee_supp_send()---start
+[  203.270986] optee_supp_send()---after mutex_lock1
+[  203.270988] optee_supp_send()---after supp_pop_req
+[  203.270989] optee_supp_send()---after mutex_unlock1
+[  203.270992] optee_supp_send()---req->num_params : 2
+[  203.270993] optee_supp_send()---before complete
+[  203.270998] optee_supp_send()---end
+[  203.271002] optee_supp_thrd_req()---end
+[  203.271015] optee_supp_thrd_req()---start
+[  203.271018] optee_supp_thrd_req()---before init_completion
+[  203.271020] optee_supp_thrd_req()---after init_completion
+[  203.271023] optee_supp_thrd_req()---after mutex_lock1
+[  203.271025] optee_supp_thrd_req()---after list_add_tail
+[  203.271026] optee_supp_thrd_req()---after mutex_unlock1
+[  203.271029] optee_supp_thrd_req()---after complete
+[  203.271032] optee_supp_thrd_req()---before wait
+[  203.271034] optee_supp_recv()---after wait
+[  203.271036] optee_supp_recv()---after mutex_lock1
+[  203.271038] optee_supp_recv()---start
+[  203.271039] optee_supp_recv()---after supp_pop_entry
+[  203.271041] optee_supp_recv()---after mutex_unlock2
+[  203.271044] optee_supp_recv()---before while
+[  203.271045] optee_supp_recv()---out while
+[  203.271049] optee_supp_recv()---after while
+[  203.271053] optee_supp_recv()---after mutex_lock1
+[  203.271055] optee_supp_recv()---num_meta != 0
+[  203.271058] optee_supp_recv()---after supp_pop_entry
+[  203.271060] optee_supp_recv()---end
+[  203.271062] optee_supp_recv()---after mutex_unlock2
+[  203.271064] optee_supp_recv()---befroe wait
+[  203.271084] optee_supp_send()---start
+[  203.271087] optee_supp_send()---after mutex_lock1
+[  203.271088] optee_supp_send()---after supp_pop_req
+[  203.271089] optee_supp_send()---after mutex_unlock1
+[  203.271091] optee_supp_send()---req->num_params : 2
+[  203.271092] optee_supp_send()---TYPE_MEMREF
+[  203.271093] optee_supp_send()---before complete
+[  203.271095] optee_supp_send()---end
+[  203.271101] optee_supp_thrd_req()---end
+[  203.271102] optee_supp_recv()---start
+[  203.271105] optee_supp_recv()---before while
+[  203.271108] optee_supp_recv()---after mutex_lock1
+[  203.271109] optee_supp_recv()---after supp_pop_entry
+[  203.271110] optee_supp_recv()---after mutex_unlock2
+[  203.271111] optee_supp_recv()---befroe wait
+[  203.271198] optee_supp_thrd_req()---start
+[  203.271200] optee_supp_thrd_req()---before init_completion
+[  203.271201] optee_supp_thrd_req()---after init_completion
+[  203.271203] optee_supp_thrd_req()---after mutex_lock1
+[  203.271204] optee_supp_thrd_req()---after list_add_tail
+[  203.271205] optee_supp_thrd_req()---after mutex_unlock1
+[  203.271212] optee_supp_recv()---after wait
+[  203.271215] optee_supp_recv()---after mutex_lock1
+[  203.271217] optee_supp_recv()---after supp_pop_entry
+[  203.271218] optee_supp_recv()---after mutex_unlock2
+[  203.271220] optee_supp_recv()---out while
+[  203.271221] optee_supp_recv()---after while
+[  203.271224] optee_supp_recv()---num_meta != 0
+[  203.271229] optee_supp_recv()---end
+[  203.271233] optee_supp_thrd_req()---after complete
+[  203.271240] optee_supp_thrd_req()---before wait
+[  203.271805] optee_supp_send()---start
+[  203.271807] optee_supp_send()---after mutex_lock1
+[  203.271810] optee_supp_send()---after supp_pop_req
+[  203.271813] optee_supp_send()---after mutex_unlock1
+[  203.271817] optee_supp_send()---req->num_params : 2
+[  203.271819] optee_supp_send()---TYPE_MEMREF
+[  203.271821] optee_supp_send()---before complete
+[  203.271824] optee_supp_send()---end
+[  203.271829] optee_supp_thrd_req()---end
+[  203.272050] optee_supp_thrd_req()---start
+[  203.272052] optee_supp_thrd_req()---before init_completion
+[  203.272054] optee_supp_thrd_req()---after init_completion
+[  203.272057] optee_supp_thrd_req()---after mutex_lock1
+[  203.272059] optee_supp_thrd_req()---after list_add_tail
+[  203.272061] optee_supp_thrd_req()---after mutex_unlock1
+[  203.272068] optee_supp_thrd_req()---after complete
+[  203.272070] optee_supp_thrd_req()---before wait
+[  203.272081] optee_supp_recv()---after wait
+[  203.272082] optee_supp_recv()---start
+[  203.272086] optee_supp_recv()---before while
+[  203.272088] optee_supp_recv()---after mutex_lock1
+[  203.272092] optee_supp_recv()---after supp_pop_entry
+[  203.272095] optee_supp_recv()---after mutex_unlock2
+[  203.272095] optee_supp_recv()---after mutex_lock1
+[  203.272097] optee_supp_recv()---after supp_pop_entry
+[  203.272101] optee_supp_recv()---out while
+[  203.272104] optee_supp_recv()---after mutex_unlock2
+[  203.272106] optee_supp_recv()---after while
+[  203.272107] optee_supp_recv()---befroe wait
+[  203.272110] optee_supp_recv()---num_meta != 0
+[  203.272112] optee_supp_recv()---end
+[  203.273413] optee_supp_send()---start
+[  203.273415] optee_supp_send()---after mutex_lock1
+[  203.273418] optee_supp_send()---after supp_pop_req
+[  203.273420] optee_supp_send()---after mutex_unlock1
+[  203.273422] optee_supp_send()---req->num_params : 2
+[  203.273423] optee_supp_send()---before complete
+[  203.273427] optee_supp_send()---end
+[  203.273433] optee_supp_thrd_req()---end
+[  203.273437] optee_supp_recv()---start
+[  203.273438] optee_supp_recv()---before while
+[  203.273440] optee_supp_recv()---after mutex_lock1
+[  203.273441] optee_supp_recv()---after supp_pop_entry
+[  203.273442] optee_supp_recv()---after mutex_unlock2
+[  203.273443] optee_supp_recv()---befroe wait
+[  203.273454] optee_supp_thrd_req()---start
+[  203.273457] optee_supp_thrd_req()---before init_completion
+[  203.273458] optee_supp_thrd_req()---after init_completion
+[  203.273460] optee_supp_thrd_req()---after mutex_lock1
+[  203.273462] optee_supp_thrd_req()---after list_add_tail
+[  203.273464] optee_supp_thrd_req()---after mutex_unlock1
+[  203.273468] optee_supp_thrd_req()---after complete
+[  203.273470] optee_supp_thrd_req()---before wait
+[  203.273472] optee_supp_recv()---after wait
+[  203.273474] optee_supp_recv()---after mutex_lock1
+[  203.273476] optee_supp_recv()---after supp_pop_entry
+[  203.273477] optee_supp_recv()---after mutex_unlock2
+[  203.273478] optee_supp_recv()---out while
+[  203.273479] optee_supp_recv()---after while
+[  203.273480] optee_supp_recv()---num_meta != 0
+[  203.273481] optee_supp_recv()---end
+[  203.274652] optee_supp_send()---start
+[  203.274654] optee_supp_send()---after mutex_lock1
+[  203.274655] optee_supp_send()---after supp_pop_req
+[  203.274656] optee_supp_send()---after mutex_unlock1
+[  203.274657] optee_supp_send()---req->num_params : 2
+[  203.274658] optee_supp_send()---before complete
+[  203.274660] optee_supp_send()---end
+[  203.274667] optee_supp_recv()---start
+[  203.274668] optee_supp_recv()---before while
+[  203.274668] optee_supp_recv()---after mutex_lock1
+[  203.274670] optee_supp_recv()---after supp_pop_entry
+[  203.274671] optee_supp_recv()---after mutex_unlock2
+[  203.274672] optee_supp_recv()---befroe wait
+[  203.274693] optee_supp_thrd_req()---end
+[  203.274725] optee_supp_thrd_req()---start
+[  203.274727] optee_supp_thrd_req()---before init_completion
+[  203.274730] optee_supp_thrd_req()---after init_completion
+[  203.274732] optee_supp_thrd_req()---after mutex_lock1
+[  203.274733] optee_supp_thrd_req()---after list_add_tail
+[  203.274734] optee_supp_thrd_req()---after mutex_unlock1
+[  203.274737] optee_supp_thrd_req()---after complete
+[  203.274739] optee_supp_thrd_req()---before wait
+[  203.274741] optee_supp_recv()---after wait
+[  203.274745] optee_supp_recv()---after mutex_lock1
+[  203.274748] optee_supp_recv()---after supp_pop_entry
+[  203.274750] optee_supp_recv()---after mutex_unlock2
+[  203.274751] optee_supp_recv()---out while
+[  203.274752] optee_supp_recv()---after while
+[  203.274753] optee_supp_recv()---num_meta != 0
+[  203.274754] optee_supp_recv()---end
+[  203.275620] optee_supp_send()---start
+[  203.275622] optee_supp_send()---after mutex_lock1
+[  203.275624] optee_supp_send()---after supp_pop_req
+[  203.275626] optee_supp_send()---after mutex_unlock1
+[  203.275627] optee_supp_send()---req->num_params : 2
+[  203.275628] optee_supp_send()---before complete
+[  203.275631] optee_supp_send()---end
+[  203.275636] optee_supp_thrd_req()---end
+[  203.275663] optee_supp_thrd_req()---start
+[  203.275666] optee_supp_thrd_req()---before init_completion
+[  203.275668] optee_supp_thrd_req()---after init_completion
+[  203.275669] optee_supp_thrd_req()---after mutex_lock1
+[  203.275671] optee_supp_thrd_req()---after list_add_tail
+[  203.275672] optee_supp_thrd_req()---after mutex_unlock1
+[  203.275676] optee_supp_thrd_req()---after complete
+[  203.275678] optee_supp_thrd_req()---before wait
+[  203.275702] optee_supp_recv()---after wait
+[  203.275706] optee_supp_recv()---after mutex_lock1
+[  203.275709] optee_supp_recv()---after supp_pop_entry
+[  203.275712] optee_supp_recv()---after mutex_unlock2
+[  203.275715] optee_supp_recv()---out while
+[  203.275717] optee_supp_recv()---after while
+[  203.275720] optee_supp_recv()---num_meta != 0
+[  203.275722] optee_supp_recv()---end
+[  203.275791] optee_supp_send()---start
+[  203.275793] optee_supp_send()---after mutex_lock1
+[  203.275795] optee_supp_send()---after supp_pop_req
+[  203.275796] optee_supp_send()---after mutex_unlock1
+[  203.275798] optee_supp_send()---req->num_params : 1
+[  203.275799] optee_supp_send()---before complete
+[  203.275804] optee_supp_send()---end
+[  203.275808] optee_supp_thrd_req()---end
+[  203.275814] optee_supp_recv()---start
+[  203.275816] optee_supp_recv()---before while
+[  203.275817] optee_supp_recv()---after mutex_lock1
+[  203.275819] optee_supp_thrd_req()---start
+[  203.275820] optee_supp_recv()---after supp_pop_entry
+[  203.275821] optee_supp_recv()---after mutex_unlock2
+[  203.275823] optee_supp_thrd_req()---before init_completion
+[  203.275824] optee_supp_recv()---befroe wait
+[  203.275826] optee_supp_thrd_req()---after init_completion
+[  203.275827] optee_supp_thrd_req()---after mutex_lock1
+[  203.275828] optee_supp_thrd_req()---after list_add_tail
+[  203.275829] optee_supp_thrd_req()---after mutex_unlock1
+[  203.275832] optee_supp_thrd_req()---after complete
+[  203.275833] optee_supp_thrd_req()---before wait
+[  203.275837] optee_supp_recv()---after wait
+[  203.275838] optee_supp_recv()---after mutex_lock1
+[  203.275840] optee_supp_recv()---after supp_pop_entry
+[  203.275841] optee_supp_recv()---after mutex_unlock2
+[  203.275842] optee_supp_recv()---out while
+[  203.275843] optee_supp_recv()---after while
+[  203.275844] optee_supp_recv()---num_meta != 0
+[  203.275845] optee_supp_recv()---end
+[  203.275862] optee_supp_send()---start
+[  203.275863] optee_supp_send()---after mutex_lock1
+[  203.275864] optee_supp_send()---after supp_pop_req
+[  203.275865] optee_supp_send()---after mutex_unlock1
+[  203.275866] optee_supp_send()---req->num_params : 1
+[  203.275867] optee_supp_send()---before complete
+[  203.275869] optee_supp_send()---end
+[  203.275874] optee_supp_thrd_req()---end
+[  203.275876] optee_supp_recv()---start
+[  203.275877] optee_supp_recv()---before while
+[  203.275879] optee_supp_recv()---after mutex_lock1
+[  203.275880] optee_supp_recv()---after supp_pop_entry
+[  203.275881] optee_supp_recv()---after mutex_unlock2
+[  203.275882] optee_supp_recv()---befroe wait
+[  203.275914] optee_supp_thrd_req()---start
+[  203.275916] optee_supp_thrd_req()---before init_completion
+[  203.275918] optee_supp_thrd_req()---after init_completion
+[  203.275919] optee_supp_thrd_req()---after mutex_lock1
+[  203.275920] optee_supp_thrd_req()---after list_add_tail
+[  203.275922] optee_supp_thrd_req()---after mutex_unlock1
+[  203.275926] optee_supp_thrd_req()---after complete
+[  203.275927] optee_supp_thrd_req()---before wait
+[  203.275933] optee_supp_recv()---after wait
+[  203.275936] optee_supp_recv()---after mutex_lock1
+[  203.275940] optee_supp_recv()---after supp_pop_entry
+[  203.275942] optee_supp_recv()---after mutex_unlock2
+[  203.275944] optee_supp_recv()---out while
+[  203.275947] optee_supp_recv()---after while
+[  203.275949] optee_supp_recv()---num_meta != 0
+[  203.275951] optee_supp_recv()---end
+[  203.276096] optee_supp_send()---start
+[  203.276100] optee_supp_send()---after mutex_lock1
+[  203.276103] optee_supp_send()---after supp_pop_req
+[  203.276106] optee_supp_send()---after mutex_unlock1
+[  203.276109] optee_supp_send()---req->num_params : 1
+[  203.276112] optee_supp_send()---TYPE_VALUE
+[  203.276114] optee_supp_send()---before complete
+[  203.276125] optee_supp_thrd_req()---end
+[  203.276148] tee_ioctl_invoke()---before invoke_func
+[  203.276229] optee_supp_recv()---start
+[  203.276231] optee_supp_recv()---before while
+[  203.276232] optee_supp_recv()---after mutex_lock1
+[  203.276233] optee_supp_recv()---after supp_pop_entry
+[  203.276234] optee_supp_recv()---after mutex_unlock2
+[  203.276236] optee_supp_recv()---befroe wait
+[  203.276559] optee_supp_send()---end
+[  203.276579] optee_supp_recv()---start
+[  203.276582] optee_supp_recv()---before while
+[  203.276586] optee_supp_recv()---after mutex_lock1
+[  203.276590] optee_supp_recv()---after supp_pop_entry
+[  203.276594] optee_supp_recv()---after mutex_unlock2
+[  203.276596] optee_supp_recv()---befroe wait

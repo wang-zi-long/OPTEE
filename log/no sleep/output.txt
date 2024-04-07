@@ -1,0 +1,11 @@
+| 1712460663632478381 | 3391 | 3 |Prepare session with the TA
+| 1712460663632559313 | 3391 | 3 |TEEC_InitializeContext---start
+| 1712460663632600435 | 3391 | 3 |TEEC_InitializeContext---end
+| 1712460663632601683 | 3391 | 3 |TEEC_OpenSession---start
+| 1712460663665823750 | 3391 | 7 |TEEC_OpenSession---end
+| 1712460663665833254 | 3391 | 7 |TEEC_InvokeCommand---start
+| 1712460663697595816 | 3391 | 7 |TEEC_InvokeCommand---end
+| 1712460663697601416 | 3391 | 7 |TEEC_CloseSession---start
+| 1712460663697656715 | 3391 | 7 |TEEC_CloseSession---end
+| 1712460663697658603 | 3391 | 7 |TEEC_FinalizeContext---start
+| 1712460663697666124 | 3391 | 7 |TEEC_FinalizeContext---end
