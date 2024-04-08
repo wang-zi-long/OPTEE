@@ -1,0 +1,22 @@
+I/TC: __tee_entry_std!!!
+I/TC: entry_open_session!!!111
+I/TC: entry_open_session---before tee_ta_open_session
+I/TC: entry_open_session---after tee_ta_open_session
+I/TC: __tee_entry_std!!!
+I/TC: __tee_entry_std!!!
+I/TC: __tee_entry_std!!!
+I/TC: __tee_entry_std!!!
+I/TC: entry_open_session!!!111
+I/TC: entry_open_session---before tee_ta_open_session
+
+
+I/TC: __tee_entry_std!!!
+*D/TA:   TA_CreateEntryPoint:40 has been called
+*I/TC: __tee_entry_std!!!
+*D/TA:   __GP11_TA_OpenSessionEntryPoint:69 has been called
+*I/TC: __tee_entry_std!!!
+*I/TA: Hello World!
+I/TC: entry_open_session---after tee_ta_open_session
+I/TC: __tee_entry_std!!!
+I/TA: Goodbye!
+D/TA:   TA_DestroyEntryPoint:51 has been called
