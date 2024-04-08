@@ -1,0 +1,8 @@
+| 1712550938025462144 | 3818 | 6 | TEEC_OpenSession---start
+arg_size : 184
+buf_data : 281473326609920   184
+arg->num_params : 4
+| 1712550938025483552 | 3818 | 6 | teec_pre_process_operation---start
+| 1712550938025488608 | 3818 | 6 | teec_pre_process_operation---!operation
+params after pre : 0 0 0 0
+| 1712550938025500640 | 3818 | 6 | TEEC_OpenSession---before ioctl

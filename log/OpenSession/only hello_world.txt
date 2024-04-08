@@ -1,0 +1,14 @@
+| 1712550817859061302 | 3655 | 1 | TEEC_OpenSession---start
+arg_size : 184
+buf_data : 281473622738432   184
+arg->num_params : 4
+| 1712550817859091798 | 3655 | 1 | teec_pre_process_operation---start
+| 1712550817859097430 | 3655 | 1 | teec_pre_process_operation---!operation
+params after pre : 0 0 0 0
+| 1712550817859105814 | 3655 | 1 | TEEC_OpenSession---before ioctl
+| 1712550817908601871 | 3655 | 3 | TEEC_OpenSession---after ioctl
+| 1712550817908636720 | 3655 | 3 | TEEC_OpenSession---res == TEEC_SUCCESS
+| 1712550817908649104 | 3655 | 3 | teec_post_process_operation---!operation
+params after post : 0 0 0 0
+TEEC_OpenSession end
+| 1712550817908685584 | 3655 | 3 | teec_pre_process_operation---start
