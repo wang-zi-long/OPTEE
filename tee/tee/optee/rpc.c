@@ -549,7 +549,9 @@ void optee_handle_rpc(struct tee_context *ctx, struct optee_rpc_param *param,
 			reg_pair_from_64(&param->a1, &param->a2, pa);
 			reg_pair_from_64(&param->a4, &param->a5,
 					 (unsigned long)shm);
+			printk("| %d |optee_handle_rpc()---ALLOC111\n", task_pid_nr(current));
 		} else {
+			printk("| %d |optee_handle_rpc()---ALLOC111\n", task_pid_nr(current));
 			param->a1 = 0;
 			param->a2 = 0;
 			param->a4 = 0;

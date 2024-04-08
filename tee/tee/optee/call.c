@@ -183,6 +183,10 @@ u32 optee_do_call_with_arg(struct tee_context *ctx, phys_addr_t parg)
 				 param.a4, param.a5, param.a6, param.a7);
 
 			optee_handle_rpc(ctx, &param, &call_ctx);
+
+			printk("| %d |optee_do_call_with_arg()---after optee_handle_rpc()\n", task_pid_nr(current));
+			printk("| %d |param : %d %d %d %d %d %d %d %d\n", task_pid_nr(current), param.a0, param.a1, param.a2, param.a3,
+				 param.a4, param.a5, param.a6, param.a7);
 		} else {
 
 			printk("| %d |optee_do_call_with_arg()---break\n", task_pid_nr(current));
