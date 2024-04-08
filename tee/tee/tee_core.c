@@ -490,6 +490,8 @@ static int tee_ioctl_open_session(struct tee_context *ctx,
 	struct tee_param *params = NULL;
 	bool have_session = false;
 
+	printk("| %d |tee_ioctl_open_session()---tee_ioctl_open_session start\n", task_pid_nr(current));
+
 	if (!ctx->teedev->desc->ops->open_session)
 		return -EINVAL;
 
@@ -525,7 +527,11 @@ static int tee_ioctl_open_session(struct tee_context *ctx,
 		goto out;
 	}
 
+	printk("| %d |tee_ioctl_open_session()---bfore open_session\n", task_pid_nr(current));
+
 	rc = ctx->teedev->desc->ops->open_session(ctx, &arg, params);
+
+	printk("| %d |tee_ioctl_open_session()---after open_session\n", task_pid_nr(current));
 	if (rc)
 		goto out;
 	have_session = true;
@@ -536,7 +542,11 @@ static int tee_ioctl_open_session(struct tee_context *ctx,
 		rc = -EFAULT;
 		goto out;
 	}
+
+	
+
 	rc = params_to_user(uparams, arg.num_params, params);
+
 out:
 	/*
 	 * If we've succeeded to open the session but failed to communicate

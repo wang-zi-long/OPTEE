@@ -239,6 +239,8 @@ int amdtee_open_session(struct tee_context *ctx,
 	int rc, i;
 	void *ta;
 
+	
+
 	if (arg->clnt_login != TEE_IOCTL_LOGIN_PUBLIC) {
 		pr_err("unsupported client login method\n");
 		return -EINVAL;
