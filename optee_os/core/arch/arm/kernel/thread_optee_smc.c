@@ -32,6 +32,10 @@ static_assert(NOTIF_VALUE_DO_BOTTOM_HALF ==
 
 void thread_handle_fast_smc(struct thread_smc_args *args)
 {
+	IMSG("thread_handle_fast_smc()---start111\n");
+	EMSG("thread_handle_fast_smc()---start222\n");
+	DMSG("thread_handle_fast_smc()---start333\n");
+
 	thread_check_canaries();
 
 	if (IS_ENABLED(CFG_NS_VIRTUALIZATION) &&

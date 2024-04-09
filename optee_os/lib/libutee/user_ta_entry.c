@@ -342,6 +342,7 @@ static TEE_Result entry_open_session(unsigned long session_id,
 	from_utee_params(params, &param_types, up);
 	ta_header_save_params(param_types, params);
 
+	IMSG("entry_open_session!!!\n");
 	res = TA_OpenSessionEntryPoint(param_types, params,
 				       &session->session_ctx);
 

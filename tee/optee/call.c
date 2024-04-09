@@ -137,6 +137,11 @@ u32 optee_do_call_with_arg(struct tee_context *ctx, phys_addr_t parg)
 	/* Initialize waiter */
 	optee_cq_wait_init(&optee->call_queue, &w);
 
+	printk("| %d |optee_do_call_with_arg()---start\n", task_pid_nr(current));
+	printk("parg : %lld\n", parg);
+	printk("w.done : %d\n", w.c.done);
+
+
 	printk("| %d |optee_do_call_with_arg()---before while\n", task_pid_nr(current));
 
 	while (true) {
@@ -178,6 +183,10 @@ u32 optee_do_call_with_arg(struct tee_context *ctx, phys_addr_t parg)
 				 param.a4, param.a5, param.a6, param.a7);
 
 			optee_handle_rpc(ctx, &param, &call_ctx);
+
+			printk("| %d |optee_do_call_with_arg()---after optee_handle_rpc()\n", task_pid_nr(current));
+			printk("| %d |param : %d %d %d %d %d %d %d %d\n", task_pid_nr(current), param.a0, param.a1, param.a2, param.a3,
+				 param.a4, param.a5, param.a6, param.a7);
 		} else {
 
 			printk("| %d |optee_do_call_with_arg()---break\n", task_pid_nr(current));
@@ -244,6 +253,8 @@ int optee_open_session(struct tee_context *ctx,
 	struct optee_session *sess = NULL;
 	uuid_t client_uuid;
 
+	printk("| %d |optee_open_session()---start\n", task_pid_nr(current));
+
 	/* +2 for the meta parameters added below */
 	shm = get_msg_arg(ctx, arg->num_params + 2, &msg_arg, &msg_parg);
 	if (IS_ERR(shm))
@@ -279,10 +290,14 @@ int optee_open_session(struct tee_context *ctx,
 		goto out;
 	}
 
+	printk("| %d |optee_open_session()---before optee_do_call_with_arg\n", task_pid_nr(current));
+
 	if (optee_do_call_with_arg(ctx, msg_parg)) {
 		msg_arg->ret = TEEC_ERROR_COMMUNICATION;
 		msg_arg->ret_origin = TEEC_ORIGIN_COMMS;
 	}
+
+	printk("| %d |optee_open_session()---after optee_do_call_with_arg\n", task_pid_nr(current));
 
 	if (msg_arg->ret == TEEC_SUCCESS) {
 		/* A new session has been created, add it to the list. */
