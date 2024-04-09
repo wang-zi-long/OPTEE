@@ -137,41 +137,41 @@ u32 optee_do_call_with_arg(struct tee_context *ctx, phys_addr_t parg)
 	/* Initialize waiter */
 	optee_cq_wait_init(&optee->call_queue, &w);
 
-	printk("| %d |optee_do_call_with_arg()---start\n", task_pid_nr(current));
+	printk("| %d | %d |optee_do_call_with_arg()---start\n", task_pid_nr(current), get_cpu());
 	printk("parg : %lld\n", parg);
 	printk("w.done : %d\n", w.c.done);
 
 
-	printk("| %d |optee_do_call_with_arg()---before while\n", task_pid_nr(current));
+	printk("| %d | %d |optee_do_call_with_arg()---before while\n", task_pid_nr(current), get_cpu());
 
 	while (true) {
 		struct arm_smccc_res res;
 
-		printk("| %d |optee_do_call_with_arg()---before invoke_fn\n", task_pid_nr(current));
-		printk("| %d |param : %d %d %d %d %d %d %d %d\n", task_pid_nr(current), param.a0, param.a1, param.a2, param.a3,
+		printk("| %d | %d |optee_do_call_with_arg()---before invoke_fn\n", task_pid_nr(current), get_cpu());
+		printk("| %d | %d |param : %d %d %d %d %d %d %d %d\n", task_pid_nr(current), get_cpu(), param.a0, param.a1, param.a2, param.a3,
 				 param.a4, param.a5, param.a6, param.a7);
 
 		optee->invoke_fn(param.a0, param.a1, param.a2, param.a3,
 				 param.a4, param.a5, param.a6, param.a7,
 				 &res);
 
-		printk("| %d |optee_do_call_with_arg()---after invoke_fn\n", task_pid_nr(current));
-		printk("| %d |res : %ld %ld %ld %ld\n", task_pid_nr(current), res.a0, res.a1, res.a2, res.a3);
+		printk("| %d | %d |optee_do_call_with_arg()---after invoke_fn\n", task_pid_nr(current), get_cpu());
+		printk("| %d | %d |res : %ld %ld %ld %ld\n", task_pid_nr(current), get_cpu(), res.a0, res.a1, res.a2, res.a3);
 
 		if (res.a0 == OPTEE_SMC_RETURN_ETHREAD_LIMIT) {
 			/*
 			 * Out of threads in secure world, wait for a thread
 			 * become available.
 			 */
-			printk("| %d |optee_do_call_with_arg()---ETHREAD_LIMIT\n", task_pid_nr(current));
+			printk("| %d | %d |optee_do_call_with_arg()---ETHREAD_LIMIT\n", task_pid_nr(current), get_cpu());
 
 			optee_cq_wait_for_completion(&optee->call_queue, &w);
 		} else if (OPTEE_SMC_RETURN_IS_RPC(res.a0)) {
 
-			printk("| %d |optee_do_call_with_arg()---IS_RPC\n", task_pid_nr(current));
+			printk("| %d | %d |optee_do_call_with_arg()---IS_RPC\n", task_pid_nr(current), get_cpu());
 
 			if (need_resched()){
-				printk("| %d |optee_do_call_with_arg()---need_resched()\n", task_pid_nr(current));
+				printk("| %d | %d |optee_do_call_with_arg()---need_resched()\n", task_pid_nr(current), get_cpu());
 				cond_resched();
 			}
 			param.a0 = res.a0;
@@ -179,17 +179,17 @@ u32 optee_do_call_with_arg(struct tee_context *ctx, phys_addr_t parg)
 			param.a2 = res.a2;
 			param.a3 = res.a3;
 
-			printk("| %d |param : %d %d %d %d %d %d %d %d\n", task_pid_nr(current), param.a0, param.a1, param.a2, param.a3,
+			printk("| %d | %d |param : %d %d %d %d %d %d %d %d\n", task_pid_nr(current), get_cpu(), param.a0, param.a1, param.a2, param.a3,
 				 param.a4, param.a5, param.a6, param.a7);
 
 			optee_handle_rpc(ctx, &param, &call_ctx);
 
-			printk("| %d |optee_do_call_with_arg()---after optee_handle_rpc()\n", task_pid_nr(current));
-			printk("| %d |param : %d %d %d %d %d %d %d %d\n", task_pid_nr(current), param.a0, param.a1, param.a2, param.a3,
+			printk("| %d | %d |optee_do_call_with_arg()---after optee_handle_rpc()\n", task_pid_nr(current), get_cpu());
+			printk("| %d | %d |param : %d %d %d %d %d %d %d %d\n", task_pid_nr(current), get_cpu(), param.a0, param.a1, param.a2, param.a3,
 				 param.a4, param.a5, param.a6, param.a7);
 		} else {
 
-			printk("| %d |optee_do_call_with_arg()---break\n", task_pid_nr(current));
+			printk("| %d | %d |optee_do_call_with_arg()---break\n", task_pid_nr(current), get_cpu());
 
 			ret = res.a0;
 			break;
@@ -253,7 +253,7 @@ int optee_open_session(struct tee_context *ctx,
 	struct optee_session *sess = NULL;
 	uuid_t client_uuid;
 
-	printk("| %d |optee_open_session()---start\n", task_pid_nr(current));
+	printk("| %d | %d |optee_open_session()---start\n", task_pid_nr(current), get_cpu());
 
 	/* +2 for the meta parameters added below */
 	shm = get_msg_arg(ctx, arg->num_params + 2, &msg_arg, &msg_parg);
@@ -290,14 +290,14 @@ int optee_open_session(struct tee_context *ctx,
 		goto out;
 	}
 
-	printk("| %d |optee_open_session()---before optee_do_call_with_arg\n", task_pid_nr(current));
+	printk("| %d | %d |optee_open_session()---before optee_do_call_with_arg\n", task_pid_nr(current), get_cpu());
 
 	if (optee_do_call_with_arg(ctx, msg_parg)) {
 		msg_arg->ret = TEEC_ERROR_COMMUNICATION;
 		msg_arg->ret_origin = TEEC_ORIGIN_COMMS;
 	}
 
-	printk("| %d |optee_open_session()---after optee_do_call_with_arg\n", task_pid_nr(current));
+	printk("| %d | %d |optee_open_session()---after optee_do_call_with_arg\n", task_pid_nr(current), get_cpu());
 
 	if (msg_arg->ret == TEEC_SUCCESS) {
 		/* A new session has been created, add it to the list. */
@@ -365,7 +365,7 @@ int optee_invoke_func(struct tee_context *ctx, struct tee_ioctl_invoke_arg *arg,
 	struct optee_session *sess;
 	int rc;
 
-	printk("| %d |optee_invoke_func()---start\n", task_pid_nr(current));
+	printk("| %d | %d |optee_invoke_func()---start\n", task_pid_nr(current), get_cpu());
 
 	/* Check that the session is valid */
 	mutex_lock(&ctxdata->mutex);

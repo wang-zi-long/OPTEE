@@ -372,12 +372,12 @@ static void entry_open_session(struct optee_msg_arg *arg, uint32_t num_params)
 	if (res != TEE_SUCCESS)
 		goto cleanup_shm_refs;
 
-	IMSG("entry_open_session()---before tee_ta_open_session\n");
+	// IMSG("entry_open_session()---before tee_ta_open_session\n");
 
 	res = tee_ta_open_session(&err_orig, &s, &tee_open_sessions, &uuid,
 				  &clnt_id, TEE_TIMEOUT_INFINITE, &param);
 
-	IMSG("entry_open_session()---after tee_ta_open_session\n");
+	// IMSG("entry_open_session()---after tee_ta_open_session\n");
 
 	if (res != TEE_SUCCESS)
 		s = NULL;

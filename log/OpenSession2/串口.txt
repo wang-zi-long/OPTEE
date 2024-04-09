@@ -1,0 +1,8 @@
+I/TC: tee_ta_init_session()---before tee_ta_init_user_ta_session
+I/TC: tee_ta_init_user_ta_session()---condvar_init
+I/TC: tee_ta_init_user_ta_session()---set_ta_ctx_ops
+I/TC: tee_ta_init_user_ta_session()---vm_info_init
+I/TC: tee_ta_init_user_ta_session()---mutex_lock
+I/TC: tee_ta_init_user_ta_session()---mutex_unlock
+I/TC: tee_ta_init_user_ta_session()---ts_push_current_session
+I/TC: tee_ta_init_user_ta_session()---ldelf_load_ldelf
