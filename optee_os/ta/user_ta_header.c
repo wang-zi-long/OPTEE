@@ -200,7 +200,6 @@ TEE_Result TA_OpenSessionEntryPoint(uint32_t pt,
 				    TEE_Param params[TEE_NUM_PARAMS],
 				    void **sess_ctx)
 {
-	IMSG("TA_OpenSessionEntryPoint!!!\n");
 	return __ta_open_sess(pt, params, sess_ctx,
 			      __GP11_TA_OpenSessionEntryPoint);
 }

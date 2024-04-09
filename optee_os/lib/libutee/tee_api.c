@@ -370,7 +370,6 @@ TEE_Result __GP11_TEE_OpenTASession(const TEE_UUID *destination,
 				    TEE_TASessionHandle *session,
 				    uint32_t *returnOrigin)
 {
-	IMSG("__GP11_TEE_OpenTASession!!!\n");
 	TEE_Result res = TEE_SUCCESS;
 	struct utee_params up = { };
 	uint32_t s = 0;
@@ -427,7 +426,6 @@ TEE_Result TEE_InvokeTACommand(TEE_TASessionHandle session,
 				TEE_Param params[TEE_NUM_PARAMS],
 				uint32_t *returnOrigin)
 {
-	IMSG("TEE_InvokeTACommand!!!\n");
 	TEE_Result res = TEE_SUCCESS;
 	uint32_t ret_origin = TEE_ORIGIN_TEE;
 	struct utee_params up = { };
@@ -481,7 +479,6 @@ TEE_Result __GP11_TEE_InvokeTACommand(TEE_TASessionHandle session,
 				      __GP11_TEE_Param params[TEE_NUM_PARAMS],
 				      uint32_t *returnOrigin)
 {
-	IMSG("__GP11_TEE_InvokeTACommand!!!\n");
 	TEE_Result res = TEE_SUCCESS;
 	uint32_t ret_origin = TEE_ORIGIN_TEE;
 	struct utee_params up = { };

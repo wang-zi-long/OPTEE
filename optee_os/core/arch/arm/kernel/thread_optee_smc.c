@@ -32,10 +32,6 @@ static_assert(NOTIF_VALUE_DO_BOTTOM_HALF ==
 
 void thread_handle_fast_smc(struct thread_smc_args *args)
 {
-	IMSG("thread_handle_fast_smc()---start111\n");
-	EMSG("thread_handle_fast_smc()---start222\n");
-	DMSG("thread_handle_fast_smc()---start333\n");
-
 	thread_check_canaries();
 
 	if (IS_ENABLED(CFG_NS_VIRTUALIZATION) &&
@@ -71,15 +67,21 @@ uint32_t thread_handle_std_smc(uint32_t a0, uint32_t a1, uint32_t a2,
 	 * thread_rpc().
 	 */
 	if (a0 == OPTEE_SMC_CALL_RETURN_FROM_RPC) {
+		// IMSG("thread_handle_std_smc()---OPTEE_SMC_CALL_RETURN_FROM_RPC111\n");
 		thread_resume_from_rpc(a3, a1, a2, a4, a5);
 		rv = OPTEE_SMC_RETURN_ERESUME;
 	} else {
+		// IMSG("thread_handle_std_smc()---OPTEE_SMC_CALL_RETURN_FROM_RPC222\n");
 		thread_alloc_and_run(a0, a1, a2, a3, 0, 0);
 		rv = OPTEE_SMC_RETURN_ETHREAD_LIMIT;
 	}
 
-	if (IS_ENABLED(CFG_NS_VIRTUALIZATION))
+	if (IS_ENABLED(CFG_NS_VIRTUALIZATION)){
+		// IMSG("thread_handle_std_smc()---before virt_unset_guest\n");
 		virt_unset_guest();
+	}
+
+	// IMSG("thread_handle_std_smc()---end\n");
 
 	return rv;
 }

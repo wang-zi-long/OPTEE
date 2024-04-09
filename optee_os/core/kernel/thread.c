@@ -472,8 +472,6 @@ void thread_init_threads(void)
 
 	mutex_lockdep_init();
 
-	IMSG("CFG_NUM_THREADS : %d\n", CFG_NUM_THREADS);
-
 	for (n = 0; n < CFG_NUM_THREADS; n++)
 		TAILQ_INIT(&threads[n].tsd.sess_stack);
 }

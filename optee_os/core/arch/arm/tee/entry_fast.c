@@ -14,7 +14,6 @@
 #include <optee_msg.h>
 #include <sm/optee_smc.h>
 #include <tee/entry_fast.h>
-#include <stdio.h>
 
 #ifdef CFG_CORE_RESERVED_SHM
 static void tee_entry_get_shm_config(struct thread_smc_args *args)
@@ -224,81 +223,61 @@ static void get_async_notif_value(struct thread_smc_args *args)
  */
 void __tee_entry_fast(struct thread_smc_args *args)
 {
-	IMSG("__tee_entry_fast()---start111\n");
-	EMSG("__tee_entry_fast()---start222\n");
-	DMSG("__tee_entry_fast()---start333\n");
-
-	IMSG("__tee_entry_fast()---args : %ld %ld %ld %ld %ld %ld %ld %ld\n", args->a0, args->a1, args->a2, args->a3, args->a4, args->a5, args->a6, args->a7);
 	switch (args->a0) {
+
 	/* Generic functions */
 	case OPTEE_SMC_CALLS_COUNT:
-		IMSG("__tee_entry_fast()---OPTEE_SMC_CALLS_COUNT : %d\n", OPTEE_SMC_CALLS_COUNT);
 		tee_entry_get_api_call_count(args);
 		break;
 	case OPTEE_SMC_CALLS_UID:
-		IMSG("__tee_entry_fast()---OPTEE_SMC_CALLS_UID : %d\n", OPTEE_SMC_CALLS_UID);
 		tee_entry_get_api_uuid(args);
 		break;
 	case OPTEE_SMC_CALLS_REVISION:
-		IMSG("__tee_entry_fast()---OPTEE_SMC_CALLS_REVISION : %d\n", OPTEE_SMC_CALLS_REVISION);
 		tee_entry_get_api_revision(args);
 		break;
 	case OPTEE_SMC_CALL_GET_OS_UUID:
-		IMSG("__tee_entry_fast()---OPTEE_SMC_CALL_GET_OS_UUID : %d\n", OPTEE_SMC_CALL_GET_OS_UUID);
 		tee_entry_get_os_uuid(args);
 		break;
 	case OPTEE_SMC_CALL_GET_OS_REVISION:
-		IMSG("__tee_entry_fast()---OPTEE_SMC_CALL_GET_OS_REVISION : %d\n", OPTEE_SMC_CALL_GET_OS_REVISION);
 		tee_entry_get_os_revision(args);
 		break;
 
 	/* OP-TEE specific SMC functions */
 #ifdef CFG_CORE_RESERVED_SHM
 	case OPTEE_SMC_GET_SHM_CONFIG:
-		IMSG("__tee_entry_fast()---OPTEE_SMC_GET_SHM_CONFIG : %d\n", OPTEE_SMC_GET_SHM_CONFIG);
 		tee_entry_get_shm_config(args);
 		break;
 #endif
 	case OPTEE_SMC_L2CC_MUTEX:
-		IMSG("__tee_entry_fast()---OPTEE_SMC_L2CC_MUTEX : %d\n", OPTEE_SMC_L2CC_MUTEX);
 		tee_entry_fastcall_l2cc_mutex(args);
 		break;
 	case OPTEE_SMC_EXCHANGE_CAPABILITIES:
-		IMSG("__tee_entry_fast()---OPTEE_SMC_EXCHANGE_CAPABILITIES : %d\n", OPTEE_SMC_EXCHANGE_CAPABILITIES);
 		tee_entry_exchange_capabilities(args);
 		break;
 	case OPTEE_SMC_DISABLE_SHM_CACHE:
-		IMSG("__tee_entry_fast()---OPTEE_SMC_DISABLE_SHM_CACHE : %d\n", OPTEE_SMC_DISABLE_SHM_CACHE);
 		tee_entry_disable_shm_cache(args);
 		break;
 	case OPTEE_SMC_ENABLE_SHM_CACHE:
-		IMSG("__tee_entry_fast()---OPTEE_SMC_ENABLE_SHM_CACHE : %d\n", OPTEE_SMC_ENABLE_SHM_CACHE);
 		tee_entry_enable_shm_cache(args);
 		break;
 	case OPTEE_SMC_BOOT_SECONDARY:
-		IMSG("__tee_entry_fast()---OPTEE_SMC_BOOT_SECONDARY : %d\n", OPTEE_SMC_BOOT_SECONDARY);
 		tee_entry_boot_secondary(args);
 		break;
 	case OPTEE_SMC_GET_THREAD_COUNT:
-		IMSG("__tee_entry_fast()---OPTEE_SMC_GET_THREAD_COUNT : %d\n", OPTEE_SMC_GET_THREAD_COUNT);
 		tee_entry_get_thread_count(args);
 		break;
 
 #if defined(CFG_NS_VIRTUALIZATION)
 	case OPTEE_SMC_VM_CREATED:
-		IMSG("__tee_entry_fast()---OPTEE_SMC_VM_CREATED : %d\n", OPTEE_SMC_VM_CREATED);
 		tee_entry_vm_created(args);
 		break;
 	case OPTEE_SMC_VM_DESTROYED:
-		IMSG("__tee_entry_fast()---OPTEE_SMC_VM_DESTROYED : %d\n", OPTEE_SMC_VM_DESTROYED);
 		tee_entry_vm_destroyed(args);
 		break;
 #endif
 
 	case OPTEE_SMC_ENABLE_ASYNC_NOTIF:
-		IMSG("__tee_entry_fast()---OPTEE_SMC_ENABLE_ASYNC_NOTIF : %d\n", OPTEE_SMC_ENABLE_ASYNC_NOTIF);
 		if (IS_ENABLED(CFG_CORE_ASYNC_NOTIF)) {
-			IMSG("__tee_entry_fast()---IS_ENABLED(CFG_CORE_ASYNC_NOTIF)\n");
 			notif_deliver_atomic_event(NOTIF_EVENT_STARTED);
 			args->a0 = OPTEE_SMC_RETURN_OK;
 		} else {
@@ -306,21 +285,16 @@ void __tee_entry_fast(struct thread_smc_args *args)
 		}
 		break;
 	case OPTEE_SMC_GET_ASYNC_NOTIF_VALUE:
-		IMSG("__tee_entry_fast()---OPTEE_SMC_GET_ASYNC_NOTIF_VALUE : %d\n", OPTEE_SMC_GET_ASYNC_NOTIF_VALUE);
-		if (IS_ENABLED(CFG_CORE_ASYNC_NOTIF)){
-			IMSG("__tee_entry_fast()---IS_ENABLED(CFG_CORE_ASYNC_NOTIF)\n");
+		if (IS_ENABLED(CFG_CORE_ASYNC_NOTIF))
 			get_async_notif_value(args);
-		}
 		else
 			args->a0 = OPTEE_SMC_RETURN_UNKNOWN_FUNCTION;
 		break;
 
 	default:
-		IMSG("__tee_entry_fast()---default\n");
 		args->a0 = OPTEE_SMC_RETURN_UNKNOWN_FUNCTION;
 		break;
 	}
-	IMSG("__tee_entry_fast()---args : %ld %ld %ld %ld %ld %ld %ld %ld\n", args->a0, args->a1, args->a2, args->a3, args->a4, args->a5, args->a6, args->a7);
 }
 
 size_t tee_entry_generic_get_api_call_count(void)

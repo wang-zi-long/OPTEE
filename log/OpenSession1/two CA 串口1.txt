@@ -1,0 +1,24 @@
+I/TC: entry_open_session()---before tee_ta_open_session
+I/TC: tee_ta_open_session()---start
+I/TC: tee_ta_init_session()---before mutex_lock
+I/TC: tee_ta_init_session()---after mutex_lock
+I/TC: tee_ta_init_session()---after tee_ta_init_session_with_context
+I/TC: tee_ta_init_session()---after mutex_unlock
+I/TC: tee_ta_init_session()---after stmm_init_session
+I/TC: tee_ta_init_session()---after tee_ta_init_pseudo_ta_session
+I/TC: tee_ta_init_session()---after tee_ta_init_user_ta_session
+I/TC: tee_ta_open_session()---after tee_ta_init_session
+I/TC: tee_ta_open_session()---after check_params
+I/TC: tee_ta_open_session()---ts_ctx
+I/TC: tee_ta_open_session()---no panicked
+I/TC: tee_ta_open_session()---tee_ta_try_set_busy111
+I/TC: entry_open_session()---after tee_ta_open_session
+
+
+I/TC: tee_ta_open_session()---start
+I/TC: tee_ta_init_session()---before mutex_lock
+I/TC: tee_ta_init_session()---after mutex_lock
+I/TC: tee_ta_init_session()---after tee_ta_init_session_with_context
+I/TC: tee_ta_init_session()---after mutex_unlock
+I/TC: tee_ta_init_session()---after stmm_init_session
+I/TC: tee_ta_init_session()---after tee_ta_init_pseudo_ta_session

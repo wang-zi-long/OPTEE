@@ -360,28 +360,24 @@ static void entry_open_session(struct optee_msg_arg *arg, uint32_t num_params)
 	size_t num_meta;
 	uint64_t saved_attr[TEE_NUM_PARAMS] = { 0 };
 
-	IMSG("entry_open_session!!!111\n");
+	// IMSG("entry_open_session()---start\n");
 
 	res = get_open_session_meta(num_params, arg->params, &num_meta, &uuid,
 				    &clnt_id);
-	if (res != TEE_SUCCESS){
-		IMSG("entry_open_session---goto out\n");
+	if (res != TEE_SUCCESS)
 		goto out;
-	}
 
 	res = copy_in_params(arg->params + num_meta, num_params - num_meta,
 			     &param, saved_attr);
-	if (res != TEE_SUCCESS){
-		IMSG("entry_open_session---goto cleanup_shm_refs\n");
+	if (res != TEE_SUCCESS)
 		goto cleanup_shm_refs;
-	}
 
-	IMSG("entry_open_session---before tee_ta_open_session\n");
-	
+	IMSG("entry_open_session()---before tee_ta_open_session\n");
+
 	res = tee_ta_open_session(&err_orig, &s, &tee_open_sessions, &uuid,
 				  &clnt_id, TEE_TIMEOUT_INFINITE, &param);
 
-	IMSG("entry_open_session---after tee_ta_open_session\n");
+	IMSG("entry_open_session()---after tee_ta_open_session\n");
 
 	if (res != TEE_SUCCESS)
 		s = NULL;
@@ -548,8 +544,6 @@ TEE_Result __weak tee_entry_std(struct optee_msg_arg *arg, uint32_t num_params)
  */
 TEE_Result __tee_entry_std(struct optee_msg_arg *arg, uint32_t num_params)
 {
-	IMSG("__tee_entry_std!!!\n");
-
 	TEE_Result res = TEE_SUCCESS;
 
 	/* Enable foreign interrupts for STD calls */
