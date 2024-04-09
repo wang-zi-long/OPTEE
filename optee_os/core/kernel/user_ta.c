@@ -437,7 +437,7 @@ TEE_Result tee_ta_init_user_ta_session(const TEE_UUID *uuid,
 	condvar_init(&utc->ta_ctx.busy_cv);
 	utc->ta_ctx.ref_count = 1;
 
-	IMSG("tee_ta_init_user_ta_session()---condvar_init\n");
+	// IMSG("tee_ta_init_user_ta_session()---condvar_init\n");
 
 	/*
 	 * Set context TA operation structure. It is required by generic
@@ -445,15 +445,15 @@ TEE_Result tee_ta_init_user_ta_session(const TEE_UUID *uuid,
 	 */
 	set_ta_ctx_ops(&utc->ta_ctx);
 
-	IMSG("tee_ta_init_user_ta_session()---set_ta_ctx_ops\n");
+	// IMSG("tee_ta_init_user_ta_session()---set_ta_ctx_ops\n");
 
 	utc->ta_ctx.ts_ctx.uuid = *uuid;
 	res = vm_info_init(&utc->uctx, &utc->ta_ctx.ts_ctx);
 
-	IMSG("tee_ta_init_user_ta_session()---vm_info_init\n");
+	// IMSG("tee_ta_init_user_ta_session()---vm_info_init\n");
 
 	if (res){
-		IMSG("tee_ta_init_user_ta_session()---goto out111\n");
+		// IMSG("tee_ta_init_user_ta_session()---goto out111\n");
 		goto out;
 	}
 
@@ -461,12 +461,12 @@ TEE_Result tee_ta_init_user_ta_session(const TEE_UUID *uuid,
 
 #ifdef CFG_TA_PAUTH
 	crypto_rng_read(&utc->uctx.keys, sizeof(utc->uctx.keys));
-	IMSG("tee_ta_init_user_ta_session()---crypto_rng_read\n");
+	// IMSG("tee_ta_init_user_ta_session()---crypto_rng_read\n");
 #endif
 
 	mutex_lock(&tee_ta_mutex);
 
-	IMSG("tee_ta_init_user_ta_session()---mutex_lock\n");
+	// IMSG("tee_ta_init_user_ta_session()---mutex_lock\n");
 
 	s->ts_sess.ctx = &utc->ta_ctx.ts_ctx;
 	s->ts_sess.handle_scall = s->ts_sess.ctx->ops->handle_scall;
@@ -478,26 +478,26 @@ TEE_Result tee_ta_init_user_ta_session(const TEE_UUID *uuid,
 	TAILQ_INSERT_TAIL(&tee_ctxes, &utc->ta_ctx, link);
 	mutex_unlock(&tee_ta_mutex);
 
-	IMSG("tee_ta_init_user_ta_session()---mutex_unlock\n");
+	// IMSG("tee_ta_init_user_ta_session()---mutex_unlock\n");
 	/*
 	 * We must not hold tee_ta_mutex while allocating page tables as
 	 * that may otherwise lead to a deadlock.
 	 */
 	ts_push_current_session(&s->ts_sess);
 
-	IMSG("tee_ta_init_user_ta_session()---ts_push_current_session\n");
+	// IMSG("tee_ta_init_user_ta_session()---ts_push_current_session\n");
 
 	res = ldelf_load_ldelf(&utc->uctx);
 
-	IMSG("tee_ta_init_user_ta_session()---ldelf_load_ldelf\n");
+	// IMSG("tee_ta_init_user_ta_session()---ldelf_load_ldelf\n");
 
 	if (!res){
-		res = ldelf_init_with_ldelf(&s->ts_sess, &utc->uctx);
 		IMSG("tee_ta_init_user_ta_session()---ldelf_init_with_ldelf\n");
+		res = ldelf_init_with_ldelf(&s->ts_sess, &utc->uctx);
 	}
-		
-	ts_pop_current_session();
+
 	IMSG("tee_ta_init_user_ta_session()---ts_pop_current_session\n");
+	ts_pop_current_session();
 
 	mutex_lock(&tee_ta_mutex);
 
@@ -510,6 +510,7 @@ TEE_Result tee_ta_init_user_ta_session(const TEE_UUID *uuid,
 
 	/* The state has changed for the context, notify eventual waiters. */
 	condvar_broadcast(&tee_ta_init_cv);
+	
 	IMSG("tee_ta_init_user_ta_session()---condvar_broadcast\n");
 
 	mutex_unlock(&tee_ta_mutex);

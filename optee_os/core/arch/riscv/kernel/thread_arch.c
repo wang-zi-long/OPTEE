@@ -320,6 +320,7 @@ static void __thread_alloc_and_run(uint32_t a0, uint32_t a1, uint32_t a2,
 		if (threads[n].state == THREAD_STATE_FREE) {
 			threads[n].state = THREAD_STATE_ACTIVE;
 			found_thread = true;
+			IMSG("__thread_alloc_and_run()---n : %d\n", n);
 			break;
 		}
 	}

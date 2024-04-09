@@ -137,9 +137,9 @@ u32 optee_do_call_with_arg(struct tee_context *ctx, phys_addr_t parg)
 	/* Initialize waiter */
 	optee_cq_wait_init(&optee->call_queue, &w);
 
-	printk("| %d | %d |optee_do_call_with_arg()---start\n", task_pid_nr(current), get_cpu());
-	printk("parg : %lld\n", parg);
-	printk("w.done : %d\n", w.c.done);
+	// printk("| %d | %d |optee_do_call_with_arg()---start\n", task_pid_nr(current), get_cpu());
+	// printk("parg : %lld\n", parg);
+	// printk("w.done : %d\n", w.c.done);
 
 
 	printk("| %d | %d |optee_do_call_with_arg()---before while\n", task_pid_nr(current), get_cpu());

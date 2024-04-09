@@ -67,21 +67,21 @@ uint32_t thread_handle_std_smc(uint32_t a0, uint32_t a1, uint32_t a2,
 	 * thread_rpc().
 	 */
 	if (a0 == OPTEE_SMC_CALL_RETURN_FROM_RPC) {
-		// IMSG("thread_handle_std_smc()---OPTEE_SMC_CALL_RETURN_FROM_RPC111\n");
+		IMSG("thread_handle_std_smc()---OPTEE_SMC_CALL_RETURN_FROM_RPC111\n");
 		thread_resume_from_rpc(a3, a1, a2, a4, a5);
 		rv = OPTEE_SMC_RETURN_ERESUME;
 	} else {
-		// IMSG("thread_handle_std_smc()---OPTEE_SMC_CALL_RETURN_FROM_RPC222\n");
+		IMSG("thread_handle_std_smc()---OPTEE_SMC_CALL_RETURN_FROM_RPC222\n");
 		thread_alloc_and_run(a0, a1, a2, a3, 0, 0);
 		rv = OPTEE_SMC_RETURN_ETHREAD_LIMIT;
 	}
 
 	if (IS_ENABLED(CFG_NS_VIRTUALIZATION)){
-		// IMSG("thread_handle_std_smc()---before virt_unset_guest\n");
+		IMSG("thread_handle_std_smc()---before virt_unset_guest\n");
 		virt_unset_guest();
 	}
 
-	// IMSG("thread_handle_std_smc()---end\n");
+	IMSG("thread_handle_std_smc()---end\n");
 
 	return rv;
 }
@@ -150,6 +150,9 @@ static void clear_prealloc_rpc_cache(struct thread_ctx *thr)
 static uint32_t call_entry_std(struct optee_msg_arg *arg, size_t num_params,
 			       struct optee_msg_arg *rpc_arg)
 {
+
+	IMSG("call_entry_std()---start()\n");
+
 	struct thread_ctx *thr = threads + thread_get_id();
 	uint32_t rv = 0;
 

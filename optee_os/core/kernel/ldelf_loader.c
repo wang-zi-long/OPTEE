@@ -132,6 +132,7 @@ TEE_Result ldelf_init_with_ldelf(struct ts_session *sess,
 		return res;
 	}
 
+	IMSG("ldelf_init_with_ldelf()---vm_check_access_rights()\n");
 	res = vm_check_access_rights(uctx,
 				     TEE_MEMORY_ACCESS_READ |
 				     TEE_MEMORY_ACCESS_ANY_OWNER,
