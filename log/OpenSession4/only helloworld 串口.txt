@@ -1,0 +1,222 @@
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run222()---n : 0
+I/TC: |0|call_entry_std()---start
+D/TC:?? 00 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA 8aaaf200-2450-11e4-abe2-0002a5d5c51b
+I/TC: |0|tee_ta_init_session()---before tee_ta_init_user_ta_session
+D/TC:?? 00 ldelf_load_ldelf:96 ldelf load address 0x40006000
+I/TC: |0|tee_ta_init_user_ta_session()---ldelf_init_with_ldelf
+I/)
+I/TC: |0|thread_enter_user_mode()---tee_ta_update_session_utime_resume()
+I/TC: |0|thread_enter_user_mode()---thread_get_pauth_keys()
+I/TC: |0|thread_enter_user_mode()---thread_mask_exceptions()
+I/TC: |0|thread_enter_user_mode()---__thread_enter_user_mode()
+D/LD:   ldelf:142 Loading TS 8aaaf200-2450-11e4-abe2-0002a5d5c51b
+F/TC:?? 00 trace_syscall:149 syscall #3 (syscall_get_property)
+F/TC:?? 00 trace_syscall:149 syscall #5 (syscall_open_ta_session)
+D/TC:?? 00 ldelf_syscall_open_bin:142 Lookup user TA ELF 8aaaf200-2450-11e4-abe2-0002a5d5c51b (early TA)
+D/TC:?? 00 ldelf_syscall_open_bin:in:142 Lookup user TA ELF 8aaaf200-2450-11e4-abe2-0002a5d5c51b (Secure Storage TA)
+I/TC: thread_handle_std_smc()-_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  305.350534] BUG: scheduling while atomic: optee_example_h/4476/0x00000015
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  305.402635] BUG:C: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  305.464324] BUG: scheduling while atomic: optee_example_h/4476/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  305.523420] BUG: scheduling while atomic: optee_example_h/4476/0x0000000a
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n 1
+��[  305.591050] BUG: scheduling while atomic: optee_example_h/4476/0x0000000a
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  305.643285] BUG: scheduling while atomic: optee_example_h/4476/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  305.695386] BUG: scheduling while atomic: optee_example_h/4476/0x0000000a
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  305.747367] BUG: scheduling while atomic: optee_example_h/4476/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0x90
+��[  305.814611] BUG: scheduling while atomic: optee_example_h/4476/0x0000000a
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  305.866519] BUG: scheduling while atomic: optee_example_h/4476/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  305.918539] BUG: scheduling while atomic: optee_example_h/4476/0x0000000a
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  305.970383] BUG: scheduling while atomic: optee_example_h/4476/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0xB6
+��[  306.048829] BUG: scheduling while atomic: optee_example_h/4476/0x0000000a
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  306.100683] BUG: scheduling while atomic: optee_example_h/4476/0x0000000a
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  306.159528] BUG: scheduling while atomic: optee_example_h/4476/0x0000000a
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  306.211346] BUG: scheduling while atomic: optee_example_h/4476/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+D/TC:?? 00 ldelf_syscall_open_bin:146 res=0xffff0008
+D/TC:?? 00 ldelf_syscall_open_bin:142 Lookup user TA ELF 8aaaf200-2450-11e4-abe2-0002a5d5c51b (REE)
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0x48
+��[  306.327168] BUG: scheduling while atomic: optee_example_h/4476/0x0000000a
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  306.392039] BUG: scheduling while atomic: optee_example_h/4476/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  306.444044] BUG: scheduling while atomic: optee_example_h/4476/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+D/TC:?? 00 ldelf_syscall_open_bin:146 res=0
+F/TC:?? 00 trace_syscall:149 syscall #7 (syscall_invoke_ta_command)
+F/TC:?? 00 trace_syscall:149 syscall #11 (syscall_mask_cancellation)
+F/TC:?? 00 trace_syscall:149 syscall #7 (syscall_invoke_ta_command)
+F/TC:?? 00 trace_syscall:149 syscall #3 (syscall_get_property)
+F/TC:?? 00 trace_syscall:149 syscall #8 (syscall_check_access_rights)
+F/TC:?? 00 trace_syscall:149 syscall #8 (syscall_check_access_rights)
+��[  306.646059] BUG: scheduling while atomic: optee_example_h/4476/0x0000000a
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  306.698227] BUG: scheduling while atomic: optee_example_h/4476/0x0000000a
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0x26
+��[  306.765506] BUG: scheduling while atomic: optee_example_h/4476/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  306.817388] BUG: scheduling while atomic: optee_example_h/4476/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  306.869239] BUG: scheduling while atomic: optee_example_h/4476/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  306.921270] BUG: scheduling while atomic: optee_example_h/4476/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0x11
+��[  306.988437] BUG: scheduling while atomic: optee_example_h/4476/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  307.040501] BUG: scheduling while atomic: optee_example_h/4476/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  307.092407] BUG: scheduling while atomic: optee_example_h/4476/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  307.144478] BUG: scheduling while atomic: optee_example_h/4476/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0x74
+��[  307.211788] BUG: scheduling while atomic: optee_example_h/4476/0x0000000a
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  307.263689] BUG: scheduling while atomic: optee_example_h/4476/0x0000000a
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  307.326779] BUG: scheduling while atomic: optee_example_h/4476/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  307.387302] BUG: scheduling while atomic: optee_example_h/4476/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0x65
+��[  307.454617] BUG: scheduling while atomic: optee_example_h/4476/0x0000000a
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  307.506854] BUG: scheduling while atomic: optee_example_h/4476/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  307.558656] BUG: scheduling while atomic: optee_example_h/4476/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+F/TC:?? 00 trace_syscall:149 syscall #6 (syscall_close_ta_session)
+��[  307.631743] BUG: scheduling while atomic: optee_example_h/4476/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+F/TC:?? 00 trace_syscall:149 syscall #3 (syscall_get_property)
+D/LD:   ldelf:176 ELF (8aaaf200-2450-11e4-abe2-0002a5d5c51b) at 0x4003c000
+I/TC: |0|thread_enter_user_mode()---thread_unmask_exceptions()
+I/TC: |0|ldelf_init_with_ldelf()---thread_user_clear_vfp()
+I/TC: |0|ldelf_init_with_ldelf()---ldelf_sess_cleanup()
+I/TC: |0|ldelf_init_with_ldelf()---vm_check_access_rights()
+I/TC: |0|tee_ta_init_user_ta_session()---ts_pop_current_session
+I/TC: |0|tee_ta_init_user_ta_session()---condvar_broadcast
+I/TC: |0|thread_enter_user_mode()---tee_ta_update_session_utime_resume()
+I/TC: |0|thread_enter_user_mode()---thread_get_pauth_keys()
+I/TC: |0|thread_enter_user_mode()---thread_mask_exceptions()
+I/TC: |0|thread_enter_user_mode()---__thread_enter_user_mode()
+F/TC:?? 00 trace_syscall:149 syscall #8 (syscall_check_access_rights)
+F/TC:?? 00 trace_syscall:149 syscall #8 (syscall_check_access_rights)
+F/TC:?? 00 trace_syscall:149 syscall #4 (syscall_get_property_name_to_index)
+D/TA:   TA_CreateEntryPoint:40 has been called
+D/TA:   __GP11_TA_OpenSessionEntryPoint:69 has been called
+I/TA: Hello World!
+I/TC: |0|thread_enter_user_mode()---thread_unmask_exceptions()
+��[  308.053196] BUG: scheduling while atomic: optee_example_h/4476/0x0000000a
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run222()---n : 0
+I/TC: |0|call_entry_std()---start
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0x32
+D/TC:?? 00 tee_ta_close_session:529 csess 0x103c190910 id 1
+D/TC:?? 00 tee_ta_close_session:548 Destroy session
+I/TC: |0|thread_enter_user_mode()---tee_ta_update_session_utime_resume()
+I/TC: |0|thread_enter_user_mode()---thread_get_pauth_keys()
+I/TC: |0|thread_enter_user_mode()---thread_mask_exceptions()
+I/TC: |0|thread_enter_user_mode()---__thread_enter_user_mode()
+I/TA: Goodbye!
+D/TA:   TA_DestroyEntryPoint:51 has been called
+I/TC: |0|thread_enter_user_mode()---thread_unmask_exceptions()
+D/TC:?? 00 destroy_context:326 Destroy TA ctx (0x103c1908b0)
+��[  308.340530] BUG: scheduling while atomic: optee_example_h/4476/0x00000010
+

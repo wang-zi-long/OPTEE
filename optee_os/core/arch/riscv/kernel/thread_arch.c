@@ -320,7 +320,7 @@ static void __thread_alloc_and_run(uint32_t a0, uint32_t a1, uint32_t a2,
 		if (threads[n].state == THREAD_STATE_FREE) {
 			threads[n].state = THREAD_STATE_ACTIVE;
 			found_thread = true;
-			IMSG("__thread_alloc_and_run()---n : %d\n", n);
+			IMSG("__thread_alloc_and_run111()---n : %ld\n", n);
 			break;
 		}
 	}
@@ -412,12 +412,15 @@ void thread_resume_from_rpc(uint32_t thread_id, uint32_t a0, uint32_t a1,
 	struct thread_core_local *l = thread_get_core_local();
 	bool found_thread = false;
 
+	IMSG("thread_resume_from_rpc111()---start\n");
+
 	assert(l->curr_thread == THREAD_ID_INVALID);
 
 	thread_lock_global();
 
 	if (n < CFG_NUM_THREADS && threads[n].state == THREAD_STATE_SUSPENDED) {
 		threads[n].state = THREAD_STATE_ACTIVE;
+		IMSG("thread_resume_from_rpc111()---n : %ld\n", n);
 		found_thread = true;
 	}
 

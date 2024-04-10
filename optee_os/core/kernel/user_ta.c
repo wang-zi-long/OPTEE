@@ -492,11 +492,11 @@ TEE_Result tee_ta_init_user_ta_session(const TEE_UUID *uuid,
 	// IMSG("tee_ta_init_user_ta_session()---ldelf_load_ldelf\n");
 
 	if (!res){
-		IMSG("tee_ta_init_user_ta_session()---ldelf_init_with_ldelf\n");
+		IMSG("|%d|tee_ta_init_user_ta_session()---ldelf_init_with_ldelf\n", thread_get_id());
 		res = ldelf_init_with_ldelf(&s->ts_sess, &utc->uctx);
 	}
 
-	IMSG("tee_ta_init_user_ta_session()---ts_pop_current_session\n");
+	IMSG("|%d|tee_ta_init_user_ta_session()---ts_pop_current_session\n", thread_get_id());
 	ts_pop_current_session();
 
 	mutex_lock(&tee_ta_mutex);
@@ -511,7 +511,7 @@ TEE_Result tee_ta_init_user_ta_session(const TEE_UUID *uuid,
 	/* The state has changed for the context, notify eventual waiters. */
 	condvar_broadcast(&tee_ta_init_cv);
 	
-	IMSG("tee_ta_init_user_ta_session()---condvar_broadcast\n");
+	IMSG("|%d|tee_ta_init_user_ta_session()---condvar_broadcast\n", thread_get_id());
 
 	mutex_unlock(&tee_ta_mutex);
 

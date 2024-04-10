@@ -114,15 +114,26 @@ TEE_Result ldelf_init_with_ldelf(struct ts_session *sess,
 	arg->uuid = uctx->ts_ctx->uuid;
 	sess->handle_scall = scall_handle_ldelf;
 
+	IMSG("|%d|ldelf_init_with_ldelf()---thread_enter_user_mode()\n", thread_get_id());
+
 	res = thread_enter_user_mode((vaddr_t)arg, 0, 0, 0,
 				     usr_stack, uctx->entry_func,
 				     is_32bit, &panicked, &panic_code);
 
 	sess->handle_scall = sess->ctx->ops->handle_scall;
+
+	IMSG("|%d|ldelf_init_with_ldelf()---thread_user_clear_vfp()\n", thread_get_id());
+
 	thread_user_clear_vfp(uctx);
+
+	IMSG("|%d|ldelf_init_with_ldelf()---ldelf_sess_cleanup()\n", thread_get_id());
+
 	ldelf_sess_cleanup(sess);
 
 	if (panicked) {
+
+		IMSG("|%d|ldelf_init_with_ldelf()---abort_print_current_ts()\n", thread_get_id());
+
 		abort_print_current_ts();
 		EMSG("ldelf panicked");
 		return TEE_ERROR_GENERIC;
@@ -132,7 +143,7 @@ TEE_Result ldelf_init_with_ldelf(struct ts_session *sess,
 		return res;
 	}
 
-	IMSG("ldelf_init_with_ldelf()---vm_check_access_rights()\n");
+	IMSG("|%d|ldelf_init_with_ldelf()---vm_check_access_rights()\n", thread_get_id());
 	res = vm_check_access_rights(uctx,
 				     TEE_MEMORY_ACCESS_READ |
 				     TEE_MEMORY_ACCESS_ANY_OWNER,

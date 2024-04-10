@@ -230,6 +230,7 @@ static void __thread_alloc_and_run(uint32_t a0, uint32_t a1, uint32_t a2,
 
 	for (n = 0; n < CFG_NUM_THREADS; n++) {
 		if (threads[n].state == THREAD_STATE_FREE) {
+			IMSG("__thread_alloc_and_run222()---n : %ld\n", n);
 			threads[n].state = THREAD_STATE_ACTIVE;
 			found_thread = true;
 			break;
@@ -367,10 +368,13 @@ void thread_resume_from_rpc(uint32_t thread_id, uint32_t a0, uint32_t a1,
 
 	assert(l->curr_thread == THREAD_ID_INVALID);
 
+	IMSG("thread_resume_from_rpc222()---start\n");
+
 	thread_lock_global();
 
 	if (n < CFG_NUM_THREADS && threads[n].state == THREAD_STATE_SUSPENDED) {
 		threads[n].state = THREAD_STATE_ACTIVE;
+		IMSG("thread_resume_from_rpc222()---n : %ld\n", n);
 		found_thread = true;
 	}
 
@@ -1011,7 +1015,11 @@ uint32_t thread_enter_user_mode(unsigned long a0, unsigned long a1,
 	struct thread_ctx_regs *regs = NULL;
 	struct thread_pauth_keys *keys = NULL;
 
+	IMSG("|%d|thread_enter_user_mode()---tee_ta_update_session_utime_resume()\n", thread_get_id());
+
 	tee_ta_update_session_utime_resume();
+
+	IMSG("|%d|thread_enter_user_mode()---thread_get_pauth_keys()\n", thread_get_id());
 
 	keys = thread_get_pauth_keys();
 
@@ -1022,6 +1030,8 @@ uint32_t thread_enter_user_mode(unsigned long a0, unsigned long a1,
 		return 0;
 	}
 
+	IMSG("|%d|thread_enter_user_mode()---thread_mask_exceptions()\n", thread_get_id());
+
 	exceptions = thread_mask_exceptions(THREAD_EXCP_ALL);
 	/*
 	 * We're using the per thread location of saved context registers
@@ -1031,7 +1041,13 @@ uint32_t thread_enter_user_mode(unsigned long a0, unsigned long a1,
 	 */
 	regs = thread_get_ctx_regs();
 	set_ctx_regs(regs, a0, a1, a2, a3, user_sp, entry_func, spsr, keys);
+
+	IMSG("|%d|thread_enter_user_mode()---__thread_enter_user_mode()\n", thread_get_id());
+
 	rc = __thread_enter_user_mode(regs, exit_status0, exit_status1);
+
+	IMSG("|%d|thread_enter_user_mode()---thread_unmask_exceptions()\n", thread_get_id());
+
 	thread_unmask_exceptions(exceptions);
 	return rc;
 }
