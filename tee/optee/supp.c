@@ -97,11 +97,11 @@ u32 optee_supp_thrd_req(struct tee_context *ctx, u32 func, size_t num_params,
 	if (!req)
 		return TEEC_ERROR_OUT_OF_MEMORY;
 
-	printk("| %d |optee_supp_thrd_req()---before init_completion\n", task_pid_nr(current));
+	// printk("| %d |optee_supp_thrd_req()---before init_completion\n", task_pid_nr(current));
 
 	init_completion(&req->c);
 
-	printk("| %d |optee_supp_thrd_req()---after init_completion\n", task_pid_nr(current));
+	// printk("| %d |optee_supp_thrd_req()---after init_completion\n", task_pid_nr(current));
 
 	req->func = func;
 	req->num_params = num_params;
@@ -110,21 +110,21 @@ u32 optee_supp_thrd_req(struct tee_context *ctx, u32 func, size_t num_params,
 	/* Insert the request in the request list */
 	mutex_lock(&supp->mutex);
 
-	printk("| %d |optee_supp_thrd_req()---after mutex_lock1\n", task_pid_nr(current));
+	// printk("| %d |optee_supp_thrd_req()---after mutex_lock1\n", task_pid_nr(current));
 
 	list_add_tail(&req->link, &supp->reqs);
 	req->in_queue = true;
 
-	printk("| %d |optee_supp_thrd_req()---after list_add_tail\n", task_pid_nr(current));
+	// printk("| %d |optee_supp_thrd_req()---after list_add_tail\n", task_pid_nr(current));
 
 	mutex_unlock(&supp->mutex);
 
-	printk("| %d |optee_supp_thrd_req()---after mutex_unlock1\n", task_pid_nr(current));
+	// printk("| %d |optee_supp_thrd_req()---after mutex_unlock1\n", task_pid_nr(current));
 
 	/* Tell an eventual waiter there's a new request */
 	complete(&supp->reqs_c);
 
-	printk("| %d |optee_supp_thrd_req()---after complete\n", task_pid_nr(current));
+	// printk("| %d |optee_supp_thrd_req()---after complete\n", task_pid_nr(current));
 
 	/*
 	 * Wait for supplicant to process and return result, once we've
@@ -139,12 +139,12 @@ u32 optee_supp_thrd_req(struct tee_context *ctx, u32 func, size_t num_params,
 
 		mutex_lock(&supp->mutex);
 
-		printk("| %d |optee_supp_thrd_req()---after mutex_lock2\n", task_pid_nr(current));
+		// printk("| %d |optee_supp_thrd_req()---after mutex_lock2\n", task_pid_nr(current));
 
 		interruptable = !supp->ctx;
 		if (interruptable) {
 
-			printk("| %d |optee_supp_thrd_req()---interruptable == true\n", task_pid_nr(current));
+			// printk("| %d |optee_supp_thrd_req()---interruptable == true\n", task_pid_nr(current));
 
 			/*
 			 * There's no supplicant available and since the
@@ -161,7 +161,7 @@ u32 optee_supp_thrd_req(struct tee_context *ctx, u32 func, size_t num_params,
 			 */
 			if (req->in_queue) {
 
-				printk("| %d |optee_supp_thrd_req()---req->in_queue == true\n", task_pid_nr(current));
+				// printk("| %d |optee_supp_thrd_req()---req->in_queue == true\n", task_pid_nr(current));
 
 				list_del(&req->link);
 				req->in_queue = false;
@@ -169,20 +169,20 @@ u32 optee_supp_thrd_req(struct tee_context *ctx, u32 func, size_t num_params,
 		}
 		mutex_unlock(&supp->mutex);
 
-		printk("| %d |optee_supp_thrd_req()---after mutex_unlock2\n", task_pid_nr(current));
+		// printk("| %d |optee_supp_thrd_req()---after mutex_unlock2\n", task_pid_nr(current));
 
 		if (interruptable) {
 			req->ret = TEEC_ERROR_COMMUNICATION;
 			break;
 		}
 
-		printk("| %d |optee_supp_thrd_req()---before wait\n", task_pid_nr(current));
+		// printk("| %d |optee_supp_thrd_req()---before wait\n", task_pid_nr(current));
 	}
 
 	ret = req->ret;
 	kfree(req);
 
-	printk("| %d |optee_supp_thrd_req()---end\n", task_pid_nr(current));
+	// printk("| %d |optee_supp_thrd_req()---end\n", task_pid_nr(current));
 
 	return ret;
 }
@@ -286,21 +286,21 @@ int optee_supp_recv(struct tee_context *ctx, u32 *func, u32 *num_params,
 	while (true) {
 		mutex_lock(&supp->mutex);
 
-		printk("| %d |optee_supp_recv()---after mutex_lock1\n", task_pid_nr(current));
+		// printk("| %d |optee_supp_recv()---after mutex_lock1\n", task_pid_nr(current));
 
 		req = supp_pop_entry(supp, *num_params - num_meta, &id);
 
-		printk("| %d |optee_supp_recv()---after supp_pop_entry\n", task_pid_nr(current));
+		// printk("| %d |optee_supp_recv()---after supp_pop_entry\n", task_pid_nr(current));
 
 		mutex_unlock(&supp->mutex);
 
-		printk("| %d |optee_supp_recv()---after mutex_unlock2\n", task_pid_nr(current));
+		// printk("| %d |optee_supp_recv()---after mutex_unlock2\n", task_pid_nr(current));
 
 		if (req) {
 			if (IS_ERR(req))
 				return PTR_ERR(req);
 
-			printk("| %d |optee_supp_recv()---out while\n", task_pid_nr(current));
+			// printk("| %d |optee_supp_recv()---out while\n", task_pid_nr(current));
 
 			break;
 		}
@@ -322,11 +322,11 @@ int optee_supp_recv(struct tee_context *ctx, u32 *func, u32 *num_params,
 		printk("| %d |optee_supp_recv()---after wait\n", task_pid_nr(current));
 	}
 
-	printk("| %d |optee_supp_recv()---after while\n", task_pid_nr(current));
+	// printk("| %d |optee_supp_recv()---after while\n", task_pid_nr(current));
 
 	if (num_meta) {
 
-		printk("| %d |optee_supp_recv()---num_meta != 0\n", task_pid_nr(current));
+		// printk("| %d |optee_supp_recv()---num_meta != 0\n", task_pid_nr(current));
 
 		/*
 		 * tee-supplicant support meta parameters -> requsts can be
@@ -339,12 +339,12 @@ int optee_supp_recv(struct tee_context *ctx, u32 *func, u32 *num_params,
 		param->u.value.c = 0;
 	} else {
 		mutex_lock(&supp->mutex);
-		printk("| %d |optee_supp_recv()---after mutex_lock2\n", task_pid_nr(current));
+		// printk("| %d |optee_supp_recv()---after mutex_lock2\n", task_pid_nr(current));
 
 		supp->req_id = id;
 		mutex_unlock(&supp->mutex);
 
-		printk("| %d |optee_supp_recv()---after mutex_unlock2\n", task_pid_nr(current));
+		// printk("| %d |optee_supp_recv()---after mutex_unlock2\n", task_pid_nr(current));
 	}
 
 	*func = req->func;
@@ -352,7 +352,7 @@ int optee_supp_recv(struct tee_context *ctx, u32 *func, u32 *num_params,
 	memcpy(param + num_meta, req->param,
 	       sizeof(struct tee_param) * req->num_params);
 
-	printk("| %d |optee_supp_recv()---end\n", task_pid_nr(current));
+	// printk("| %d |optee_supp_recv()---end\n", task_pid_nr(current));
 	
 	return 0;
 }
@@ -418,22 +418,22 @@ int optee_supp_send(struct tee_context *ctx, u32 ret, u32 num_params,
 
 	mutex_lock(&supp->mutex);
 
-	printk("| %d |optee_supp_send()---after mutex_lock1\n", task_pid_nr(current));
+	// printk("| %d |optee_supp_send()---after mutex_lock1\n", task_pid_nr(current));
 
 	req = supp_pop_req(supp, num_params, param, &num_meta);
 
-	printk("| %d |optee_supp_send()---after supp_pop_req\n", task_pid_nr(current));
+	// printk("| %d |optee_supp_send()---after supp_pop_req\n", task_pid_nr(current));
 	
 	mutex_unlock(&supp->mutex);
 
-	printk("| %d |optee_supp_send()---after mutex_unlock1\n", task_pid_nr(current));
+	// printk("| %d |optee_supp_send()---after mutex_unlock1\n", task_pid_nr(current));
 
 	if (IS_ERR(req)) {
 		/* Something is wrong, let supplicant restart. */
 		return PTR_ERR(req);
 	}
 
-	printk("| %d |optee_supp_send()---req->num_params : %ld\n", task_pid_nr(current), req->num_params);
+	// printk("| %d |optee_supp_send()---req->num_params : %ld\n", task_pid_nr(current), req->num_params);
 
 	/* Update out and in/out parameters */
 	for (n = 0; n < req->num_params; n++) {
@@ -461,12 +461,12 @@ int optee_supp_send(struct tee_context *ctx, u32 ret, u32 num_params,
 	}
 	req->ret = ret;
 
-	printk("| %d |optee_supp_send()---before complete\n", task_pid_nr(current));
+	// printk("| %d |optee_supp_send()---before complete\n", task_pid_nr(current));
 
 	/* Let the requesting thread continue */
 	complete(&req->c);
 
-	printk("| %d |optee_supp_send()---end\n", task_pid_nr(current));
+	// printk("| %d |optee_supp_send()---end\n", task_pid_nr(current));
 
 	return 0;
 }

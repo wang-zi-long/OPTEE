@@ -1,0 +1,151 @@
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run222()---n : 0
+I/TC: |0|call_entry_std()---start
+D/TC:?? 00 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA d96a5b40-c3e5-21e3-8794-1002a5d5c61b
+I/TC: |0|tee_ta_init_session()---before tee_ta_init_user_ta_session
+D/TC:?? 00 ldelf_load_ldelf:96 ldelf load address 0x40006000
+I/TC: |0|tee_ta_init_user_ta_session()---ldelf_init_with_ldelf
+I/TC: |0|ldelf_init_with_ldelf()---thread_enter_user_mode()
+I/TC: |0|thread_enter_user_mode()---tee_ta_update_session_utime_resume()
+I/TC: |0|thread_enter_user_mode()---thread_get_pauth_keys()
+I/TC: |0|thread_enter_user_mode()---thread_mask_exceptions()
+I/TC: |0|thread_enter_user_mode()---__thread_enter_user_mode()
+D/LD:   ldelf:142 Loading TS d96a5b40-c3e5-21e3-8794-1002a5d5c61b
+F/TC:?? 00 trace_syscall:149 syscall #3 (syscall_get_property)
+F/TC:?? 00 trace_syscall:149 syscall #5 (syscall_open_ta_session)
+D/TC:?? 00 ldelf_syscall_open_bin:142 Lookup user TA ELF d96a5b40-c3e5-21e3-8794-1002a5d5c61b (early TA)
+D/TC:?? 00 ldelf_syscall_open_bin:146 res=0xffff0008
+D/TC:?? 00 ldelf_syscall_open_bin:142 Lookup user TA ELF d96a5b40-c3e5-21e3-8794-1002a5d5c61b (Secure Storage TA)
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  345.567940] BUG: scheduling while atomic: optee_example_h/3668/0x00000014
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  345.620095] BUG: scheduling while atomic: optee_example_h/3668/0x0000000a
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  345.686304] BUG: scheduling while atomic: optee_example_h/3668/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  345.744996] BUG: scheduling while atomic: optee_example_h/3668/0x0000000a
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0x19
+��[  345.812536] BUG: scheduling while atomic: optee_example_h/3668/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  345.864515] BUG: scheduling while atomic: optee_example_h/3668/0x0000000a
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  345.916449] BUG: scheduling while atomic: optee_example_h/3668/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  345.968338] BUG: scheduling while atomic: optee_example_h/3668/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0x28
+��[  346.035393] BUG: scheduling while atomic: optee_example_h/3668/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  346.087297] BUG: scheduling while atomic: optee_example_h/3668/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  346.139195] BUG: scheduling while atomic: optee_example_h/3668/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  346.191026] BUG: scheduling while atomic: optee_example_h/3668/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0x00
+��[  346.269685] BUG: scheduling while atomic: optee_example_h/3668/0x0000000a
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  346.321577] BUG: scheduling while atomic: optee_example_h/3668/0x0000000a
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  346.380141] BUG: scheduling while atomic: optee_example_h/3668/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  346.432046] BUG: scheduling while atomic: optee_example_h/3668/0x00000009
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+D/TC:?? 00 ldelf_syscall_open_bin:146 res=0xffff0008
+D/TC:?? 00 ldelf_syscall_open_bin:142 Lookup user TA ELF d96a5b40-c3e5-21e3-8794-1002a5d5c61b (REE)
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0x9B
+��[  346.547671] BUG: scheduling while atomic: optee_example_h/3668/0x0000000a
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+D/TC:?? 00 ldelf_syscall_open_bin:146 res=0xffff0008
+E/LD:   init_elf:486 sys_open_ta_bin(d96a5b40-c3e5-21e3-8794-1002a5d5c61b)
+I/TC: |0|thread_enter_user_mode()---thread_unmask_exceptions()
+I/TC: |0|ldelf_init_with_ldelf()---thread_user_clear_vfp()                            +-----------------------------+
+I/TC: |0|ldelf_init_with_ldelf()---ldelf_sess_cleanup()                               |                             |
+E/TC:?? 00 ldelf_init_with_ldelf:142 ldelf failed with res: 0xffff0008                |  Cannot open /dev/ttyACM0!  |
+I/TC: |0|tee_ta_init_user_ta_session()---ts_pop_current_session                       |                             |
+I/TC: |0|tee_ta_init_user_ta_session()---condvar_broadcast                            +-----------------------------+
+D/TC:?? 00 tee_ta_open_session:772 init session failed 0xffff0008
+��[  346.791677] BUG: scheduling while atomic: optee_example_h/3668/0x0000000a
+��I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start
+I/TC: thread_resume_from_rpc222()---n : 0
+��[  346.843688] Unable to handle kernel NULL pointer dereference at virtual address 0000000000000000
+[  346.852737] Mem abort info:
+[  346.855618]   ESR = 0x92000004
+[  346.858774]   EC = 0x24: DABT (lower EL), IL = 32 bits
+[  346.864064]   SET = 0, FnV = 0
+[  346.867207]   EA = 0, S1PTW = 0
+[  346.870449] Data abort info:
+[  346.873416]   ISV = 0, ISS = 0x00000004
+[  346.877369]   CM = 0, WnR = 0
+[  346.880425] user pgtable: 4k pages, 48-bit VAs, pgdp=00000001b3e0c000
+[  346.887048] [0000000000000000] pgd=0000000000000000, p4d=0000000000000000
+[  346.894056] Internal error: Oops: 92000004 [#1] PREEMPT SMP
+[  346.899786] Modules linked in: fuse(E) nvidia_modeset(OE) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) aes_ce_blk(E) snd_soc_tegra186_asrc(E) crypto_simd(E) cryptd(E))
+[  346.899838]  userspace_alert(E) snd_soc_tegra210_ahub(E) nvadsp(E) nct1008(E) snd_hda_core(E) snd_soc_rl6231(E) tegra_bpmp_thermal(E) tegra210_adma(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina322]
+[  347.016004] CPU: 2 PID: 3668 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #18
+[  347.025120] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  347.031018] pstate: 20001000 (nzCv daif -PAN -UAO -TCO BTYPE=--)
+[  347.037192] pc : 0000ffffb3cdaa60
+[  347.040606] lr : 0000ffffb3cdaa40
+[  347.044021] sp : 0000ffffb3b328d0
+[  347.047434] x29: 0000ffffb3b328d0 x28: 0000ffffb3b331e0 
+[  347.052895] x27: 0000ffffb3cd3000 x26: 0000ffffb3b331e0 
+[  347.058352] x25: 0000ffffb3b338e0 x24: 0000aaaac03b0b9c 
+[  347.063809] x23: 0000ffffe7c15eff x22: 0000ffffb3cd2000 
+[  347.069269] x21: 0000ffffe7c15efe x20: 0000ffffe7c15f00 
+[  347.074727] x19: 0000ffffb3b335fc x18: 0000000000000000 
+[  347.080193] x17: 0000ffffb3bb9f40 x16: 0000ffffb3ced038 
+[  347.085652] x15: 000000007fffffde x14: 0000000000000000 
+[  347.091116] x13: 0000000000000000 x12: 0000000000000001 
+[  347.096576] x11: 0000ffffb3b324d8 x10: 0000000000000000 
+[  347.102036] x9 : 646e65206e6f6973 x8 : 0000000000000040 
+[  347.107497] x7 : 6e6f69737365536e x6 : 65704f5f43454554 
+[  347.112953] x5 : 0000ffffac000b74 x4 : 0000ffffb3b328fc 
+[  347.118410] x3 : 0000000000000000 x2 : 0000000000000004 
+[  347.123867] x1 : 0000000000000000 x0 : 0000000000000000 
+[  347.129343] ---[ end trace fb7f0799726590e1 ]---
+[  347.141140] Kernel panic - not syncing: Oops: Fatal exception
+[  347.147046] SMP: stopping secondary CPUs
+[  347.151090] Kernel Offset: 0x484868930000 from 0xffff800010000000
+[  347.157364] PHYS_OFFSET: 0xffff8c8ac0000000
+[  347.161665] CPU features: 0x08040006,4a80aa38
+[  347.166145] Memory Limit: none
+[  347.176260] ---[ end Kernel panic - not syncing: Oops: Fatal exception ]---

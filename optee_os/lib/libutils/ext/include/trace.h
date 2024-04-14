@@ -14,9 +14,9 @@
 #define MAX_PRINT_SIZE      256
 #define MAX_FUNC_PRINT_SIZE 32
 
-// #ifndef TRACE_LEVEL
+#ifndef TRACE_LEVEL
 #define TRACE_LEVEL TRACE_MAX
-// #endif
+#endif
 
 /*
  * Symbols provided by the entity that uses this API.

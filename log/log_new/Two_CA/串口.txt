@@ -1,0 +1,1405 @@
+I/TC: thread_handle_std_smc()---start : 838860804 1 -1205284864 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run222()---n : 0
+I/TC: |0|call_entry_std()---start
+I/TC: |0|tee_ta_init_session()---before tee_ta_init_user_ta_session
+I/TC: |0|tee_ta_init_user_ta_session()---ldelf_init_with_ldelf
+I/TC: |0|ldelf_init_with_ldelf()---thread_enter_user_mode()
+I/TC: |0|thread_enter_user_mode()---tee_ta_update_session_utime_resume()
+I/TC: |0|thread_enter_user_mode()---thread_get_pauth_keys()
+I/TC: |0|thread_enter_user_mode()---thread_mask_exceptions()
+I/TC: |0|thread_enter_user_mode()---__thread_enter_user_mode()
+��[  602.064736] BUG: scheduling while atomic: optee_example_s/4982/0x00000007
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  602.193819] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  602.322758] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  602.451824] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  602.580841] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  602.709876] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  602.838951] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  602.968022] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  603.097143] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  603.226232] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  603.355377] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  603.484294] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  603.613396] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  603.742440] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  603.871567] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  604.000602] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  604.129642] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  604.271027] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  604.400175] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  604.542294] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  604.671416] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  604.800400] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  604.929330] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  605.058441] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  605.187501] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  605.316543] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  605.445669] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  605.574764] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  605.703908] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  605.833013] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  605.962050] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  606.091037] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  606.220144] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  606.349236] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  606.478378] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  606.607501] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  606.736471] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  606.865586] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: |0|thread_enter_user_mode()---thread_unmask_exceptions()
+I/TC: |0|ldelf_init_with_ldelf()---thread_user_clear_vfp()
+I/TC: |0|ldelf_init_with_ldelf()---ldelf_sess_cleanup()
+I/TC: |0|ldelf_init_with_ldelf()---vm_check_access_rights()
+I/TC: |0|tee_ta_init_user_ta_session()---ts_pop_current_session
+I/TC: |0|tee_ta_init_user_ta_session()---condvar_broadcast
+I/TC: |0|thread_enter_user_mode()---tee_ta_update_session_utime_resume()
+I/TC: |0|thread_enter_user_mode()---thread_get_pauth_keys()
+I/TC: |0|thread_enter_user_mode()---thread_mask_exceptions()
+I/TC: |0|thread_enter_user_mode()---__thread_enter_user_mode()
+I/TC: |0|thread_enter_user_mode()---thread_unmask_exceptions()
+��[  607.210783] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_handle_std_smc()---start : 838860804 1 -615407616 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run222()---n : 0
+I/TC: |0|call_entry_std()---start
+I/TC: thread_handle_std_smc()---start : 838860804 1 -615407616 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run222()---n : 0
+I/TC: |0|call_entry_std()---start
+��[  607.439052] BUG: scheduling while atomic: optee_example_s/4982/0x0000000d
+��I/TC: thread_handle_std_smc()---start : 838860804 1 -1205284864 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run222()---n : 0
+I/TC: |0|call_entry_std()---start
+I/TC: |0|thread_enter_user_mode()---tee_ta_update_session_utime_resume()
+I/TC: |0|thread_enter_user_mode()---thread_get_pauth_keys()
+I/TC: |0|thread_enter_user_mode()---thread_mask_exceptions()
+I/TC: |0|thread_enter_user_mode()---__thread_enter_user_mode()
+��[  607.592880] BUG: scheduling while atomic: optee_example_s/4982/0x00000007
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  607.721968] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  607.851052] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  607.980057] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  608.109118] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  608.238150] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  608.367267] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  608.496447] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  608.625602] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  608.754708] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  608.896762] BUG: scheduling while atomic: optee_example_s/4982/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  609.034698] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  609.172294] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  609.309828] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  609.447436] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  609.584764] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  609.722363] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  609.851476] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  609.980441] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  610.109430] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  610.238538] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  610.380337] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  610.517797] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  610.655373] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  610.791672] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  610.921002] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  611.063669] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+
+
+
+��I/TC: thread_handle_std_smc()---start : 838860804 1 1522237440 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run222()---n : 1
+I/TC: |1|call_entry_std()---start
+I/TC: |1|tee_ta_init_session()---before tee_ta_init_user_ta_session
+I/TC: |1|tee_ta_init_user_ta_session()---ldelf_init_with_ldelf
+I/TC: |1|ldelf_init_with_ldelf()---thread_enter_user_mode()
+I/TC: |1|thread_enter_user_mode()---tee_ta_update_session_utime_resume()
+I/TC: |1|thread_enter_user_mode()---thread_get_pauth_keys()
+I/TC: |1|thread_enter_user_mode()---thread_mask_exceptions()
+I/TC: |1|thread_enter_user_mode()---__thread_enter_user_mode()
+I/TC: thread_handle_std_smc()---start : 838860803 1 -915415040 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 1 -915415040 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  643.848028] BUG: scheduling while atomic: optee_example_h/5102/0x0000000c
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  644.506090] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  645.146278] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  645.786312] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  646.426393] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  647.066265] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  647.706084] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  648.346274] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  648.986289] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  649.626306] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  650.266188] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  650.906190] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  651.546265] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  652.186276] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  652.826385] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  653.466252] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  654.106044] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  654.746293] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  655.386280] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  656.026248] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  656.670026] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  657.306254] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  657.946249] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  658.586256] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  659.226401] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  659.866364] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  660.506333] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  661.146037] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  661.785991] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  662.425992] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  663.066012] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  663.705982] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  664.346050] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  664.986126] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  665.626085] BUG: scheduling while atomic: optee_example_h/5102/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  666.266114] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  666.906023] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  667.546000] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  668.186065] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  668.825972] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  669.466034] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  670.105985] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  670.746081] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  671.207470] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+*I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+*I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+*I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+*I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+*I/TC: thread_resume_from_rpc()---threads.flags
+*I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  671����.461526] BUG: sche��*��duling while atomi��I��c: optee_example_s/4982/��/��0x00000005
+��TC: thread_resume_from_rpc()---threads.flags
+��[  671.476998] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  671.605876] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  671.742827] BUG: scheduling while atomic: optee_example_s/4982/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  671.871862] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  ����672.00102��*��8] BUG: schedul��I��ing while atomic: optee_��/��example_s/4982/0x0000��T��0005
+��C: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+*I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+*I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+*I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+*I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  672.22����3272] BUG: sche��*��duling while atomic: ��I��optee_example_h/5102/��/��0x00000005
+��TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  672.253933] BUG: scheduling while atomic: optee_example_s/4982/0x00000004
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  672.388501] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+*I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+*I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+*I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+*I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  672.74����7661] BUG: sche��*��duling while atomic: ��I��optee_example_s/4982/��/��0x00000009
+��TC: thread_resume_from_rpc()---threads.flags
+*I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+*I/TC: thread_resume_from_rpc()---threads.flags
+*I/TC: thread_resume_from_rpc()---n : 0
+��[  672.85����5682] BUG: sche��I��duling while atomic: ��/��optee_example_h/5102/��T��0x00000005
+��C: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  672.901165] BUG: scheduling while atomic: optee_example_s/4982/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+*I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+*I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---have_user_map
+*I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+*I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+*I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  ����673.282589] BUG: s��*��cheduling while at��I��omic: optee_example_h/51��/��02/0x00000005
+��TC: |0|thread_enter_user_mode()---thread_unmask_exceptions()
+��[  673����.302901] BUG: sche��*��duling while atomi��I��c: optee_example_s/4982/��/��0x00000009
+��TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+*I/TC: thread_handle_std_smc()---start : 838860803 -37648 1028308608 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 0 -37648 1028308608 0 0
+*I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+*I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---threads.flags
+*I/TC: thread_resume_from_rpc()---n : 1
+��[  673.47����9759] BUG: schedul��I��ing while atomic: opt��/��ee_example_s/4982/0x0��T��0000004
+��C: thread_resume_from_rpc()---have_user_map
+*I/TC: thread_handle_std_smc()---start : 838860804 1 -1205284864 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+*I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+*I/TC: __thread_alloc_and_run222()---n : 0
+��[  673.58����0219] BUG: schedul��I��ing while atomic: ��/��optee_example_h/5102/0x0��T��0000005
+��C: |0|call_entry_std()---start
+*I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+*I/TC: thread_handle_std_smc()---start : 838860804 1 -1205284864 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+*I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+*I/TC: __thread_alloc_and_run222()---n : 0
+*I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  673����.776275] BUG: sche��*��duling while atomic: ��I��optee_example_h/5102/��/��0x00000005
+��TC: |0|call_entry_std()---start
+��[  673.78����7769] BUG: schedul��*��ing while atomic: opt��I��ee_example_s/4982/0x0000��/��0009
+��TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+*I/TC: thread_handle_std_smc()---start : 838860804 1 -1205284864 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+*I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+*I/TC: __thread_alloc_and_run222()---n : 0
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+*I/TC: |0|call_entry_std()---start
+*I/TC: thread_resume_from_rpc()---threads.flags
+*I/TC: |0|thread_enter_user_mode()---tee_ta_update_session_utime_resume()
+I/TC: |0|thread_enter_user_mode()---thread_get_pauth_keys()
+I/TC: |0|thread_enter_user_mode()---thread_mask_exceptions()
+I/TC: |0|thread_enter_user_mode()---__thread_enter_user_mode()
+*I/TC: thread_resume_from_rpc()---threads.flags
+��[  674����.066393] BUG: s��*��cheduling while atomi��I��c: optee_example_h/51��/��02/0x00000005
+��TC: |0|thread_enter_user_mode()---thread_unmask_exceptions()
+��[  ����674.086768] BUG��*��: scheduling while at��I��omic: optee_example_s��/��/4982/0x00000005
+��TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  674.216278] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  674.352759] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  674.489140] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  674.625776] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  674.762132] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  674.898520] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  675.034886] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  675.171046] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  675.307171] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  675.443347] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  675.579524] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  675.715688] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  675.851963] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  675.988235] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  676.124418] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  676.261914] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  676.398050] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  676.534205] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  676.670314] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  676.806545] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  676.942742] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  677.078981] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  677.215180] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  677.351457] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  677.487848] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  677.624076] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  677.760250] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  677.896429] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  678.032581] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  678.168827] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  678.305029] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  678.441192] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  678.577333] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---have_user_map
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: thread_resume_from_rpc()---threads.flags
+I/TC: |1|thread_enter_user_mode()---thread_unmask_exceptions()
+I/TC: |1|ldelf_init_with_ldelf()---thread_user_clear_vfp()
+I/TC: |1|ldelf_init_with_ldelf()---ldelf_sess_cleanup()
+I/TC: |1|ldelf_init_with_ldelf()---vm_check_access_rights()
+I/TC: |1|tee_ta_init_user_ta_session()---ts_pop_current_session
+I/TC: |1|tee_ta_init_user_ta_session()---condvar_broadcast
+I/TC: |1|thread_enter_user_mode()---tee_ta_update_session_utime_resume()
+I/TC: |1|thread_enter_user_mode()---thread_get_pauth_keys()
+I/TC: |1|thread_enter_user_mode()---thread_mask_exceptions()
+I/TC: |1|thread_enter_user_mode()---__thread_enter_user_mode()
+D/TA:   TA_CreateEntryPoint:40 has been called
+D/TA:   __GP11_TA_OpenSessionEntryPoint:69 has been called
+I/TA: Hello World!
+I/TC: |1|thread_enter_user_mode()---thread_unmask_exceptions()
+��[  678.970310] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860803 -37648 351703808 1 -37648 351703808 0 0
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc222()---start : 1 -37648 351703808 -37648 351703808
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---threads.flags
+��[  679.076105] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+��I/TC: thread_handle_std_smc()---start : 838860804 1 1522237440 0 0 0 0 0
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run222()---n : 0
+I/TC: |0|call_entry_std()---start
+I/TC: |0|thread_enter_user_mode()---tee_ta_update_session_utime_resume()
+I/TC: |0|thread_enter_user_mode()---thread_get_pauth_keys()
+I/TC: |0|thread_enter_user_mode()---thread_mask_exceptions()
+I/TC: |0|thread_enter_user_mode()---__thread_enter_user_mode()
+I/TA: Goodbye!
+D/TA:   TA_DestroyEntryPoint:51 has been called
+I/TC: |0|thread_enter_user_mode()---thread_unmask_exceptions()
+��[  679.270550] BUG: scheduling while atomic: optee_example_h/5102/0x00000005
+

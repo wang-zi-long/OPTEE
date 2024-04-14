@@ -1,0 +1,1765 @@
+[   76.174954] zram3: detected capacity change from 0 to 4114374656
+[   76.557553] Adding 4017940k swap on /dev/zram3.  Priority:5 extents:1 across:4017940k SS
+[   76.562588] zram4: detected capacity change from 0 to 4114374656
+[   77.145580] Adding 4017940k swap on /dev/zram4.  Priority:5 extents:1 across:4017940k SS
+[   77.150867] zram5: detected capacity change from 0 to 4114374656
+[   77.525491] Adding 4017940k swap on /dev/zram5.  Priority:5 extents:1 across:4017940k SS
+[   77.535186] zram6: detected capacity change from 0 to 4114374656
+[   78.113550] Adding 4017940k swap on /dev/zram6.  Priority:5 extents:1 across:4017940k SS
+[   78.118836] zram7: detected capacity change from 0 to 4114374656
+[   78.689611] Adding 4017940k swap on /dev/zram7.  Priority:5 extents:1 across:4017940k SS
+[   82.008605] irq: IRQ313: trimming hierarchy from :interrupt-controller@f400000-1
+[   82.009798] hwmon hwmon7: temp1_input not attached to any thermal zone
+[   82.738089] Aquantia AQR113C 6810000.ethernet:00: No AQR phy_mode setting in DT
+[   90.966495] l4tbr0: port 2(usb0) entered blocking state
+[   90.966509] l4tbr0: port 2(usb0) entered forwarding state
+[   90.966588] l4tbr0: port 1(rndis0) entered blocking state
+[   90.966591] l4tbr0: port 1(rndis0) entered forwarding state
+[   90.967300] IPv6: ADDRCONF(NETDEV_CHANGE): l4tbr0: link becomes ready
+[   91.547094] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[   96.775101] fuse: init (API version 7.32)
+[   97.231913] nvidia-modeset: Loading NVIDIA UNIX Open Kernel Mode Setting Driver for aarch64  35.5.0  Release Build  (buildbrain@mobile-u64-6519-d7000)  Mon Feb 19 20:34:14 PST 2024
+[   97.505618] NVRM rpcRmApiControl_dce: NVRM_RPC_DCE: Failed RM ctrl call cmd:0x731341 result 0xffff:
+[  105.059075] exfat: Deprecated parameter 'namecase'
+[  105.065389] exFAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[  273.963152] | 4470 |tee_ioctl_open_session()---tee_ioctl_open_session start
+[  273.963166] | 4470 |tee_ioctl_open_session()---bfore open_session
+[  273.963168] | 4470 | 7 |optee_open_session()---start
+[  273.963178] | 4470 | 7 |optee_open_session()---before optee_do_call_with_arg
+[  273.963181] | 4470 | 7 |optee_do_call_with_arg()---before while
+[  273.963182] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  273.963184] | 4470 |param : 838860804 1 1260199936 0 0 0 0 0
+[  273.963187] | 4470 |optee_smccc_smc()---start
+[  274.169848] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  274.169855] | 4470 |res64 : 4294901760 160 0 0
+[  274.169856] | 4470 |res32 : -65536 160 0 0
+[  274.169858] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  274.169859] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  274.169861] | 4470 |param : -65536 160 0 0 0 0 0 0
+[  274.169864] | 4470 |optee_handle_rpc()---ALLOC
+[  274.169868] | 4470 |optee_handle_rpc()---ALLOC111
+[  274.169869] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  274.169871] | 4470 |param : 838860803 1 1255456768 0 -37648 1028308608 0 0
+[  274.169872] | 4470 |optee_smccc_smc()---start
+[  274.297051] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  274.297053] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  274.297054] | 4470 |res32 : -65531 -37648 1028308608 0
+[  274.297055] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  274.297056] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  274.297058] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  274.297059] | 4470 |optee_handle_rpc()---CMD
+[  274.297060] | 4470 |handle_rpc_func_cmd()---SHM_ALLOC
+[  274.297064] | 4470 |optee_supp_thrd_req()---start
+[  274.297069] | 4470 |optee_supp_thrd_req()---before wait
+[  274.297073] BUG: scheduling while atomic: optee_example_h/4470/0x0000000c
+[  274.297102] | 353 |optee_supp_recv()---after wait
+[  274.304106] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  274.304235]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  274.304275] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  274.304277] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  274.304281] Call trace:
+[  274.304298]  dump_backtrace+0x0/0x1e0
+[  274.304302]  show_stack+0x30/0x40
+[  274.304316]  dump_stack+0xf0/0x130
+[  274.304325]  __schedule_bug+0x6c/0x80
+[  274.304334]  __schedule+0x890/0x980
+[  274.304336]  schedule+0x78/0x110
+[  274.304338]  schedule_timeout+0x2dc/0x340
+[  274.304340]  wait_for_completion_interruptible+0x90/0x160
+[  274.304351]  optee_supp_thrd_req+0xfc/0x1c0
+[  274.304353]  optee_handle_rpc+0x794/0x8c0
+[  274.304358]  optee_do_call_with_arg+0x2d4/0x360
+[  274.304360]  optee_open_session+0x19c/0x2a0
+[  274.304362]  tee_ioctl+0xa50/0xbe0
+[  274.304371]  __arm64_sys_ioctl+0xac/0xf0
+[  274.304376]  el0_svc_common.constprop.0+0x80/0x1d0
+[  274.304382]  do_el0_svc+0x38/0xc0
+[  274.304384]  el0_svc+0x1c/0x30
+[  274.304386]  el0_sync_handler+0xa8/0xb0
+[  274.304388]  el0_sync+0x16c/0x180
+[  274.304406] | 4471 |optee_supp_recv()---start
+[  274.304410] | 4471 |optee_supp_recv()---before while
+[  274.304412] | 4471 |optee_supp_recv()---befroe wait
+[  274.304446] | 353 |optee_supp_send()---start
+[  274.304453] | 353 |optee_supp_send()---TYPE_VALUE
+[  274.304465] | 353 |optee_supp_recv()---start
+[  274.304466] | 353 |optee_supp_recv()---before while
+[  274.304469] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  274.304471] | 353 |optee_supp_recv()---befroe wait
+[  274.304477] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  274.304478] | 4470 |optee_smccc_smc()---start
+[  274.434708] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  274.434711] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  274.434712] | 4470 |res32 : -65531 -37648 1028308608 0
+[  274.434713] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  274.434714] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  274.434716] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  274.434717] | 4470 |optee_handle_rpc()---CMD
+[  274.434719] | 4470 |handle_rpc_func_cmd()---default
+[  274.434721] | 4470 |optee_supp_thrd_req()---start
+[  274.434726] | 4470 |optee_supp_thrd_req()---before wait
+[  274.434728] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  274.434739] | 4471 |optee_supp_recv()---after wait
+[  274.441724] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  274.441789]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  274.441811] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  274.441812] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  274.441813] Call trace:
+[  274.441817]  dump_backtrace+0x0/0x1e0
+[  274.441819]  show_stack+0x30/0x40
+[  274.441822]  dump_stack+0xf0/0x130
+[  274.441825]  __schedule_bug+0x6c/0x80
+[  274.441829]  __schedule+0x890/0x980
+[  274.441831]  schedule+0x78/0x110
+[  274.441833]  schedule_timeout+0x2dc/0x340
+[  274.441835]  wait_for_completion_interruptible+0x90/0x160
+[  274.441837]  optee_supp_thrd_req+0xfc/0x1c0
+[  274.441839]  optee_handle_rpc+0x2c8/0x8c0
+[  274.441842]  optee_do_call_with_arg+0x2d4/0x360
+[  274.441844]  optee_open_session+0x19c/0x2a0
+[  274.441847]  tee_ioctl+0xa50/0xbe0
+[  274.441850]  __arm64_sys_ioctl+0xac/0xf0
+[  274.441852]  el0_svc_common.constprop.0+0x80/0x1d0
+[  274.441855]  do_el0_svc+0x38/0xc0
+[  274.441856]  el0_svc+0x1c/0x30
+[  274.441858]  el0_sync_handler+0xa8/0xb0
+[  274.441860]  el0_sync+0x16c/0x180
+[  274.452767] | 4471 |optee_supp_send()---start
+[  274.452773] | 4471 |optee_supp_send()---TYPE_VALUE
+[  274.452788] | 4471 |optee_supp_recv()---start
+[  274.452789] | 4471 |optee_supp_recv()---before while
+[  274.452791] | 4471 |optee_supp_recv()---befroe wait
+[  274.452984] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  274.452989] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  274.452991] | 4470 |optee_smccc_smc()---start
+[  274.583216] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  274.583219] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  274.583222] | 4470 |res32 : -65531 -37648 1028308608 0
+[  274.583227] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  274.583228] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  274.583231] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  274.583234] | 4470 |optee_handle_rpc()---CMD
+[  274.583237] | 4470 |handle_rpc_func_cmd()---default
+[  274.583240] | 4470 |optee_supp_thrd_req()---start
+[  274.583245] | 4470 |optee_supp_thrd_req()---before wait
+[  274.583249] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  274.583268] | 353 |optee_supp_recv()---after wait
+[  274.590256] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  274.590359]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  274.590386] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  274.590388] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  274.590391] Call trace:
+[  274.590409]  dump_backtrace+0x0/0x1e0
+[  274.590413]  show_stack+0x30/0x40
+[  274.590429]  dump_stack+0xf0/0x130
+[  274.590450]  __schedule_bug+0x6c/0x80
+[  274.590458]  __schedule+0x890/0x980
+[  274.590462]  schedule+0x78/0x110
+[  274.590467]  schedule_timeout+0x2dc/0x340
+[  274.590471]  wait_for_completion_interruptible+0x90/0x160
+[  274.590480]  optee_supp_thrd_req+0xfc/0x1c0
+[  274.590486]  optee_handle_rpc+0x2c8/0x8c0
+[  274.590488]  optee_do_call_with_arg+0x2d4/0x360
+[  274.590492]  optee_open_session+0x19c/0x2a0
+[  274.590495]  tee_ioctl+0xa50/0xbe0
+[  274.590503]  __arm64_sys_ioctl+0xac/0xf0
+[  274.590510]  el0_svc_common.constprop.0+0x80/0x1d0
+[  274.590515]  do_el0_svc+0x38/0xc0
+[  274.590517]  el0_svc+0x1c/0x30
+[  274.590519]  el0_sync_handler+0xa8/0xb0
+[  274.590522]  el0_sync+0x16c/0x180
+[  274.597742] | 353 |optee_supp_send()---start
+[  274.597748] | 353 |optee_supp_send()---TYPE_MEMREF
+[  274.597762] | 353 |optee_supp_recv()---start
+[  274.597763] | 353 |optee_supp_recv()---before while
+[  274.597769] | 353 |optee_supp_recv()---befroe wait
+[  274.597956] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  274.597960] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  274.597964] | 4470 |optee_smccc_smc()---start
+[  274.728192] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  274.728197] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  274.728200] | 4470 |res32 : -65531 -37648 1028308608 0
+[  274.728203] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  274.728205] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  274.728208] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  274.728218] | 4470 |optee_handle_rpc()---CMD
+[  274.728221] | 4470 |handle_rpc_func_cmd()---default
+[  274.728224] | 4470 |optee_supp_thrd_req()---start
+[  274.728230] | 4470 |optee_supp_thrd_req()---before wait
+[  274.728234] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  274.728256] | 4471 |optee_supp_recv()---after wait
+[  274.735241] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E)
+[  274.735300] | 4471 |optee_supp_send()---start
+[  274.735304] | 4471 |optee_supp_send()---TYPE_MEMREF
+[  274.735308]  btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E)
+[  274.735326] | 4471 |optee_supp_recv()---start
+[  274.735328]  sha256_arm64(E) snd_soc_tegra_machine_driver(E)
+[  274.735336] | 4471 |optee_supp_recv()---before while
+[  274.735338]  sha1_ce(E) snd_hda_codec_hdmi(E)
+[  274.735345] | 4471 |optee_supp_recv()---befroe wait
+[  274.735348]  snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E) userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  274.735409] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  274.735411] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  274.735415] Call trace:
+[  274.735440]  dump_backtrace+0x0/0x1e0
+[  274.735450]  show_stack+0x30/0x40
+[  274.735471]  dump_stack+0xf0/0x130
+[  274.735489]  __schedule_bug+0x6c/0x80
+[  274.735501]  __schedule+0x890/0x980
+[  274.735505]  schedule+0x78/0x110
+[  274.735510]  schedule_timeout+0x2dc/0x340
+[  274.735515]  wait_for_completion_interruptible+0x90/0x160
+[  274.735525]  optee_supp_thrd_req+0xfc/0x1c0
+[  274.735527]  optee_handle_rpc+0x2c8/0x8c0
+[  274.735530]  optee_do_call_with_arg+0x2d4/0x360
+[  274.735533]  optee_open_session+0x19c/0x2a0
+[  274.735535]  tee_ioctl+0xa50/0xbe0
+[  274.735542]  __arm64_sys_ioctl+0xac/0xf0
+[  274.735547]  el0_svc_common.constprop.0+0x80/0x1d0
+[  274.735549]  do_el0_svc+0x38/0xc0
+[  274.735552]  el0_svc+0x1c/0x30
+[  274.735553]  el0_sync_handler+0xa8/0xb0
+[  274.735557]  el0_sync+0x16c/0x180
+[  274.735562] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  274.735564] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  274.735565] | 4470 |optee_smccc_smc()---start
+[  274.865767] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  274.865771] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  274.865773] | 4470 |res32 : -65531 -37648 1028308608 0
+[  274.865774] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  274.865775] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  274.865776] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  274.865778] | 4470 |optee_handle_rpc()---CMD
+[  274.865779] | 4470 |handle_rpc_func_cmd()---default
+[  274.865780] | 4470 |optee_supp_thrd_req()---start
+[  274.865783] | 4470 |optee_supp_thrd_req()---before wait
+[  274.865785] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  274.865800] | 353 |optee_supp_recv()---after wait
+[  274.872810] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  274.872860]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  274.872878] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  274.872879] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  274.872881] Call trace:
+[  274.872884]  dump_backtrace+0x0/0x1e0
+[  274.872886]  show_stack+0x30/0x40
+[  274.872889]  dump_stack+0xf0/0x130
+[  274.872891]  __schedule_bug+0x6c/0x80
+[  274.872893]  __schedule+0x890/0x980
+[  274.872895]  schedule+0x78/0x110
+[  274.872897]  schedule_timeout+0x2dc/0x340
+[  274.872899]  wait_for_completion_interruptible+0x90/0x160
+[  274.872902]  optee_supp_thrd_req+0xfc/0x1c0
+[  274.872904]  optee_handle_rpc+0x2c8/0x8c0
+[  274.872906]  optee_do_call_with_arg+0x2d4/0x360
+[  274.872908]  optee_open_session+0x19c/0x2a0
+[  274.872910]  tee_ioctl+0xa50/0xbe0
+[  274.872912]  __arm64_sys_ioctl+0xac/0xf0
+[  274.872914]  el0_svc_common.constprop.0+0x80/0x1d0
+[  274.872917]  do_el0_svc+0x38/0xc0
+[  274.872918]  el0_svc+0x1c/0x30
+[  274.872920]  el0_sync_handler+0xa8/0xb0
+[  274.872922]  el0_sync+0x16c/0x180
+[  274.872948] | 353 |optee_supp_send()---start
+[  274.872951] | 353 |optee_supp_send()---TYPE_MEMREF
+[  274.872962] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  274.872965] | 353 |optee_supp_recv()---start
+[  274.872968] | 353 |optee_supp_recv()---before while
+[  274.872972] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  274.872977] | 353 |optee_supp_recv()---befroe wait
+[  274.872981] | 4470 |optee_smccc_smc()---start
+[  275.003249] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  275.003251] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  275.003253] | 4470 |res32 : -65531 -37648 1028308608 0
+[  275.003257] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  275.003258] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  275.003259] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  275.003260] | 4470 |optee_handle_rpc()---CMD
+[  275.003261] | 4470 |handle_rpc_func_cmd()---default
+[  275.003263] | 4470 |optee_supp_thrd_req()---start
+[  275.003266] | 4470 |optee_supp_thrd_req()---before wait
+[  275.003268] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  275.003287] | 4471 |optee_supp_recv()---after wait
+[  275.010259] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  275.010313]  userspace_alert(E) max96712(E)
+[  275.010318] | 4471 |optee_supp_send()---start
+[  275.010320]  nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E)
+[  275.010329] | 4471 |optee_supp_send()---TYPE_MEMREF
+[  275.010332]  cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  275.010348] | 4471 |optee_supp_recv()---start
+[  275.010351] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  275.010355] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  275.010359] | 4471 |optee_supp_recv()---before while
+[  275.010362] Call trace:
+[  275.010367]  dump_backtrace+0x0/0x1e0
+[  275.010370] | 4471 |optee_supp_recv()---befroe wait
+[  275.010375]  show_stack+0x30/0x40
+[  275.010380]  dump_stack+0xf0/0x130
+[  275.010382]  __schedule_bug+0x6c/0x80
+[  275.010384]  __schedule+0x890/0x980
+[  275.010386]  schedule+0x78/0x110
+[  275.010388]  schedule_timeout+0x2dc/0x340
+[  275.010390]  wait_for_completion_interruptible+0x90/0x160
+[  275.010392]  optee_supp_thrd_req+0xfc/0x1c0
+[  275.010394]  optee_handle_rpc+0x2c8/0x8c0
+[  275.010396]  optee_do_call_with_arg+0x2d4/0x360
+[  275.010398]  optee_open_session+0x19c/0x2a0
+[  275.010400]  tee_ioctl+0xa50/0xbe0
+[  275.010402]  __arm64_sys_ioctl+0xac/0xf0
+[  275.010405]  el0_svc_common.constprop.0+0x80/0x1d0
+[  275.010407]  do_el0_svc+0x38/0xc0
+[  275.010408]  el0_svc+0x1c/0x30
+[  275.010410]  el0_sync_handler+0xa8/0xb0
+[  275.010412]  el0_sync+0x16c/0x180
+[  275.010421] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  275.010422] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  275.010424] | 4470 |optee_smccc_smc()---start
+[  275.140710] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  275.140712] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  275.140713] | 4470 |res32 : -65531 -37648 1028308608 0
+[  275.140714] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  275.140715] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  275.140717] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  275.140718] | 4470 |optee_handle_rpc()---CMD
+[  275.140718] | 4470 |handle_rpc_func_cmd()---default
+[  275.140720] | 4470 |optee_supp_thrd_req()---start
+[  275.140723] | 4470 |optee_supp_thrd_req()---before wait
+[  275.140725] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  275.140743] | 353 |optee_supp_recv()---after wait
+[  275.147712] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  275.147766]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E)
+[  275.147775] | 353 |optee_supp_send()---start
+[  275.147778]  spi_tegra114(E)
+[  275.147781] | 353 |optee_supp_send()---TYPE_MEMREF
+[  275.147784]  nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  275.147801] | 353 |optee_supp_recv()---start
+[  275.147804] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  275.147808] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  275.147811] | 353 |optee_supp_recv()---before while
+[  275.147813] Call trace:
+[  275.147818]  dump_backtrace+0x0/0x1e0
+[  275.147823] | 353 |optee_supp_recv()---befroe wait
+[  275.147828]  show_stack+0x30/0x40
+[  275.147834]  dump_stack+0xf0/0x130
+[  275.147840]  __schedule_bug+0x6c/0x80
+[  275.147843]  __schedule+0x890/0x980
+[  275.147845]  schedule+0x78/0x110
+[  275.147847]  schedule_timeout+0x2dc/0x340
+[  275.147849]  wait_for_completion_interruptible+0x90/0x160
+[  275.147852]  optee_supp_thrd_req+0xfc/0x1c0
+[  275.147853]  optee_handle_rpc+0x2c8/0x8c0
+[  275.147855]  optee_do_call_with_arg+0x2d4/0x360
+[  275.147857]  optee_open_session+0x19c/0x2a0
+[  275.147859]  tee_ioctl+0xa50/0xbe0
+[  275.147862]  __arm64_sys_ioctl+0xac/0xf0
+[  275.147866]  el0_svc_common.constprop.0+0x80/0x1d0
+[  275.147872]  do_el0_svc+0x38/0xc0
+[  275.147874]  el0_svc+0x1c/0x30
+[  275.147875]  el0_sync_handler+0xa8/0xb0
+[  275.147877]  el0_sync+0x16c/0x180
+[  275.147880] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  275.147882] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  275.147883] | 4470 |optee_smccc_smc()---start
+[  275.278164] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  275.278169] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  275.278171] | 4470 |res32 : -65531 -37648 1028308608 0
+[  275.278172] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  275.278173] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  275.278175] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  275.278176] | 4470 |optee_handle_rpc()---CMD
+[  275.278177] | 4470 |handle_rpc_func_cmd()---default
+[  275.278178] | 4470 |optee_supp_thrd_req()---start
+[  275.278183] | 4470 |optee_supp_thrd_req()---before wait
+[  275.278185] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  275.278220] | 4471 |optee_supp_recv()---after wait
+[  275.285174] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  275.285229]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  275.285247] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  275.285249] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  275.285250] Call trace:
+[  275.285254]  dump_backtrace+0x0/0x1e0
+[  275.285264]  show_stack+0x30/0x40
+[  275.285271]  dump_stack+0xf0/0x130
+[  275.285273]  __schedule_bug+0x6c/0x80
+[  275.285276]  __schedule+0x890/0x980
+[  275.285278]  schedule+0x78/0x110
+[  275.285282]  schedule_timeout+0x2dc/0x340
+[  275.285286]  wait_for_completion_interruptible+0x90/0x160
+[  275.285288]  optee_supp_thrd_req+0xfc/0x1c0
+[  275.285290]  optee_handle_rpc+0x2c8/0x8c0
+[  275.285294]  optee_do_call_with_arg+0x2d4/0x360
+[  275.285298]  optee_open_session+0x19c/0x2a0
+[  275.285300]  tee_ioctl+0xa50/0xbe0
+[  275.285303]  __arm64_sys_ioctl+0xac/0xf0
+[  275.285307]  el0_svc_common.constprop.0+0x80/0x1d0
+[  275.285310]  do_el0_svc+0x38/0xc0
+[  275.285312]  el0_svc+0x1c/0x30
+[  275.285314]  el0_sync_handler+0xa8/0xb0
+[  275.285316]  el0_sync+0x16c/0x180
+[  275.285347] | 4471 |optee_supp_send()---start
+[  275.285354] | 4471 |optee_supp_send()---TYPE_MEMREF
+[  275.285369] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  275.285372] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  275.285374] | 4470 |optee_smccc_smc()---start
+[  275.285380] | 4471 |optee_supp_recv()---start
+[  275.285384] | 4471 |optee_supp_recv()---before while
+[  275.285387] | 4471 |optee_supp_recv()---befroe wait
+[  275.415651] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  275.415654] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  275.415658] | 4470 |res32 : -65531 -37648 1028308608 0
+[  275.415660] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  275.415661] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  275.415662] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  275.415663] | 4470 |optee_handle_rpc()---CMD
+[  275.415664] | 4470 |handle_rpc_func_cmd()---default
+[  275.415670] | 4470 |optee_supp_thrd_req()---start
+[  275.415674] | 4470 |optee_supp_thrd_req()---before wait
+[  275.415675] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  275.415695] | 353 |optee_supp_recv()---after wait
+[  275.422672] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  275.422745]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E)
+[  275.422755] | 353 |optee_supp_send()---start
+[  275.422758]  nvidia(OE)
+[  275.422761] | 353 |optee_supp_send()---TYPE_MEMREF
+[  275.422764]  binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  275.422773] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  275.422774] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  275.422776] Call trace:
+[  275.422779]  dump_backtrace+0x0/0x1e0
+[  275.422781]  show_stack+0x30/0x40
+[  275.422785] | 353 |optee_supp_recv()---start
+[  275.422791]  dump_stack+0xf0/0x130
+[  275.422795] | 353 |optee_supp_recv()---before while
+[  275.422799]  __schedule_bug+0x6c/0x80
+[  275.422803] | 353 |optee_supp_recv()---befroe wait
+[  275.422808]  __schedule+0x890/0x980
+[  275.422812]  schedule+0x78/0x110
+[  275.422815]  schedule_timeout+0x2dc/0x340
+[  275.422817]  wait_for_completion_interruptible+0x90/0x160
+[  275.422819]  optee_supp_thrd_req+0xfc/0x1c0
+[  275.422821]  optee_handle_rpc+0x2c8/0x8c0
+[  275.422823]  optee_do_call_with_arg+0x2d4/0x360
+[  275.422825]  optee_open_session+0x19c/0x2a0
+[  275.422827]  tee_ioctl+0xa50/0xbe0
+[  275.422830]  __arm64_sys_ioctl+0xac/0xf0
+[  275.422832]  el0_svc_common.constprop.0+0x80/0x1d0
+[  275.422834]  do_el0_svc+0x38/0xc0
+[  275.422836]  el0_svc+0x1c/0x30
+[  275.422838]  el0_sync_handler+0xa8/0xb0
+[  275.422840]  el0_sync+0x16c/0x180
+[  275.422843] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  275.422845] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  275.422847] | 4470 |optee_smccc_smc()---start
+[  275.553128] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  275.553130] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  275.553135] | 4470 |res32 : -65531 -37648 1028308608 0
+[  275.553136] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  275.553138] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  275.553139] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  275.553140] | 4470 |optee_handle_rpc()---CMD
+[  275.553142] | 4470 |handle_rpc_func_cmd()---default
+[  275.553143] | 4470 |optee_supp_thrd_req()---start
+[  275.553146] | 4470 |optee_supp_thrd_req()---before wait
+[  275.553148] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  275.553161] | 4471 |optee_supp_recv()---after wait
+[  275.560133] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  275.560172]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  275.560184] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  275.560185] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  275.560186] Call trace:
+[  275.560189]  dump_backtrace+0x0/0x1e0
+[  275.560191]  show_stack+0x30/0x40
+[  275.560193]  dump_stack+0xf0/0x130
+[  275.560195]  __schedule_bug+0x6c/0x80
+[  275.560197]  __schedule+0x890/0x980
+[  275.560199]  schedule+0x78/0x110
+[  275.560200]  schedule_timeout+0x2dc/0x340
+[  275.560202]  wait_for_completion_interruptible+0x90/0x160
+[  275.560204]  optee_supp_thrd_req+0xfc/0x1c0
+[  275.560206]  optee_handle_rpc+0x2c8/0x8c0
+[  275.560208]  optee_do_call_with_arg+0x2d4/0x360
+[  275.560209]  optee_open_session+0x19c/0x2a0
+[  275.560211]  tee_ioctl+0xa50/0xbe0
+[  275.560213]  __arm64_sys_ioctl+0xac/0xf0
+[  275.560215]  el0_svc_common.constprop.0+0x80/0x1d0
+[  275.560217]  do_el0_svc+0x38/0xc0
+[  275.560218]  el0_svc+0x1c/0x30
+[  275.560220]  el0_sync_handler+0xa8/0xb0
+[  275.560221]  el0_sync+0x16c/0x180
+[  275.560306] | 4471 |optee_supp_send()---start
+[  275.560312] | 4471 |optee_supp_send()---TYPE_MEMREF
+[  275.560326] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  275.560331] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  275.560335] | 4470 |optee_smccc_smc()---start
+[  275.560475] | 4471 |optee_supp_recv()---start
+[  275.560480] | 4471 |optee_supp_recv()---before while
+[  275.560483] | 4471 |optee_supp_recv()---befroe wait
+[  275.690616] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  275.690618] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  275.690620] | 4470 |res32 : -65531 -37648 1028308608 0
+[  275.690621] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  275.690624] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  275.690627] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  275.690628] | 4470 |optee_handle_rpc()---CMD
+[  275.690630] | 4470 |handle_rpc_func_cmd()---default
+[  275.690633] | 4470 |optee_supp_thrd_req()---start
+[  275.690636] | 4470 |optee_supp_thrd_req()---before wait
+[  275.690637] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  275.690650] | 353 |optee_supp_recv()---after wait
+[  275.697629] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  275.697680]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  275.697697] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  275.697698] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  275.697699] Call trace:
+[  275.697702]  dump_backtrace+0x0/0x1e0
+[  275.697704]  show_stack+0x30/0x40
+[  275.697707]  dump_stack+0xf0/0x130
+[  275.697709]  __schedule_bug+0x6c/0x80
+[  275.697711]  __schedule+0x890/0x980
+[  275.697713]  schedule+0x78/0x110
+[  275.697715]  schedule_timeout+0x2dc/0x340
+[  275.697717]  wait_for_completion_interruptible+0x90/0x160
+[  275.697720]  optee_supp_thrd_req+0xfc/0x1c0
+[  275.697722]  optee_handle_rpc+0x2c8/0x8c0
+[  275.697724]  optee_do_call_with_arg+0x2d4/0x360
+[  275.697726]  optee_open_session+0x19c/0x2a0
+[  275.697727]  tee_ioctl+0xa50/0xbe0
+[  275.697730]  __arm64_sys_ioctl+0xac/0xf0
+[  275.697732]  el0_svc_common.constprop.0+0x80/0x1d0
+[  275.697734]  do_el0_svc+0x38/0xc0
+[  275.697736]  el0_svc+0x1c/0x30
+[  275.697738]  el0_sync_handler+0xa8/0xb0
+[  275.697740]  el0_sync+0x16c/0x180
+[  275.697802] | 353 |optee_supp_send()---start
+[  275.697808] | 353 |optee_supp_send()---TYPE_VALUE
+[  275.697819] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  275.697821] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  275.697823] | 4470 |optee_smccc_smc()---start
+[  275.697827] | 353 |optee_supp_recv()---start
+[  275.697829] | 353 |optee_supp_recv()---before while
+[  275.697832] | 353 |optee_supp_recv()---befroe wait
+[  275.828001] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  275.828004] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  275.828005] | 4470 |res32 : -65531 -37648 1028308608 0
+[  275.828006] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  275.828007] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  275.828009] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  275.828010] | 4470 |optee_handle_rpc()---CMD
+[  275.828010] | 4470 |handle_rpc_func_cmd()---default
+[  275.828012] | 4470 |optee_supp_thrd_req()---start
+[  275.828014] | 4470 |optee_supp_thrd_req()---before wait
+[  275.828020] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  275.828033] | 4471 |optee_supp_recv()---after wait
+[  275.835002] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  275.835042]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  275.835058] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  275.835059] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  275.835060] Call trace:
+[  275.835063]  dump_backtrace+0x0/0x1e0
+[  275.835065]  show_stack+0x30/0x40
+[  275.835068]  dump_stack+0xf0/0x130
+[  275.835069]  __schedule_bug+0x6c/0x80
+[  275.835071]  __schedule+0x890/0x980
+[  275.835073]  schedule+0x78/0x110
+[  275.835075]  schedule_timeout+0x2dc/0x340
+[  275.835077]  wait_for_completion_interruptible+0x90/0x160
+[  275.835079]  optee_supp_thrd_req+0xfc/0x1c0
+[  275.835081]  optee_handle_rpc+0x2c8/0x8c0
+[  275.835083]  optee_do_call_with_arg+0x2d4/0x360
+[  275.835085]  optee_open_session+0x19c/0x2a0
+[  275.835087]  tee_ioctl+0xa50/0xbe0
+[  275.835089]  __arm64_sys_ioctl+0xac/0xf0
+[  275.835092]  el0_svc_common.constprop.0+0x80/0x1d0
+[  275.835094]  do_el0_svc+0x38/0xc0
+[  275.835095]  el0_svc+0x1c/0x30
+[  275.835097]  el0_sync_handler+0xa8/0xb0
+[  275.835098]  el0_sync+0x16c/0x180
+[  275.846474] | 4471 |optee_supp_send()---start
+[  275.846482] | 4471 |optee_supp_send()---TYPE_MEMREF
+[  275.846504] | 4471 |optee_supp_recv()---start
+[  275.846508] | 4471 |optee_supp_recv()---before while
+[  275.846511] | 4471 |optee_supp_recv()---befroe wait
+[  275.846618] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  275.846621] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  275.846623] | 4470 |optee_smccc_smc()---start
+[  275.976831] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  275.976835] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  275.976837] | 4470 |res32 : -65531 -37648 1028308608 0
+[  275.976840] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  275.976842] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  275.976845] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  275.976848] | 4470 |optee_handle_rpc()---CMD
+[  275.976850] | 4470 |handle_rpc_func_cmd()---default
+[  275.976853] | 4470 |optee_supp_thrd_req()---start
+[  275.976857] | 4470 |optee_supp_thrd_req()---before wait
+[  275.976860] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  275.976880] | 353 |optee_supp_recv()---after wait
+[  275.983862] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  275.983960]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E)
+[  275.983972] | 353 |optee_supp_send()---start
+[  275.983974]  cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E)
+[  275.983985] | 353 |optee_supp_send()---TYPE_MEMREF
+[  275.983988]  spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  275.984013] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  275.984015] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  275.984019] Call trace:
+[  275.984022] | 353 |optee_supp_recv()---start
+[  275.984028] | 353 |optee_supp_recv()---before while
+[  275.984052]  dump_backtrace+0x0/0x1e0
+[  275.984064] | 353 |optee_supp_recv()---befroe wait
+[  275.984074]  show_stack+0x30/0x40
+[  275.984097]  dump_stack+0xf0/0x130
+[  275.984110]  __schedule_bug+0x6c/0x80
+[  275.984118]  __schedule+0x890/0x980
+[  275.984123]  schedule+0x78/0x110
+[  275.984128]  schedule_timeout+0x2dc/0x340
+[  275.984132]  wait_for_completion_interruptible+0x90/0x160
+[  275.984141]  optee_supp_thrd_req+0xfc/0x1c0
+[  275.984144]  optee_handle_rpc+0x2c8/0x8c0
+[  275.984147]  optee_do_call_with_arg+0x2d4/0x360
+[  275.984149]  optee_open_session+0x19c/0x2a0
+[  275.984151]  tee_ioctl+0xa50/0xbe0
+[  275.984158]  __arm64_sys_ioctl+0xac/0xf0
+[  275.984164]  el0_svc_common.constprop.0+0x80/0x1d0
+[  275.984167]  do_el0_svc+0x38/0xc0
+[  275.984169]  el0_svc+0x1c/0x30
+[  275.984172]  el0_sync_handler+0xa8/0xb0
+[  275.984175]  el0_sync+0x16c/0x180
+[  275.984180] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  275.984183] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  275.984186] | 4470 |optee_smccc_smc()---start
+[  276.114390] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  276.114392] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  276.114394] | 4470 |res32 : -65531 -37648 1028308608 0
+[  276.114395] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  276.114397] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  276.114398] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  276.114399] | 4470 |optee_handle_rpc()---CMD
+[  276.114400] | 4470 |handle_rpc_func_cmd()---default
+[  276.114402] | 4470 |optee_supp_thrd_req()---start
+[  276.114405] | 4470 |optee_supp_thrd_req()---before wait
+[  276.114407] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  276.114456] | 4471 |optee_supp_recv()---after wait
+[  276.121413] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  276.121472]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  276.121489] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  276.121490] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  276.121491] Call trace:
+[  276.121495]  dump_backtrace+0x0/0x1e0
+[  276.121499]  show_stack+0x30/0x40
+[  276.121502]  dump_stack+0xf0/0x130
+[  276.121508]  __schedule_bug+0x6c/0x80
+[  276.121510]  __schedule+0x890/0x980
+[  276.121512]  schedule+0x78/0x110
+[  276.121514]  schedule_timeout+0x2dc/0x340
+[  276.121517]  wait_for_completion_interruptible+0x90/0x160
+[  276.121519]  optee_supp_thrd_req+0xfc/0x1c0
+[  276.121522]  optee_handle_rpc+0x2c8/0x8c0
+[  276.121524]  optee_do_call_with_arg+0x2d4/0x360
+[  276.121526]  optee_open_session+0x19c/0x2a0
+[  276.121528]  tee_ioctl+0xa50/0xbe0
+[  276.121531]  __arm64_sys_ioctl+0xac/0xf0
+[  276.121533]  el0_svc_common.constprop.0+0x80/0x1d0
+[  276.121535]  do_el0_svc+0x38/0xc0
+[  276.121537]  el0_svc+0x1c/0x30
+[  276.121539]  el0_sync_handler+0xa8/0xb0
+[  276.121542]  el0_sync+0x16c/0x180
+[  276.128480] | 4471 |optee_supp_send()---start
+[  276.128487] | 4471 |optee_supp_send()---TYPE_MEMREF
+[  276.128505] | 4471 |optee_supp_recv()---start
+[  276.128508] | 4471 |optee_supp_recv()---before while
+[  276.128510] | 4471 |optee_supp_recv()---befroe wait
+[  276.128696] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  276.128700] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  276.128703] | 4470 |optee_smccc_smc()---start
+[  276.258981] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  276.258984] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  276.258986] | 4470 |res32 : -65531 -37648 1028308608 0
+[  276.258988] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  276.258990] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  276.258993] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  276.258995] | 4470 |optee_handle_rpc()---CMD
+[  276.258998] | 4470 |handle_rpc_func_cmd()---default
+[  276.259001] | 4470 |optee_supp_thrd_req()---start
+[  276.259006] | 4470 |optee_supp_thrd_req()---before wait
+[  276.259010] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  276.259016] | 353 |optee_supp_recv()---after wait
+[  276.266019] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E)
+[  276.266076] | 353 |optee_supp_send()---start
+[  276.266081]  snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E)
+[  276.266099] | 353 |optee_supp_recv()---start
+[  276.266103] | 353 |optee_supp_recv()---before while
+[  276.266107]  snd_soc_tegra210_mixer(E)
+[  276.266111] | 353 |optee_supp_recv()---befroe wait
+[  276.266114]  snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E) userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  276.266221] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  276.266223] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  276.266227] Call trace:
+[  276.266251]  dump_backtrace+0x0/0x1e0
+[  276.266258]  show_stack+0x30/0x40
+[  276.266281]  dump_stack+0xf0/0x130
+[  276.266294]  __schedule_bug+0x6c/0x80
+[  276.266302]  __schedule+0x890/0x980
+[  276.266307]  schedule+0x78/0x110
+[  276.266310]  schedule_timeout+0x2dc/0x340
+[  276.266314]  wait_for_completion_interruptible+0x90/0x160
+[  276.266321]  optee_supp_thrd_req+0xfc/0x1c0
+[  276.266324]  optee_handle_rpc+0x2c8/0x8c0
+[  276.266327]  optee_do_call_with_arg+0x2d4/0x360
+[  276.266330]  optee_open_session+0x19c/0x2a0
+[  276.266332]  tee_ioctl+0xa50/0xbe0
+[  276.266341]  __arm64_sys_ioctl+0xac/0xf0
+[  276.266350]  el0_svc_common.constprop.0+0x80/0x1d0
+[  276.266353]  do_el0_svc+0x38/0xc0
+[  276.266355]  el0_svc+0x1c/0x30
+[  276.266357]  el0_sync_handler+0xa8/0xb0
+[  276.266360]  el0_sync+0x16c/0x180
+[  276.266364] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  276.266366] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  276.266367] | 4470 |optee_smccc_smc()---start
+[  276.396574] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  276.396578] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  276.396582] | 4470 |res32 : -65531 -37648 1028308608 0
+[  276.396584] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  276.396585] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  276.396586] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  276.396587] | 4470 |optee_handle_rpc()---CMD
+[  276.396588] | 4470 |handle_rpc_func_cmd()---default
+[  276.396590] | 4470 |optee_supp_thrd_req()---start
+[  276.396594] | 4470 |optee_supp_thrd_req()---before wait
+[  276.396596] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  276.396606] | 4471 |optee_supp_recv()---after wait
+[  276.403584] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  276.403641]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  276.403661] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  276.403662] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  276.403664] Call trace:
+[  276.403667]  dump_backtrace+0x0/0x1e0
+[  276.403670]  show_stack+0x30/0x40
+[  276.403673]  dump_stack+0xf0/0x130
+[  276.403675]  __schedule_bug+0x6c/0x80
+[  276.403678]  __schedule+0x890/0x980
+[  276.403680]  schedule+0x78/0x110
+[  276.403682]  schedule_timeout+0x2dc/0x340
+[  276.403685]  wait_for_completion_interruptible+0x90/0x160
+[  276.403687]  optee_supp_thrd_req+0xfc/0x1c0
+[  276.403689]  optee_handle_rpc+0x2c8/0x8c0
+[  276.403691]  optee_do_call_with_arg+0x2d4/0x360
+[  276.403693]  optee_open_session+0x19c/0x2a0
+[  276.403695]  tee_ioctl+0xa50/0xbe0
+[  276.403697]  __arm64_sys_ioctl+0xac/0xf0
+[  276.403700]  el0_svc_common.constprop.0+0x80/0x1d0
+[  276.403702]  do_el0_svc+0x38/0xc0
+[  276.403704]  el0_svc+0x1c/0x30
+[  276.403706]  el0_sync_handler+0xa8/0xb0
+[  276.403707]  el0_sync+0x16c/0x180
+[  276.403762] | 4471 |optee_supp_send()---start
+[  276.403778] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  276.403782] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  276.403788] | 4471 |optee_supp_recv()---start
+[  276.403793] | 4471 |optee_supp_recv()---before while
+[  276.403799] | 4470 |optee_smccc_smc()---start
+[  276.403807] | 4471 |optee_supp_recv()---befroe wait
+[  276.534015] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  276.534018] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  276.534019] | 4470 |res32 : -65531 -37648 1028308608 0
+[  276.534020] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  276.534024] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  276.534026] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  276.534027] | 4470 |optee_handle_rpc()---CMD
+[  276.534029] | 4470 |handle_rpc_func_cmd()---default
+[  276.534030] | 4470 |optee_supp_thrd_req()---start
+[  276.534034] | 4470 |optee_supp_thrd_req()---before wait
+[  276.534036] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  276.534057] | 353 |optee_supp_recv()---after wait
+[  276.541020] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  276.541072]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  276.541090] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  276.541091] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  276.541092] Call trace:
+[  276.541095]  dump_backtrace+0x0/0x1e0
+[  276.541097]  show_stack+0x30/0x40
+[  276.541100]  dump_stack+0xf0/0x130
+[  276.541101]  __schedule_bug+0x6c/0x80
+[  276.541103]  __schedule+0x890/0x980
+[  276.541105]  schedule+0x78/0x110
+[  276.541108]  schedule_timeout+0x2dc/0x340
+[  276.541110]  wait_for_completion_interruptible+0x90/0x160
+[  276.541112]  optee_supp_thrd_req+0xfc/0x1c0
+[  276.541114]  optee_handle_rpc+0x2c8/0x8c0
+[  276.541116]  optee_do_call_with_arg+0x2d4/0x360
+[  276.541118]  optee_open_session+0x19c/0x2a0
+[  276.541120]  tee_ioctl+0xa50/0xbe0
+[  276.541122]  __arm64_sys_ioctl+0xac/0xf0
+[  276.541125]  el0_svc_common.constprop.0+0x80/0x1d0
+[  276.541127]  do_el0_svc+0x38/0xc0
+[  276.541129]  el0_svc+0x1c/0x30
+[  276.541130]  el0_sync_handler+0xa8/0xb0
+[  276.541132]  el0_sync+0x16c/0x180
+[  276.554346] | 353 |optee_supp_send()---start
+[  276.554353] | 353 |optee_supp_send()---TYPE_MEMREF
+[  276.554375] | 353 |optee_supp_recv()---start
+[  276.554378] | 353 |optee_supp_recv()---before while
+[  276.554381] | 353 |optee_supp_recv()---befroe wait
+[  276.554620] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  276.554625] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  276.554631] | 4470 |optee_smccc_smc()---start
+[  276.684859] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  276.684863] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  276.684866] | 4470 |res32 : -65531 -37648 1028308608 0
+[  276.684867] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  276.684869] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  276.684872] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  276.684875] | 4470 |optee_handle_rpc()---CMD
+[  276.684878] | 4470 |handle_rpc_func_cmd()---SHM_ALLOC
+[  276.684890] | 4470 |optee_supp_thrd_req()---start
+[  276.684895] | 4470 |optee_supp_thrd_req()---before wait
+[  276.684900] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  276.684925] | 4471 |optee_supp_recv()---after wait
+[  276.691906] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  276.692001]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  276.692034] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  276.692036] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  276.692040] Call trace:
+[  276.692062]  dump_backtrace+0x0/0x1e0
+[  276.692066]  show_stack+0x30/0x40
+[  276.692080]  dump_stack+0xf0/0x130
+[  276.692090]  __schedule_bug+0x6c/0x80
+[  276.692098]  __schedule+0x890/0x980
+[  276.692103]  schedule+0x78/0x110
+[  276.692106]  schedule_timeout+0x2dc/0x340
+[  276.692112]  wait_for_completion_interruptible+0x90/0x160
+[  276.692120] | 4471 |optee_supp_send()---start
+[  276.692134]  optee_supp_thrd_req+0xfc/0x1c0
+[  276.692142] | 4471 |optee_supp_send()---TYPE_VALUE
+[  276.692145]  optee_handle_rpc+0x794/0x8c0
+[  276.692151]  optee_do_call_with_arg+0x2d4/0x360
+[  276.692160]  optee_open_session+0x19c/0x2a0
+[  276.692164]  tee_ioctl+0xa50/0xbe0
+[  276.692174]  __arm64_sys_ioctl+0xac/0xf0
+[  276.692177] | 4471 |optee_supp_recv()---start
+[  276.692182] | 4471 |optee_supp_recv()---before while
+[  276.692191]  el0_svc_common.constprop.0+0x80/0x1d0
+[  276.692196] | 4471 |optee_supp_recv()---befroe wait
+[  276.692201]  do_el0_svc+0x38/0xc0
+[  276.692206]  el0_svc+0x1c/0x30
+[  276.692209]  el0_sync_handler+0xa8/0xb0
+[  276.692212]  el0_sync+0x16c/0x180
+[  276.692222] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  276.692224] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  276.692226] | 4470 |optee_smccc_smc()---start
+[  276.822462] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  276.822465] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  276.822466] | 4470 |res32 : -65531 -37648 1028308608 0
+[  276.822468] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  276.822469] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  276.822471] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  276.822472] | 4470 |optee_handle_rpc()---CMD
+[  276.822473] | 4470 |handle_rpc_func_cmd()---default
+[  276.822475] | 4470 |optee_supp_thrd_req()---start
+[  276.822478] | 4470 |optee_supp_thrd_req()---before wait
+[  276.822480] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  276.822489] | 353 |optee_supp_recv()---after wait
+[  276.829469] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  276.829533]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  276.829550] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  276.829551] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  276.829553] Call trace:
+[  276.829556]  dump_backtrace+0x0/0x1e0
+[  276.829559]  show_stack+0x30/0x40
+[  276.829562]  dump_stack+0xf0/0x130
+[  276.829565]  __schedule_bug+0x6c/0x80
+[  276.829567]  __schedule+0x890/0x980
+[  276.829569]  schedule+0x78/0x110
+[  276.829571]  schedule_timeout+0x2dc/0x340
+[  276.829574]  wait_for_completion_interruptible+0x90/0x160
+[  276.829576]  optee_supp_thrd_req+0xfc/0x1c0
+[  276.829578]  optee_handle_rpc+0x2c8/0x8c0
+[  276.829580]  optee_do_call_with_arg+0x2d4/0x360
+[  276.829582]  optee_open_session+0x19c/0x2a0
+[  276.829584]  tee_ioctl+0xa50/0xbe0
+[  276.829587]  __arm64_sys_ioctl+0xac/0xf0
+[  276.829591]  el0_svc_common.constprop.0+0x80/0x1d0
+[  276.829594]  do_el0_svc+0x38/0xc0
+[  276.829601]  el0_svc+0x1c/0x30
+[  276.829602]  el0_sync_handler+0xa8/0xb0
+[  276.829604]  el0_sync+0x16c/0x180
+[  276.841556] | 353 |optee_supp_send()---start
+[  276.841563] | 353 |optee_supp_send()---TYPE_MEMREF
+[  276.841581] | 353 |optee_supp_recv()---start
+[  276.841584] | 353 |optee_supp_recv()---before while
+[  276.841586] | 353 |optee_supp_recv()---befroe wait
+[  276.841800] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  276.841806] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  276.841810] | 4470 |optee_smccc_smc()---start
+[  276.973262] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  276.973269] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  276.973272] | 4470 |res32 : -65531 -37648 1028308608 0
+[  276.973274] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  276.973277] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  276.973279] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  276.973281] | 4470 |optee_handle_rpc()---CMD
+[  276.973284] | 4470 |handle_rpc_func_cmd()---default
+[  276.973287] | 4470 |optee_supp_thrd_req()---start
+[  276.973299] | 4470 |optee_supp_thrd_req()---before wait
+[  276.973303] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  276.973310] | 4471 |optee_supp_recv()---after wait
+[  276.980301] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  276.980422]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E)
+[  276.980437] | 4471 |optee_supp_send()---start
+[  276.980440]  nvgpu(E)
+[  276.980442] | 4471 |optee_supp_send()---TYPE_VALUE
+[  276.980444]  nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  276.980456] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  276.980457] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  276.980459] Call trace:
+[  276.980466]  dump_backtrace+0x0/0x1e0
+[  276.980468] | 4471 |optee_supp_recv()---start
+[  276.980472] | 4471 |optee_supp_recv()---before while
+[  276.980475]  show_stack+0x30/0x40
+[  276.980481]  dump_stack+0xf0/0x130
+[  276.980485] | 4471 |optee_supp_recv()---befroe wait
+[  276.980490]  __schedule_bug+0x6c/0x80
+[  276.980495]  __schedule+0x890/0x980
+[  276.980499]  schedule+0x78/0x110
+[  276.980501]  schedule_timeout+0x2dc/0x340
+[  276.980504]  wait_for_completion_interruptible+0x90/0x160
+[  276.980509]  optee_supp_thrd_req+0xfc/0x1c0
+[  276.980511]  optee_handle_rpc+0x2c8/0x8c0
+[  276.980513]  optee_do_call_with_arg+0x2d4/0x360
+[  276.980515]  optee_open_session+0x19c/0x2a0
+[  276.980517]  tee_ioctl+0xa50/0xbe0
+[  276.980522]  __arm64_sys_ioctl+0xac/0xf0
+[  276.980526]  el0_svc_common.constprop.0+0x80/0x1d0
+[  276.980528]  do_el0_svc+0x38/0xc0
+[  276.980530]  el0_svc+0x1c/0x30
+[  276.980532]  el0_sync_handler+0xa8/0xb0
+[  276.980533]  el0_sync+0x16c/0x180
+[  276.980537] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  276.980539] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  276.980540] | 4470 |optee_smccc_smc()---start
+[  277.110705] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  277.110708] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  277.110712] | 4470 |res32 : -65531 -37648 1028308608 0
+[  277.110713] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  277.110715] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  277.110716] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  277.110717] | 4470 |optee_handle_rpc()---CMD
+[  277.110718] | 4470 |handle_rpc_func_cmd()---default
+[  277.110720] | 4470 |optee_supp_thrd_req()---start
+[  277.110723] | 4470 |optee_supp_thrd_req()---before wait
+[  277.110724] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  277.110737] | 353 |optee_supp_recv()---after wait
+[  277.117718] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  277.117773]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  277.117790] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  277.117791] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  277.117794] | 353 |optee_supp_send()---start
+[  277.117797] Call trace:
+[  277.117800] | 353 |optee_supp_send()---TYPE_MEMREF
+[  277.117804]  dump_backtrace+0x0/0x1e0
+[  277.117807]  show_stack+0x30/0x40
+[  277.117810]  dump_stack+0xf0/0x130
+[  277.117812]  __schedule_bug+0x6c/0x80
+[  277.117814]  __schedule+0x890/0x980
+[  277.117815]  schedule+0x78/0x110
+[  277.117818]  schedule_timeout+0x2dc/0x340
+[  277.117820]  wait_for_completion_interruptible+0x90/0x160
+[  277.117822]  optee_supp_thrd_req+0xfc/0x1c0
+[  277.117824]  optee_handle_rpc+0x2c8/0x8c0
+[  277.117826]  optee_do_call_with_arg+0x2d4/0x360
+[  277.117828]  optee_open_session+0x19c/0x2a0
+[  277.117830]  tee_ioctl+0xa50/0xbe0
+[  277.117832]  __arm64_sys_ioctl+0xac/0xf0
+[  277.117835]  el0_svc_common.constprop.0+0x80/0x1d0
+[  277.117837]  do_el0_svc+0x38/0xc0
+[  277.117839]  el0_svc+0x1c/0x30
+[  277.117840]  el0_sync_handler+0xa8/0xb0
+[  277.117842]  el0_sync+0x16c/0x180
+[  277.117846] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  277.117847] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  277.117849] | 4470 |optee_smccc_smc()---start
+[  277.117937] | 353 |optee_supp_recv()---start
+[  277.117941] | 353 |optee_supp_recv()---before while
+[  277.117944] | 353 |optee_supp_recv()---befroe wait
+[  277.248056] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  277.248058] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  277.248060] | 4470 |res32 : -65531 -37648 1028308608 0
+[  277.248062] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  277.248063] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  277.248064] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  277.248065] | 4470 |optee_handle_rpc()---CMD
+[  277.248066] | 4470 |handle_rpc_func_cmd()---default
+[  277.248068] | 4470 |optee_supp_thrd_req()---start
+[  277.248071] | 4470 |optee_supp_thrd_req()---before wait
+[  277.248073] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  277.248088] | 4471 |optee_supp_recv()---after wait
+[  277.255059] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  277.255106]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  277.255119] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  277.255120] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  277.255121] Call trace:
+[  277.255124]  dump_backtrace+0x0/0x1e0
+[  277.255126]  show_stack+0x30/0x40
+[  277.255128]  dump_stack+0xf0/0x130
+[  277.255130]  __schedule_bug+0x6c/0x80
+[  277.255131]  __schedule+0x890/0x980
+[  277.255133]  schedule+0x78/0x110
+[  277.255135]  schedule_timeout+0x2dc/0x340
+[  277.255136]  wait_for_completion_interruptible+0x90/0x160
+[  277.255138]  optee_supp_thrd_req+0xfc/0x1c0
+[  277.255140]  optee_handle_rpc+0x2c8/0x8c0
+[  277.255142]  optee_do_call_with_arg+0x2d4/0x360
+[  277.255143]  optee_open_session+0x19c/0x2a0
+[  277.255145]  tee_ioctl+0xa50/0xbe0
+[  277.255147]  __arm64_sys_ioctl+0xac/0xf0
+[  277.255149]  el0_svc_common.constprop.0+0x80/0x1d0
+[  277.255150]  do_el0_svc+0x38/0xc0
+[  277.255152]  el0_svc+0x1c/0x30
+[  277.255154]  el0_sync_handler+0xa8/0xb0
+[  277.255172]  el0_sync+0x16c/0x180
+[  277.255239] | 4471 |optee_supp_send()---start
+[  277.255246] | 4471 |optee_supp_send()---TYPE_MEMREF
+[  277.255266] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  277.255270] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  277.255274] | 4470 |optee_smccc_smc()---start
+[  277.255279] | 4471 |optee_supp_recv()---start
+[  277.255285] | 4471 |optee_supp_recv()---before while
+[  277.255297] | 4471 |optee_supp_recv()---befroe wait
+[  277.385488] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  277.385492] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  277.385494] | 4470 |res32 : -65531 -37648 1028308608 0
+[  277.385495] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  277.385497] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  277.385499] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  277.385506] | 4470 |optee_handle_rpc()---CMD
+[  277.385507] | 4470 |handle_rpc_func_cmd()---default
+[  277.385509] | 4470 |optee_supp_thrd_req()---start
+[  277.385513] | 4470 |optee_supp_thrd_req()---before wait
+[  277.385514] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  277.385528] | 353 |optee_supp_recv()---after wait
+[  277.392524] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  277.392575]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  277.392592] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  277.392593] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  277.392594] Call trace:
+[  277.392597]  dump_backtrace+0x0/0x1e0
+[  277.392599]  show_stack+0x30/0x40
+[  277.392602]  dump_stack+0xf0/0x130
+[  277.392604]  __schedule_bug+0x6c/0x80
+[  277.392606]  __schedule+0x890/0x980
+[  277.392608]  schedule+0x78/0x110
+[  277.392610]  schedule_timeout+0x2dc/0x340
+[  277.392615] | 353 |optee_supp_send()---start
+[  277.392619]  wait_for_completion_interruptible+0x90/0x160
+[  277.392623] | 353 |optee_supp_send()---TYPE_MEMREF
+[  277.392627]  optee_supp_thrd_req+0xfc/0x1c0
+[  277.392631]  optee_handle_rpc+0x2c8/0x8c0
+[  277.392632]  optee_do_call_with_arg+0x2d4/0x360
+[  277.392634]  optee_open_session+0x19c/0x2a0
+[  277.392636]  tee_ioctl+0xa50/0xbe0
+[  277.392639]  __arm64_sys_ioctl+0xac/0xf0
+[  277.392641]  el0_svc_common.constprop.0+0x80/0x1d0
+[  277.392643]  do_el0_svc+0x38/0xc0
+[  277.392645]  el0_svc+0x1c/0x30
+[  277.392647]  el0_sync_handler+0xa8/0xb0
+[  277.392648]  el0_sync+0x16c/0x180
+[  277.392652] | 353 |optee_supp_recv()---start
+[  277.392656] | 353 |optee_supp_recv()---before while
+[  277.392659] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  277.392663] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  277.392667] | 4470 |optee_smccc_smc()---start
+[  277.392669] | 353 |optee_supp_recv()---befroe wait
+[  277.522916] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  277.522920] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  277.522922] | 4470 |res32 : -65531 -37648 1028308608 0
+[  277.522924] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  277.522925] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  277.522927] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  277.522928] | 4470 |optee_handle_rpc()---CMD
+[  277.522934] | 4470 |handle_rpc_func_cmd()---default
+[  277.522936] | 4470 |optee_supp_thrd_req()---start
+[  277.522939] | 4470 |optee_supp_thrd_req()---before wait
+[  277.522942] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  277.522958] | 4471 |optee_supp_recv()---after wait
+[  277.529928] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  277.529994]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  277.530012] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  277.530013] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  277.530014] Call trace:
+[  277.530017]  dump_backtrace+0x0/0x1e0
+[  277.530020]  show_stack+0x30/0x40
+[  277.530022]  dump_stack+0xf0/0x130
+[  277.530024]  __schedule_bug+0x6c/0x80
+[  277.530026]  __schedule+0x890/0x980
+[  277.530028]  schedule+0x78/0x110
+[  277.530030]  schedule_timeout+0x2dc/0x340
+[  277.530033]  wait_for_completion_interruptible+0x90/0x160
+[  277.530035]  optee_supp_thrd_req+0xfc/0x1c0
+[  277.530041]  optee_handle_rpc+0x2c8/0x8c0
+[  277.530045]  optee_do_call_with_arg+0x2d4/0x360
+[  277.530051]  optee_open_session+0x19c/0x2a0
+[  277.530055] | 4471 |optee_supp_send()---start
+[  277.530062]  tee_ioctl+0xa50/0xbe0
+[  277.530065] | 4471 |optee_supp_send()---TYPE_MEMREF
+[  277.530072]  __arm64_sys_ioctl+0xac/0xf0
+[  277.530077]  el0_svc_common.constprop.0+0x80/0x1d0
+[  277.530081]  do_el0_svc+0x38/0xc0
+[  277.530084]  el0_svc+0x1c/0x30
+[  277.530088]  el0_sync_handler+0xa8/0xb0
+[  277.530092] | 4471 |optee_supp_recv()---start
+[  277.530097]  el0_sync+0x16c/0x180
+[  277.530102] | 4471 |optee_supp_recv()---before while
+[  277.530106] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  277.530110] | 4471 |optee_supp_recv()---befroe wait
+[  277.530114] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  277.530118] | 4470 |optee_smccc_smc()---start
+[  277.660402] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  277.660406] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  277.660410] | 4470 |res32 : -65531 -37648 1028308608 0
+[  277.660412] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  277.660414] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  277.660415] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  277.660417] | 4470 |optee_handle_rpc()---CMD
+[  277.660418] | 4470 |handle_rpc_func_cmd()---default
+[  277.660419] | 4470 |optee_supp_thrd_req()---start
+[  277.660422] | 4470 |optee_supp_thrd_req()---before wait
+[  277.660425] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  277.660438] | 353 |optee_supp_recv()---after wait
+[  277.667413] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  277.667452]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  277.667466] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  277.667472] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  277.667476] Call trace:
+[  277.667479]  dump_backtrace+0x0/0x1e0
+[  277.667481]  show_stack+0x30/0x40
+[  277.667484]  dump_stack+0xf0/0x130
+[  277.667486]  __schedule_bug+0x6c/0x80
+[  277.667488]  __schedule+0x890/0x980
+[  277.667490]  schedule+0x78/0x110
+[  277.667492]  schedule_timeout+0x2dc/0x340
+[  277.667495]  wait_for_completion_interruptible+0x90/0x160
+[  277.667497]  optee_supp_thrd_req+0xfc/0x1c0
+[  277.667500]  optee_handle_rpc+0x2c8/0x8c0
+[  277.667502]  optee_do_call_with_arg+0x2d4/0x360
+[  277.667504]  optee_open_session+0x19c/0x2a0
+[  277.667506]  tee_ioctl+0xa50/0xbe0
+[  277.667508]  __arm64_sys_ioctl+0xac/0xf0
+[  277.667511]  el0_svc_common.constprop.0+0x80/0x1d0
+[  277.667513]  do_el0_svc+0x38/0xc0
+[  277.667515]  el0_svc+0x1c/0x30
+[  277.667518]  el0_sync_handler+0xa8/0xb0
+[  277.667519]  el0_sync+0x16c/0x180
+[  277.667542] | 353 |optee_supp_send()---start
+[  277.667549] | 353 |optee_supp_send()---TYPE_MEMREF
+[  277.667563] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  277.667566] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  277.667567] | 4470 |optee_smccc_smc()---start
+[  277.667574] | 353 |optee_supp_recv()---start
+[  277.667578] | 353 |optee_supp_recv()---before while
+[  277.667582] | 353 |optee_supp_recv()---befroe wait
+[  277.797845] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  277.797849] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  277.797852] | 4470 |res32 : -65531 -37648 1028308608 0
+[  277.797854] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  277.797856] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  277.797857] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  277.797859] | 4470 |optee_handle_rpc()---CMD
+[  277.797860] | 4470 |handle_rpc_func_cmd()---default
+[  277.797861] | 4470 |optee_supp_thrd_req()---start
+[  277.797872] | 4470 |optee_supp_thrd_req()---before wait
+[  277.797873] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  277.797882] | 4471 |optee_supp_recv()---after wait
+[  277.804862] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  277.804914]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  277.804931] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  277.804932] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  277.804933] Call trace:
+[  277.804936]  dump_backtrace+0x0/0x1e0
+[  277.804938]  show_stack+0x30/0x40
+[  277.804941]  dump_stack+0xf0/0x130
+[  277.804943]  __schedule_bug+0x6c/0x80
+[  277.804945]  __schedule+0x890/0x980
+[  277.804947]  schedule+0x78/0x110
+[  277.804950]  schedule_timeout+0x2dc/0x340
+[  277.804952]  wait_for_completion_interruptible+0x90/0x160
+[  277.804955]  optee_supp_thrd_req+0xfc/0x1c0
+[  277.804957]  optee_handle_rpc+0x2c8/0x8c0
+[  277.804959]  optee_do_call_with_arg+0x2d4/0x360
+[  277.804961]  optee_open_session+0x19c/0x2a0
+[  277.804962]  tee_ioctl+0xa50/0xbe0
+[  277.804965]  __arm64_sys_ioctl+0xac/0xf0
+[  277.804969] | 4471 |optee_supp_send()---start
+[  277.804973]  el0_svc_common.constprop.0+0x80/0x1d0
+[  277.804977] | 4471 |optee_supp_send()---TYPE_MEMREF
+[  277.804981]  do_el0_svc+0x38/0xc0
+[  277.804983]  el0_svc+0x1c/0x30
+[  277.804985]  el0_sync_handler+0xa8/0xb0
+[  277.804987]  el0_sync+0x16c/0x180
+[  277.804991] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  277.804993] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  277.804994] | 4470 |optee_smccc_smc()---start
+[  277.805005] | 4471 |optee_supp_recv()---start
+[  277.805011] | 4471 |optee_supp_recv()---before while
+[  277.805015] | 4471 |optee_supp_recv()---befroe wait
+[  277.935270] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  277.935274] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  277.935276] | 4470 |res32 : -65531 -37648 1028308608 0
+[  277.935277] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  277.935278] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  277.935279] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  277.935280] | 4470 |optee_handle_rpc()---CMD
+[  277.935281] | 4470 |handle_rpc_func_cmd()---default
+[  277.935283] | 4470 |optee_supp_thrd_req()---start
+[  277.935291] | 4470 |optee_supp_thrd_req()---before wait
+[  277.935293] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  277.935302] | 353 |optee_supp_recv()---after wait
+[  277.942301] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  277.942352]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  277.942368] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  277.942369] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  277.942370] Call trace:
+[  277.942374]  dump_backtrace+0x0/0x1e0
+[  277.942376]  show_stack+0x30/0x40
+[  277.942379]  dump_stack+0xf0/0x130
+[  277.942380]  __schedule_bug+0x6c/0x80
+[  277.942382]  __schedule+0x890/0x980
+[  277.942384]  schedule+0x78/0x110
+[  277.942386]  schedule_timeout+0x2dc/0x340
+[  277.942389]  wait_for_completion_interruptible+0x90/0x160
+[  277.942392]  optee_supp_thrd_req+0xfc/0x1c0
+[  277.942393]  optee_handle_rpc+0x2c8/0x8c0
+[  277.942395]  optee_do_call_with_arg+0x2d4/0x360
+[  277.942398]  optee_open_session+0x19c/0x2a0
+[  277.942400]  tee_ioctl+0xa50/0xbe0
+[  277.942402]  __arm64_sys_ioctl+0xac/0xf0
+[  277.942404]  el0_svc_common.constprop.0+0x80/0x1d0
+[  277.942407]  do_el0_svc+0x38/0xc0
+[  277.942409]  el0_svc+0x1c/0x30
+[  277.942410]  el0_sync_handler+0xa8/0xb0
+[  277.942412]  el0_sync+0x16c/0x180
+[  277.942486] | 353 |optee_supp_send()---start
+[  277.942493] | 353 |optee_supp_send()---TYPE_MEMREF
+[  277.942516] | 353 |optee_supp_recv()---start
+[  277.942526] | 353 |optee_supp_recv()---before while
+[  277.942536] | 353 |optee_supp_recv()---befroe wait
+[  277.943039] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  277.943045] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  277.943051] | 4470 |optee_smccc_smc()---start
+[  278.073378] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  278.073383] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  278.073385] | 4470 |res32 : -65531 -37648 1028308608 0
+[  278.073387] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  278.073390] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  278.073392] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  278.073395] | 4470 |optee_handle_rpc()---CMD
+[  278.073398] | 4470 |handle_rpc_func_cmd()---default
+[  278.073410] | 4470 |optee_supp_thrd_req()---start
+[  278.073417] | 4470 |optee_supp_thrd_req()---before wait
+[  278.073422] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  278.073435] | 4471 |optee_supp_recv()---after wait
+[  278.080430] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  278.080526]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E)
+[  278.080552] | 4471 |optee_supp_send()---start
+[  278.080555]  nvmap(E) ip_tables(E) x_tables(E)
+[  278.080566] | 4471 |optee_supp_send()---TYPE_MEMREF
+[  278.080571]  [last unloaded: mtd]
+[  278.080582] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  278.080584] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  278.080588] Call trace:
+[  278.080609]  dump_backtrace+0x0/0x1e0
+[  278.080613] | 4471 |optee_supp_recv()---start
+[  278.080617] | 4471 |optee_supp_recv()---before while
+[  278.080628]  show_stack+0x30/0x40
+[  278.080636] | 4471 |optee_supp_recv()---befroe wait
+[  278.080657]  dump_stack+0xf0/0x130
+[  278.080670]  __schedule_bug+0x6c/0x80
+[  278.080677]  __schedule+0x890/0x980
+[  278.080681]  schedule+0x78/0x110
+[  278.080685]  schedule_timeout+0x2dc/0x340
+[  278.080690]  wait_for_completion_interruptible+0x90/0x160
+[  278.080700]  optee_supp_thrd_req+0xfc/0x1c0
+[  278.080702]  optee_handle_rpc+0x2c8/0x8c0
+[  278.080704]  optee_do_call_with_arg+0x2d4/0x360
+[  278.080706]  optee_open_session+0x19c/0x2a0
+[  278.080708]  tee_ioctl+0xa50/0xbe0
+[  278.080715]  __arm64_sys_ioctl+0xac/0xf0
+[  278.080719]  el0_svc_common.constprop.0+0x80/0x1d0
+[  278.080722]  do_el0_svc+0x38/0xc0
+[  278.080723]  el0_svc+0x1c/0x30
+[  278.080725]  el0_sync_handler+0xa8/0xb0
+[  278.080728]  el0_sync+0x16c/0x180
+[  278.080734] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  278.080735] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  278.080737] | 4470 |optee_smccc_smc()---start
+[  278.211024] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  278.211027] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  278.211031] | 4470 |res32 : -65531 -37648 1028308608 0
+[  278.211032] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  278.211033] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  278.211035] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  278.211036] | 4470 |optee_handle_rpc()---CMD
+[  278.211037] | 4470 |handle_rpc_func_cmd()---default
+[  278.211039] | 4470 |optee_supp_thrd_req()---start
+[  278.211041] | 4470 |optee_supp_thrd_req()---before wait
+[  278.211044] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  278.211057] | 353 |optee_supp_recv()---after wait
+[  278.218045] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  278.218094]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  278.218112] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  278.218113] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  278.218115] Call trace:
+[  278.218118]  dump_backtrace+0x0/0x1e0
+[  278.218120]  show_stack+0x30/0x40
+[  278.218122]  dump_stack+0xf0/0x130
+[  278.218124]  __schedule_bug+0x6c/0x80
+[  278.218126]  __schedule+0x890/0x980
+[  278.218128]  schedule+0x78/0x110
+[  278.218130]  schedule_timeout+0x2dc/0x340
+[  278.218134] | 353 |optee_supp_send()---start
+[  278.218139]  wait_for_completion_interruptible+0x90/0x160
+[  278.218142] | 353 |optee_supp_send()---TYPE_MEMREF
+[  278.218147]  optee_supp_thrd_req+0xfc/0x1c0
+[  278.218150]  optee_handle_rpc+0x2c8/0x8c0
+[  278.218152]  optee_do_call_with_arg+0x2d4/0x360
+[  278.218154]  optee_open_session+0x19c/0x2a0
+[  278.218156]  tee_ioctl+0xa50/0xbe0
+[  278.218158]  __arm64_sys_ioctl+0xac/0xf0
+[  278.218161]  el0_svc_common.constprop.0+0x80/0x1d0
+[  278.218164] | 353 |optee_supp_recv()---start
+[  278.218167] | 353 |optee_supp_recv()---before while
+[  278.218173]  do_el0_svc+0x38/0xc0
+[  278.218177] | 353 |optee_supp_recv()---befroe wait
+[  278.218180]  el0_svc+0x1c/0x30
+[  278.218185]  el0_sync_handler+0xa8/0xb0
+[  278.218189]  el0_sync+0x16c/0x180
+[  278.218193] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  278.218195] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  278.218196] | 4470 |optee_smccc_smc()---start
+[  278.348477] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  278.348482] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  278.348484] | 4470 |res32 : -65531 -37648 1028308608 0
+[  278.348485] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  278.348487] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  278.348489] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  278.348490] | 4470 |optee_handle_rpc()---CMD
+[  278.348496] | 4470 |handle_rpc_func_cmd()---default
+[  278.348498] | 4470 |optee_supp_thrd_req()---start
+[  278.348503] | 4470 |optee_supp_thrd_req()---before wait
+[  278.348505] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  278.348521] | 4471 |optee_supp_recv()---after wait
+[  278.355493] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  278.355544]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  278.355562] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  278.355564] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  278.355565] Call trace:
+[  278.355568]  dump_backtrace+0x0/0x1e0
+[  278.355571]  show_stack+0x30/0x40
+[  278.355573]  dump_stack+0xf0/0x130
+[  278.355575]  __schedule_bug+0x6c/0x80
+[  278.355577]  __schedule+0x890/0x980
+[  278.355579]  schedule+0x78/0x110
+[  278.355581]  schedule_timeout+0x2dc/0x340
+[  278.355584]  wait_for_completion_interruptible+0x90/0x160
+[  278.355586]  optee_supp_thrd_req+0xfc/0x1c0
+[  278.355588]  optee_handle_rpc+0x2c8/0x8c0
+[  278.355590]  optee_do_call_with_arg+0x2d4/0x360
+[  278.355592]  optee_open_session+0x19c/0x2a0
+[  278.355594]  tee_ioctl+0xa50/0xbe0
+[  278.355596]  __arm64_sys_ioctl+0xac/0xf0
+[  278.355599]  el0_svc_common.constprop.0+0x80/0x1d0
+[  278.355601]  do_el0_svc+0x38/0xc0
+[  278.355603]  el0_svc+0x1c/0x30
+[  278.355605]  el0_sync_handler+0xa8/0xb0
+[  278.355606]  el0_sync+0x16c/0x180
+[  278.355705] | 4471 |optee_supp_send()---start
+[  278.355716] | 4471 |optee_supp_send()---TYPE_VALUE
+[  278.355729] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  278.355732] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  278.355733] | 4470 |optee_smccc_smc()---start
+[  278.355745] | 4471 |optee_supp_recv()---start
+[  278.355749] | 4471 |optee_supp_recv()---before while
+[  278.355752] | 4471 |optee_supp_recv()---befroe wait
+[  278.485938] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  278.485940] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  278.485942] | 4470 |res32 : -65531 -37648 1028308608 0
+[  278.485943] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  278.485946] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  278.485948] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  278.485949] | 4470 |optee_handle_rpc()---CMD
+[  278.485950] | 4470 |handle_rpc_func_cmd()---default
+[  278.485952] | 4470 |optee_supp_thrd_req()---start
+[  278.485957] | 4470 |optee_supp_thrd_req()---before wait
+[  278.485959] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  278.485975] | 353 |optee_supp_recv()---after wait
+[  278.492956] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  278.493009]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  278.493026] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  278.493027] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  278.493028] Call trace:
+[  278.493032]  dump_backtrace+0x0/0x1e0
+[  278.493034]  show_stack+0x30/0x40
+[  278.493037]  dump_stack+0xf0/0x130
+[  278.493039]  __schedule_bug+0x6c/0x80
+[  278.493040]  __schedule+0x890/0x980
+[  278.493042]  schedule+0x78/0x110
+[  278.493045]  schedule_timeout+0x2dc/0x340
+[  278.493047]  wait_for_completion_interruptible+0x90/0x160
+[  278.493050]  optee_supp_thrd_req+0xfc/0x1c0
+[  278.493052]  optee_handle_rpc+0x2c8/0x8c0
+[  278.493054]  optee_do_call_with_arg+0x2d4/0x360
+[  278.493056]  optee_open_session+0x19c/0x2a0
+[  278.493057]  tee_ioctl+0xa50/0xbe0
+[  278.493060]  __arm64_sys_ioctl+0xac/0xf0
+[  278.493063]  el0_svc_common.constprop.0+0x80/0x1d0
+[  278.493065]  do_el0_svc+0x38/0xc0
+[  278.493067]  el0_svc+0x1c/0x30
+[  278.493069]  el0_sync_handler+0xa8/0xb0
+[  278.493070]  el0_sync+0x16c/0x180
+[  278.504305] | 353 |optee_supp_send()---start
+[  278.504313] | 353 |optee_supp_send()---TYPE_MEMREF
+[  278.504337] | 353 |optee_supp_recv()---start
+[  278.504340] | 353 |optee_supp_recv()---before while
+[  278.504343] | 353 |optee_supp_recv()---befroe wait
+[  278.504525] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  278.504530] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  278.504533] | 4470 |optee_smccc_smc()---start
+[  278.634759] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  278.634765] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  278.634767] | 4470 |res32 : -65531 -37648 1028308608 0
+[  278.634769] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  278.634775] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  278.634777] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  278.634779] | 4470 |optee_handle_rpc()---CMD
+[  278.634781] | 4470 |handle_rpc_func_cmd()---default
+[  278.634783] | 4470 |optee_supp_thrd_req()---start
+[  278.634788] | 4470 |optee_supp_thrd_req()---before wait
+[  278.634791] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  278.634797] | 4471 |optee_supp_recv()---after wait
+[  278.641796] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  278.641889]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  278.641922] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  278.641924] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  278.641926] Call trace:
+[  278.641944]  dump_backtrace+0x0/0x1e0
+[  278.641949]  show_stack+0x30/0x40
+[  278.641964]  dump_stack+0xf0/0x130
+[  278.641975]  __schedule_bug+0x6c/0x80
+[  278.641987]  __schedule+0x890/0x980
+[  278.641993]  schedule+0x78/0x110
+[  278.641998]  schedule_timeout+0x2dc/0x340
+[  278.642003]  wait_for_completion_interruptible+0x90/0x160
+[  278.642013]  optee_supp_thrd_req+0xfc/0x1c0
+[  278.642017]  optee_handle_rpc+0x2c8/0x8c0
+[  278.642022]  optee_do_call_with_arg+0x2d4/0x360
+[  278.642026]  optee_open_session+0x19c/0x2a0
+[  278.642028]  tee_ioctl+0xa50/0xbe0
+[  278.642036]  __arm64_sys_ioctl+0xac/0xf0
+[  278.642041]  el0_svc_common.constprop.0+0x80/0x1d0
+[  278.642043]  do_el0_svc+0x38/0xc0
+[  278.642047]  el0_svc+0x1c/0x30
+[  278.642049]  el0_sync_handler+0xa8/0xb0
+[  278.642053]  el0_sync+0x16c/0x180
+[  278.648620] | 4471 |optee_supp_send()---start
+[  278.648627] | 4471 |optee_supp_send()---TYPE_MEMREF
+[  278.648755] | 4471 |optee_supp_recv()---start
+[  278.648759] | 4471 |optee_supp_recv()---before while
+[  278.648761] | 4471 |optee_supp_recv()---befroe wait
+[  278.648838] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  278.648843] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  278.648847] | 4470 |optee_smccc_smc()---start
+[  278.779115] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  278.779119] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  278.779124] | 4470 |res32 : -65531 -37648 1028308608 0
+[  278.779126] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  278.779128] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  278.779130] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  278.779133] | 4470 |optee_handle_rpc()---CMD
+[  278.779136] | 4470 |handle_rpc_func_cmd()---default
+[  278.779139] | 4470 |optee_supp_thrd_req()---start
+[  278.779143] | 4470 |optee_supp_thrd_req()---before wait
+[  278.779158] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  278.779163] | 353 |optee_supp_recv()---after wait
+[  278.779238] | 353 |optee_supp_send()---start
+[  278.786186] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E)
+[  278.786205] | 353 |optee_supp_send()---TYPE_MEMREF
+[  278.786210]  ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E)
+[  278.786230] | 353 |optee_supp_recv()---start
+[  278.786232]  aes_ce_blk(E) snd_soc_tegra210_dmic(E)
+[  278.786241] | 353 |optee_supp_recv()---before while
+[  278.786246]  snd_soc_tegra210_adx(E)
+[  278.786250] | 353 |optee_supp_recv()---befroe wait
+[  278.786252]  snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E) userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  278.786354] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  278.786357] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  278.786360] Call trace:
+[  278.786381]  dump_backtrace+0x0/0x1e0
+[  278.786389]  show_stack+0x30/0x40
+[  278.786407]  dump_stack+0xf0/0x130
+[  278.786419]  __schedule_bug+0x6c/0x80
+[  278.786428]  __schedule+0x890/0x980
+[  278.786434]  schedule+0x78/0x110
+[  278.786442]  schedule_timeout+0x2dc/0x340
+[  278.786453]  wait_for_completion_interruptible+0x90/0x160
+[  278.786463]  optee_supp_thrd_req+0xfc/0x1c0
+[  278.786468]  optee_handle_rpc+0x2c8/0x8c0
+[  278.786471]  optee_do_call_with_arg+0x2d4/0x360
+[  278.786473]  optee_open_session+0x19c/0x2a0
+[  278.786476]  tee_ioctl+0xa50/0xbe0
+[  278.786483]  __arm64_sys_ioctl+0xac/0xf0
+[  278.786487]  el0_svc_common.constprop.0+0x80/0x1d0
+[  278.786490]  do_el0_svc+0x38/0xc0
+[  278.786492]  el0_svc+0x1c/0x30
+[  278.786494]  el0_sync_handler+0xa8/0xb0
+[  278.786500]  el0_sync+0x16c/0x180
+[  278.786514] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  278.786516] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  278.786517] | 4470 |optee_smccc_smc()---start
+[  278.916799] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  278.916804] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  278.916806] | 4470 |res32 : -65531 -37648 1028308608 0
+[  278.916807] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  278.916808] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  278.916810] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  278.916811] | 4470 |optee_handle_rpc()---CMD
+[  278.916812] | 4470 |handle_rpc_func_cmd()---default
+[  278.916819] | 4470 |optee_supp_thrd_req()---start
+[  278.916822] | 4470 |optee_supp_thrd_req()---before wait
+[  278.916824] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  278.916835] | 4471 |optee_supp_recv()---after wait
+[  278.923832] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  278.923882]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  278.923900] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  278.923901] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  278.923902] Call trace:
+[  278.923906]  dump_backtrace+0x0/0x1e0
+[  278.923908]  show_stack+0x30/0x40
+[  278.923911]  dump_stack+0xf0/0x130
+[  278.923913]  __schedule_bug+0x6c/0x80
+[  278.923915]  __schedule+0x890/0x980
+[  278.923917]  schedule+0x78/0x110
+[  278.923921] | 4471 |optee_supp_send()---start
+[  278.923927]  schedule_timeout+0x2dc/0x340
+[  278.923932]  wait_for_completion_interruptible+0x90/0x160
+[  278.923936] | 4471 |optee_supp_send()---TYPE_MEMREF
+[  278.923940]  optee_supp_thrd_req+0xfc/0x1c0
+[  278.923943]  optee_handle_rpc+0x2c8/0x8c0
+[  278.923945]  optee_do_call_with_arg+0x2d4/0x360
+[  278.923948]  optee_open_session+0x19c/0x2a0
+[  278.923949]  tee_ioctl+0xa50/0xbe0
+[  278.923952]  __arm64_sys_ioctl+0xac/0xf0
+[  278.923954]  el0_svc_common.constprop.0+0x80/0x1d0
+[  278.923956]  do_el0_svc+0x38/0xc0
+[  278.923958]  el0_svc+0x1c/0x30
+[  278.923960]  el0_sync_handler+0xa8/0xb0
+[  278.923963] | 4471 |optee_supp_recv()---start
+[  278.923968]  el0_sync+0x16c/0x180
+[  278.923972] | 4471 |optee_supp_recv()---before while
+[  278.923976] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  278.923980] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  278.923983] | 4471 |optee_supp_recv()---befroe wait
+[  278.923987] | 4470 |optee_smccc_smc()---start
+[  279.054266] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  279.054270] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  279.054271] | 4470 |res32 : -65531 -37648 1028308608 0
+[  279.054273] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  279.054274] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  279.054276] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  279.054277] | 4470 |optee_handle_rpc()---CMD
+[  279.054278] | 4470 |handle_rpc_func_cmd()---default
+[  279.054285] | 4470 |optee_supp_thrd_req()---start
+[  279.054288] | 4470 |optee_supp_thrd_req()---before wait
+[  279.054290] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  279.054300] | 353 |optee_supp_recv()---after wait
+[  279.061282] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  279.061338]  userspace_alert(E) max96712(E)
+[  279.061342] | 353 |optee_supp_send()---start
+[  279.061346]  nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  279.061365] | 353 |optee_supp_recv()---start
+[  279.061369] | 353 |optee_supp_recv()---before while
+[  279.061375] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  279.061378] | 353 |optee_supp_recv()---befroe wait
+[  279.061382] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  279.061385] Call trace:
+[  279.061388]  dump_backtrace+0x0/0x1e0
+[  279.061391]  show_stack+0x30/0x40
+[  279.061393]  dump_stack+0xf0/0x130
+[  279.061396]  __schedule_bug+0x6c/0x80
+[  279.061398]  __schedule+0x890/0x980
+[  279.061400]  schedule+0x78/0x110
+[  279.061402]  schedule_timeout+0x2dc/0x340
+[  279.061404]  wait_for_completion_interruptible+0x90/0x160
+[  279.061407]  optee_supp_thrd_req+0xfc/0x1c0
+[  279.061409]  optee_handle_rpc+0x2c8/0x8c0
+[  279.061411]  optee_do_call_with_arg+0x2d4/0x360
+[  279.061413]  optee_open_session+0x19c/0x2a0
+[  279.061415]  tee_ioctl+0xa50/0xbe0
+[  279.061417]  __arm64_sys_ioctl+0xac/0xf0
+[  279.061419]  el0_svc_common.constprop.0+0x80/0x1d0
+[  279.061422]  do_el0_svc+0x38/0xc0
+[  279.061424]  el0_svc+0x1c/0x30
+[  279.061425]  el0_sync_handler+0xa8/0xb0
+[  279.061427]  el0_sync+0x16c/0x180
+[  279.061430] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  279.061432] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  279.061433] | 4470 |optee_smccc_smc()---start
+[  279.191633] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  279.191638] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  279.191639] | 4470 |res32 : -65531 -37648 1028308608 0
+[  279.191640] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  279.191641] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  279.191642] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  279.191643] | 4470 |optee_handle_rpc()---CMD
+[  279.191644] | 4470 |handle_rpc_func_cmd()---default
+[  279.191652] | 4470 |optee_supp_thrd_req()---start
+[  279.191655] | 4470 |optee_supp_thrd_req()---before wait
+[  279.191657] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  279.191666] | 4471 |optee_supp_recv()---after wait
+[  279.198644] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E)
+[  279.198689] | 4471 |optee_supp_send()---start
+[  279.198693]  snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E)
+[  279.198707] | 4471 |optee_supp_recv()---start
+[  279.198711] | 4471 |optee_supp_recv()---before while
+[  279.198715]  nvadsp(E)
+[  279.198719] | 4471 |optee_supp_recv()---befroe wait
+[  279.198721]  typec(E) userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  279.198745] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  279.198746] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  279.198747] Call trace:
+[  279.198750]  dump_backtrace+0x0/0x1e0
+[  279.198752]  show_stack+0x30/0x40
+[  279.198755]  dump_stack+0xf0/0x130
+[  279.198757]  __schedule_bug+0x6c/0x80
+[  279.198759]  __schedule+0x890/0x980
+[  279.198761]  schedule+0x78/0x110
+[  279.198763]  schedule_timeout+0x2dc/0x340
+[  279.198765]  wait_for_completion_interruptible+0x90/0x160
+[  279.198767]  optee_supp_thrd_req+0xfc/0x1c0
+[  279.198769]  optee_handle_rpc+0x2c8/0x8c0
+[  279.198771]  optee_do_call_with_arg+0x2d4/0x360
+[  279.198773]  optee_open_session+0x19c/0x2a0
+[  279.198776]  tee_ioctl+0xa50/0xbe0
+[  279.198779]  __arm64_sys_ioctl+0xac/0xf0
+[  279.198781]  el0_svc_common.constprop.0+0x80/0x1d0
+[  279.198783]  do_el0_svc+0x38/0xc0
+[  279.198785]  el0_svc+0x1c/0x30
+[  279.198787]  el0_sync_handler+0xa8/0xb0
+[  279.198788]  el0_sync+0x16c/0x180
+[  279.198792] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  279.198793] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  279.198794] | 4470 |optee_smccc_smc()---start
+[  279.329054] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  279.329056] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  279.329057] | 4470 |res32 : -65531 -37648 1028308608 0
+[  279.329059] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  279.329060] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  279.329061] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  279.329062] | 4470 |optee_handle_rpc()---CMD
+[  279.329064] | 4470 |handle_rpc_func_cmd()---SHM_FREE
+[  279.329066] | 4470 |optee_supp_thrd_req()---start
+[  279.329069] | 4470 |optee_supp_thrd_req()---before wait
+[  279.329071] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  279.329080] | 353 |optee_supp_recv()---after wait
+[  279.336061] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  279.336120]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  279.336140] | 353 |optee_supp_send()---start
+[  279.336148] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  279.336152] | 353 |optee_supp_send()---TYPE_VALUE
+[  279.336154] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  279.336158] Call trace:
+[  279.336164]  dump_backtrace+0x0/0x1e0
+[  279.336167]  show_stack+0x30/0x40
+[  279.336169]  dump_stack+0xf0/0x130
+[  279.336171]  __schedule_bug+0x6c/0x80
+[  279.336173]  __schedule+0x890/0x980
+[  279.336176] | 353 |optee_supp_recv()---start
+[  279.336180]  schedule+0x78/0x110
+[  279.336186]  schedule_timeout+0x2dc/0x340
+[  279.336196] | 353 |optee_supp_recv()---before while
+[  279.336200]  wait_for_completion_interruptible+0x90/0x160
+[  279.336206]  optee_supp_thrd_req+0xfc/0x1c0
+[  279.336210] | 353 |optee_supp_recv()---befroe wait
+[  279.336215]  optee_handle_rpc+0x51c/0x8c0
+[  279.336220]  optee_do_call_with_arg+0x2d4/0x360
+[  279.336222]  optee_open_session+0x19c/0x2a0
+[  279.336225]  tee_ioctl+0xa50/0xbe0
+[  279.336228]  __arm64_sys_ioctl+0xac/0xf0
+[  279.336235]  el0_svc_common.constprop.0+0x80/0x1d0
+[  279.336237]  do_el0_svc+0x38/0xc0
+[  279.336239]  el0_svc+0x1c/0x30
+[  279.336241]  el0_sync_handler+0xa8/0xb0
+[  279.336242]  el0_sync+0x16c/0x180
+[  279.336246] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  279.336247] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  279.336248] | 4470 |optee_smccc_smc()---start
+[  279.723308] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  279.723314] | 4470 |res64 : 4294901765 4294929648 1028308608 0
+[  279.723319] | 4470 |res32 : -65531 -37648 1028308608 0
+[  279.723322] | 4470 | 7 |optee_do_call_with_arg()---need_resched()
+[  279.723324] | 4470 | 7 |optee_do_call_with_arg()---IS_RPC
+[  279.723327] | 4470 |param : -65531 -37648 1028308608 0 -37648 1028308608 0 0
+[  279.723329] | 4470 |optee_handle_rpc()---CMD
+[  279.723331] | 4470 |handle_rpc_func_cmd()---SHM_FREE
+[  279.723335] | 4470 |optee_supp_thrd_req()---start
+[  279.723340] | 4470 |optee_supp_thrd_req()---before wait
+[  279.723344] BUG: scheduling while atomic: optee_example_h/4470/0x00000005
+[  279.723358] | 4471 |optee_supp_recv()---after wait
+[  279.730342] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  279.730395]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  279.730422] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  279.730424] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  279.730425] Call trace:
+[  279.730429]  dump_backtrace+0x0/0x1e0
+[  279.730432]  show_stack+0x30/0x40
+[  279.730435]  dump_stack+0xf0/0x130
+[  279.730437]  __schedule_bug+0x6c/0x80
+[  279.730442]  __schedule+0x890/0x980
+[  279.730444]  schedule+0x78/0x110
+[  279.730446]  schedule_timeout+0x2dc/0x340
+[  279.730448]  wait_for_completion_interruptible+0x90/0x160
+[  279.730461]  optee_supp_thrd_req+0xfc/0x1c0
+[  279.730464]  optee_handle_rpc+0x51c/0x8c0
+[  279.730466]  optee_do_call_with_arg+0x2d4/0x360
+[  279.730468]  optee_open_session+0x19c/0x2a0
+[  279.730470]  tee_ioctl+0xa50/0xbe0
+[  279.730473]  __arm64_sys_ioctl+0xac/0xf0
+[  279.730476]  el0_svc_common.constprop.0+0x80/0x1d0
+[  279.730478]  do_el0_svc+0x38/0xc0
+[  279.730480]  el0_svc+0x1c/0x30
+[  279.730482]  el0_sync_handler+0xa8/0xb0
+[  279.730483]  el0_sync+0x16c/0x180
+[  279.730628] | 4471 |optee_supp_send()---start
+[  279.730634] | 4471 |optee_supp_send()---TYPE_VALUE
+[  279.730651] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  279.730653] | 4470 |param : 838860803 -37648 1028308608 0 -37648 1028308608 0 0
+[  279.730655] | 4470 |optee_smccc_smc()---start
+[  279.730665] | 4471 |optee_supp_recv()---start
+[  279.730669] | 4471 |optee_supp_recv()---before while
+[  279.730671] | 4471 |optee_supp_recv()---befroe wait
+[  279.830511] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  279.830515] | 4470 |res64 : 0 0 0 0
+[  279.830516] | 4470 |res32 : 0 0 0 0
+[  279.830518] | 4470 | 7 |optee_do_call_with_arg()---break
+[  279.830526] | 4470 | 7 |optee_open_session()---after optee_do_call_with_arg
+[  279.830536] | 4470 |tee_ioctl_open_session()---after open_session
+[  279.830634] | 4470 | 7 |optee_do_call_with_arg()---before while
+[  279.830636] | 4470 | 7 |optee_do_call_with_arg()---before invoke_fn
+[  279.830637] | 4470 |param : 838860804 1 1260199936 0 0 0 0 0
+[  279.830639] | 4470 |optee_smccc_smc()---start
+[  280.017948] | 4470 | 7 |optee_do_call_with_arg()---after invoke_fn
+[  280.017951] | 4470 |res64 : 0 0 0 0
+[  280.017954] | 4470 |res32 : 0 0 0 0
+[  280.017958] | 4470 | 7 |optee_do_call_with_arg()---break
+[  280.017964] BUG: scheduling while atomic: optee_example_h/4470/0x00000009
+[  280.024970] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) loop(E) snd_soc_tegra186_asrc(E) snd_soc_tegra186_dspk(E) snd_soc_tegra210_ope(E) snd_soc_tegra186_arad(E) snd_soc_tegra210_iqc(E) snd_soc_tegra210_mvc(E) snd_soc_tegra210_afc(E) aes_ce_blk(E) snd_soc_tegra210_dmic(E) snd_soc_tegra210_adx(E) snd_soc_tegra210_amx(E) crypto_simd(E) snd_soc_tegra210_admaif(E) rtk_btusb(E) cryptd(E) snd_soc_tegra210_i2s(E) snd_soc_tegra210_sfc(E) snd_soc_tegra210_mixer(E) snd_soc_tegra_pcm(E) btusb(E) aes_ce_cipher(E) ghash_ce(E) btrtl(E) sha2_ce(E) btbcm(E) input_leds(E) snd_soc_tegra210_adsp(E) btintel(E) sha256_arm64(E) snd_soc_tegra_machine_driver(E) sha1_ce(E) snd_hda_codec_hdmi(E) snd_soc_tegra_utils(E) cam_cdi_tsc(E) ucsi_ccg(E) snd_soc_spdif_tx(E) snd_hda_tegra(E) nv_hawk_owl(E) rtl8822ce(E) snd_soc_simple_card_utils(E) snd_soc_rt5640(E) snd_hda_codec(E) typec_ucsi(E) snd_soc_tegra210_ahub(E) i2c_nvvrs11(E) nvadsp(E) typec(E)
+[  280.025020]  userspace_alert(E) max96712(E) nct1008(E) tegra_bpmp_thermal(E) tegra210_adma(E) cfg80211(E) snd_hda_core(E) snd_soc_rl6231(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fan(E) nvgpu(E) nvmap(E) ip_tables(E) x_tables(E) [last unloaded: mtd]
+[  280.025038] CPU: 7 PID: 4470 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
+[  280.025039] Hardware name: Jetson AGX Orin Developer Kit (DT)
+[  280.025040] Call trace:
+[  280.025045]  dump_backtrace+0x0/0x1e0
+[  280.025047]  show_stack+0x30/0x40
+[  280.025052]  dump_stack+0xf0/0x130
+[  280.025054]  __schedule_bug+0x6c/0x80
+[  280.025057]  __schedule+0x890/0x980
+[  280.025059]  schedule+0x78/0x110
+[  280.025062]  do_notify_resume+0x1d4/0x990
+[  280.025064]  work_pending+0xc/0x738

@@ -148,7 +148,7 @@ u32 optee_do_call_with_arg(struct tee_context *ctx, phys_addr_t parg)
 		struct arm_smccc_res res;
 
 		printk("| %d | %d |optee_do_call_with_arg()---before invoke_fn\n", task_pid_nr(current), get_cpu());
-		printk("| %d | %d |param : %d %d %d %d %d %d %d %d\n", task_pid_nr(current), get_cpu(), param.a0, param.a1, param.a2, param.a3,
+		printk("| %d |param : %d %d %d %d %d %d %d %d\n", task_pid_nr(current), param.a0, param.a1, param.a2, param.a3,
 				 param.a4, param.a5, param.a6, param.a7);
 
 		optee->invoke_fn(param.a0, param.a1, param.a2, param.a3,
@@ -156,7 +156,8 @@ u32 optee_do_call_with_arg(struct tee_context *ctx, phys_addr_t parg)
 				 &res);
 
 		printk("| %d | %d |optee_do_call_with_arg()---after invoke_fn\n", task_pid_nr(current), get_cpu());
-		printk("| %d | %d |res : %ld %ld %ld %ld\n", task_pid_nr(current), get_cpu(), res.a0, res.a1, res.a2, res.a3);
+		printk("| %d |res64 : %ld %ld %ld %ld\n", task_pid_nr(current), res.a0, res.a1, res.a2, res.a3);
+		printk("| %d |res32 : %d %d %d %d\n", task_pid_nr(current), (unsigned int)res.a0, (unsigned int)res.a1, (unsigned int)res.a2, (unsigned int)res.a3);
 
 		if (res.a0 == OPTEE_SMC_RETURN_ETHREAD_LIMIT) {
 			/*
@@ -167,9 +168,6 @@ u32 optee_do_call_with_arg(struct tee_context *ctx, phys_addr_t parg)
 
 			optee_cq_wait_for_completion(&optee->call_queue, &w);
 		} else if (OPTEE_SMC_RETURN_IS_RPC(res.a0)) {
-
-			printk("| %d | %d |optee_do_call_with_arg()---IS_RPC\n", task_pid_nr(current), get_cpu());
-
 			if (need_resched()){
 				printk("| %d | %d |optee_do_call_with_arg()---need_resched()\n", task_pid_nr(current), get_cpu());
 				cond_resched();
@@ -179,14 +177,15 @@ u32 optee_do_call_with_arg(struct tee_context *ctx, phys_addr_t parg)
 			param.a2 = res.a2;
 			param.a3 = res.a3;
 
-			printk("| %d | %d |param : %d %d %d %d %d %d %d %d\n", task_pid_nr(current), get_cpu(), param.a0, param.a1, param.a2, param.a3,
+			printk("| %d | %d |optee_do_call_with_arg()---IS_RPC\n", task_pid_nr(current), get_cpu());
+			printk("| %d |param : %d %d %d %d %d %d %d %d\n", task_pid_nr(current), param.a0, param.a1, param.a2, param.a3,
 				 param.a4, param.a5, param.a6, param.a7);
 
 			optee_handle_rpc(ctx, &param, &call_ctx);
 
-			printk("| %d | %d |optee_do_call_with_arg()---after optee_handle_rpc()\n", task_pid_nr(current), get_cpu());
-			printk("| %d | %d |param : %d %d %d %d %d %d %d %d\n", task_pid_nr(current), get_cpu(), param.a0, param.a1, param.a2, param.a3,
-				 param.a4, param.a5, param.a6, param.a7);
+			// printk("| %d | %d |optee_do_call_with_arg()---after optee_handle_rpc()\n", task_pid_nr(current), get_cpu());
+			// printk("| %d |param : %d %d %d %d %d %d %d %d\n", task_pid_nr(current), get_cpu(), param.a0, param.a1, param.a2, param.a3,
+			// 	 param.a4, param.a5, param.a6, param.a7);
 		} else {
 
 			printk("| %d | %d |optee_do_call_with_arg()---break\n", task_pid_nr(current), get_cpu());

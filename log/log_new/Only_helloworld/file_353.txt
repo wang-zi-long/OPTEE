@@ -1,0 +1,429 @@
+11111 : 1
+| 1713077823076940428 | 4470 | 7 | TEEC_OpenSession---start
+arg_size : 184
+buf_data : 281473154631184   184
+arg->num_params : 4
+| 1713077823077008396 | 4470 | 7 | teec_pre_process_operation---start
+| 1713077823077021516 | 4470 | 7 | teec_pre_process_operation---!operation
+params after pre : 0 0 0 0
+| 1713077823077043276 | 4470 | 7 | TEEC_OpenSession---before ioctl
+| 1713077828944474054 | 4470 | 7 | TEEC_OpenSession---after ioctl
+| 1713077828944519590 | 4470 | 7 | TEEC_OpenSession---res == TEEC_SUCCESS
+| 1713077828944523462 | 4470 | 7 | teec_post_process_operation---!operation
+params after post : 0 0 0 0
+
+
+| 1679939688978561888 |  353 | 8 | main()---before if(argv[optind])
+| 1679939688979761856 |  353 | 8 | main()---dev == NULL
+| 1679939688989113376 |  353 | 1 | main()---before while
+| 1679939688989120096 |  353 | 1 | process_one_request---start
+| 1679939688989123680 |  353 | 1 | num_waiters_inc---num_waiters : 1
+| 1679939688989126080 |  353 | 1 | read_request---before ioctl
+| 1713077823418064274 |  353 | 1 | process_one_request---after read_request
+| 1713077823418087154 |  353 | 1 | num_waiters_dec---num_waiters : 0
+| 1713077823418089330 |  353 | 1 | spawn_thread---start 281473414923776
+| 1713077823418101522 |  353 | 1 | num_waiters_inc---num_waiters : 1
+| 1713077823418275826 |  353 | 1 | spawn_thread---tid : 281473412547040
+| 1713077823418280370 |  353 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_ALLOC
+| 1713077823418299730 | 4471 | 2 | thread_main---start
+| 1713077823418304498 | 4471 | 2 | num_waiters_dec---num_waiters : 0
+| 1713077823418306386 | 4471 | 2 | process_one_request---start
+| 1713077823418307634 | 4471 | 2 | num_waiters_inc---num_waiters : 1
+| 1713077823418309714 | 4471 | 2 | read_request---before ioctl
+| 1713077823418352498 |  353 | 1 | process_one_request---before write_response
+| 1713077823418354738 |  353 | 1 | write_response---before ioctl
+| 1713077823418373010 |  353 | 1 | main()---arg.abort == false
+| 1713077823418375410 |  353 | 1 | process_one_request---start
+| 1713077823418376402 |  353 | 1 | num_waiters_inc---num_waiters : 2
+| 1713077823418377810 |  353 | 1 | read_request---before ioctl
+| 1713077823555642665 | 4471 | 2 | process_one_request---after read_request
+| 1713077823555644873 | 4471 | 2 | num_waiters_dec---num_waiters : 1
+| 1713077823555645961 | 4471 | 2 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077823555648393 | 4471 | 2 | tee_supp_fs_process---start
+| 1713077823566339543 | 4471 | 2 | tee_supp_fs_process---OPTEE_MRF_OPEN
+| 1713077823566670296 | 4471 | 2 | process_one_request---before write_response
+| 1713077823566674232 | 4471 | 2 | write_response---before ioctl
+| 1713077823566694520 | 4471 | 2 | thread_main---arg->abort == false
+| 1713077823566696504 | 4471 | 2 | process_one_request---start
+| 1713077823566698008 | 4471 | 2 | num_waiters_inc---num_waiters : 2
+| 1713077823566699832 | 4471 | 2 | read_request---before ioctl
+| 1713077823704200431 |  353 | 1 | process_one_request---after read_request
+| 1713077823704210159 |  353 | 1 | num_waiters_dec---num_waiters : 1
+| 1713077823704212559 |  353 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077823704214447 |  353 | 1 | tee_supp_fs_process---start
+| 1713077823704215759 |  353 | 1 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077823711639833 |  353 | 1 | process_one_request---before write_response
+| 1713077823711646745 |  353 | 1 | write_response---before ioctl
+| 1713077823711668697 |  353 | 1 | main()---arg.abort == false
+| 1713077823711670937 |  353 | 1 | process_one_request---start
+| 1713077823711671993 |  353 | 1 | num_waiters_inc---num_waiters : 2
+| 1713077823711673721 |  353 | 1 | read_request---before ioctl
+| 1713077823849181840 | 4471 | 3 | process_one_request---after read_request
+| 1713077823849189616 | 4471 | 3 | num_waiters_dec---num_waiters : 1
+| 1713077823849192656 | 4471 | 3 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077823849194960 | 4471 | 3 | tee_supp_fs_process---start
+| 1713077823849197168 | 4471 | 3 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077823849205040 | 4471 | 3 | process_one_request---before write_response
+| 1713077823849207248 | 4471 | 3 | write_response---before ioctl
+| 1713077823849229136 | 4471 | 3 | thread_main---arg->abort == false
+| 1713077823849231536 | 4471 | 3 | process_one_request---start
+| 1713077823849233392 | 4471 | 3 | num_waiters_inc---num_waiters : 2
+| 1713077823849235280 | 4471 | 3 | read_request---before ioctl
+| 1713077823986730119 |  353 | 1 | process_one_request---after read_request
+| 1713077823986733383 |  353 | 1 | num_waiters_dec---num_waiters : 1
+| 1713077823986734791 |  353 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077823986735911 |  353 | 1 | tee_supp_fs_process---start
+| 1713077823986849895 |  353 | 1 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077823986857159 |  353 | 1 | process_one_request---before write_response
+| 1713077823986858567 |  353 | 1 | write_response---before ioctl
+| 1713077823986871463 |  353 | 1 | main()---arg.abort == false
+| 1713077823986873063 |  353 | 1 | process_one_request---start
+| 1713077823986874215 |  353 | 1 | num_waiters_inc---num_waiters : 2
+| 1713077823986875303 |  353 | 1 | read_request---before ioctl
+| 1713077824124192253 | 4471 | 3 | process_one_request---after read_request
+| 1713077824124199037 | 4471 | 3 | num_waiters_dec---num_waiters : 1
+| 1713077824124202941 | 4471 | 3 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077824124205853 | 4471 | 3 | tee_supp_fs_process---start
+| 1713077824124208957 | 4471 | 3 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077824124221533 | 4471 | 3 | process_one_request---before write_response
+| 1713077824124225117 | 4471 | 3 | write_response---before ioctl
+| 1713077824124251101 | 4471 | 3 | thread_main---arg->abort == false
+| 1713077824124254269 | 4471 | 3 | process_one_request---start
+| 1713077824124256317 | 4471 | 3 | num_waiters_inc---num_waiters : 2
+| 1713077824124258333 | 4471 | 3 | read_request---before ioctl
+| 1713077824261655059 |  353 | 1 | process_one_request---after read_request
+| 1713077824261661715 |  353 | 1 | num_waiters_dec---num_waiters : 1
+| 1713077824261665555 |  353 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077824261668435 |  353 | 1 | tee_supp_fs_process---start
+| 1713077824261671091 |  353 | 1 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077824261679731 |  353 | 1 | process_one_request---before write_response
+| 1713077824261682835 |  353 | 1 | write_response---before ioctl
+| 1713077824261702419 |  353 | 1 | main()---arg.abort == false
+| 1713077824261705747 |  353 | 1 | process_one_request---start
+| 1713077824261708307 |  353 | 1 | num_waiters_inc---num_waiters : 2
+| 1713077824261710803 |  353 | 1 | read_request---before ioctl
+| 1713077824399203881 | 4471 | 0 | process_one_request---after read_request
+| 1713077824399217929 | 4471 | 0 | num_waiters_dec---num_waiters : 1
+| 1713077824399223049 | 4471 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077824399226377 | 4471 | 0 | tee_supp_fs_process---start
+| 1713077824399229257 | 4471 | 0 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077824399247913 | 4471 | 0 | process_one_request---before write_response
+| 1713077824399251241 | 4471 | 0 | write_response---before ioctl
+| 1713077824399279913 | 4471 | 0 | thread_main---arg->abort == false
+| 1713077824399283209 | 4471 | 0 | process_one_request---start
+| 1713077824399285289 | 4471 | 0 | num_waiters_inc---num_waiters : 2
+| 1713077824399287657 | 4471 | 0 | read_request---before ioctl
+| 1713077824536631870 |  353 | 1 | process_one_request---after read_request
+| 1713077824536639327 |  353 | 1 | num_waiters_dec---num_waiters : 1
+| 1713077824536643295 |  353 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077824536646527 |  353 | 1 | tee_supp_fs_process---start
+| 1713077824536649631 |  353 | 1 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077824536659103 |  353 | 1 | process_one_request---before write_response
+| 1713077824536662751 |  353 | 1 | write_response---before ioctl
+| 1713077824536683775 |  353 | 1 | main()---arg.abort == false
+| 1713077824536687551 |  353 | 1 | process_one_request---start
+| 1713077824536690655 |  353 | 1 | num_waiters_inc---num_waiters : 2
+| 1713077824536694015 |  353 | 1 | read_request---before ioctl
+| 1713077824674174837 | 4471 | 0 | process_one_request---after read_request
+| 1713077824674183669 | 4471 | 0 | num_waiters_dec---num_waiters : 1
+| 1713077824674188661 | 4471 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077824674192341 | 4471 | 0 | tee_supp_fs_process---start
+| 1713077824674196213 | 4471 | 0 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077824674208853 | 4471 | 0 | process_one_request---before write_response
+| 1713077824674212917 | 4471 | 0 | write_response---before ioctl
+| 1713077824674237269 | 4471 | 0 | thread_main---arg->abort == false
+| 1713077824674375861 | 4471 | 0 | process_one_request---start
+| 1713077824674380917 | 4471 | 0 | num_waiters_inc---num_waiters : 2
+| 1713077824674383381 | 4471 | 0 | read_request---before ioctl
+| 1713077824811578698 |  353 | 1 | process_one_request---after read_request
+| 1713077824811587754 |  353 | 1 | num_waiters_dec---num_waiters : 1
+| 1713077824811592010 |  353 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077824811595434 |  353 | 1 | tee_supp_fs_process---start
+| 1713077824811598986 |  353 | 1 | tee_supp_fs_process---OPTEE_MRF_OPEN
+| 1713077824811705035 |  353 | 1 | process_one_request---before write_response
+| 1713077824811709963 |  353 | 1 | write_response---before ioctl
+| 1713077824811731115 |  353 | 1 | main()---arg.abort == false
+| 1713077824811733899 |  353 | 1 | process_one_request---start
+| 1713077824811735979 |  353 | 1 | num_waiters_inc---num_waiters : 2
+| 1713077824811738379 |  353 | 1 | read_request---before ioctl
+| 1713077824948962400 | 4471 | 0 | process_one_request---after read_request
+| 1713077824948973120 | 4471 | 0 | num_waiters_dec---num_waiters : 1
+| 1713077824948977856 | 4471 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077824948981408 | 4471 | 0 | tee_supp_fs_process---start
+| 1713077824948985184 | 4471 | 0 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077824960372303 | 4471 | 0 | process_one_request---before write_response
+| 1713077824960379247 | 4471 | 0 | write_response---before ioctl
+| 1713077824960405999 | 4471 | 0 | thread_main---arg->abort == false
+| 1713077824960409967 | 4471 | 0 | process_one_request---start
+| 1713077824960412687 | 4471 | 0 | num_waiters_inc---num_waiters : 2
+| 1713077824960415375 | 4471 | 0 | read_request---before ioctl
+| 1713077825097830789 |  353 | 1 | process_one_request---after read_request
+| 1713077825097843749 |  353 | 1 | num_waiters_dec---num_waiters : 1
+| 1713077825097848613 |  353 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077825097852581 |  353 | 1 | tee_supp_fs_process---start
+| 1713077825097856901 |  353 | 1 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077825097872197 |  353 | 1 | process_one_request---before write_response
+| 1713077825097876741 |  353 | 1 | write_response---before ioctl
+| 1713077825097915461 |  353 | 1 | main()---arg.abort == false
+| 1713077825097920453 |  353 | 1 | process_one_request---start
+| 1713077825097924389 |  353 | 1 | num_waiters_inc---num_waiters : 2
+| 1713077825097928741 |  353 | 1 | read_request---before ioctl
+| 1713077825235350554 | 4471 | 0 | process_one_request---after read_request
+| 1713077825235357370 | 4471 | 0 | num_waiters_dec---num_waiters : 1
+| 1713077825235360218 | 4471 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077825235362266 | 4471 | 0 | tee_supp_fs_process---start
+| 1713077825235364538 | 4471 | 0 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077825242381891 | 4471 | 0 | process_one_request---before write_response
+| 1713077825242387267 | 4471 | 0 | write_response---before ioctl
+| 1713077825242410499 | 4471 | 0 | thread_main---arg->abort == false
+| 1713077825242413475 | 4471 | 0 | process_one_request---start
+| 1713077825242415715 | 4471 | 0 | num_waiters_inc---num_waiters : 2
+| 1713077825242418275 | 4471 | 0 | read_request---before ioctl
+| 1713077825379950776 |  353 | 1 | process_one_request---after read_request
+| 1713077825379957624 |  353 | 1 | num_waiters_dec---num_waiters : 1
+| 1713077825379960120 |  353 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077825379962136 |  353 | 1 | tee_supp_fs_process---start
+| 1713077825379964472 |  353 | 1 | tee_supp_fs_process---OPTEE_MRF_CLOSE
+| 1713077825379982680 |  353 | 1 | process_one_request---before write_response
+| 1713077825379985656 |  353 | 1 | write_response---before ioctl
+| 1713077825380000632 |  353 | 1 | main()---arg.abort == false
+| 1713077825380003416 |  353 | 1 | process_one_request---start
+| 1713077825380005528 |  353 | 1 | num_waiters_inc---num_waiters : 2
+| 1713077825380007672 |  353 | 1 | read_request---before ioctl
+| 1713077825517522989 | 4471 | 0 | process_one_request---after read_request
+| 1713077825517638125 | 4471 | 0 | num_waiters_dec---num_waiters : 1
+| 1713077825517644173 | 4471 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077825517646573 | 4471 | 0 | tee_supp_fs_process---start
+| 1713077825517649357 | 4471 | 0 | tee_supp_fs_process---OPTEE_MRF_CLOSE
+| 1713077825517662829 | 4471 | 0 | process_one_request---before write_response
+| 1713077825517665933 | 4471 | 0 | write_response---before ioctl
+| 1713077825517688557 | 4471 | 0 | thread_main---arg->abort == false
+| 1713077825517691533 | 4471 | 0 | process_one_request---start
+| 1713077825517693741 | 4471 | 0 | num_waiters_inc---num_waiters : 2
+| 1713077825517696045 | 4471 | 0 | read_request---before ioctl
+| 1713077825654974882 |  353 | 1 | process_one_request---after read_request
+| 1713077825654986082 |  353 | 1 | num_waiters_dec---num_waiters : 1
+| 1713077825654990754 |  353 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_LOAD_TA
+| 1713077825668245812 |  353 | 1 | process_one_request---before write_response
+| 1713077825668252500 |  353 | 1 | write_response---before ioctl
+| 1713077825668278420 |  353 | 1 | main()---arg.abort == false
+| 1713077825668281684 |  353 | 1 | process_one_request---start
+| 1713077825668284116 |  353 | 1 | num_waiters_inc---num_waiters : 2
+| 1713077825668286804 |  353 | 1 | read_request---before ioctl
+| 1713077825805858601 | 4471 | 0 | process_one_request---after read_request
+| 1713077825805870057 | 4471 | 0 | num_waiters_dec---num_waiters : 1
+| 1713077825805874761 | 4471 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_ALLOC
+| 1713077825806020201 | 4471 | 0 | process_one_request---before write_response
+| 1713077825806025481 | 4471 | 0 | write_response---before ioctl
+| 1713077825806077545 | 4471 | 0 | thread_main---arg->abort == false
+| 1713077825806081257 | 4471 | 0 | process_one_request---start
+| 1713077825806083625 | 4471 | 0 | num_waiters_inc---num_waiters : 2
+| 1713077825806086153 | 4471 | 0 | read_request---before ioctl
+| 1713077825943407038 |  353 | 1 | process_one_request---after read_request
+| 1713077825943412958 |  353 | 1 | num_waiters_dec---num_waiters : 1
+| 1713077825943415518 |  353 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_LOAD_TA
+| 1713077825955458958 |  353 | 1 | process_one_request---before write_response
+| 1713077825955464654 |  353 | 1 | write_response---before ioctl
+| 1713077825955487470 |  353 | 1 | main()---arg.abort == false
+| 1713077825955490382 |  353 | 1 | process_one_request---start
+| 1713077825955492814 |  353 | 1 | num_waiters_inc---num_waiters : 2
+| 1713077825955495374 |  353 | 1 | read_request---before ioctl
+| 1713077826094242724 | 4471 | 0 | process_one_request---after read_request
+| 1713077826094253732 | 4471 | 0 | num_waiters_dec---num_waiters : 1
+| 1713077826094258340 | 4471 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077826094261700 | 4471 | 0 | tee_supp_fs_process---start
+| 1713077826094265380 | 4471 | 0 | tee_supp_fs_process---OPTEE_MRF_OPEN
+| 1713077826094341604 | 4471 | 0 | process_one_request---before write_response
+| 1713077826094345860 | 4471 | 0 | write_response---before ioctl
+| 1713077826094369764 | 4471 | 0 | thread_main---arg->abort == false
+| 1713077826094372900 | 4471 | 0 | process_one_request---start
+| 1713077826094375044 | 4471 | 0 | num_waiters_inc---num_waiters : 2
+| 1713077826094377668 | 4471 | 0 | read_request---before ioctl
+| 1713077826231664888 |  353 | 1 | process_one_request---after read_request
+| 1713077826231674296 |  353 | 1 | num_waiters_dec---num_waiters : 1
+| 1713077826231677752 |  353 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077826231680312 |  353 | 1 | tee_supp_fs_process---start
+| 1713077826231682904 |  353 | 1 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077826231700504 |  353 | 1 | process_one_request---before write_response
+| 1713077826231703288 |  353 | 1 | write_response---before ioctl
+| 1713077826231724888 |  353 | 1 | main()---arg.abort == false
+| 1713077826231727704 |  353 | 1 | process_one_request---start
+| 1713077826231729816 |  353 | 1 | num_waiters_inc---num_waiters : 2
+| 1713077826231732024 |  353 | 1 | read_request---before ioctl
+| 1713077826369106380 | 4471 | 0 | process_one_request---after read_request
+| 1713077826369117228 | 4471 | 0 | num_waiters_dec---num_waiters : 1
+| 1713077826369121900 | 4471 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077826369125452 | 4471 | 0 | tee_supp_fs_process---start
+| 1713077826369129388 | 4471 | 0 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077826369142380 | 4471 | 0 | process_one_request---before write_response
+| 1713077826369146860 | 4471 | 0 | write_response---before ioctl
+| 1713077826369175276 | 4471 | 0 | thread_main---arg->abort == false
+| 1713077826369179756 | 4471 | 0 | process_one_request---start
+| 1713077826369183180 | 4471 | 0 | num_waiters_inc---num_waiters : 2
+| 1713077826369187244 | 4471 | 0 | read_request---before ioctl
+| 1713077826506480832 |  353 | 1 | process_one_request---after read_request
+| 1713077826506490496 |  353 | 1 | num_waiters_dec---num_waiters : 1
+| 1713077826506495072 |  353 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077826506498816 |  353 | 1 | tee_supp_fs_process---start
+| 1713077826506502560 |  353 | 1 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077826506516864 |  353 | 1 | process_one_request---before write_response
+| 1713077826506521184 |  353 | 1 | write_response---before ioctl
+| 1713077826506548800 |  353 | 1 | main()---arg.abort == false
+| 1713077826506553504 |  353 | 1 | process_one_request---start
+| 1713077826506557248 |  353 | 1 | num_waiters_inc---num_waiters : 2
+| 1713077826506561472 |  353 | 1 | read_request---before ioctl
+| 1713077826643911988 | 4471 | 0 | process_one_request---after read_request
+| 1713077826643922004 | 4471 | 0 | num_waiters_dec---num_waiters : 1
+| 1713077826643926836 | 4471 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077826643930324 | 4471 | 0 | tee_supp_fs_process---start
+| 1713077826643934548 | 4471 | 0 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077826643953940 | 4471 | 0 | process_one_request---before write_response
+| 1713077826643958228 | 4471 | 0 | write_response---before ioctl
+| 1713077826643991764 | 4471 | 0 | thread_main---arg->abort == false
+| 1713077826643996180 | 4471 | 0 | process_one_request---start
+| 1713077826643999668 | 4471 | 0 | num_waiters_inc---num_waiters : 2
+| 1713077826644002868 | 4471 | 0 | read_request---before ioctl
+| 1713077826781406824 |  353 | 1 | process_one_request---after read_request
+| 1713077826781419784 |  353 | 1 | num_waiters_dec---num_waiters : 1
+| 1713077826781424552 |  353 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077826781428264 |  353 | 1 | tee_supp_fs_process---start
+| 1713077826781431304 |  353 | 1 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077826781446792 |  353 | 1 | process_one_request---before write_response
+| 1713077826781450088 |  353 | 1 | write_response---before ioctl
+| 1713077826781477416 |  353 | 1 | main()---arg.abort == false
+| 1713077826781480648 |  353 | 1 | process_one_request---start
+| 1713077826781482824 |  353 | 1 | num_waiters_inc---num_waiters : 2
+| 1713077826781485256 |  353 | 1 | read_request---before ioctl
+| 1713077826918832540 | 4471 | 0 | process_one_request---after read_request
+| 1713077826918842300 | 4471 | 0 | num_waiters_dec---num_waiters : 1
+| 1713077826918848284 | 4471 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077826918853052 | 4471 | 0 | tee_supp_fs_process---start
+| 1713077826918857404 | 4471 | 0 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077826918871196 | 4471 | 0 | process_one_request---before write_response
+| 1713077826918875324 | 4471 | 0 | write_response---before ioctl
+| 1713077826918902748 | 4471 | 0 | thread_main---arg->abort == false
+| 1713077826918907580 | 4471 | 0 | process_one_request---start
+| 1713077826918911228 | 4471 | 0 | num_waiters_inc---num_waiters : 2
+| 1713077826918915484 | 4471 | 0 | read_request---before ioctl
+| 1713077827056239407 |  353 | 1 | process_one_request---after read_request
+| 1713077827056244975 |  353 | 1 | num_waiters_dec---num_waiters : 1
+| 1713077827056247343 |  353 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077827056249295 |  353 | 1 | tee_supp_fs_process---start
+| 1713077827056385136 |  353 | 1 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077827056395056 |  353 | 1 | process_one_request---before write_response
+| 1713077827056397712 |  353 | 1 | write_response---before ioctl
+| 1713077827056423152 |  353 | 1 | main()---arg.abort == false
+| 1713077827056426160 |  353 | 1 | process_one_request---start
+| 1713077827056428240 |  353 | 1 | num_waiters_inc---num_waiters : 2
+| 1713077827056430544 |  353 | 1 | read_request---before ioctl
+| 1713077827194417476 | 4471 | 1 | process_one_request---after read_request
+| 1713077827194428676 | 4471 | 1 | num_waiters_dec---num_waiters : 1
+| 1713077827194433124 | 4471 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077827194436548 | 4471 | 1 | tee_supp_fs_process---start
+| 1713077827194440548 | 4471 | 1 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077827194456484 | 4471 | 1 | process_one_request---before write_response
+| 1713077827194460612 | 4471 | 1 | write_response---before ioctl
+| 1713077827194498916 | 4471 | 1 | thread_main---arg->abort == false
+| 1713077827194503556 | 4471 | 1 | process_one_request---start
+| 1713077827194506948 | 4471 | 1 | num_waiters_inc---num_waiters : 2
+| 1713077827194510884 | 4471 | 1 | read_request---before ioctl
+| 1713077827332008503 |  353 | 1 | process_one_request---after read_request
+| 1713077827332018327 |  353 | 1 | num_waiters_dec---num_waiters : 1
+| 1713077827332020951 |  353 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077827332023127 |  353 | 1 | tee_supp_fs_process---start
+| 1713077827332025463 |  353 | 1 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077827332039991 |  353 | 1 | process_one_request---before write_response
+| 1713077827332043223 |  353 | 1 | write_response---before ioctl
+| 1713077827332068375 |  353 | 1 | main()---arg.abort == false
+| 1713077827332071415 |  353 | 1 | process_one_request---start
+| 1713077827332073687 |  353 | 1 | num_waiters_inc---num_waiters : 2
+| 1713077827332075959 |  353 | 1 | read_request---before ioctl
+| 1713077827469478730 | 4471 | 2 | process_one_request---after read_request
+| 1713077827469489482 | 4471 | 2 | num_waiters_dec---num_waiters : 1
+| 1713077827469494090 | 4471 | 2 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077827469497546 | 4471 | 2 | tee_supp_fs_process---start
+| 1713077827469501258 | 4471 | 2 | tee_supp_fs_process---OPTEE_MRF_OPEN
+| 1713077827469606858 | 4471 | 2 | process_one_request---before write_response
+| 1713077827469612458 | 4471 | 2 | write_response---before ioctl
+| 1713077827469645098 | 4471 | 2 | thread_main---arg->abort == false
+| 1713077827469650026 | 4471 | 2 | process_one_request---start
+| 1713077827469653386 | 4471 | 2 | num_waiters_inc---num_waiters : 2
+| 1713077827469657002 | 4471 | 2 | read_request---before ioctl
+| 1713077827606911997 |  353 | 2 | process_one_request---after read_request
+| 1713077827606921821 |  353 | 2 | num_waiters_dec---num_waiters : 1
+| 1713077827606926301 |  353 | 2 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077827606929853 |  353 | 2 | tee_supp_fs_process---start
+| 1713077827606933533 |  353 | 2 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077827618206796 |  353 | 2 | process_one_request---before write_response
+| 1713077827618213580 |  353 | 2 | write_response---before ioctl
+| 1713077827618241132 |  353 | 2 | main()---arg.abort == false
+| 1713077827618245164 |  353 | 2 | process_one_request---start
+| 1713077827618247756 |  353 | 2 | num_waiters_inc---num_waiters : 2
+| 1713077827618250412 |  353 | 2 | read_request---before ioctl
+| 1713077827755729311 | 4471 | 2 | process_one_request---after read_request
+| 1713077827755733855 | 4471 | 2 | num_waiters_dec---num_waiters : 1
+| 1713077827755736255 | 4471 | 2 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077827755738207 | 4471 | 2 | tee_supp_fs_process---start
+| 1713077827755740223 | 4471 | 2 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077827762527272 | 4471 | 2 | process_one_request---before write_response
+| 1713077827762532680 | 4471 | 2 | write_response---before ioctl
+| 1713077827762555048 | 4471 | 2 | thread_main---arg->abort == false
+| 1713077827762662696 | 4471 | 2 | process_one_request---start
+| 1713077827762666312 | 4471 | 2 | num_waiters_inc---num_waiters : 2
+| 1713077827762668520 | 4471 | 2 | read_request---before ioctl
+| 1713077827893098546 |  353 | 2 | process_one_request---after read_request
+| 1713077827893110002 |  353 | 2 | num_waiters_dec---num_waiters : 1
+| 1713077827893116082 |  353 | 2 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077827893121042 |  353 | 2 | tee_supp_fs_process---start
+| 1713077827893126194 |  353 | 2 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077827893145938 |  353 | 2 | process_one_request---before write_response
+| 1713077827893149778 |  353 | 2 | write_response---before ioctl
+| 1713077827900133339 |  353 | 2 | main()---arg.abort == false
+| 1713077827900137467 |  353 | 2 | process_one_request---start
+| 1713077827900140155 |  353 | 2 | num_waiters_inc---num_waiters : 2
+| 1713077827900143131 |  353 | 2 | read_request---before ioctl
+| 1713077828037792046 | 4471 | 2 | process_one_request---after read_request
+| 1713077828037801230 | 4471 | 2 | num_waiters_dec---num_waiters : 1
+| 1713077828037805998 | 4471 | 2 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077828037809614 | 4471 | 2 | tee_supp_fs_process---start
+| 1713077828037813263 | 4471 | 2 | tee_supp_fs_process---OPTEE_MRF_READ
+| 1713077828037826511 | 4471 | 2 | process_one_request---before write_response
+| 1713077828037830831 | 4471 | 2 | write_response---before ioctl
+| 1713077828037863759 | 4471 | 2 | thread_main---arg->abort == false
+| 1713077828037868559 | 4471 | 2 | process_one_request---start
+| 1713077828037872239 | 4471 | 2 | num_waiters_inc---num_waiters : 2
+| 1713077828037876239 | 4471 | 2 | read_request---before ioctl
+| 1713077828175222689 |  353 | 2 | process_one_request---after read_request
+| 1713077828175228129 |  353 | 2 | num_waiters_dec---num_waiters : 1
+| 1713077828175230881 |  353 | 2 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077828175232993 |  353 | 2 | tee_supp_fs_process---start
+| 1713077828175235201 |  353 | 2 | tee_supp_fs_process---OPTEE_MRF_CLOSE
+| 1713077828175253345 |  353 | 2 | process_one_request---before write_response
+| 1713077828175256065 |  353 | 2 | write_response---before ioctl
+| 1713077828175274529 |  353 | 2 | main()---arg.abort == false
+| 1713077828175277473 |  353 | 2 | process_one_request---start
+| 1713077828175279649 |  353 | 2 | num_waiters_inc---num_waiters : 2
+| 1713077828175281825 |  353 | 2 | read_request---before ioctl
+| 1713077828312580083 | 4471 | 2 | process_one_request---after read_request
+| 1713077828312584115 | 4471 | 2 | num_waiters_dec---num_waiters : 1
+| 1713077828312586323 | 4471 | 2 | process_one_request---OPTEE_MSG_RPC_CMD_FS
+| 1713077828312588147 | 4471 | 2 | tee_supp_fs_process---start
+| 1713077828312590035 | 4471 | 2 | tee_supp_fs_process---OPTEE_MRF_CLOSE
+| 1713077828312601939 | 4471 | 2 | process_one_request---before write_response
+| 1713077828312604467 | 4471 | 2 | write_response---before ioctl
+| 1713077828312616243 | 4471 | 2 | thread_main---arg->abort == false
+| 1713077828312618835 | 4471 | 2 | process_one_request---start
+| 1713077828312620851 | 4471 | 2 | num_waiters_inc---num_waiters : 2
+| 1713077828312622867 | 4471 | 2 | read_request---before ioctl
+| 1713077828450002469 |  353 | 2 | process_one_request---after read_request
+| 1713077828450007749 |  353 | 2 | num_waiters_dec---num_waiters : 1
+| 1713077828450010021 |  353 | 2 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_FREE
+| 1713077828450051685 |  353 | 2 | process_one_request---before write_response
+| 1713077828450054565 |  353 | 2 | write_response---before ioctl
+| 1713077828450085669 |  353 | 2 | main()---arg.abort == false
+| 1713077828450088485 |  353 | 2 | process_one_request---start
+| 1713077828450090565 |  353 | 2 | num_waiters_inc---num_waiters : 2
+| 1713077828450092709 |  353 | 2 | read_request---before ioctl
+| 1713077828844313605 | 4471 | 2 | process_one_request---after read_request
+| 1713077828844357157 | 4471 | 2 | num_waiters_dec---num_waiters : 1
+| 1713077828844362277 | 4471 | 2

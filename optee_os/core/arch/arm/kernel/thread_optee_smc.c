@@ -58,6 +58,8 @@ uint32_t thread_handle_std_smc(uint32_t a0, uint32_t a1, uint32_t a2,
 
 	thread_check_canaries();
 
+	IMSG("thread_handle_std_smc()---start : %d %d %d %d %d %d %d %d\n", a0, a1, a2, a3, a4, a5, a6, a7);
+
 	if (IS_ENABLED(CFG_NS_VIRTUALIZATION) && virt_set_guest(a7))
 		return OPTEE_SMC_RETURN_ENOTAVAIL;
 
@@ -151,7 +153,7 @@ static uint32_t call_entry_std(struct optee_msg_arg *arg, size_t num_params,
 			       struct optee_msg_arg *rpc_arg)
 {
 
-	IMSG("|%d|call_entry_std()---start\n", thread_get_id());
+	// IMSG("|%d|call_entry_std()---start\n", thread_get_id());
 
 	struct thread_ctx *thr = threads + thread_get_id();
 	uint32_t rv = 0;

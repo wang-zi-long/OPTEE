@@ -16,7 +16,7 @@
 #include "optee_smc.h"
 #include <linux/sched.h>
 
-#define SLEEP_TIMEOUT (msecs_to_jiffies(100))
+#define SLEEP_TIMEOUT (msecs_to_jiffies(500))
 
 struct wq_entry {
 	struct list_head link;
@@ -285,8 +285,6 @@ static void handle_rpc_supp_cmd(struct tee_context *ctx,
 		arg->ret = TEEC_ERROR_BAD_PARAMETERS;
 out:
 
-	printk("| %d |handle_rpc_supp_cmd()---kfree\n", task_pid_nr(current));
-
 	kfree(params);
 }
 
@@ -551,7 +549,7 @@ void optee_handle_rpc(struct tee_context *ctx, struct optee_rpc_param *param,
 					 (unsigned long)shm);
 			printk("| %d |optee_handle_rpc()---ALLOC111\n", task_pid_nr(current));
 		} else {
-			printk("| %d |optee_handle_rpc()---ALLOC111\n", task_pid_nr(current));
+			printk("| %d |optee_handle_rpc()---ALLOC222\n", task_pid_nr(current));
 			param->a1 = 0;
 			param->a2 = 0;
 			param->a4 = 0;

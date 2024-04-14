@@ -368,13 +368,13 @@ void thread_resume_from_rpc(uint32_t thread_id, uint32_t a0, uint32_t a1,
 
 	assert(l->curr_thread == THREAD_ID_INVALID);
 
-	IMSG("thread_resume_from_rpc222()---start\n");
+	IMSG("thread_resume_from_rpc222()---start : %d %d %d %d %d\n", thread_id, a0, a1, a2, a3);
 
 	thread_lock_global();
 
 	if (n < CFG_NUM_THREADS && threads[n].state == THREAD_STATE_SUSPENDED) {
 		threads[n].state = THREAD_STATE_ACTIVE;
-		IMSG("thread_resume_from_rpc222()---n : %ld\n", n);
+		IMSG("thread_resume_from_rpc()---n : %ld\n", n);
 		found_thread = true;
 	}
 
@@ -386,27 +386,33 @@ void thread_resume_from_rpc(uint32_t thread_id, uint32_t a0, uint32_t a1,
 	l->curr_thread = n;
 
 	if (threads[n].have_user_map) {
+		IMSG("thread_resume_from_rpc()---have_user_map\n");
 		core_mmu_set_user_map(&threads[n].user_map);
 		if (threads[n].flags & THREAD_FLAGS_EXIT_ON_FOREIGN_INTR)
 			tee_ta_ftrace_update_times_resume();
 	}
 
-	if (is_user_mode(&threads[n].regs))
+	if (is_user_mode(&threads[n].regs)){
+		IMSG("thread_resume_from_rpc()---is_user_mode\n");
 		tee_ta_update_session_utime_resume();
+	}
 
 	/*
 	 * Return from RPC to request service of a foreign interrupt must not
 	 * get parameters from non-secure world.
 	 */
 	if (threads[n].flags & THREAD_FLAGS_COPY_ARGS_ON_RETURN) {
+		IMSG("thread_resume_from_rpc()---threads.flags\n");
 		copy_a0_to_a3(&threads[n].regs, a0, a1, a2, a3);
 		threads[n].flags &= ~THREAD_FLAGS_COPY_ARGS_ON_RETURN;
 	}
 
 	thread_lazy_save_ns_vfp();
 
-	if (threads[n].have_user_map)
+	if (threads[n].have_user_map){
+		IMSG("thread_resume_from_rpc()---threads.flags\n");
 		ftrace_resume();
+	}
 
 	l->flags &= ~THREAD_CLF_TMP;
 	thread_resume(&threads[n].regs);
