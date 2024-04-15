@@ -316,8 +316,12 @@ static uint32_t load_ta(size_t num_params, struct tee_ioctl_param *params)
 	memset(&shm_ta, 0, sizeof(shm_ta));
 
 	if (num_params != 2 || get_value(num_params, params, 0, &val_cmd) ||
-	    get_param(num_params, params, 1, &shm_ta))
-		return TEEC_ERROR_BAD_PARAMETERS;
+	    get_param(num_params, params, 1, &shm_ta)){
+			printf("\n\n\nload_ta error!!!\n\n\n");
+			EMSG("\n\n\nload_ta error111!!!\n\n\n");
+			IMSG("\n\n\nload_ta error222!!!\n\n\n");
+			return TEEC_ERROR_BAD_PARAMETERS;
+		}
 
 	uuid_from_octets(&uuid, (void *)val_cmd);
 

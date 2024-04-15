@@ -729,7 +729,7 @@ static TEE_Result tee_ta_init_session(TEE_ErrorOrigin *err,
 		goto out;
 	}
 
-	IMSG("|%d|tee_ta_init_session()---before tee_ta_init_user_ta_session\n", thread_get_id());
+	// IMSG("|%d|tee_ta_init_session()---before tee_ta_init_user_ta_session\n", thread_get_id());
 	/* Look for user TA */
 	res = tee_ta_init_user_ta_session(uuid, s);
 

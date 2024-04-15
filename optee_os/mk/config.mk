@@ -687,9 +687,12 @@ CFG_DEVICE_ENUM_PTA ?= y
 
 # The attestation pseudo TA provides an interface to request measurements of
 # a TA or the TEE binary.
-CFG_ATTESTATION_PTA ?= n
+CFG_ATTESTATION_PTA ?= y
 $(eval $(call cfg-depends-all,CFG_ATTESTATION_PTA,_CFG_WITH_SECURE_STORAGE))
 
+CFG_TEE_BENCHMARK ?= y
+
+# CFG_WITH_STATS ?=y
 # RSA key size (in bits) for the attestation PTA. Must be at least 528 given
 # other algorithm parameters (RSA PSS with SHA-256 and 32-byte salt), but
 # note that such a low value is not secure.

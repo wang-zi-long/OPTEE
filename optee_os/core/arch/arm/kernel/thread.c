@@ -230,7 +230,7 @@ static void __thread_alloc_and_run(uint32_t a0, uint32_t a1, uint32_t a2,
 
 	for (n = 0; n < CFG_NUM_THREADS; n++) {
 		if (threads[n].state == THREAD_STATE_FREE) {
-			IMSG("__thread_alloc_and_run222()---n : %ld\n", n);
+			// IMSG("__thread_alloc_and_run222()---n : %ld\n", n);
 			threads[n].state = THREAD_STATE_ACTIVE;
 			found_thread = true;
 			break;
@@ -368,13 +368,13 @@ void thread_resume_from_rpc(uint32_t thread_id, uint32_t a0, uint32_t a1,
 
 	assert(l->curr_thread == THREAD_ID_INVALID);
 
-	IMSG("thread_resume_from_rpc222()---start : %d %d %d %d %d\n", thread_id, a0, a1, a2, a3);
+	// IMSG("thread_resume_from_rpc222()---start : %d %d %d %d %d\n", thread_id, a0, a1, a2, a3);
 
 	thread_lock_global();
 
 	if (n < CFG_NUM_THREADS && threads[n].state == THREAD_STATE_SUSPENDED) {
 		threads[n].state = THREAD_STATE_ACTIVE;
-		IMSG("thread_resume_from_rpc()---n : %ld\n", n);
+		// IMSG("thread_resume_from_rpc()---n : %ld\n", n);
 		found_thread = true;
 	}
 
@@ -386,14 +386,14 @@ void thread_resume_from_rpc(uint32_t thread_id, uint32_t a0, uint32_t a1,
 	l->curr_thread = n;
 
 	if (threads[n].have_user_map) {
-		IMSG("thread_resume_from_rpc()---have_user_map\n");
+		// IMSG("thread_resume_from_rpc()---have_user_map\n");
 		core_mmu_set_user_map(&threads[n].user_map);
 		if (threads[n].flags & THREAD_FLAGS_EXIT_ON_FOREIGN_INTR)
 			tee_ta_ftrace_update_times_resume();
 	}
 
 	if (is_user_mode(&threads[n].regs)){
-		IMSG("thread_resume_from_rpc()---is_user_mode\n");
+		// IMSG("thread_resume_from_rpc()---is_user_mode\n");
 		tee_ta_update_session_utime_resume();
 	}
 
@@ -402,7 +402,7 @@ void thread_resume_from_rpc(uint32_t thread_id, uint32_t a0, uint32_t a1,
 	 * get parameters from non-secure world.
 	 */
 	if (threads[n].flags & THREAD_FLAGS_COPY_ARGS_ON_RETURN) {
-		IMSG("thread_resume_from_rpc()---threads.flags\n");
+		// IMSG("thread_resume_from_rpc()---threads.flags\n");
 		copy_a0_to_a3(&threads[n].regs, a0, a1, a2, a3);
 		threads[n].flags &= ~THREAD_FLAGS_COPY_ARGS_ON_RETURN;
 	}
@@ -410,7 +410,7 @@ void thread_resume_from_rpc(uint32_t thread_id, uint32_t a0, uint32_t a1,
 	thread_lazy_save_ns_vfp();
 
 	if (threads[n].have_user_map){
-		IMSG("thread_resume_from_rpc()---threads.flags\n");
+		// IMSG("thread_resume_from_rpc()---have_user_map\n");
 		ftrace_resume();
 	}
 
@@ -1021,11 +1021,11 @@ uint32_t thread_enter_user_mode(unsigned long a0, unsigned long a1,
 	struct thread_ctx_regs *regs = NULL;
 	struct thread_pauth_keys *keys = NULL;
 
-	IMSG("|%d|thread_enter_user_mode()---tee_ta_update_session_utime_resume()\n", thread_get_id());
+	// IMSG("|%d|thread_enter_user_mode()---tee_ta_update_session_utime_resume()\n", thread_get_id());
 
 	tee_ta_update_session_utime_resume();
 
-	IMSG("|%d|thread_enter_user_mode()---thread_get_pauth_keys()\n", thread_get_id());
+	// IMSG("|%d|thread_enter_user_mode()---thread_get_pauth_keys()\n", thread_get_id());
 
 	keys = thread_get_pauth_keys();
 
@@ -1036,7 +1036,7 @@ uint32_t thread_enter_user_mode(unsigned long a0, unsigned long a1,
 		return 0;
 	}
 
-	IMSG("|%d|thread_enter_user_mode()---thread_mask_exceptions()\n", thread_get_id());
+	// IMSG("|%d|thread_enter_user_mode()---thread_mask_exceptions()\n", thread_get_id());
 
 	exceptions = thread_mask_exceptions(THREAD_EXCP_ALL);
 	/*
@@ -1048,11 +1048,11 @@ uint32_t thread_enter_user_mode(unsigned long a0, unsigned long a1,
 	regs = thread_get_ctx_regs();
 	set_ctx_regs(regs, a0, a1, a2, a3, user_sp, entry_func, spsr, keys);
 
-	IMSG("|%d|thread_enter_user_mode()---__thread_enter_user_mode()\n", thread_get_id());
+	// IMSG("|%d|thread_enter_user_mode()---__thread_enter_user_mode()\n", thread_get_id());
 
 	rc = __thread_enter_user_mode(regs, exit_status0, exit_status1);
 
-	IMSG("|%d|thread_enter_user_mode()---thread_unmask_exceptions()\n", thread_get_id());
+	// IMSG("|%d|thread_enter_user_mode()---thread_unmask_exceptions()\n", thread_get_id());
 
 	thread_unmask_exceptions(exceptions);
 	return rc;

@@ -696,13 +696,13 @@ TEEC_Result tee_supp_fs_process(size_t num_params,
 	}
 	case OPTEE_MRF_WRITE:{
 		printf("| %lld | %4d | %d | tee_supp_fs_process---OPTEE_MRF_WRITE\n", getMilliseconds(), gettid(), sched_getcpu());
-		if(count >= 10){
-			printf("| %lld | %4d | %d | tee_supp_fs_process---sleep()\n", getMilliseconds(), gettid(), sched_getcpu());
-			// pause();
-			sleep(60);
-			count = 0;
-		}
-		count++;
+		// if(count >= 10){
+		// 	printf("| %lld | %4d | %d | tee_supp_fs_process---sleep()\n", getMilliseconds(), gettid(), sched_getcpu());
+		// 	// pause();
+		// 	sleep(60);
+		// 	count = 0;
+		// }
+		// count++;
 		return ree_fs_new_write(num_params, params);
 	}
 	case OPTEE_MRF_TRUNCATE:{

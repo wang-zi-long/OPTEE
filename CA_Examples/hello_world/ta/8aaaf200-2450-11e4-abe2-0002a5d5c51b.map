@@ -1,0 +1,1465 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+                              ./hello_world_ta.o (trace_printf)
+/home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o) (__stack_chk_fail)
+/home/neu/Desktop/export-ta_arm64/lib/libutils.a(memcpy.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o) (memcpy)
+/home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o) (vsnprintk)
+/home/neu/Desktop/export-ta_arm64/lib/libutils.a(memchr.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o) (memchr)
+/home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlen.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o) (strlen)
+/home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o) (trace_ext_puts)
+/home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+                              ./user_ta_header.o (__utee_entry)
+/home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+                              ./user_ta_header.o (__ta_open_sess)
+/home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o) (_utee_panic)
+/home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o) (abort)
+/home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o) (TEE_Malloc)
+/home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o) (_TEE_MathAPI_Init)
+/home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o) (TEE_Panic)
+/home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o) (TEE_GetPropertyAsU32)
+/home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o) (tee_map_zi)
+/home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o) (__utee_tcb_init)
+/home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o) (_assert_log)
+/home/neu/Desktop/export-ta_arm64/lib/libutee.a(base64.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o) (_base64_enc_len)
+/home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o) (mbedtls_mpi_init_mempool)
+/home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o) (mbedtls_ct_size_bool_eq)
+/home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o) (mbedtls_platform_zeroize)
+/home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o) (raw_malloc)
+/home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintf.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o) (snprintf)
+/home/neu/Desktop/export-ta_arm64/lib/libutils.a(memmove.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o) (memmove)
+/home/neu/Desktop/export-ta_arm64/lib/libutils.a(memset.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o) (memset)
+/home/neu/Desktop/export-ta_arm64/lib/libutils.a(strcmp.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o) (strcmp)
+/home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlcpy.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o) (strlcpy)
+/home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o) (mempool_alloc_pool)
+/home/neu/Desktop/export-ta_arm64/lib/libutils.a(consttime_memcmp.o)
+                              /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o) (consttime_memcmp)
+
+Allocating common symbols
+Common symbol       size              file
+
+ta_heap             0x8000            ./user_ta_header.o
+ta_param_types      0x4               /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+__ta_no_share_malloc_ctx
+                    0x8               /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+__ta_no_share_heap  0x0               ./user_ta_header.o
+ta_params           0x40              /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+__elf_phdr_info     0x10              /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+mbedtls_mpi_mempool
+                    0x8               /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+
+Discarded input sections
+
+ .group         0x0000000000000000        0xc ./hello_world_ta.o
+ .group         0x0000000000000000        0xc ./hello_world_ta.o
+ .group         0x0000000000000000        0xc ./hello_world_ta.o
+ .group         0x0000000000000000        0xc ./hello_world_ta.o
+ .group         0x0000000000000000        0xc ./hello_world_ta.o
+ .group         0x0000000000000000        0xc ./hello_world_ta.o
+ .group         0x0000000000000000        0xc ./hello_world_ta.o
+ .group         0x0000000000000000        0xc ./hello_world_ta.o
+ .group         0x0000000000000000        0xc ./hello_world_ta.o
+ .group         0x0000000000000000        0xc ./hello_world_ta.o
+ .group         0x0000000000000000        0xc ./hello_world_ta.o
+ .group         0x0000000000000000        0xc ./hello_world_ta.o
+ .group         0x0000000000000000        0xc ./hello_world_ta.o
+ .group         0x0000000000000000        0xc ./hello_world_ta.o
+ .group         0x0000000000000000        0xc ./hello_world_ta.o
+ .group         0x0000000000000000        0xc ./user_ta_header.o
+ .group         0x0000000000000000        0xc ./user_ta_header.o
+ .group         0x0000000000000000        0xc ./user_ta_header.o
+ .group         0x0000000000000000        0xc ./user_ta_header.o
+ .group         0x0000000000000000        0xc ./user_ta_header.o
+ .group         0x0000000000000000        0xc ./user_ta_header.o
+ .group         0x0000000000000000        0xc ./user_ta_header.o
+ .group         0x0000000000000000        0xc ./user_ta_header.o
+ .group         0x0000000000000000        0xc ./user_ta_header.o
+ .group         0x0000000000000000        0xc ./user_ta_header.o
+ .group         0x0000000000000000        0xc ./user_ta_header.o
+ .group         0x0000000000000000        0xc ./user_ta_header.o
+ .group         0x0000000000000000        0xc ./user_ta_header.o
+ .group         0x0000000000000000        0xc ./user_ta_header.o
+ .group         0x0000000000000000        0xc ./user_ta_header.o
+ .group         0x0000000000000000        0xc ./user_ta_header.o
+ .group         0x0000000000000000        0xc ./user_ta_header.o
+ .group         0x0000000000000000        0xc ./user_ta_header.o
+ .group         0x0000000000000000        0xc ./user_ta_header.o
+ .group         0x0000000000000000        0xc ./user_ta_header.o
+ .group         0x0000000000000000        0xc ./user_ta_header.o
+ .debug_macro   0x0000000000000000      0x112 ./user_ta_header.o
+ .debug_macro   0x0000000000000000      0x174 ./user_ta_header.o
+ .debug_macro   0x0000000000000000       0x7c ./user_ta_header.o
+ .debug_macro   0x0000000000000000      0x1a0 ./user_ta_header.o
+ .debug_macro   0x0000000000000000       0xc4 ./user_ta_header.o
+ .debug_macro   0x0000000000000000       0x22 ./user_ta_header.o
+ .debug_macro   0x0000000000000000      0xceb ./user_ta_header.o
+ .debug_macro   0x0000000000000000       0x35 ./user_ta_header.o
+ .debug_macro   0x0000000000000000       0x58 ./user_ta_header.o
+ .debug_macro   0x0000000000000000       0x34 ./user_ta_header.o
+ .debug_macro   0x0000000000000000       0x79 ./user_ta_header.o
+ .debug_macro   0x0000000000000000      0x184 ./user_ta_header.o
+ .debug_macro   0x0000000000000000       0xfd ./user_ta_header.o
+ .debug_macro   0x0000000000000000       0x1c ./user_ta_header.o
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .debug_macro   0x0000000000000000       0x58 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .debug_macro   0x0000000000000000       0x22 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .debug_macro   0x0000000000000000      0x112 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .debug_macro   0x0000000000000000       0x34 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .debug_macro   0x0000000000000000      0x1a0 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .debug_macro   0x0000000000000000       0xc4 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .debug_macro   0x0000000000000000       0x2e /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .debug_macro   0x0000000000000000      0x112 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .debug_macro   0x0000000000000000       0x58 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .debug_macro   0x0000000000000000       0x22 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .debug_macro   0x0000000000000000       0x34 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .debug_macro   0x0000000000000000       0x79 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .debug_macro   0x0000000000000000      0x1a0 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .debug_macro   0x0000000000000000       0xc4 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .debug_macro   0x0000000000000000       0x35 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memcpy.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memcpy.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memcpy.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memcpy.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memcpy.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memcpy.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memcpy.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memcpy.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o)
+ .debug_macro   0x0000000000000000      0x112 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o)
+ .debug_macro   0x0000000000000000      0x1a0 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o)
+ .debug_macro   0x0000000000000000       0x58 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o)
+ .debug_macro   0x0000000000000000       0x22 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memchr.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memchr.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memchr.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memchr.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memchr.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memchr.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memchr.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memchr.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memchr.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memchr.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memchr.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlen.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlen.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlen.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlen.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlen.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlen.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlen.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlen.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlen.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlen.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlen.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .debug_macro   0x0000000000000000       0x58 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .debug_macro   0x0000000000000000      0x112 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .debug_macro   0x0000000000000000       0x22 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .debug_macro   0x0000000000000000       0x34 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .debug_macro   0x0000000000000000       0x79 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .debug_macro   0x0000000000000000      0x1a0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .debug_macro   0x0000000000000000       0xc4 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .debug_macro   0x0000000000000000       0xea /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .debug_macro   0x0000000000000000      0xcf1 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .debug_macro   0x0000000000000000       0x35 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .debug_macro   0x0000000000000000      0x112 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .debug_macro   0x0000000000000000      0x1a0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .debug_macro   0x0000000000000000       0xc4 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .debug_macro   0x0000000000000000       0x22 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .debug_macro   0x0000000000000000       0x2e /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .debug_macro   0x0000000000000000       0x33 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .debug_macro   0x0000000000000000       0x58 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .debug_macro   0x0000000000000000       0x34 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .debug_macro   0x0000000000000000       0x79 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .debug_macro   0x0000000000000000       0xf0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .debug_macro   0x0000000000000000      0xcf1 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .debug_macro   0x0000000000000000       0x35 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .debug_macro   0x0000000000000000       0xfd /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .debug_macro   0x0000000000000000      0x112 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .debug_macro   0x0000000000000000      0xcf1 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .debug_macro   0x0000000000000000      0x1a0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .debug_macro   0x0000000000000000       0xc4 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .debug_macro   0x0000000000000000       0x22 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .debug_macro   0x0000000000000000       0x35 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .debug_macro   0x0000000000000000       0x58 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .debug_macro   0x0000000000000000       0x34 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .debug_macro   0x0000000000000000       0x79 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .debug_macro   0x0000000000000000      0x112 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .debug_macro   0x0000000000000000      0x1a0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .debug_macro   0x0000000000000000       0xc4 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .debug_macro   0x0000000000000000       0x22 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .debug_macro   0x0000000000000000       0x2e /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .debug_macro   0x0000000000000000       0x33 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .debug_macro   0x0000000000000000       0x58 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .debug_macro   0x0000000000000000      0xcf1 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .debug_macro   0x0000000000000000       0x35 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .debug_macro   0x0000000000000000       0x34 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .debug_macro   0x0000000000000000       0x79 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .debug_macro   0x0000000000000000      0x112 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .debug_macro   0x0000000000000000      0x1a0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .debug_macro   0x0000000000000000       0xc4 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .debug_macro   0x0000000000000000       0x22 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .debug_macro   0x0000000000000000       0x2e /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .debug_macro   0x0000000000000000       0x33 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .debug_macro   0x0000000000000000      0xcf1 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .debug_macro   0x0000000000000000       0x35 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .debug_macro   0x0000000000000000       0x58 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .debug_macro   0x0000000000000000       0x34 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .debug_macro   0x0000000000000000       0x79 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .debug_macro   0x0000000000000000       0xfd /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .debug_macro   0x0000000000000000       0xf0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .debug_macro   0x0000000000000000       0x88 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .debug_macro   0x0000000000000000      0x112 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .debug_macro   0x0000000000000000       0x58 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .debug_macro   0x0000000000000000       0x22 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .debug_macro   0x0000000000000000       0x34 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .debug_macro   0x0000000000000000       0x79 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .debug_macro   0x0000000000000000      0x1a0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .debug_macro   0x0000000000000000       0xc4 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .debug_macro   0x0000000000000000       0x2e /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .debug_macro   0x0000000000000000      0xcf1 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .debug_macro   0x0000000000000000       0x35 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .debug_macro   0x0000000000000000       0x34 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .debug_macro   0x0000000000000000       0xfd /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .debug_macro   0x0000000000000000       0xf0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .debug_macro   0x0000000000000000       0x2e /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .debug_macro   0x0000000000000000      0x112 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .debug_macro   0x0000000000000000      0xcf1 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .debug_macro   0x0000000000000000      0x1a0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .debug_macro   0x0000000000000000       0xc4 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .debug_macro   0x0000000000000000       0x22 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .debug_macro   0x0000000000000000       0x35 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .debug_macro   0x0000000000000000       0x58 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .debug_macro   0x0000000000000000       0x34 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .debug_macro   0x0000000000000000       0x79 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .debug_macro   0x0000000000000000       0xf0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .debug_macro   0x0000000000000000       0x58 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .debug_macro   0x0000000000000000       0x22 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .debug_macro   0x0000000000000000      0x112 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .debug_macro   0x0000000000000000      0x1a0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .debug_macro   0x0000000000000000       0xc4 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .debug_macro   0x0000000000000000       0x2e /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .debug_macro   0x0000000000000000       0x33 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .debug_macro   0x0000000000000000      0xcf1 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .debug_macro   0x0000000000000000       0x35 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .debug_macro   0x0000000000000000       0x34 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .debug_macro   0x0000000000000000       0x79 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .debug_macro   0x0000000000000000       0x34 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .debug_macro   0x0000000000000000       0xfd /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .debug_macro   0x0000000000000000       0xf0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .debug_macro   0x0000000000000000       0x88 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .debug_macro   0x0000000000000000      0x112 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .debug_macro   0x0000000000000000      0x1a0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .debug_macro   0x0000000000000000       0xc4 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .debug_macro   0x0000000000000000       0xea /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .debug_macro   0x0000000000000000       0x58 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .debug_macro   0x0000000000000000       0x22 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .debug_macro   0x0000000000000000       0x34 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .debug_macro   0x0000000000000000       0x79 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .debug_macro   0x0000000000000000       0xfd /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .debug_macro   0x0000000000000000      0xcf1 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .debug_macro   0x0000000000000000       0x35 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .debug_macro   0x0000000000000000       0x2e /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .debug_macro   0x0000000000000000      0x112 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .debug_macro   0x0000000000000000      0x1a0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .debug_macro   0x0000000000000000       0x58 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .debug_macro   0x0000000000000000       0x22 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .debug_macro   0x0000000000000000       0x34 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .debug_macro   0x0000000000000000       0x79 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .debug_macro   0x0000000000000000     0x1609 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .debug_macro   0x0000000000000000       0x5f /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .debug_macro   0x0000000000000000       0xc4 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .debug_macro   0x0000000000000000       0x2e /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .debug_macro   0x0000000000000000       0x33 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .debug_macro   0x0000000000000000      0x2e9 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .debug_macro   0x0000000000000000      0xcf1 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .debug_macro   0x0000000000000000       0x35 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .debug_macro   0x0000000000000000       0xf0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .debug_macro   0x0000000000000000       0x88 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .debug_macro   0x0000000000000000      0x112 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .debug_macro   0x0000000000000000       0x58 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .debug_macro   0x0000000000000000       0x22 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .debug_macro   0x0000000000000000       0x34 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .debug_macro   0x0000000000000000       0x79 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .debug_macro   0x0000000000000000      0xcf1 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .debug_macro   0x0000000000000000      0x1a0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .debug_macro   0x0000000000000000       0xc4 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .debug_macro   0x0000000000000000       0x35 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .debug_macro   0x0000000000000000       0xfd /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(base64.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(base64.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(base64.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(base64.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(base64.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(base64.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutee.a(base64.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutee.a(base64.o)
+ .debug_macro   0x0000000000000000      0x1a0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(base64.o)
+ .debug_macro   0x0000000000000000       0x22 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(base64.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(base64.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .debug_macro   0x0000000000000000      0x142 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .debug_macro   0x0000000000000000       0x12 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .debug_macro   0x0000000000000000      0x1a0 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .debug_macro   0x0000000000000000       0x79 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .debug_macro   0x0000000000000000       0x58 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .debug_macro   0x0000000000000000      0x112 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .debug_macro   0x0000000000000000       0xc4 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .debug_macro   0x0000000000000000       0x22 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .debug_macro   0x0000000000000000       0x2e /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .debug_macro   0x0000000000000000       0x33 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .debug_macro   0x0000000000000000       0xf0 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .debug_macro   0x0000000000000000      0x142 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .debug_macro   0x0000000000000000       0x12 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .debug_macro   0x0000000000000000      0x1a0 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .debug_macro   0x0000000000000000       0x8b /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .debug_macro   0x0000000000000000       0x79 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .debug_macro   0x0000000000000000       0x17 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .debug_macro   0x0000000000000000       0x41 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .debug_macro   0x0000000000000000      0x142 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .debug_macro   0x0000000000000000       0x12 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .debug_macro   0x0000000000000000      0x1a0 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .debug_macro   0x0000000000000000       0x8b /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .debug_macro   0x0000000000000000       0x41 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .debug_macro   0x0000000000000000       0x58 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .debug_macro   0x0000000000000000      0x112 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .debug_macro   0x0000000000000000       0xc4 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .debug_macro   0x0000000000000000       0x22 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .debug_macro   0x0000000000000000       0x2e /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .debug_macro   0x0000000000000000       0x33 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .debug_macro   0x0000000000000000      0x112 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .debug_macro   0x0000000000000000       0x2e /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .debug_macro   0x0000000000000000      0x1a0 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .debug_macro   0x0000000000000000       0xc4 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .debug_macro   0x0000000000000000       0x22 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .debug_macro   0x0000000000000000       0x2e /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .debug_macro   0x0000000000000000       0x33 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .debug_macro   0x0000000000000000       0x58 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .debug_macro   0x0000000000000000       0x34 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .debug_macro   0x0000000000000000       0x79 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .debug_macro   0x0000000000000000       0xf0 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .debug_macro   0x0000000000000000       0x1c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintf.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintf.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintf.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintf.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintf.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintf.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintf.o)
+ .debug_macro   0x0000000000000000       0x58 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintf.o)
+ .debug_macro   0x0000000000000000       0x22 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintf.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memmove.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memmove.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memmove.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memmove.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memmove.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memmove.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memmove.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memmove.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memmove.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memmove.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memmove.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memset.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memset.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memset.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memset.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memset.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memset.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memset.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memset.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memset.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strcmp.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strcmp.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strcmp.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strcmp.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strcmp.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strcmp.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strcmp.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strcmp.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strcmp.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strcmp.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strcmp.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlcpy.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlcpy.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlcpy.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlcpy.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlcpy.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlcpy.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlcpy.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlcpy.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlcpy.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlcpy.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlcpy.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlcpy.o)
+ .debug_macro   0x0000000000000000      0x1a0 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlcpy.o)
+ .debug_macro   0x0000000000000000       0xc4 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlcpy.o)
+ .debug_macro   0x0000000000000000       0x22 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlcpy.o)
+ .debug_macro   0x0000000000000000       0x2e /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlcpy.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlcpy.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .debug_macro   0x0000000000000000      0x112 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .debug_macro   0x0000000000000000       0x58 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .debug_macro   0x0000000000000000       0x22 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .debug_macro   0x0000000000000000       0x34 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .debug_macro   0x0000000000000000       0x79 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .debug_macro   0x0000000000000000      0x1a0 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .debug_macro   0x0000000000000000       0xc4 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .debug_macro   0x0000000000000000       0x2e /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .debug_macro   0x0000000000000000       0x33 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .debug_macro   0x0000000000000000       0x10 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .debug_macro   0x0000000000000000       0xf0 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(consttime_memcmp.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(consttime_memcmp.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(consttime_memcmp.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(consttime_memcmp.o)
+ .group         0x0000000000000000        0xc /home/neu/Desktop/export-ta_arm64/lib/libutils.a(consttime_memcmp.o)
+ .debug_macro   0x0000000000000000      0x5ad /home/neu/Desktop/export-ta_arm64/lib/libutils.a(consttime_memcmp.o)
+ .debug_macro   0x0000000000000000       0x7c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(consttime_memcmp.o)
+ .debug_macro   0x0000000000000000      0x174 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(consttime_memcmp.o)
+ .debug_macro   0x0000000000000000       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(consttime_memcmp.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+
+.ta_head        0x0000000000000000       0x20
+ *(SORT_BY_ALIGNMENT(.ta_head))
+ .ta_head       0x0000000000000000       0x20 ./user_ta_header.o
+                0x0000000000000000                ta_head
+
+.text           0x0000000000000020     0xca40
+                0x0000000000000020                __text_start = .
+ *(SORT_BY_ALIGNMENT(.text) SORT_BY_ALIGNMENT(.text.*))
+ .text          0x0000000000000020       0xec /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memcpy.o)
+                0x0000000000000020                memcpy
+ .text          0x000000000000010c      0x228 ./hello_world_ta.o
+                0x000000000000010c                TA_CreateEntryPoint
+                0x0000000000000140                TA_DestroyEntryPoint
+                0x0000000000000164                __GP11_TA_OpenSessionEntryPoint
+                0x00000000000001d4                TA_CloseSessionEntryPoint
+                0x00000000000001f8                __GP11_TA_InvokeCommandEntryPoint
+ .text          0x0000000000000334       0x34 ./user_ta_header.o
+                0x0000000000000334                __ta_entry
+                0x0000000000000348                tahead_get_trace_level
+                0x0000000000000350                TA_OpenSessionEntryPoint
+                0x000000000000035c                TA_InvokeCommandEntryPoint
+ .text          0x0000000000000368      0x32c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+                0x0000000000000368                trace_set_level
+                0x0000000000000384                trace_get_level
+                0x0000000000000394                trace_vprintf
+                0x00000000000005b0                trace_printf
+                0x0000000000000690                dhex_dump
+ .text          0x0000000000000694       0x30 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+                0x0000000000000694                __stack_chk_fail
+ .text          0x00000000000006c4      0xe10 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o)
+                0x00000000000006c4                __vsnprintf
+                0x0000000000000784                vsnprintk
+                0x00000000000007dc                snprintk
+                0x0000000000001488                __vsprintf
+ .text          0x00000000000014d4       0x2c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memchr.o)
+                0x00000000000014d4                memchr
+ .text          0x0000000000001500       0x1c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlen.o)
+                0x0000000000001500                strlen
+ .text          0x000000000000151c      0x1e0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+                0x000000000000151c                trace_ext_puts
+                0x0000000000001544                trace_ext_get_thread_id
+                0x000000000000154c                printf
+                0x000000000000164c                puts
+                0x000000000000168c                putchar
+ .text          0x00000000000016fc      0x74c /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+                0x00000000000019c0                __utee_call_elf_init_fn
+                0x0000000000001b18                __utee_call_elf_fini_fn
+                0x0000000000001bc0                __utee_entry
+ .text          0x0000000000001e48      0x234 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+                0x0000000000001f10                __ta_open_sess
+                0x0000000000001fbc                __ta_invoke_cmd
+ .text._utee_panic
+                0x000000000000207c        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x000000000000207c                _utee_panic
+ .text._utee_return
+                0x0000000000002088        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002088                _utee_return
+ .text._utee_log
+                0x0000000000002094        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002094                _utee_log
+ .text.__utee_panic
+                0x00000000000020a0        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000020a0                __utee_panic
+ .text._utee_get_property
+                0x00000000000020ac        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000020ac                _utee_get_property
+ .text._utee_get_property_name_to_index
+                0x00000000000020b8        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000020b8                _utee_get_property_name_to_index
+ .text._utee_open_ta_session
+                0x00000000000020c4        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000020c4                _utee_open_ta_session
+ .text._utee_close_ta_session
+                0x00000000000020d0        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000020d0                _utee_close_ta_session
+ .text._utee_invoke_ta_command
+                0x00000000000020dc        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000020dc                _utee_invoke_ta_command
+ .text._utee_get_cancellation_flag
+                0x00000000000020e8        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000020e8                _utee_get_cancellation_flag
+ .text._utee_check_access_rights
+                0x00000000000020f4        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000020f4                _utee_check_access_rights
+ .text._utee_unmask_cancellation
+                0x0000000000002100        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002100                _utee_unmask_cancellation
+ .text._utee_mask_cancellation
+                0x000000000000210c        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x000000000000210c                _utee_mask_cancellation
+ .text._utee_wait
+                0x0000000000002118        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002118                _utee_wait
+ .text._utee_get_time
+                0x0000000000002124        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002124                _utee_get_time
+ .text._utee_set_ta_time
+                0x0000000000002130        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002130                _utee_set_ta_time
+ .text._utee_cryp_state_alloc
+                0x000000000000213c        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x000000000000213c                _utee_cryp_state_alloc
+ .text._utee_cryp_state_copy
+                0x0000000000002148        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002148                _utee_cryp_state_copy
+ .text._utee_cryp_state_free
+                0x0000000000002154        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002154                _utee_cryp_state_free
+ .text._utee_hash_init
+                0x0000000000002160        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002160                _utee_hash_init
+ .text._utee_hash_update
+                0x000000000000216c        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x000000000000216c                _utee_hash_update
+ .text._utee_hash_final
+                0x0000000000002178        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002178                _utee_hash_final
+ .text._utee_cipher_init
+                0x0000000000002184        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002184                _utee_cipher_init
+ .text._utee_cipher_update
+                0x0000000000002190        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002190                _utee_cipher_update
+ .text._utee_cipher_final
+                0x000000000000219c        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x000000000000219c                _utee_cipher_final
+ .text._utee_cryp_obj_get_info
+                0x00000000000021a8        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000021a8                _utee_cryp_obj_get_info
+ .text._utee_cryp_obj_restrict_usage
+                0x00000000000021b4        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000021b4                _utee_cryp_obj_restrict_usage
+ .text._utee_cryp_obj_get_attr
+                0x00000000000021c0        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000021c0                _utee_cryp_obj_get_attr
+ .text._utee_cryp_obj_alloc
+                0x00000000000021cc        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000021cc                _utee_cryp_obj_alloc
+ .text._utee_cryp_obj_close
+                0x00000000000021d8        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000021d8                _utee_cryp_obj_close
+ .text._utee_cryp_obj_reset
+                0x00000000000021e4        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000021e4                _utee_cryp_obj_reset
+ .text._utee_cryp_obj_populate
+                0x00000000000021f0        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000021f0                _utee_cryp_obj_populate
+ .text._utee_cryp_obj_copy
+                0x00000000000021fc        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000021fc                _utee_cryp_obj_copy
+ .text._utee_cryp_derive_key
+                0x0000000000002208        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002208                _utee_cryp_derive_key
+ .text._utee_cryp_random_number_generate
+                0x0000000000002214        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002214                _utee_cryp_random_number_generate
+ .text._utee_authenc_init
+                0x0000000000002220        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002220                _utee_authenc_init
+ .text._utee_authenc_update_aad
+                0x000000000000222c        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x000000000000222c                _utee_authenc_update_aad
+ .text._utee_authenc_update_payload
+                0x0000000000002238        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002238                _utee_authenc_update_payload
+ .text._utee_authenc_enc_final
+                0x0000000000002244        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002244                _utee_authenc_enc_final
+ .text._utee_authenc_dec_final
+                0x0000000000002250        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002250                _utee_authenc_dec_final
+ .text._utee_asymm_operate
+                0x000000000000225c        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x000000000000225c                _utee_asymm_operate
+ .text._utee_asymm_verify
+                0x0000000000002268        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002268                _utee_asymm_verify
+ .text._utee_storage_obj_open
+                0x0000000000002274        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002274                _utee_storage_obj_open
+ .text._utee_storage_obj_create
+                0x0000000000002280        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002280                _utee_storage_obj_create
+ .text._utee_storage_obj_del
+                0x000000000000228c        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x000000000000228c                _utee_storage_obj_del
+ .text._utee_storage_obj_rename
+                0x0000000000002298        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002298                _utee_storage_obj_rename
+ .text._utee_storage_alloc_enum
+                0x00000000000022a4        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000022a4                _utee_storage_alloc_enum
+ .text._utee_storage_free_enum
+                0x00000000000022b0        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000022b0                _utee_storage_free_enum
+ .text._utee_storage_reset_enum
+                0x00000000000022bc        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000022bc                _utee_storage_reset_enum
+ .text._utee_storage_start_enum
+                0x00000000000022c8        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000022c8                _utee_storage_start_enum
+ .text._utee_storage_next_enum
+                0x00000000000022d4        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000022d4                _utee_storage_next_enum
+ .text._utee_storage_obj_read
+                0x00000000000022e0        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000022e0                _utee_storage_obj_read
+ .text._utee_storage_obj_write
+                0x00000000000022ec        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000022ec                _utee_storage_obj_write
+ .text._utee_storage_obj_trunc
+                0x00000000000022f8        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x00000000000022f8                _utee_storage_obj_trunc
+ .text._utee_storage_obj_seek
+                0x0000000000002304        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002304                _utee_storage_obj_seek
+ .text._utee_cryp_obj_generate_key
+                0x0000000000002310        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x0000000000002310                _utee_cryp_obj_generate_key
+ .text._utee_cache_operation
+                0x000000000000231c        0xc /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+                0x000000000000231c                _utee_cache_operation
+ .text.unlikely
+                0x0000000000002328       0x20 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+                0x0000000000002328                abort
+ .text          0x0000000000002348     0x10c0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+                0x00000000000026f8                TEE_CloseTASession
+                0x0000000000002720                TEE_GetCancellationFlag
+                0x0000000000002780                TEE_UnmaskCancellation
+                0x00000000000027e0                TEE_MaskCancellation
+                0x0000000000002840                TEE_CheckMemoryAccessRights
+                0x0000000000002a64                TEE_OpenTASession
+                0x0000000000002bb8                __GP11_TEE_OpenTASession
+                0x0000000000002d00                TEE_InvokeTACommand
+                0x0000000000002e84                __GP11_TEE_InvokeTACommand
+                0x0000000000002ffc                __GP11_TEE_CheckMemoryAccessRights
+                0x0000000000003004                TEE_SetInstanceData
+                0x0000000000003010                TEE_GetInstanceData
+                0x000000000000301c                TEE_MemMove
+                0x0000000000003020                __GP11_TEE_MemMove
+                0x0000000000003028                TEE_MemCompare
+                0x000000000000302c                __GP11_TEE_MemCompare
+                0x0000000000003034                TEE_MemFill
+                0x0000000000003038                __GP11_TEE_MemFill
+                0x0000000000003040                TEE_GetSystemTime
+                0x0000000000003068                TEE_Wait
+                0x00000000000030a4                TEE_GetTAPersistentTime
+                0x0000000000003118                TEE_SetTAPersistentTime
+                0x000000000000315c                TEE_GetREETime
+                0x0000000000003184                TEE_Malloc
+                0x00000000000032a8                __GP11_TEE_Malloc
+                0x00000000000032b0                TEE_Free
+                0x0000000000003310                TEE_Realloc
+                0x00000000000033e8                __GP11_TEE_Realloc
+                0x00000000000033f0                TEE_CacheClean
+                0x00000000000033f8                TEE_CacheFlush
+                0x0000000000003400                TEE_CacheInvalidate
+ .text          0x0000000000003408     0x212c /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+                0x0000000000003c6c                _TEE_MathAPI_Init
+                0x0000000000003cbc                TEE_BigIntInit
+                0x0000000000003d1c                __GP11_TEE_BigIntInit
+                0x0000000000003d24                TEE_BigIntConvertFromOctetString
+                0x0000000000003dec                __GP11_TEE_BigIntConvertFromOctetString
+                0x0000000000003df4                TEE_BigIntConvertToOctetString
+                0x0000000000003ebc                __GP11_TEE_BigIntConvertToOctetString
+                0x0000000000003f1c                TEE_BigIntConvertFromS32
+                0x0000000000003fcc                TEE_BigIntConvertToS32
+                0x0000000000004088                TEE_BigIntCmp
+                0x000000000000411c                TEE_BigIntCmpS32
+                0x0000000000004368                TEE_BigIntShiftRight
+                0x0000000000004508                __GP11_TEE_BigIntShiftRight
+                0x0000000000004510                TEE_BigIntGetBit
+                0x0000000000004590                TEE_BigIntGetBitCount
+                0x0000000000004604                TEE_BigIntSetBit
+                0x00000000000046b4                TEE_BigIntAssign
+                0x0000000000004704                TEE_BigIntAbs
+                0x0000000000004730                TEE_BigIntAdd
+                0x000000000000473c                TEE_BigIntSub
+                0x0000000000004748                TEE_BigIntNeg
+                0x000000000000482c                TEE_BigIntMul
+                0x0000000000004940                TEE_BigIntSquare
+                0x0000000000004948                TEE_BigIntDiv
+                0x0000000000004afc                TEE_BigIntMod
+                0x0000000000004b68                TEE_BigIntAddMod
+                0x0000000000004b74                TEE_BigIntSubMod
+                0x0000000000004b80                TEE_BigIntMulMod
+                0x0000000000004b8c                TEE_BigIntSquareMod
+                0x0000000000004b98                TEE_BigIntInvMod
+                0x0000000000004ce8                TEE_BigIntRelativePrime
+                0x0000000000004df0                TEE_BigIntExpMod
+                0x0000000000004fc4                TEE_BigIntComputeExtendedGcd
+                0x000000000000522c                TEE_BigIntIsProbablePrime
+                0x00000000000052b0                TEE_BigIntInitFMM
+                0x00000000000052b4                __GP11_TEE_BigIntInitFMM
+                0x00000000000052bc                TEE_BigIntInitFMMContext
+                0x00000000000052c0                __GP11_TEE_BigIntInitFMMContext
+                0x00000000000052c8                TEE_BigIntInitFMMContext1
+                0x00000000000052d0                TEE_BigIntFMMSizeInU32
+                0x00000000000052e0                __GP11_TEE_BigIntFMMSizeInU32
+                0x00000000000052f8                TEE_BigIntFMMContextSizeInU32
+                0x0000000000005300                __GP11_TEE_BigIntFMMContextSizeInU32
+                0x0000000000005318                TEE_BigIntConvertToFMM
+                0x000000000000531c                TEE_BigIntConvertFromFMM
+                0x00000000000053ec                TEE_BigIntComputeFMM
+ .text          0x0000000000005534      0x21c /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+                0x0000000000005550                TEE_Panic
+                0x0000000000005568                __utee_check_outbuf_annotation
+                0x00000000000055b4                __utee_check_gp11_outbuf_annotation
+                0x0000000000005600                __utee_check_instring_annotation
+                0x0000000000005630                __utee_check_outstring_annotation
+                0x000000000000567c                __utee_check_gp11_outstring_annotation
+                0x00000000000056c8                __utee_check_out_annotation
+                0x00000000000056e8                __utee_check_attr_in_annotation
+                0x000000000000570c                __utee_check_gp11_attr_in_annotation
+                0x0000000000005730                __utee_check_inout_annotation
+ .text          0x0000000000005750      0xf78 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+                0x0000000000005ae0                TEE_GetPropertyAsString
+                0x0000000000005d3c                __GP11_TEE_GetPropertyAsString
+                0x0000000000005dd4                TEE_GetPropertyAsBool
+                0x0000000000005eac                TEE_GetPropertyAsU32
+                0x0000000000005f94                TEE_GetPropertyAsU64
+                0x000000000000607c                __GP11_TEE_GetPropertyAsBinaryBlock
+                0x0000000000006168                TEE_GetPropertyAsBinaryBlock
+                0x0000000000006200                TEE_GetPropertyAsUUID
+                0x00000000000062e8                TEE_GetPropertyAsIdentity
+                0x00000000000063d0                TEE_ResetPropertyEnumerator
+                0x00000000000063dc                TEE_AllocatePropertyEnumerator
+                0x0000000000006424                TEE_FreePropertyEnumerator
+                0x0000000000006428                TEE_StartPropertyEnumerator
+                0x0000000000006438                __GP11_TEE_GetPropertyName
+                0x0000000000006560                TEE_GetPropertyName
+                0x00000000000065e8                TEE_GetNextProperty
+ .text          0x00000000000066c8      0x310 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+                0x0000000000006750                tee_map_zi
+                0x0000000000006800                tee_unmap
+                0x00000000000068c8                tee_invoke_supp_plugin
+ .text          0x00000000000069d8      0x34c /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+                0x00000000000069d8                __utee_tcb_init
+                0x0000000000006c18                __tls_get_addr
+                0x0000000000006c34                dl_iterate_phdr
+ .text          0x0000000000006d24       0x58 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+                0x0000000000006d24                _assert_log
+                0x0000000000006d68                _assert_break
+ .text          0x0000000000006d7c      0x258 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(base64.o)
+                0x0000000000006d7c                _base64_enc_len
+                0x0000000000006d94                _base64_enc
+                0x0000000000006eb0                _base64_dec
+ .text          0x0000000000006fd4     0x4190 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+                0x00000000000077a8                mbedtls_mpi_init
+                0x00000000000077b8                mbedtls_mpi_init_mempool
+                0x00000000000077e0                mbedtls_mpi_free
+                0x000000000000784c                mbedtls_mpi_grow
+                0x00000000000079a0                mbedtls_mpi_shrink
+                0x0000000000007ac0                mbedtls_mpi_copy
+                0x0000000000007b8c                mbedtls_mpi_swap
+                0x0000000000007c14                mbedtls_mpi_lset
+                0x0000000000007c7c                mbedtls_mpi_get_bit
+                0x0000000000007ca8                mbedtls_mpi_set_bit
+                0x0000000000007d34                mbedtls_mpi_lsb
+                0x0000000000007d88                mbedtls_mpi_bitlen
+                0x0000000000007de4                mbedtls_mpi_size
+                0x0000000000007e00                mbedtls_mpi_read_binary_le
+                0x0000000000007e78                mbedtls_mpi_read_binary
+                0x0000000000007efc                mbedtls_mpi_write_binary_le
+                0x0000000000007fb4                mbedtls_mpi_write_binary
+                0x0000000000008078                mbedtls_mpi_shift_l
+                0x0000000000008188                mbedtls_mpi_shift_r
+                0x0000000000008248                mbedtls_mpi_cmp_abs
+                0x00000000000082e4                mbedtls_mpi_cmp_mpi
+                0x00000000000083b8                mbedtls_mpi_cmp_int
+                0x000000000000842c                mbedtls_mpi_add_abs
+                0x000000000000854c                mbedtls_mpi_sub_abs
+                0x00000000000086a8                mbedtls_mpi_add_mpi
+                0x0000000000008730                mbedtls_mpi_sub_mpi
+                0x00000000000087bc                mbedtls_mpi_add_int
+                0x0000000000008830                mbedtls_mpi_sub_int
+                0x00000000000088a4                mbedtls_mpi_mul_mpi
+                0x0000000000008a50                mbedtls_mpi_mul_int
+                0x0000000000008af8                mbedtls_mpi_read_string
+                0x0000000000008d04                mbedtls_mpi_div_mpi
+                0x0000000000009238                mbedtls_mpi_div_int
+                0x00000000000092ac                mbedtls_mpi_mod_mpi
+                0x0000000000009360                mbedtls_mpi_mod_int
+                0x00000000000093fc                mbedtls_mpi_write_string
+                0x0000000000009730                mbedtls_mpi_montg_init
+                0x0000000000009738                mbedtls_mpi_montmul
+                0x0000000000009740                mbedtls_mpi_montred
+                0x0000000000009744                mbedtls_mpi_exp_mod
+                0x0000000000009e10                mbedtls_mpi_gcd
+                0x0000000000009fe8                mbedtls_mpi_fill_random
+                0x000000000000a2f4                mbedtls_mpi_random
+                0x000000000000a4ac                mbedtls_mpi_inv_mod
+                0x000000000000a904                mbedtls_mpi_is_prime_ext
+                0x000000000000a9e0                mbedtls_mpi_is_prime
+                0x000000000000a9f0                mbedtls_mpi_gen_prime
+                0x000000000000ad3c                mbedtls_mpi_self_test
+ .text          0x000000000000b164      0x7c0 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+                0x000000000000b184                mbedtls_ct_memcmp
+                0x000000000000b1cc                mbedtls_ct_uint_mask
+                0x000000000000b1dc                mbedtls_ct_mpi_uint_mask
+                0x000000000000b1ec                mbedtls_ct_size_bool_eq
+                0x000000000000b204                mbedtls_ct_mpi_uint_lt
+                0x000000000000b220                mbedtls_ct_uint_if
+                0x000000000000b250                mbedtls_ct_mpi_uint_cond_assign
+                0x000000000000b28c                mbedtls_ct_base64_enc_char
+                0x000000000000b33c                mbedtls_ct_base64_dec_value
+                0x000000000000b3f8                mbedtls_mpi_safe_cond_assign
+                0x000000000000b4b4                mbedtls_mpi_safe_cond_swap
+                0x000000000000b5b0                mbedtls_mpi_lt_mpi_ct
+                0x000000000000b6a8                mbedtls_ct_rsaes_pkcs1_v15_unpadding
+ .text          0x000000000000b924       0x20 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+                0x000000000000b924                mbedtls_platform_zeroize
+ .text          0x000000000000b944      0xd00 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+                0x000000000000b97c                bget
+                0x000000000000bc44                bgetz
+                0x000000000000bccc                brel
+                0x000000000000bf50                bgetr
+                0x000000000000c020                bpool
+                0x000000000000c0f0                raw_memalign
+                0x000000000000c144                raw_malloc
+                0x000000000000c154                raw_free
+                0x000000000000c164                raw_calloc
+                0x000000000000c1b4                raw_realloc
+                0x000000000000c29c                malloc
+                0x000000000000c2b4                calloc
+                0x000000000000c2d0                realloc
+                0x000000000000c2e8                memalign
+                0x000000000000c304                aligned_alloc
+                0x000000000000c31c                free
+                0x000000000000c32c                free_wipe
+                0x000000000000c33c                raw_malloc_get_ctx_size
+                0x000000000000c344                raw_malloc_init_ctx
+                0x000000000000c370                raw_malloc_add_pool
+                0x000000000000c438                raw_malloc_buffer_overlaps_heap
+                0x000000000000c4b8                raw_malloc_buffer_is_within_alloced
+                0x000000000000c608                malloc_add_pool
+                0x000000000000c61c                malloc_buffer_is_within_alloced
+                0x000000000000c630                malloc_buffer_overlaps_heap
+ .text          0x000000000000c644      0x128 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintf.o)
+                0x000000000000c644                snprintf
+                0x000000000000c714                vsnprintf
+ .text          0x000000000000c76c       0x5c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memmove.o)
+                0x000000000000c76c                memmove
+ .text          0x000000000000c7c8       0x1c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memset.o)
+                0x000000000000c7c8                memset
+ .text          0x000000000000c7e4       0x24 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strcmp.o)
+                0x000000000000c7e4                strcmp
+ .text          0x000000000000c808       0x58 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlcpy.o)
+                0x000000000000c808                strlcpy
+ .text          0x000000000000c860      0x190 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+                0x000000000000c860                mempool_alloc_pool
+                0x000000000000c928                mempool_alloc
+                0x000000000000c98c                mempool_calloc
+                0x000000000000c9dc                mempool_free
+ .text          0x000000000000c9f0       0x70 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(consttime_memcmp.o)
+                0x000000000000c9f0                consttime_memcmp
+ .text          0x000000000000ca60        0x0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(utee_syscalls_a64.o)
+ .text          0x000000000000ca60        0x0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ *(SORT_BY_ALIGNMENT(.stub))
+ *(SORT_BY_ALIGNMENT(.glue_7))
+ *(SORT_BY_ALIGNMENT(.glue_7t))
+ *(SORT_BY_ALIGNMENT(.gnu.linkonce.t.*))
+ *(SORT_BY_ALIGNMENT(.vfp11_veneer))
+                0x000000000000ca60                __text_end = .
+
+.note.gnu.property
+ *(SORT_BY_ALIGNMENT(.note.gnu.property))
+
+.plt            0x000000000000ca60        0x0
+ *(SORT_BY_ALIGNMENT(.plt))
+ .plt           0x000000000000ca60        0x0 ./hello_world_ta.o
+
+.eh_frame_hdr
+ *(SORT_BY_ALIGNMENT(.eh_frame_hdr))
+ *(SORT_BY_ALIGNMENT(.eh_frame_entry) SORT_BY_ALIGNMENT(.eh_frame_entry.*))
+
+.eh_frame       0x000000000000ca60     0x2924
+ *(SORT_BY_ALIGNMENT(.eh_frame))
+ .eh_frame      0x000000000000ca60       0xb8 ./hello_world_ta.o
+ .eh_frame      0x000000000000cb18       0x58 ./user_ta_header.o
+                                         0x68 (size before relaxing)
+ .eh_frame      0x000000000000cb70       0xb8 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+                                         0xc8 (size before relaxing)
+ .eh_frame      0x000000000000cc28       0x18 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+                                         0x30 (size before relaxing)
+ .eh_frame      0x000000000000cc40       0x18 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memcpy.o)
+                                         0x28 (size before relaxing)
+ .eh_frame      0x000000000000cc58       0xf0 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o)
+                                        0x100 (size before relaxing)
+ .eh_frame      0x000000000000cd48       0x18 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memchr.o)
+                                         0x28 (size before relaxing)
+ .eh_frame      0x000000000000cd60       0x18 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlen.o)
+                                         0x28 (size before relaxing)
+ .eh_frame      0x000000000000cd78       0xa8 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+                                         0xc0 (size before relaxing)
+ .eh_frame      0x000000000000ce20      0x150 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+                                        0x168 (size before relaxing)
+ .eh_frame      0x000000000000cf70       0x98 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry_compat.o)
+                                         0xa8 (size before relaxing)
+ .eh_frame      0x000000000000d008       0x18 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+                                         0x30 (size before relaxing)
+ .eh_frame      0x000000000000d020      0x588 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+                                        0x5a0 (size before relaxing)
+ .eh_frame      0x000000000000d5a8      0x7d0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+                                        0x7e0 (size before relaxing)
+ .eh_frame      0x000000000000dd78      0x180 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_panic.o)
+                                        0x198 (size before relaxing)
+ .eh_frame      0x000000000000def8      0x2f8 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+                                        0x308 (size before relaxing)
+ .eh_frame      0x000000000000e1f0       0xc0 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+                                         0xd0 (size before relaxing)
+ .eh_frame      0x000000000000e2b0       0x90 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+                                         0xa8 (size before relaxing)
+ .eh_frame      0x000000000000e340       0x38 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+                                         0x50 (size before relaxing)
+ .eh_frame      0x000000000000e378       0x58 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(base64.o)
+                                         0x70 (size before relaxing)
+ .eh_frame      0x000000000000e3d0      0x988 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+                                        0x9a0 (size before relaxing)
+ .eh_frame      0x000000000000ed58      0x1e0 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(constant_time.o)
+                                        0x1f8 (size before relaxing)
+ .eh_frame      0x000000000000ef38       0x18 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(platform_util.o)
+                                         0x28 (size before relaxing)
+ .eh_frame      0x000000000000ef50      0x2d8 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(bget_malloc.o)
+                                        0x2e8 (size before relaxing)
+ .eh_frame      0x000000000000f228       0x58 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintf.o)
+                                         0x68 (size before relaxing)
+ .eh_frame      0x000000000000f280       0x18 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memmove.o)
+                                         0x28 (size before relaxing)
+ .eh_frame      0x000000000000f298       0x18 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(memset.o)
+                                         0x28 (size before relaxing)
+ .eh_frame      0x000000000000f2b0       0x18 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strcmp.o)
+                                         0x28 (size before relaxing)
+ .eh_frame      0x000000000000f2c8       0x18 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(strlcpy.o)
+                                         0x28 (size before relaxing)
+ .eh_frame      0x000000000000f2e0       0x88 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(mempool.o)
+                                         0xa0 (size before relaxing)
+ .eh_frame      0x000000000000f368       0x1c /home/neu/Desktop/export-ta_arm64/lib/libutils.a(consttime_memcmp.o)
+                                         0x30 (size before relaxing)
+ *(SORT_BY_ALIGNMENT(.eh_frame.*))
+
+.gcc_except_table
+ *(SORT_BY_ALIGNMENT(.gcc_except_table) SORT_BY_ALIGNMENT(.gcc_except_table.*))
+
+.rodata         0x000000000000f388     0x133e
+ *(SORT_BY_ALIGNMENT(.gnu.linkonce.r.*))
+ *(SORT_BY_ALIGNMENT(.rodata) SORT_BY_ALIGNMENT(.rodata.*))
+ .rodata.user_ta_header.c
+                0x000000000000f388       0x33 ./user_ta_header.o
+                0x000000000000f388                ta_num_props
+                0x000000000000f3a8                __ta_no_share_heap_size
+                0x000000000000f3b0                ta_heap_size
+                0x000000000000f3b8                trace_ext_prefix
+ *fill*         0x000000000000f3bb        0x5 
+ .rodata.lib/libutee/tee_api.c
+                0x000000000000f3c0       0x20 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .rodata.lib/libutils/ext/snprintk.c
+                0x000000000000f3e0       0xac /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o)
+ .rodata.lib/libutee/tee_api_property.c
+                0x000000000000f48c       0x20 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+ .rodata.lib/libutee/tee_system_pta.c
+                0x000000000000f4ac       0x31 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ *fill*         0x000000000000f4dd        0x3 
+ .rodata.lib/libutee/base64.c
+                0x000000000000f4e0       0x45 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(base64.o)
+ *fill*         0x000000000000f525        0x3 
+ .rodata.lib/libmbedtls/mbedtls/library/bignum.c
+                0x000000000000f528      0x2c4 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignum.o)
+ .rodata.str1.1.hello_world_ta.c
+                0x000000000000f7ec       0x6a ./hello_world_ta.o
+ .rodata.hello_world_ta.c
+                0x000000000000f856       0x77 ./hello_world_ta.o
+ .rodata.str1.1.user_ta_header.c
+                0x000000000000f8cd      0x15f ./user_ta_header.o
+ .rodata.str1.1.lib/libutils/ext/trace.c
+                0x000000000000fa2c       0x1a /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+                                         0x1b (size before relaxing)
+ .rodata.lib/libutils/ext/trace.c
+                0x000000000000fa46        0x5 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(trace.o)
+ .rodata.str1.1.lib/libutils/isoc/stack_check.c
+                0x000000000000fa4b       0x18 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(stack_check.o)
+ .rodata.str1.1.lib/libutils/ext/snprintk.c
+                0x000000000000fa63       0x38 /home/neu/Desktop/export-ta_arm64/lib/libutils.a(snprintk.o)
+ .rodata.str1.1.lib/libutee/trace_ext.c
+                0x000000000000fa9b       0x38 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(trace_ext.o)
+                                          0x2 (size before relaxing)
+ .rodata.str1.1.lib/libutee/user_ta_entry.c
+                0x000000000000fa9b       0x4f /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .rodata.lib/libutee/user_ta_entry.c
+                0x000000000000faea       0x16 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(user_ta_entry.o)
+ .rodata.str1.1.lib/libutee/abort.c
+                0x000000000000fb00        0x7 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(abort.o)
+ .rodata.str1.1.lib/libutee/tee_api.c
+                0x000000000000fb07       0x11 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api.o)
+ .rodata.str1.1.lib/libutee/tee_api_arith_mpi.c
+                0x000000000000fb18       0xc9 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .rodata.lib/libutee/tee_api_arith_mpi.c
+                0x000000000000fbe1      0x14e /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_arith_mpi.o)
+ .rodata.str1.1.lib/libutee/tee_api_property.c
+                0x000000000000fd2f       0x80 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_api_property.o)
+                                         0x88 (size before relaxing)
+ .rodata.str1.1.lib/libutee/tee_system_pta.c
+                0x000000000000fdaf       0x55 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tee_system_pta.o)
+ .rodata.str1.1.lib/libutee/tcb.c
+                0x000000000000fe04       0x8d /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .rodata.lib/libutee/tcb.c
+                0x000000000000fe91       0x20 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(tcb.o)
+ .rodata.str1.1.lib/libutee/assert.c
+                0x000000000000feb1       0x27 /home/neu/Desktop/export-ta_arm64/lib/libutee.a(assert.o)
+ .rodata.str1.1.lib/libmbedtls/mbedtls/library/bignum.c
+                0x000000000000fed8      0x456 /home/neu/Desktop/export-ta_arm64/lib/libmbedtls.a(bignu

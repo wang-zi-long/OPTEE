@@ -610,7 +610,7 @@ static int tee_ioctl_invoke(struct tee_context *ctx,
 
 	rc = ctx->teedev->desc->ops->invoke_func(ctx, &arg, params);
 
-	printk("| %d |tee_ioctl_invoke()---before invoke_func\n", task_pid_nr(current));
+	printk("| %d |tee_ioctl_invoke()---after invoke_func\n", task_pid_nr(current));
 
 	if (rc)
 		goto out;
