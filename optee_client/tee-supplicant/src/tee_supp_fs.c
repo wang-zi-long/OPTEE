@@ -41,6 +41,10 @@
 #include <tee_supp_fs.h>
 #include <tee_supplicant.h>
 #include <unistd.h>
+#include <pthread.h>
+#include <sys/syscall.h>
+#include <time.h>
+#include <sys/time.h>
 
 #ifndef __aligned
 #define __aligned(x) __attribute__((__aligned__(x)))
@@ -50,6 +54,14 @@
 #ifndef PATH_MAX
 #define PATH_MAX 255
 #endif
+
+static long long getMilliseconds() {
+    struct timespec ts;
+	clock_gettime(CLOCK_REALTIME, &ts);
+    // 将秒和纳秒转换为纳秒级时间戳
+    long long timestamp_ns = ts.tv_sec * 1000000000LL + ts.tv_nsec;
+	return timestamp_ns;
+}
 
 /* Path to all secure storage files. */
 static char tee_fs_root[PATH_MAX];
@@ -637,45 +649,89 @@ static TEEC_Result ree_fs_new_readdir(size_t num_params,
 	return TEEC_SUCCESS;
 }
 
+#define gettid() ((pid_t)syscall(SYS_gettid))
+static int count = 0;
+
 TEEC_Result tee_supp_fs_process(size_t num_params,
 				struct tee_ioctl_param *params)
 {
-	if (!num_params || !tee_supp_param_is_value(params))
-		return TEEC_ERROR_BAD_PARAMETERS;
+	printf("| %lld | %4d | %d | tee_supp_fs_process---start\n", getMilliseconds(), gettid(), sched_getcpu());
 
+	if (!num_params || !tee_supp_param_is_value(params)){
+
+		printf("| %lld | %4d | %d | tee_supp_fs_process---TEEC_ERROR_BAD_PARAMETERS\n", getMilliseconds(), gettid(), sched_getcpu());
+
+		return TEEC_ERROR_BAD_PARAMETERS;
+	}
+		
 	if (!tee_fs_root[0]) {
 		if (tee_supp_fs_init() != 0) {
 			EMSG("error tee_supp_fs_init: failed to create %s/",
 				tee_fs_root);
 			memset(tee_fs_root, 0, sizeof(tee_fs_root));
+
+			printf("| %lld | %4d | %d | tee_supp_fs_process---TEEC_ERROR_STORAGE_NOT_AVAILABLE\n", getMilliseconds(), gettid(), sched_getcpu());
+
 			return TEEC_ERROR_STORAGE_NOT_AVAILABLE;
 		}
 	}
 
 	switch (params->a) {
 	case OPTEE_MRF_OPEN:
+	{
+		printf("| %lld | %4d | %d | tee_supp_fs_process---OPTEE_MRF_OPEN\n", getMilliseconds(), gettid(), sched_getcpu());
 		return ree_fs_new_open(num_params, params);
-	case OPTEE_MRF_CREATE:
+	}
+	case OPTEE_MRF_CREATE:{
+		printf("| %lld | %4d | %d | tee_supp_fs_process---OPTEE_MRF_CREATE\n", getMilliseconds(), gettid(), sched_getcpu());
 		return ree_fs_new_create(num_params, params);
-	case OPTEE_MRF_CLOSE:
+	}
+	case OPTEE_MRF_CLOSE:{
+		printf("| %lld | %4d | %d | tee_supp_fs_process---OPTEE_MRF_CLOSE\n", getMilliseconds(), gettid(), sched_getcpu());
 		return ree_fs_new_close(num_params, params);
-	case OPTEE_MRF_READ:
+	}
+	case OPTEE_MRF_READ:{
+		printf("| %lld | %4d | %d | tee_supp_fs_process---OPTEE_MRF_READ\n", getMilliseconds(), gettid(), sched_getcpu());
 		return ree_fs_new_read(num_params, params);
-	case OPTEE_MRF_WRITE:
+	}
+	case OPTEE_MRF_WRITE:{
+		printf("| %lld | %4d | %d | tee_supp_fs_process---OPTEE_MRF_WRITE\n", getMilliseconds(), gettid(), sched_getcpu());
+		// if(count >= 10){
+		// 	printf("| %lld | %4d | %d | tee_supp_fs_process---sleep()\n", getMilliseconds(), gettid(), sched_getcpu());
+		// 	// pause();
+		// 	sleep(60);
+		// 	count = 0;
+		// }
+		// count++;
 		return ree_fs_new_write(num_params, params);
-	case OPTEE_MRF_TRUNCATE:
+	}
+	case OPTEE_MRF_TRUNCATE:{
+		printf("| %lld | %4d | %d | tee_supp_fs_process---OPTEE_MRF_TRUNCATE\n", getMilliseconds(), gettid(), sched_getcpu());
 		return ree_fs_new_truncate(num_params, params);
-	case OPTEE_MRF_REMOVE:
+	}
+	case OPTEE_MRF_REMOVE:{
+		printf("| %lld | %4d | %d | tee_supp_fs_process---OPTEE_MRF_REMOVE\n", getMilliseconds(), gettid(), sched_getcpu());
 		return ree_fs_new_remove(num_params, params);
-	case OPTEE_MRF_RENAME:
+	}
+	case OPTEE_MRF_RENAME:{
+		printf("| %lld | %4d | %d | tee_supp_fs_process---OPTEE_MRF_RENAME\n", getMilliseconds(), gettid(), sched_getcpu());
 		return ree_fs_new_rename(num_params, params);
-	case OPTEE_MRF_OPENDIR:
+	}
+	case OPTEE_MRF_OPENDIR:{
+		printf("| %lld | %4d | %d | tee_supp_fs_process---OPTEE_MRF_OPENDIR\n", getMilliseconds(), gettid(), sched_getcpu());
 		return ree_fs_new_opendir(num_params, params);
-	case OPTEE_MRF_CLOSEDIR:
+	}
+	case OPTEE_MRF_CLOSEDIR:{
+		printf("| %lld | %4d | %d | tee_supp_fs_process---OPTEE_MRF_CLOSEDIR\n", getMilliseconds(), gettid(), sched_getcpu());
 		return ree_fs_new_closedir(num_params, params);
-	case OPTEE_MRF_READDIR:
+	}
+	case OPTEE_MRF_READDIR:{
+		printf("| %lld | %4d | %d | tee_supp_fs_process---OPTEE_MRF_READDIR\n", getMilliseconds(), gettid(), sched_getcpu());
 		return ree_fs_new_readdir(num_params, params);
-	default:
+	}
+	default:{
+		printf("| %lld | %4d | %d | tee_supp_fs_process---default\n", getMilliseconds(), gettid(), sched_getcpu());
 		return TEEC_ERROR_BAD_PARAMETERS;
+	}
 	}
 }

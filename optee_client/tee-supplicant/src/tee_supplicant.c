@@ -57,8 +57,10 @@
 #include <tee_supp_fs.h>
 #include <tee_supplicant.h>
 #include <unistd.h>
-
+#include <time.h>
 #include "optee_msg_supplicant.h"
+#include <sys/syscall.h>
+#include <linux/sched.h>
 
 #ifndef __aligned
 #define __aligned(x) __attribute__((__aligned__(x)))
@@ -69,6 +71,17 @@
 
 #define RPC_BUF_SIZE	(sizeof(struct tee_iocl_supp_send_arg) + \
 			 RPC_NUM_PARAMS * sizeof(struct tee_ioctl_param))
+
+
+#define gettid() ((pid_t)syscall(SYS_gettid))
+
+static long long getMilliseconds() {
+    struct timespec ts;
+	clock_gettime(CLOCK_REALTIME, &ts);
+    // 将秒和纳秒转换为纳秒级时间戳
+    long long timestamp_ns = ts.tv_sec * 1000000000LL + ts.tv_nsec;
+	return timestamp_ns;
+}
 
 char **ta_path;
 char *ta_path_str;
@@ -123,6 +136,9 @@ static size_t num_waiters_inc(struct thread_arg *arg)
 	arg->num_waiters++;
 	assert(arg->num_waiters);
 	ret = arg->num_waiters;
+
+	printf("| %lld | %4d | %d | num_waiters_inc---num_waiters : %ld\n", getMilliseconds(), gettid(), sched_getcpu(), ret);
+
 	tee_supp_mutex_unlock(&arg->mutex);
 
 	return ret;
@@ -136,6 +152,9 @@ static size_t num_waiters_dec(struct thread_arg *arg)
 	assert(arg->num_waiters);
 	arg->num_waiters--;
 	ret = arg->num_waiters;
+
+	printf("| %lld | %4d | %d | num_waiters_dec---num_waiters : %ld\n", getMilliseconds(), gettid(), sched_getcpu(), ret);
+
 	tee_supp_mutex_unlock(&arg->mutex);
 
 	return ret;
@@ -297,8 +316,12 @@ static uint32_t load_ta(size_t num_params, struct tee_ioctl_param *params)
 	memset(&shm_ta, 0, sizeof(shm_ta));
 
 	if (num_params != 2 || get_value(num_params, params, 0, &val_cmd) ||
-	    get_param(num_params, params, 1, &shm_ta))
-		return TEEC_ERROR_BAD_PARAMETERS;
+	    get_param(num_params, params, 1, &shm_ta)){
+			printf("\n\n\nload_ta error!!!\n\n\n");
+			EMSG("\n\n\nload_ta error111!!!\n\n\n");
+			IMSG("\n\n\nload_ta error222!!!\n\n\n");
+			return TEEC_ERROR_BAD_PARAMETERS;
+		}
 
 	uuid_from_octets(&uuid, (void *)val_cmd);
 
@@ -545,6 +568,9 @@ static bool read_request(int fd, union tee_rpc_invoke *request)
 
 	data.buf_ptr = (uintptr_t)request;
 	data.buf_len = sizeof(*request);
+
+	printf("| %lld | %4d | %d | read_request---before ioctl\n", getMilliseconds(), gettid(), sched_getcpu());
+
 	if (ioctl(fd, TEE_IOC_SUPPL_RECV, &data)) {
 		EMSG("TEE_IOC_SUPPL_RECV: %s", strerror(errno));
 		return false;
@@ -562,6 +588,9 @@ static bool write_response(int fd, union tee_rpc_invoke *request)
 	data.buf_len = sizeof(struct tee_iocl_supp_send_arg) +
 		       sizeof(struct tee_ioctl_param) *
 				(__u64)request->send.num_params;
+	
+	printf("| %lld | %4d | %d | write_response---before ioctl\n", getMilliseconds(), gettid(), sched_getcpu());
+
 	if (ioctl(fd, TEE_IOC_SUPPL_SEND, &data)) {
 		EMSG("TEE_IOC_SUPPL_SEND: %s", strerror(errno));
 		return false;
@@ -608,6 +637,8 @@ static bool spawn_thread(struct thread_arg *arg)
 
 	DMSG("Spawning a new thread");
 
+	printf("| %lld | %4d | %d | spawn_thread---start %lu\n", getMilliseconds(), gettid(), sched_getcpu(), pthread_self());
+
 	/*
 	 * Increase number of waiters now to avoid starting another thread
 	 * before this thread has been scheduled.
@@ -625,11 +656,15 @@ static bool spawn_thread(struct thread_arg *arg)
 	if (e)
 		EMSG("pthread_detach: %s", strerror(e));
 
+	printf("| %lld | %4d | %d | spawn_thread---tid : %lu\n", getMilliseconds(), gettid(), sched_getcpu(), tid);
+
 	return true;
 }
 
 static bool process_one_request(struct thread_arg *arg)
 {
+	printf("| %lld | %4d | %d | process_one_request---start\n", getMilliseconds(), gettid(), sched_getcpu());
+
 	size_t num_params = 0;
 	size_t num_meta = 0;
 	struct tee_ioctl_param *params = NULL;
@@ -648,47 +683,70 @@ static bool process_one_request(struct thread_arg *arg)
 
 	num_waiters_inc(arg);
 
-	if (!read_request(arg->fd, &request))
+	if (!read_request(arg->fd, &request)){
 		return false;
+	}
 
-	if (!find_params(&request, &func, &num_params, &params, &num_meta))
-		return false;
+	printf("| %lld | %4d | %d | process_one_request---after read_request\n", getMilliseconds(), gettid(), sched_getcpu());
 
-	if (num_meta && !num_waiters_dec(arg) && !spawn_thread(arg))
+	if (!find_params(&request, &func, &num_params, &params, &num_meta)){
+
+		printf("| %lld | %4d | %d | process_one_request---!find_params\n", getMilliseconds(), gettid(), sched_getcpu());
+
 		return false;
+	}
+
+	if (num_meta && !num_waiters_dec(arg) && !spawn_thread(arg)){
+		
+		printf("| %lld | %4d | %d | process_one_request---num_meta false\n", getMilliseconds(), gettid(), sched_getcpu());
+
+		return false;
+	}
 
 	switch (func) {
 	case OPTEE_MSG_RPC_CMD_LOAD_TA:
+		printf("| %lld | %4d | %d | process_one_request---OPTEE_MSG_RPC_CMD_LOAD_TA\n", getMilliseconds(), gettid(), sched_getcpu());
 		ret = load_ta(num_params, params);
 		break;
 	case OPTEE_MSG_RPC_CMD_FS:
+		printf("| %lld | %4d | %d | process_one_request---OPTEE_MSG_RPC_CMD_FS\n", getMilliseconds(), gettid(), sched_getcpu());
 		ret = tee_supp_fs_process(num_params, params);
 		break;
 	case OPTEE_MSG_RPC_CMD_RPMB:
+		printf("| %lld | %4d | %d | process_one_request---OPTEE_MSG_RPC_CMD_RPMB\n", getMilliseconds(), gettid(), sched_getcpu());
 		ret = process_rpmb(num_params, params);
 		break;
 	case OPTEE_MSG_RPC_CMD_SHM_ALLOC:
+		printf("| %lld | %4d | %d | process_one_request---OPTEE_MSG_RPC_CMD_SHM_ALLOC\n", getMilliseconds(), gettid(), sched_getcpu());
 		ret = process_alloc(arg, num_params, params);
 		break;
 	case OPTEE_MSG_RPC_CMD_SHM_FREE:
+		printf("| %lld | %4d | %d | process_one_request---OPTEE_MSG_RPC_CMD_SHM_FREE\n", getMilliseconds(), gettid(), sched_getcpu());
 		ret = process_free(num_params, params);
 		break;
 	case OPTEE_MSG_RPC_CMD_GPROF:
+		printf("| %lld | %4d | %d | process_one_request---OPTEE_MSG_RPC_CMD_GPROF\n", getMilliseconds(), gettid(), sched_getcpu());
 		ret = prof_process(num_params, params, "gmon-");
 		break;
 	case OPTEE_MSG_RPC_CMD_SOCKET:
+		printf("| %lld | %4d | %d | process_one_request---OPTEE_MSG_RPC_CMD_SOCKET\n", getMilliseconds(), gettid(), sched_getcpu());
 		ret = tee_socket_process(num_params, params);
 		break;
 	case OPTEE_MSG_RPC_CMD_FTRACE:
+		printf("| %lld | %4d | %d | process_one_request---OPTEE_MSG_RPC_CMD_FTRACE\n", getMilliseconds(), gettid(), sched_getcpu());
 		ret = prof_process(num_params, params, "ftrace-");
 		break;
 	case OPTEE_MSG_RPC_CMD_PLUGIN:
+		printf("| %lld | %4d | %d | process_one_request---OPTEE_MSG_RPC_CMD_PLUGIN\n", getMilliseconds(), gettid(), sched_getcpu());
 		ret = plugin_process(num_params, params);
 		break;
 	case OPTEE_MSG_RPC_CMD_NVME_RPMB:
+		printf("| %lld | %4d | %d | process_one_request---OPTEE_MSG_RPC_CMD_NVME_RPMB\n", getMilliseconds(), gettid(), sched_getcpu());
 		ret = process_nvme_rpmb(num_params, params);
 		break;
 	default:
+		printf("| %lld | %4d | %d | process_one_request---default\n", getMilliseconds(), gettid(), sched_getcpu());
+
 		EMSG("Cmd [0x%" PRIx32 "] not supported", func);
 		/* Not supported. */
 		ret = TEEC_ERROR_NOT_SUPPORTED;
@@ -696,12 +754,15 @@ static bool process_one_request(struct thread_arg *arg)
 	}
 
 	request.send.ret = ret;
+	printf("| %lld | %4d | %d | process_one_request---before write_response\n", getMilliseconds(), gettid(), sched_getcpu());
 	return write_response(arg->fd, &request);
 }
 
 static void *thread_main(void *a)
 {
 	struct thread_arg *arg = a;
+
+	printf("| %lld | %4d | %d | thread_main---start\n", getMilliseconds(), gettid(), sched_getcpu());
 
 	/*
 	 * Now that this thread has been scheduled, compensate for the
@@ -710,9 +771,16 @@ static void *thread_main(void *a)
 	num_waiters_dec(arg);
 
 	while (!arg->abort) {
-		if (!process_one_request(arg))
+		if (!process_one_request(arg)){
+			printf("| %lld | %4d | %d | thread_main---arg->abort == true\n", getMilliseconds(), gettid(), sched_getcpu());
 			arg->abort = true;
+		}
+		else{
+			printf("| %lld | %4d | %d | thread_main---arg->abort == false\n", getMilliseconds(), gettid(), sched_getcpu());
+		}
 	}
+
+	printf("| %lld | %4d | %d | thread_main---end\n", getMilliseconds(), gettid(), sched_getcpu());
 
 	return NULL;
 }
@@ -861,8 +929,18 @@ int main(int argc, char *argv[])
 				return usage(EXIT_FAILURE);
 		}
 	}
+
+	char filename[15];
+    sprintf(filename, "/home/neu/file_%d.txt", gettid());
+	FILE *fp = freopen(filename, "a", stdout);
+
+	printf("| %lld | %4d | %d | main()---before if(argv[optind])\n", getMilliseconds(), gettid(), sched_getcpu());
+
 	/* check for non option argument, which is device name */
 	if (argv[optind]) {
+		
+		printf("| %lld | %4d | %d | main()---argv[optind] : %s\n", getMilliseconds(), gettid(), sched_getcpu(), argv[optind]);
+
 		fprintf(stderr, "Using device %s.\n", argv[optind]);
 		dev = argv[optind];
 		/* check that we do not have too many arguments */
@@ -882,6 +960,9 @@ int main(int argc, char *argv[])
 	}
 
 	if (daemonize) {
+
+		printf("| %lld | %4d | %d | main()---daemonize111\n", getMilliseconds(), gettid(), sched_getcpu());
+
 		if (pipe(pipefd) < 0) {
 			EMSG("pipe(): %s", strerror(errno));
 			exit(EXIT_FAILURE);
@@ -894,12 +975,18 @@ int main(int argc, char *argv[])
 	}
 
 	if (dev) {
+
+		printf("| %lld | %4d | %d | main()---dev : %s \n", getMilliseconds(), gettid(), sched_getcpu(), dev);
+
 		arg.fd = open_dev(dev, &arg.gen_caps);
 		if (arg.fd < 0) {
 			EMSG("failed to open \"%s\"", argv[1]);
 			exit(EXIT_FAILURE);
 		}
 	} else {
+
+		printf("| %lld | %4d | %d | main()---dev == NULL\n", getMilliseconds(), gettid(), sched_getcpu());
+
 		arg.fd = get_dev_fd(&arg.gen_caps);
 		if (arg.fd < 0) {
 			EMSG("failed to find an OP-TEE supplicant device");
@@ -908,6 +995,9 @@ int main(int argc, char *argv[])
 	}
 
 	if (daemonize) {
+
+		printf("| %lld | %4d | %d | main()---daemonize222\n", getMilliseconds(), gettid(), sched_getcpu());
+
 		/* Release parent */
 		if (write(pipefd[1], "", 1) != 1) {
 			EMSG("write(): %s", strerror(errno));
@@ -916,12 +1006,21 @@ int main(int argc, char *argv[])
 		close(pipefd[1]);
 	}
 
+	printf("| %lld | %4d | %d | main()---before while\n", getMilliseconds(), gettid(), sched_getcpu());
+
 	while (!arg.abort) {
-		if (!process_one_request(&arg))
+		if (!process_one_request(&arg)){
+			printf("| %lld | %4d | %d | main()---arg.abort == true\n", getMilliseconds(), gettid(), sched_getcpu());
 			arg.abort = true;
+		}else{
+			printf("| %lld | %4d | %d | main()---arg.abort == false\n", getMilliseconds(), gettid(), sched_getcpu());
+		}
 	}
 
 	close(arg.fd);
+
+	fclose(fp);
+	printf("| %lld | %4d | %d | main()---end\n", getMilliseconds(), gettid(), sched_getcpu());
 
 	return EXIT_FAILURE;
 }
