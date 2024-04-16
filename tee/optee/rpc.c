@@ -559,6 +559,7 @@ void optee_handle_rpc(struct tee_context *ctx, struct optee_rpc_param *param,
 	case OPTEE_SMC_RPC_FUNC_FREE:
 
 		printk("| %d |optee_handle_rpc()---FREE\n", task_pid_nr(current));
+		
 		shm = reg_pair_to_ptr(param->a1, param->a2);
 		tee_shm_free(shm);
 		break;

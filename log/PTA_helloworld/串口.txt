@@ -1,0 +1,31 @@
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 00 tee_ta_init_session_with_context:624 Re-open TA 8aaaf200-2450-11e4-abe2-0002a5d5c51b
+D/TC:?? 00 TA_OpenSessionEntryPoint:84 has been called
+I/TC: PTA Hello World!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[  738.931158] BUG: scheduling while atomic: optee_example_h/3875/0x00000008
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 00 inc_value:121 has been called
+I/TC: Got value: 42 from NW
+I/TC: Increase value to: 43
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[  739.057900] BUG: scheduling while atomic: optee_example_h/3875/0x00000006
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 00 tee_ta_close_session:529 csess 0x103c192490 id 1
+D/TC:?? 00 tee_ta_close_session:548 Destroy session
+I/TC: PTA Goodbye!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[  739.194770] BUG: scheduling while atomic: optee_example_h/3875/0x00000005
+

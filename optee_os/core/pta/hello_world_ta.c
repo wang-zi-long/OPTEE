@@ -27,6 +27,16 @@
 
 #include <tee_internal_api.h>
 #include <tee_internal_api_extensions.h>
+#include <kernel/misc.h>
+#include <kernel/msg_param.h>
+#include <kernel/pseudo_ta.h>
+#include <kernel/user_ta.h>
+#include <kernel/thread.h>
+#include <mm/core_memprot.h>
+#include <mm/mobj.h>
+#include <optee_rpc_cmd.h>
+#include <pta_gprof.h>
+#include <string.h>
 
 #define TA_HELLO_WORLD_UUID \
 	{ 0x8aaaf200, 0x2450, 0x11e4, \
@@ -84,7 +94,7 @@ TEE_Result TA_OpenSessionEntryPoint(uint32_t param_types,
 	 * The DMSG() macro is non-standard, TEE Internal API doesn't
 	 * specify any means to logging from a TA.
 	 */
-	IMSG("\n\nPTA Hello World!!!!\n\n");
+	IMSG("PTA Hello World!\n");
 
 	/* If return value != TEE_SUCCESS the session will not be created. */
 	return TEE_SUCCESS;
@@ -97,7 +107,7 @@ TEE_Result TA_OpenSessionEntryPoint(uint32_t param_types,
 void TA_CloseSessionEntryPoint(void __maybe_unused *sess_ctx)
 {
 	(void)&sess_ctx; /* Unused parameter */
-	IMSG("Goodbye!\n");
+	IMSG("PTA Goodbye!\n");
 }
 
 static TEE_Result inc_value(uint32_t param_types,
@@ -159,3 +169,9 @@ TEE_Result TA_InvokeCommandEntryPoint(void __maybe_unused *sess_ctx,
 		return TEE_ERROR_BAD_PARAMETERS;
 	}
 }
+
+pseudo_ta_register(.uuid = TA_HELLO_WORLD_UUID, .name = "hello_world",
+			.flags = PTA_DEFAULT_FLAGS,
+			.open_session_entry_point = TA_OpenSessionEntryPoint,
+			.invoke_command_entry_point = TA_InvokeCommandEntryPoint,
+			.close_session_entry_point = TA_CloseSessionEntryPoint);

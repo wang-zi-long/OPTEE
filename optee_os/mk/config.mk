@@ -989,6 +989,7 @@ $(eval $(call cfg-enable-all-depends,CFG_MEMPOOL_REPORT_LAST_OFFSET, \
 CFG_TEE_BENCHMARK ?= y
 CFG_WITH_STATS ?= y
 CFG_RTC_PTA_HELLO_WORLD ?= y
+CFG_RTC_PTA_GPROF_RTEE ?= y
 
 # Pointer Authentication (part of ARMv8.3 Extensions) provides instructions
 # for signing and authenticating pointers against secret keys. These can

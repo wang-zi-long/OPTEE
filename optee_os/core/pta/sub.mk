@@ -15,6 +15,7 @@ srcs-$(CFG_SCMI_PTA) += scmi.c
 srcs-$(CFG_HWRNG_PTA) += hwrng.c
 srcs-$(CFG_RTC_PTA) += rtc.c
 srcs-$(CFG_RTC_PTA_HELLO_WORLD) += hello_world_ta.c
+srcs-$(CFG_RTC_PTA_GPROF_RTEE) += gprof_rtee.c
 
 subdirs-y += bcm
 subdirs-y += tegra
