@@ -43,13 +43,11 @@ TEES_INCLUDES 	:= ${CURDIR}/../libteec/include \
 		   ${CURDIR}/src \
 		   ${CURDIR}/../public \
 
-TEES_CFLAGS	:= $(addprefix -I, $(TEES_INCLUDES)) $(CFLAGS) -D_GNU_SOURCE \
+TEES_CFLAGS	:= $(addprefix -I, $(TEES_INCLUDES)) $(CFLAGS) \
 		   -DDEBUGLEVEL_$(CFG_TEE_SUPP_LOG_LEVEL) \
 		   -DBINARY_PREFIX=\"TEES\" \
 		   -DTEE_FS_PARENT_PATH=\"$(CFG_TEE_FS_PARENT_PATH)\" \
 		   -DTEEC_LOAD_PATH=\"$(CFG_TEE_CLIENT_LOAD_PATH)\" \
-
-CFLAGS := $(filter-out -Werror,$(CFLAGS))
 
 ifeq ($(CFG_GP_SOCKETS),y)
 TEES_CFLAGS	+= -DCFG_GP_SOCKETS=1

@@ -16,8 +16,6 @@
 #include <tee/cache.h>
 #include <trace.h>
 #include <types_ext.h>
-#include <tee_internal_api.h>
-#include <tee_internal_api_extensions.h>
 
 #include "misc.h"
 
@@ -27,7 +25,6 @@ static TEE_Result test_trace(uint32_t param_types __unused,
 			TEE_Param params[TEE_NUM_PARAMS] __unused)
 {
 	IMSG("pseudo TA \"%s\" says \"Hello world !\"", TA_NAME);
-
 
 	return TEE_SUCCESS;
 }
@@ -403,73 +400,6 @@ static void close_session(void *pSessionContext __unused)
 	DMSG("close entry point for pseudo ta \"%s\"", TA_NAME);
 }
 
-static TEE_Result create_raw_object(uint32_t param_types, TEE_Param params[4])
-{
-	const uint32_t exp_param_types =
-		TEE_PARAM_TYPES(TEE_PARAM_TYPE_MEMREF_INPUT,
-				TEE_PARAM_TYPE_MEMREF_INPUT,
-				TEE_PARAM_TYPE_NONE,
-				TEE_PARAM_TYPE_NONE);
-	TEE_ObjectHandle object;
-	TEE_Result res;
-	char *obj_id;
-	size_t obj_id_sz;
-	char *data;
-	size_t data_sz;
-	uint32_t obj_data_flag;
-
-	/*
-	 * Safely get the invocation parameters
-	 */
-	if (param_types != exp_param_types)
-		return TEE_ERROR_BAD_PARAMETERS;
-
-	obj_id_sz = params[0].memref.size;
-	obj_id = TEE_Malloc(obj_id_sz, 0);
-	if (!obj_id)
-		return TEE_ERROR_OUT_OF_MEMORY;
-
-	TEE_MemMove(obj_id, params[0].memref.buffer, obj_id_sz);
-
-	data_sz = params[1].memref.size;
-	data = TEE_Malloc(data_sz, 0);
-	if (!data)
-		return TEE_ERROR_OUT_OF_MEMORY;
-	TEE_MemMove(data, params[1].memref.buffer, data_sz);
-
-	/*
-	 * Create object in secure storage and fill with data
-	 */
-	obj_data_flag = TEE_DATA_FLAG_ACCESS_READ |		/* we can later read the oject */
-			TEE_DATA_FLAG_ACCESS_WRITE |		/* we can later write into the object */
-			TEE_DATA_FLAG_ACCESS_WRITE_META |	/* we can later destroy or rename the object */
-			TEE_DATA_FLAG_OVERWRITE;		/* destroy existing object of same ID */
-
-	res = TEE_CreatePersistentObject(TEE_STORAGE_PRIVATE,
-					obj_id, obj_id_sz,
-					obj_data_flag,
-					TEE_HANDLE_NULL,
-					NULL, 0,		/* we may not fill it right now */
-					&object);
-	if (res != TEE_SUCCESS) {
-		EMSG("TEE_CreatePersistentObject failed 0x%08x", res);
-		TEE_Free(obj_id);
-		TEE_Free(data);
-		return res;
-	}
-
-	res = TEE_WriteObjectData(object, data, data_sz);
-	if (res != TEE_SUCCESS) {
-		EMSG("TEE_WriteObjectData failed 0x%08x", res);
-		TEE_CloseAndDeletePersistentObject1(object);
-	} else {
-		TEE_CloseObject(object);
-	}
-	TEE_Free(obj_id);
-	TEE_Free(data);
-	return res;
-}
-
 static TEE_Result invoke_command(void *pSessionContext __unused,
 		uint32_t nCommandID, uint32_t nParamTypes,
 		TEE_Param pParams[TEE_NUM_PARAMS])
@@ -477,10 +407,8 @@ static TEE_Result invoke_command(void *pSessionContext __unused,
 	FMSG("command entry point for pseudo ta \"%s\"", TA_NAME);
 
 	switch (nCommandID) {
-	case PTA_INVOKE_TESTS_CMD_TRACE:{
-		// create_raw_object(nParamTypes, pParams);
+	case PTA_INVOKE_TESTS_CMD_TRACE:
 		return test_trace(nParamTypes, pParams);
-	}
 	case PTA_INVOKE_TESTS_CMD_PARAMS:
 		return test_entry_params(nParamTypes, pParams);
 	case PTA_INVOKE_TESTS_CMD_MEMREF_NULL:

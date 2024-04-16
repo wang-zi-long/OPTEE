@@ -87,8 +87,12 @@ void* function1(void *arg){
 		printf("TEEC_OpenSession success!!!\n");
 	}
 
-	op.paramTypes = TEEC_PARAM_TYPES(TEEC_VALUE_INPUT, TEEC_VALUE_INPUT,
+	op.paramTypes = TEEC_PARAM_TYPES(TEEC_VALUE_INOUT, TEEC_VALUE_INPUT,
 					TEEC_NONE, TEEC_NONE);
+
+	op.params[0].value.a = 10;
+	op.params[0].value.b = 0;
+	op.params[1].value.a = 10;
 
 	res = TEEC_InvokeCommand(&bench_sess, BENCHMARK_CMD_REGISTER_MEMREF,
 					&op, &ret_orig);

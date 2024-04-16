@@ -56,9 +56,9 @@ uint32_t thread_handle_std_smc(uint32_t a0, uint32_t a1, uint32_t a2,
 {
 	uint32_t rv = OPTEE_SMC_RETURN_OK;
 
-	thread_check_canaries();
+	IMSG("thread_handle_std_smc()---start\n");
 
-	// IMSG("thread_handle_std_smc()---start : %d %d %d %d %d %d %d %d\n", a0, a1, a2, a3, a4, a5, a6, a7);
+	thread_check_canaries();
 
 	if (IS_ENABLED(CFG_NS_VIRTUALIZATION) && virt_set_guest(a7))
 		return OPTEE_SMC_RETURN_ENOTAVAIL;
@@ -69,21 +69,17 @@ uint32_t thread_handle_std_smc(uint32_t a0, uint32_t a1, uint32_t a2,
 	 * thread_rpc().
 	 */
 	if (a0 == OPTEE_SMC_CALL_RETURN_FROM_RPC) {
-		// IMSG("thread_handle_std_smc()---thread_resume_from_rpc\n");
+		IMSG("thread_handle_std_smc()---thread_resume_from_rpc\n");
 		thread_resume_from_rpc(a3, a1, a2, a4, a5);
 		rv = OPTEE_SMC_RETURN_ERESUME;
 	} else {
-		// IMSG("thread_handle_std_smc()---thread_alloc_and_run\n");
+		IMSG("thread_handle_std_smc()---thread_alloc_and_run\n");
 		thread_alloc_and_run(a0, a1, a2, a3, 0, 0);
 		rv = OPTEE_SMC_RETURN_ETHREAD_LIMIT;
 	}
 
-	if (IS_ENABLED(CFG_NS_VIRTUALIZATION)){
-		// IMSG("thread_handle_std_smc()---before virt_unset_guest\n");
+	if (IS_ENABLED(CFG_NS_VIRTUALIZATION))
 		virt_unset_guest();
-	}
-
-	// IMSG("thread_handle_std_smc()---end\n");
 
 	return rv;
 }
@@ -152,9 +148,6 @@ static void clear_prealloc_rpc_cache(struct thread_ctx *thr)
 static uint32_t call_entry_std(struct optee_msg_arg *arg, size_t num_params,
 			       struct optee_msg_arg *rpc_arg)
 {
-
-	// IMSG("|%d|call_entry_std()---start\n", thread_get_id());
-
 	struct thread_ctx *thr = threads + thread_get_id();
 	uint32_t rv = 0;
 
@@ -174,10 +167,14 @@ static uint32_t call_entry_std(struct optee_msg_arg *arg, size_t num_params,
 		thr->rpc_arg = rpc_arg;
 	}
 
-	if (tee_entry_std(arg, num_params))
+	if (tee_entry_std(arg, num_params)){
+		IMSG("call_entry_std()---OPTEE_SMC_RETURN_EBADCMD\n");
 		rv = OPTEE_SMC_RETURN_EBADCMD;
-	else
+	}
+	else{
+		IMSG("call_entry_std()---OPTEE_SMC_RETURN_OK\n");
 		rv = OPTEE_SMC_RETURN_OK;
+	}
 
 	thread_rpc_shm_cache_clear(&thr->shm_cache);
 	if (rpc_arg)
@@ -221,6 +218,7 @@ static uint32_t std_entry_with_parg(paddr_t parg, bool with_rpc_arg)
 		if (!core_pbuf_is(CORE_MEM_NSEC_SHM, parg, sz))
 			goto bad_addr;
 
+		IMSG("std_entry_with_parg()---call_entry_std111\n");
 		return call_entry_std(arg, num_params, rpc_arg);
 	} else {
 		if (parg & SMALL_PAGE_MASK)
@@ -237,7 +235,10 @@ static uint32_t std_entry_with_parg(paddr_t parg, bool with_rpc_arg)
 		else
 			rv = get_msg_arg(mobj, 0, &num_params, &arg, NULL);
 		if (!rv)
+		{
+			IMSG("std_entry_with_parg()---call_entry_std222\n");
 			rv = call_entry_std(arg, num_params, rpc_arg);
+		}
 		mobj_put(mobj);
 		return rv;
 	}

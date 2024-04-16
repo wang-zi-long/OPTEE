@@ -687,12 +687,9 @@ CFG_DEVICE_ENUM_PTA ?= y
 
 # The attestation pseudo TA provides an interface to request measurements of
 # a TA or the TEE binary.
-CFG_ATTESTATION_PTA ?= y
+CFG_ATTESTATION_PTA ?= n
 $(eval $(call cfg-depends-all,CFG_ATTESTATION_PTA,_CFG_WITH_SECURE_STORAGE))
 
-CFG_TEE_BENCHMARK ?= y
-
-# CFG_WITH_STATS ?=y
 # RSA key size (in bits) for the attestation PTA. Must be at least 528 given
 # other algorithm parameters (RSA PSS with SHA-256 and 32-byte salt), but
 # note that such a low value is not secure.
@@ -988,6 +985,10 @@ CFG_CORE_ASYNC_NOTIF ?= n
 
 $(eval $(call cfg-enable-all-depends,CFG_MEMPOOL_REPORT_LAST_OFFSET, \
 	 CFG_WITH_STATS))
+
+CFG_TEE_BENCHMARK ?= y
+CFG_WITH_STATS ?= y
+CFG_RTC_PTA_HELLO_WORLD ?= y
 
 # Pointer Authentication (part of ARMv8.3 Extensions) provides instructions
 # for signing and authenticating pointers against secret keys. These can

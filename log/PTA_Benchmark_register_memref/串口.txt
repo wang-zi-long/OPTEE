@@ -1,41 +1,31 @@
-[  294.778648] Unable to handle kernel paging request at virtual address 0000ffff8d8b39e0
-[  294.786817] Mem abort info:
-[  294.789685]   ESR = 0x82000007
-[  294.792838]   EC = 0x20: IABT (lower EL), IL = 32 bits
-[  294.798125]   SET = 0, FnV = 0
-[  294.801274]   EA = 0, S1PTW = 0
-[  294.804513] user pgtable: 4k pages, 48-bit VAs, pgdp=00000001defd3000
-[  294.811144] [0000ffff8d8b39e0] pgd=0000000210c24003, p4d=0000000210c24003, pud=0000000210cc8003, pmd=0000000210cc9003, pte=0000000000000000
-[  294.824032] Internal error: Oops: 82000007 [#1] PREEMPT SMP
-[  294.829765] Modules linked in: nvidia_modeset(OE) fuse(E) lzo_rle(E) lzo_compress(E) zram(E) ramoops(E) reed_solomon(E) bnep(E) aes_ce_blk(E) loop(E) crypto_simd(E) rtk_btusb(E) cryptd(E) btusb(E) ae)
-[  294.829831]  snd_soc_tegra210_ahub(E) typec(E) tegra210_adma(E) snd_hda_core(E) max96712(E) nct1008(E) i2c_nvvrs11(E) tegra_bpmp_thermal(E) spi_tegra114(E) nvidia(OE) binfmt_misc(E) ina3221(E) pwm_fa]
-[  294.946049] CPU: 1 PID: 4635 Comm: optee_example_h Tainted: G        W  OE     5.10.192-tegra #19
-[  294.946053] Hardware name: Jetson AGX Orin Developer Kit (DT)
-[  294.961080] pstate: 80001000 (Nzcv daif -PAN -UAO -TCO BTYPE=--)
-[  294.967244] pc : 0000ffff8d8b39e0
-[  294.970653] lr : 0000ffff8d840fd0
-[  294.974060] sp : 0000ffff8d7c29b0
-[  294.977468] x29: 0000ffff8d7c29b0 x28: 0000ffff8d7c31e0 
-[  294.982936] x27: 0000ffff8d963000 x26: 0000ffff8d7c31e0 
-[  294.988392] x25: 0000ffff8d7c38e0 x24: 0000aaaab5a60b0c 
-[  294.993851] x23: 0000fffff43412ef x22: 0000ffff8d962000 
-[  294.999310] x21: 0000fffff43412ee x20: 0000fffff43412f0 
-[  295.004767] x19: 0000ffff8d7c35fc x18: 0000000000000098 
-[  295.010225] x17: 0000ffff8d963100 x16: 0000ffff8d840fc0 
-[  295.015694] x15: 000000007fffffde x14: 0000000000000000 
-[  295.021151] x13: 0000000000000000 x12: 0000ffff8d7c7e48 
-[  295.026610] x11: 0000000000000020 x10: 0000000000000000 
-[  295.032067] x9 : 212121726f727265 x8 : 0000000000000039 
-[  295.037526] x7 : 616d6d6f43656b6f x6 : 766e495f43454554 
-[  295.042983] x5 : 0000ffff88000b7b x4 : 0000ffff8d7c28ec 
-[  295.048445] x3 : 0000000000000000 x2 : 0000000000000000 
-[  295.053903] x1 : 0000ffff8d7c31e0 x0 : 0000000000000000 
-[  295.059379] ---[ end trace c546f87e4e8813e6 ]---
-[  295.069563] Kernel panic - not syncing: Oops: Fatal exception
-[  295.075466] SMP: stopping secondary CPUs
-[  295.079669] Kernel Offset: 0x2fafcee40000 from 0xffff800010000000
-[  295.085943] PHYS_OFFSET: 0xffffd9ce40000000
-[  295.090244] CPU features: 0x08040006,4a80aa38
-[  295.094724] Memory Limit: none
-[  295.103278] ---[ end Kernel panic - not syncing: Oops: Fatal exception ]---
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 00 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA 0b9a63b0-b4c6-4c85-a284-a228ef547b4e
+D/TC:?? 00 tee_ta_init_pseudo_ta_session:309 Open benchmark.ta
+D/TC:?? 00 tee_ta_init_pseudo_ta_session:326 benchmark.ta : 0b9a63b0-b4c6-4c85-a284-a228ef547b4e
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+E/TC:?? 00 get_rpc_alloc_res:657 RPC allocation failed. Non-secure world result: ret=0xffff0006 ret_origin=0x2
+E/TC:?? 00 alloc_benchmark_buffer:72 Benchmark: can't create mobj for timestamp buffer
+D/TC:?? 00 tee_ta_invoke_command:840 Error: ffff000c of 4
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 00 tee_ta_close_session:529 csess 0x103c191f10 id 1
+D/TC:?? 00 tee_ta_close_session:548 Destroy session
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
 

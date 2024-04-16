@@ -593,8 +593,6 @@ static TEE_Result tee_ta_init_session_with_context(struct tee_ta_session *s,
 		if (!ctx)
 			return TEE_ERROR_ITEM_NOT_FOUND;
 
-		// IMSG("tee_ta_init_session_with_context()---after tee_ta_context_find\n");
-
 		if (!is_user_ta_ctx(&ctx->ts_ctx) ||
 		    !to_user_ta_ctx(&ctx->ts_ctx)->uctx.is_initializing)
 			break;
@@ -604,15 +602,8 @@ static TEE_Result tee_ta_init_session_with_context(struct tee_ta_session *s,
 		 * context again since it may have been removed while we
 		 * where sleeping.
 		 */
-
-		// IMSG("tee_ta_init_session_with_context()---before condvar_wait\n");
-
 		condvar_wait(&tee_ta_init_cv, &tee_ta_mutex);
-
-		// IMSG("tee_ta_init_session_with_context()---after condvar_wait\n");
 	}
-
-	// IMSG("tee_ta_init_session_with_context()---out while\n");
 
 	/*
 	 * If TA isn't single instance it should be loaded as new
@@ -682,10 +673,7 @@ static TEE_Result tee_ta_init_session(TEE_ErrorOrigin *err,
 	s->lock_thread = THREAD_ID_INVALID;
 	s->ref_count = 1;
 
-	// IMSG("tee_ta_init_session()---before mutex_lock\n");
 	mutex_lock(&tee_ta_mutex);
-	// IMSG("tee_ta_init_session()---after mutex_lock\n");
-
 	s->id = new_session_id(open_sessions);
 	if (!s->id) {
 		res = TEE_ERROR_OVERFLOW;
@@ -696,44 +684,22 @@ static TEE_Result tee_ta_init_session(TEE_ErrorOrigin *err,
 
 	/* Look for already loaded TA */
 	res = tee_ta_init_session_with_context(s, uuid);
-
-	// IMSG("tee_ta_init_session()---after tee_ta_init_session_with_context\n");
-
 	mutex_unlock(&tee_ta_mutex);
-
-	// IMSG("tee_ta_init_session()---after mutex_unlock\n");
-
-	if (res == TEE_SUCCESS || res != TEE_ERROR_ITEM_NOT_FOUND){
-		// IMSG("tee_ta_init_session()---goto out111\n");
+	if (res == TEE_SUCCESS || res != TEE_ERROR_ITEM_NOT_FOUND)
 		goto out;
-	}
-		
 
 	/* Look for secure partition */
 	res = stmm_init_session(uuid, s);
-
-	// IMSG("tee_ta_init_session()---after stmm_init_session\n");
-
-	if (res == TEE_SUCCESS || res != TEE_ERROR_ITEM_NOT_FOUND){
-		// IMSG("tee_ta_init_session()---goto out222\n");
+	if (res == TEE_SUCCESS || res != TEE_ERROR_ITEM_NOT_FOUND)
 		goto out;
-	}
 
 	/* Look for pseudo TA */
 	res = tee_ta_init_pseudo_ta_session(uuid, s);
-
-	// IMSG("tee_ta_init_session()---after tee_ta_init_pseudo_ta_session\n");
-
-	if (res == TEE_SUCCESS || res != TEE_ERROR_ITEM_NOT_FOUND){
-		// IMSG("tee_ta_init_session()---goto out333\n");
+	if (res == TEE_SUCCESS || res != TEE_ERROR_ITEM_NOT_FOUND)
 		goto out;
-	}
 
-	// IMSG("|%d|tee_ta_init_session()---before tee_ta_init_user_ta_session\n", thread_get_id());
 	/* Look for user TA */
 	res = tee_ta_init_user_ta_session(uuid, s);
-
-	// IMSG("tee_ta_init_session()---after tee_ta_init_user_ta_session\n");
 
 out:
 	if (!res) {
@@ -764,52 +730,36 @@ TEE_Result tee_ta_open_session(TEE_ErrorOrigin *err,
 	bool panicked = false;
 	bool was_busy = false;
 
-	// IMSG("tee_ta_open_session()---start\n");
-
 	res = tee_ta_init_session(err, open_sessions, uuid, &s);
 	if (res != TEE_SUCCESS) {
-		// IMSG("init session failed 0x%x", res);
 		DMSG("init session failed 0x%x", res);
 		return res;
 	}
 
-	// IMSG("tee_ta_open_session()---after tee_ta_init_session\n");
-
-	if (!check_params(s, param)){
-		// IMSG("tee_ta_open_session()---!check_params\n");
+	if (!check_params(s, param))
 		return TEE_ERROR_BAD_PARAMETERS;
-	}
-
-	// IMSG("tee_ta_open_session()---after check_params\n");
 
 	ts_ctx = s->ts_sess.ctx;
-	if (ts_ctx){
-		// IMSG("tee_ta_open_session()---ts_ctx\n");
+	if (ts_ctx)
 		ctx = ts_to_ta_ctx(ts_ctx);
-	}
-		
+
 	if (!ctx || ctx->panicked) {
-		// IMSG("panicked, call tee_ta_close_session()");
 		DMSG("panicked, call tee_ta_close_session()");
 		tee_ta_close_session(s, open_sessions, KERN_IDENTITY);
 		*err = TEE_ORIGIN_TEE;
 		return TEE_ERROR_TARGET_DEAD;
 	}
 
-	// IMSG("tee_ta_open_session()---no panicked\n");
-
 	*sess = s;
 	/* Save identity of the owner of the session */
 	s->clnt_id = *clnt_id;
 
 	if (tee_ta_try_set_busy(ctx)) {
-		// IMSG("tee_ta_open_session()---tee_ta_try_set_busy111\n");
 		s->param = param;
 		set_invoke_timeout(s, cancel_req_to);
 		res = ts_ctx->ops->enter_open_session(&s->ts_sess);
 		tee_ta_clear_busy(ctx);
 	} else {
-		// IMSG("tee_ta_open_session()---tee_ta_try_set_busy222\n");
 		/* Deadlock avoided */
 		res = TEE_ERROR_BUSY;
 		was_busy = true;
@@ -828,11 +778,9 @@ TEE_Result tee_ta_open_session(TEE_ErrorOrigin *err,
 		*err = s->err_origin;
 
 	tee_ta_put_session(s);
-	if (panicked || res != TEE_SUCCESS){
+	if (panicked || res != TEE_SUCCESS)
 		tee_ta_close_session(s, open_sessions, KERN_IDENTITY);
-		// IMSG("tee_ta_open_session()---tee_ta_close_session\n");
-	}
-		
+
 	if (res != TEE_SUCCESS)
 		EMSG("Failed. Return error 0x%x", res);
 

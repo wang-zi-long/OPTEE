@@ -160,29 +160,6 @@ static TEE_Result unregister_benchmark(uint32_t type,
 	return res;
 }
 
-#define TESTFLAG 10
-
-static TEE_Result testflag(){
-	IMSG("\nbenchmark---testflag!!!\n");
-
-	TEE_Result res;
-	struct thread_param params[2];
-
-	memset(params, 0, sizeof(params));
-	params[0].attr = THREAD_PARAM_ATTR_VALUE_IN;
-	params[1].attr = THREAD_PARAM_ATTR_MEMREF_OUT;
-
-	res = thread_rpc_cmd(OPTEE_RPC_CMD_LOAD_TA, 2, params);
-
-	if (res != TEE_SUCCESS){
-		IMSG("\nbenchmark---thread_rpc_cmd error!!!\n\n");
-	}else{
-		IMSG("\nbenchmark---thread_rpc_cmd success!!\n\n");
-	}
-
-	return 0;
-}
-
 static TEE_Result invoke_command(void *session_ctx __unused,
 		uint32_t cmd_id, uint32_t param_types,
 		TEE_Param params[TEE_NUM_PARAMS])
@@ -194,8 +171,6 @@ static TEE_Result invoke_command(void *session_ctx __unused,
 		return get_benchmark_memref(param_types, params);
 	case BENCHMARK_CMD_UNREGISTER:
 		return unregister_benchmark(param_types, params);
-	case TESTFLAG:
-		return testflag();
 	default:
 		break;
 	}

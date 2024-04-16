@@ -40,8 +40,6 @@
 #include <tee_client_api.h>
 #include <teec_trace.h>
 #include <unistd.h>
-#include <sys/syscall.h>
-#include <linux/sched.h>
 
 #ifndef __aligned
 #define __aligned(x) __attribute__((__aligned__(x)))
@@ -59,16 +57,6 @@
 #define MEMREF_SHM_ID(p)	((p)->c)
 #define MEMREF_SHM_OFFS(p)	((p)->a)
 #define MEMREF_SIZE(p)		((p)->b)
-
-#define gettid() ((pid_t)syscall(SYS_gettid))
-
-static long long getMilliseconds() {
-    struct timespec ts;
-	clock_gettime(CLOCK_REALTIME, &ts);
-    // 将秒和纳秒转换为纳秒级时间戳
-    long long timestamp_ns = ts.tv_sec * 1000000000LL + ts.tv_nsec;
-	return timestamp_ns;
-}
 
 /*
  * Internal flags of TEEC_SharedMemory::internal.flags
@@ -344,8 +332,6 @@ static TEEC_Result teec_pre_process_operation(TEEC_Context *ctx,
 			struct tee_ioctl_param *params,
 			TEEC_SharedMemory *shms)
 {
-	printf("| %lld | %4d | %d | teec_pre_process_operation---start\n", getMilliseconds(), gettid(), sched_getcpu());
-
 	TEEC_Result res = TEEC_ERROR_GENERIC;
 	size_t n = 0;
 
@@ -356,7 +342,6 @@ static TEEC_Result teec_pre_process_operation(TEEC_Context *ctx,
 		shms[n].id = -1;
 
 	if (!operation) {
-		printf("| %lld | %4d | %d | teec_pre_process_operation---!operation\n", getMilliseconds(), gettid(), sched_getcpu());
 		memset(params, 0, sizeof(struct tee_ioctl_param) *
 				  TEEC_CONFIG_PAYLOAD_REF_COUNT);
 		return TEEC_SUCCESS;
@@ -471,10 +456,7 @@ static void teec_post_process_operation(TEEC_Operation *operation,
 	size_t n = 0;
 
 	if (!operation)
-	{
-		printf("| %lld | %4d | %d | teec_post_process_operation---!operation\n", getMilliseconds(), gettid(), sched_getcpu());
 		return;
-	}
 
 	for (n = 0; n < TEEC_CONFIG_PAYLOAD_REF_COUNT; n++) {
 		uint32_t param_type = 0;
@@ -619,18 +601,13 @@ TEEC_Result TEEC_OpenSession(TEEC_Context *ctx, TEEC_Session *session,
 	TEEC_Result res = TEEC_ERROR_GENERIC;
 	uint32_t eorig = 0;
 	int rc = 0;
-
-	printf("| %lld | %4d | %d | TEEC_OpenSession---start\n", getMilliseconds(), gettid(), sched_getcpu());
-
 	const size_t arg_size = sizeof(struct tee_ioctl_open_session_arg) +
 				TEEC_CONFIG_PAYLOAD_REF_COUNT *
 					sizeof(struct tee_ioctl_param);
-
 	union {
 		struct tee_ioctl_open_session_arg arg;
 		uint8_t data[arg_size];
 	} buf;
-
 	struct tee_ioctl_buf_data buf_data;
 	TEEC_SharedMemory shm[TEEC_CONFIG_PAYLOAD_REF_COUNT];
 
@@ -641,7 +618,6 @@ TEEC_Result TEEC_OpenSession(TEEC_Context *ctx, TEEC_Session *session,
 	if (!ctx || !session) {
 		eorig = TEEC_ORIGIN_API;
 		res = TEEC_ERROR_BAD_PARAMETERS;
-		printf("| %lld | %4d | %d | TEEC_OpenSession---goto out\n", getMilliseconds(), gettid(), sched_getcpu());
 		goto out;
 	}
 
@@ -652,48 +628,30 @@ TEEC_Result TEEC_OpenSession(TEEC_Context *ctx, TEEC_Session *session,
 	arg->num_params = TEEC_CONFIG_PAYLOAD_REF_COUNT;
 	params = (struct tee_ioctl_param *)(arg + 1);
 
-	printf("arg_size : %ld\n", arg_size);
-	printf("buf_data : %ld   %ld\n", buf_data.buf_ptr, buf_data.buf_len);
-	printf("arg->num_params : %d\n", arg->num_params);
-
 	uuid_to_octets(arg->uuid, destination);
 
 	setup_client_data(arg, connection_method, connection_data);
 
 	res = teec_pre_process_operation(ctx, operation, params, shm);
-
-	printf("params after pre : %ld %ld %ld %ld\n", params->attr, params->a, params->b, params->c);
-
 	if (res != TEEC_SUCCESS) {
-		printf("| %lld | %4d | %d | TEEC_OpenSession---res != TEEC_SUCCESS\n", getMilliseconds(), gettid(), sched_getcpu());
 		eorig = TEEC_ORIGIN_API;
 		goto out_free_temp_refs;
 	}
 
-	printf("| %lld | %4d | %d | TEEC_OpenSession---before ioctl\n", getMilliseconds(), gettid(), sched_getcpu());
-
 	rc = ioctl(ctx->fd, TEE_IOC_OPEN_SESSION, &buf_data);
-
 	if (rc) {
 		EMSG("TEE_IOC_OPEN_SESSION failed");
 		eorig = TEEC_ORIGIN_COMMS;
 		res = ioctl_errno_to_res(errno);
-		printf("| %lld | %4d | %d | TEEC_OpenSession---goto out_free_temp_refs\n", getMilliseconds(), gettid(), sched_getcpu());
 		goto out_free_temp_refs;
 	}
-
-	printf("| %lld | %4d | %d | TEEC_OpenSession---after ioctl\n", getMilliseconds(), gettid(), sched_getcpu());
-
 	res = arg->ret;
 	eorig = arg->ret_origin;
 	if (res == TEEC_SUCCESS) {
-		printf("| %lld | %4d | %d | TEEC_OpenSession---res == TEEC_SUCCESS\n", getMilliseconds(), gettid(), sched_getcpu());
 		session->ctx = ctx;
 		session->session_id = arg->session;
 	}
 	teec_post_process_operation(operation, params, shm);
-
-	printf("params after post : %ld %ld %ld %ld\n", params->attr, params->a, params->b, params->c);
 
 out_free_temp_refs:
 	teec_free_temp_refs(operation, shm);
