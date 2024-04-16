@@ -1,0 +1,60 @@
+| 1679939723503982528 |  346 | 9 | main()---before if(argv[optind])
+| 1679939723505626944 |  346 | 9 | main()---dev == NULL
+| 1679939723505902336 |  346 | 10 | main()---before while
+| 1679939723505906528 |  346 | 10 | process_one_request---start
+| 1679939723505910208 |  346 | 10 | num_waiters_inc---num_waiters : 1
+| 1679939723505912384 |  346 | 10 | read_request---before ioctl
+| 1713272666950506569 |  346 | 5 | process_one_request---after read_request
+| 1713272666950528618 |  346 | 5 | num_waiters_dec---num_waiters : 0
+| 1713272666950530858 |  346 | 5 | spawn_thread---start 281473890854400
+| 1713272666950541290 |  346 | 5 | num_waiters_inc---num_waiters : 1
+| 1713272666950669167 |  346 | 5 | spawn_thread---tid : 281473888555488
+| 1713272666950672591 |  346 | 5 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_ALLOC
+| 1713272666950706736 | 3285 | 1 | thread_main---start
+| 1713272666950715024 | 3285 | 1 | num_waiters_dec---num_waiters : 0
+| 1713272666950716880 | 3285 | 1 | process_one_request---start
+| 1713272666950718224 | 3285 | 1 | num_waiters_inc---num_waiters : 1
+| 1713272666950718576 |  346 | 5 | process_one_request---before write_response
+| 1713272666950719760 | 3285 | 1 | read_request---before ioctl
+| 1713272666950720848 |  346 | 5 | write_response---before ioctl
+| 1713272666950754097 |  346 | 5 | main()---arg.abort == false
+| 1713272666950756785 |  346 | 5 | process_one_request---start
+| 1713272666950757937 |  346 | 5 | num_waiters_inc---num_waiters : 2
+| 1713272666950759090 |  346 | 5 | read_request---before ioctl
+| 1713272667062226812 | 3285 | 1 | process_one_request---after read_request
+| 1713272667062234492 | 3285 | 1 | num_waiters_dec---num_waiters : 1
+| 1713272667062236668 | 3285 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+| 1713272667062240060 | 3285 | 1 | process_one_request---before write_response
+| 1713272667062241372 | 3285 | 1 | write_response---before ioctl
+| 1713272667062253309 | 3285 | 1 | thread_main---arg->abort == false
+| 1713272667062255133 | 3285 | 1 | process_one_request---start
+| 1713272667062256093 | 3285 | 1 | num_waiters_inc---num_waiters : 2
+| 1713272667062257373 | 3285 | 1 | read_request---before ioctl
+| 1713272667145564511 |  346 | 5 | process_one_request---after read_request
+| 1713272667145568415 |  346 | 5 | num_waiters_dec---num_waiters : 1
+| 1713272667145569631 |  346 | 5 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+| 1713272667145571103 |  346 | 5 | process_one_request---before write_response
+| 1713272667145572159 |  346 | 5 | write_response---before ioctl
+| 1713272667145586176 |  346 | 5 | main()---arg.abort == false
+| 1713272667145587360 |  346 | 5 | process_one_request---start
+| 1713272667145588384 |  346 | 5 | num_waiters_inc---num_waiters : 2
+| 1713272667145589472 |  346 | 5 | read_request---before ioctl
+| 1713272667244444210 | 3285 | 1 | process_one_request---after read_request
+| 1713272667244454195 | 3285 | 1 | num_waiters_dec---num_waiters : 1
+| 1713272667244456403 | 3285 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+| 1713272667244458931 | 3285 | 1 | process_one_request---before write_response
+| 1713272667244460243 | 3285 | 1 | write_response---before ioctl
+| 1713272667244474899 | 3285 | 1 | thread_main---arg->abort == false
+| 1713272667244476339 | 3285 | 1 | process_one_request---start
+| 1713272667244477971 | 3285 | 1 | num_waiters_inc---num_waiters : 2
+| 1713272667244479315 | 3285 | 1 | read_request---before ioctl
+| 1713272667327676210 |  346 | 5 | process_one_request---after read_request
+| 1713272667327679090 |  346 | 5 | num_waiters_dec---num_waiters : 1
+| 1713272667327680050 |  346 | 5 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+| 1713272667327681042 |  346 | 5 | process_one_request---before write_response
+| 1713272667327682291 |  346 | 5 | write_response---before ioctl
+| 1713272667327694355 |  346 | 5 | main()---arg.abort == false
+| 1713272667327695571 |  346 | 5 | process_one_request---start
+| 1713272667327696499 |  346 | 5 | num_waiters_inc---num_waiters : 2
+| 1713272667327697427 |  346 | 5 | read_request---before ioctl
+| 1713272667411081720 | 3285

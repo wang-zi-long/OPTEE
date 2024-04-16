@@ -71,7 +71,7 @@ void* function1(void *arg){
 	TEEC_Context bench_ctx;
 	TEEC_Session bench_sess;
 
-	TEEC_Result res = TA_RANDOM_UUID;
+	TEEC_Result res;
 	uint32_t ret_orig = 0;
 	TEEC_Operation op;
 
@@ -79,7 +79,7 @@ void* function1(void *arg){
 
 	res = TEEC_InitializeContext(NULL, &bench_ctx);
 
-	TEEC_UUID pta_benchmark_uuid = BENCHMARK_UUID;
+	TEEC_UUID pta_benchmark_uuid = TA_RANDOM_UUID;
 
 	res = TEEC_OpenSession(&bench_ctx, &bench_sess,
 			&pta_benchmark_uuid,

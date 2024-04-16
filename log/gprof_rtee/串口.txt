@@ -3,37 +3,78 @@ I/TC: thread_handle_std_smc()---thread_alloc_and_run
 I/TC: __thread_alloc_and_run()---n : 0
 I/TC: __thread_alloc_and_run()---thread_resume
 I/TC: std_entry_with_parg()---call_entry_std222
-D/TC:?? 00 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA 0b9a63b0-b4c6-4c85-a284-a228ef547b4e
-D/TC:?? 00 tee_ta_init_pseudo_ta_session:309 Open benchmark.ta
-D/TC:?? 00 tee_ta_init_pseudo_ta_session:326 benchmark.ta : 0b9a63b0-b4c6-4c85-a284-a228ef547b4e
+D/TC:?? 00 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA b6c53aba-9669-4668-a7f2-205629d00f86
+D/TC:?? 00 tee_ta_init_pseudo_ta_session:309 Open gprof_rtee
+D/TC:?? 00 tee_ta_init_pseudo_ta_session:326 gprof_rtee : b6c53aba-9669-4668-a7f2-205629d00f86
+I/TC: gprof_rtee---open_session!!!
 I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
-��[  395.717844] BUG: scheduling while atomic: optee_example_h/3699/0x00000008
+��[  327.628891] BUG: scheduling while atomic: optee_example_h/3284/0x00000008
 ��I/TC: thread_handle_std_smc()---start
 I/TC: thread_handle_std_smc()---thread_alloc_and_run
 I/TC: __thread_alloc_and_run()---n : 0
 I/TC: __thread_alloc_and_run()---thread_resume
 I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: gprof_rtee---invoke_command!!!
+I/TC: gprof_rtee---gprof_send!!!
+I/TC: gprof_rtee---gprof_send_rpc_rtee!!!
 I/TC: thread_handle_std_smc()---start
 I/TC: thread_handle_std_smc()---thread_resume_from_rpc
 I/TC: thread_resume_from_rpc()---n : 0
 I/TC: thread_resume_from_rpc()---thread_resume
-I/TC: thread_handle_std_smc()---start
+��[  327.803124] BUG: scheduling while atomic: optee_example_h/3284/0x0000000b
+��I/TC: thread_handle_std_smc()---start
 I/TC: thread_handle_std_smc()---thread_resume_from_rpc
 I/TC: thread_resume_from_rpc()---n : 0
 I/TC: thread_resume_from_rpc()---thread_resume
-E/TC:?? 00 get_rpc_alloc_res:657 RPC allocation failed. Non-secure world result: ret=0xffff0006 ret_origin=0x2
-E/TC:?? 00 alloc_benchmark_buffer:72 Benchmark: can't create mobj for timestamp buffer
-D/TC:?? 00 tee_ta_invoke_command:840 Error: ffff000c of 4
+I/TC: gprof_rtee---gprof_send_rpc_rtee( mobj )
+I/TC: gprof_rtee---gprof_send_rpc_rtee( va )
+I/TC: gprof_rtee---gprof_send_rpc_rtee( before for )
+��[  327.914880] BUG: scheduling while atomic: optee_example_h/3284/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[  327.998222] BUG: scheduling while atomic: optee_example_h/3284/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee---gprof_send_rpc_rtee( not TEE_SUCCESS )
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0x1C
+��[  328.097037] BUG: scheduling while atomic: optee_example_h/3284/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[  328.180335] BUG: scheduling while atomic: optee_example_h/3284/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[  328.263704] BUG: scheduling while atomic: optee_example_h/3284/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[  328.347157] BUG: scheduling while atomic: optee_example_h/3284/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee---gprof_send_rpc_rtee not success!!!
 I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
-��[  396.008152] BUG: scheduling while atomic: optee_example_h/3699/0x0000000d
+��[  328.443978] BUG: scheduling while atomic: optee_example_h/3284/0x00000004
 ��I/TC: thread_handle_std_smc()---start
 I/TC: thread_handle_std_smc()---thread_alloc_and_run
 I/TC: __thread_alloc_and_run()---n : 0
 I/TC: __thread_alloc_and_run()---thread_resume
 I/TC: std_entry_with_parg()---call_entry_std222
-F/TC:?? 00 plat_prng_add_jitter_entropy:72 0xCF
-D/TC:?? 00 tee_ta_close_session:529 csess 0x103c192760 id 1
+D/TC:?? 00 tee_ta_close_session:529 csess 0x103c192910 id 1
 D/TC:?? 00 tee_ta_close_session:548 Destroy session
 I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
-��[  396.153753] BUG: scheduling while atomic: optee_example_h/3699/0x00000005
+��[  328.574110] BUG: scheduling while atomic: optee_example_h/3284/0x00000005
 
