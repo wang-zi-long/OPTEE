@@ -372,8 +372,10 @@ static void entry_open_session(struct optee_msg_arg *arg, uint32_t num_params)
 
 	res = tee_ta_open_session(&err_orig, &s, &tee_open_sessions, &uuid,
 				  &clnt_id, TEE_TIMEOUT_INFINITE, &param);
-	if (res != TEE_SUCCESS)
+	if (res != TEE_SUCCESS){
+		IMSG("entry_open_session---tee_ta_open_session\n");
 		s = NULL;
+	}
 	copy_out_param(&param, num_params - num_meta, arg->params + num_meta,
 		       saved_attr);
 

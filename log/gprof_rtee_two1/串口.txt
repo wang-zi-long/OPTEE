@@ -1,0 +1,103 @@
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 00 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA b6c53aba-9669-4668-a7f2-205629d00f86
+D/TC:?? 00 tee_ta_init_pseudo_ta_session:309 Open gprof_rtee
+D/TC:?? 00 tee_ta_init_pseudo_ta_session:326 gprof_rtee : b6c53aba-9669-4668-a7f2-205629d00f86
+I/TC: after tee_ta_init_pseudo_ta_session
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: lock_single_instance : -1 | 0
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock111
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: gprof_rtee---open_session!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 2936.622625] BUG: scheduling while atomic: optee_example_h/3760/0x00000008
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: lock_single_instance : -1 | 0
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock111
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: gprof_rtee---invoke_command!!!
+I/TC: gprof_rtee---gprof_send!!!
+I/TC: gprof_rtee---gprof_send_rpc_rtee!!!
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+��[ 2936.856617] BUG: scheduling while atomic: optee_example_h/3760/0x0000000b
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee---gprof_send_rpc_rtee( mobj )
+I/TC: gprof_rtee---gprof_send_rpc_rtee( va )
+I/TC: gprof_rtee---gprof_send_rpc_rtee( before for )
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0xBC
+��[ 2936.984100] BUG: scheduling while atomic: optee_example_h/3760/0x00000005
+
+
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 1
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 01 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA b6c53aba-9669-4668-a7f2-205629d00f01
+D/TC:?? 01 tee_ta_init_pseudo_ta_session:309 Open gprof_rtee_1
+D/TC:?? 01 tee_ta_init_pseudo_ta_session:326 gprof_rtee_1 : b6c53aba-9669-4668-a7f2-205629d00f01
+I/TC: after tee_ta_init_pseudo_ta_session
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: lock_single_instance : 0 | 1
+I/TC: lock_single_instance : condvar_wait
+I/TC: __condvar_wait
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[ 2955.929474] BUG: scheduling while atomic: optee_example_h/3799/0x00000008
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[ 2956.518275] BUG: scheduling while atomic: optee_example_h/3799/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[ 2957.126104] BUG: scheduling while atomic: optee_example_h/3799/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x41
+��[ 2957.749843] BUG: scheduling while atomic: optee_example_h/3799/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[ 2958.342481] BUG: scheduling while atomic: optee_example_h/3799/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[ 2958.950176] BUG: scheduling while atomic: optee_example_h/3799/0x00000005

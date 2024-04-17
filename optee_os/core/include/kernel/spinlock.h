@@ -95,7 +95,11 @@ static inline void cpu_spin_unlock(unsigned int *lock)
 
 static inline uint32_t cpu_spin_lock_xsave_no_dldetect(unsigned int *lock)
 {
+	IMSG("thread_mask_exceptions\n");
+
 	uint32_t exceptions = thread_mask_exceptions(THREAD_EXCP_ALL);
+
+	IMSG("cpu_spin_lock\n");
 
 	cpu_spin_lock(lock);
 	return exceptions;

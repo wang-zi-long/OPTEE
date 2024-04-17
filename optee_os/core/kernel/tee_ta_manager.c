@@ -81,11 +81,14 @@ static bool has_single_instance_lock(void)
 #else
 static void lock_single_instance(void)
 {
+	IMSG("lock_single_instance : %d | %d\n", tee_ta_single_instance_thread, thread_get_id());
 	/* Requires tee_ta_mutex to be held */
 	if (tee_ta_single_instance_thread != thread_get_id()) {
 		/* Wait until the single-instance lock is available. */
-		while (tee_ta_single_instance_thread != THREAD_ID_INVALID)
+		while (tee_ta_single_instance_thread != THREAD_ID_INVALID){
+			IMSG("lock_single_instance : condvar_wait\n");
 			condvar_wait(&tee_ta_cv, &tee_ta_mutex);
+		}
 
 		tee_ta_single_instance_thread = thread_get_id();
 		assert(tee_ta_single_instance_count == 0);
@@ -138,13 +141,19 @@ static bool tee_ta_try_set_busy(struct tee_ta_ctx *ctx)
 	if (ctx->flags & TA_FLAG_CONCURRENT)
 		return true;
 
+	IMSG("tee_ta_try_set_busy---mutex_lock\n");
+
 	mutex_lock(&tee_ta_mutex);
 
-	if (ctx->flags & TA_FLAG_SINGLE_INSTANCE)
+	if (ctx->flags & TA_FLAG_SINGLE_INSTANCE){
 		lock_single_instance();
+	}
 
+	IMSG("has_single_instance_lock\n");
 	if (has_single_instance_lock()) {
+		IMSG("has_single_instance_lock111\n");
 		if (ctx->busy) {
+			IMSG("ctx->busy\n");
 			/*
 			 * We're holding the single-instance lock and the
 			 * TA is busy, as waiting now would only cause a
@@ -159,6 +168,7 @@ static bool tee_ta_try_set_busy(struct tee_ta_ctx *ctx)
 		 * We're not holding the single-instance lock, we're free to
 		 * wait for the TA to become available.
 		 */
+		IMSG("has_single_instance_lock222\n");
 		while (ctx->busy)
 			condvar_wait(&ctx->busy_cv, &tee_ta_mutex);
 	}
@@ -166,6 +176,7 @@ static bool tee_ta_try_set_busy(struct tee_ta_ctx *ctx)
 	/* Either it's already true or we should set it to true */
 	ctx->busy = true;
 
+	IMSG("tee_ta_try_set_busy---mutex_unlock\n");
 	mutex_unlock(&tee_ta_mutex);
 	return rc;
 }
@@ -695,8 +706,11 @@ static TEE_Result tee_ta_init_session(TEE_ErrorOrigin *err,
 
 	/* Look for pseudo TA */
 	res = tee_ta_init_pseudo_ta_session(uuid, s);
-	if (res == TEE_SUCCESS || res != TEE_ERROR_ITEM_NOT_FOUND)
+
+	if (res == TEE_SUCCESS || res != TEE_ERROR_ITEM_NOT_FOUND){
+		IMSG("after tee_ta_init_pseudo_ta_session\n");
 		goto out;
+	}
 
 	/* Look for user TA */
 	res = tee_ta_init_user_ta_session(uuid, s);
@@ -734,6 +748,8 @@ TEE_Result tee_ta_open_session(TEE_ErrorOrigin *err,
 	if (res != TEE_SUCCESS) {
 		DMSG("init session failed 0x%x", res);
 		return res;
+	}else{
+		IMSG("after tee_ta_init_session\n");
 	}
 
 	if (!check_params(s, param))
@@ -754,12 +770,20 @@ TEE_Result tee_ta_open_session(TEE_ErrorOrigin *err,
 	/* Save identity of the owner of the session */
 	s->clnt_id = *clnt_id;
 
+	IMSG("before tee_ta_try_set_busy\n");
+
 	if (tee_ta_try_set_busy(ctx)) {
+
+		IMSG("after tee_ta_try_set_busy111\n");
+
 		s->param = param;
 		set_invoke_timeout(s, cancel_req_to);
 		res = ts_ctx->ops->enter_open_session(&s->ts_sess);
 		tee_ta_clear_busy(ctx);
 	} else {
+
+		IMSG("after tee_ta_try_set_busy222\n");
+
 		/* Deadlock avoided */
 		res = TEE_ERROR_BUSY;
 		was_busy = true;

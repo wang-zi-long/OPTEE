@@ -78,8 +78,11 @@ void wq_wait_final(struct wait_queue *wq, struct wait_queue_elem *wqe,
 	unsigned done;
 
 	do {
+		IMSG("wq_wait_final\n");
 		do_notif(notif_wait, wqe->handle,
 			 "sleep", sync_obj, fname, lineno);
+
+		IMSG("cpu_spin_lock_xsave\n");
 
 		old_itr_status = cpu_spin_lock_xsave(&wq_spin_lock);
 
@@ -87,6 +90,7 @@ void wq_wait_final(struct wait_queue *wq, struct wait_queue_elem *wqe,
 		if (done)
 			SLIST_REMOVE(wq, wqe, wait_queue_elem, link);
 
+		IMSG("cpu_spin_unlock_xrestore\n");
 		cpu_spin_unlock_xrestore(&wq_spin_lock, old_itr_status);
 	} while (!done);
 }
@@ -131,9 +135,11 @@ void wq_wake_next(struct wait_queue *wq, const void *sync_obj,
 
 		cpu_spin_unlock_xrestore(&wq_spin_lock, old_itr_status);
 
-		if (do_wakeup)
+		if (do_wakeup){
+			IMSG("wq_wake_next\n");
 			do_notif(notif_send_sync, handle,
 				 "wake ", sync_obj, fname, lineno);
+		}
 
 		if (!do_wakeup || !wake_read)
 			break;

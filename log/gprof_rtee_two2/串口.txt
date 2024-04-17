@@ -1,0 +1,262 @@
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 00 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA b6c53aba-9669-4668-a7f2-205629d00f86
+D/TC:?? 00 tee_ta_init_pseudo_ta_session:309 Open gprof_rtee
+D/TC:?? 00 tee_ta_init_pseudo_ta_session:326 gprof_rtee : b6c53aba-9669-4668-a7f2-205629d00f86
+I/TC: after tee_ta_init_pseudo_ta_session
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: lock_single_instance : -1 | 0
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock111
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: gprof_rtee---open_session!!!
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0xC7
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[  446.317528] BUG: scheduling while atomic: optee_example_h/3714/0x00000008
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: lock_single_instance : -1 | 0
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock111
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: gprof_rtee---invoke_command!!!
+I/TC: gprof_rtee---gprof_send!!!
+I/TC: gprof_rtee---gprof_send_rpc_rtee!!!
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+��[  446.551425] BUG: scheduling while atomic: optee_example_h/3714/0x0000000b
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee---gprof_send_rpc_rtee( mobj )
+I/TC: gprof_rtee---gprof_send_rpc_rtee( va )
+I/TC: gprof_rtee---gprof_send_rpc_rtee( before for )
+��[  446.663164] BUG: scheduling while atomic: optee_example_h/3714/0x00000005
+
+
+
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: lock_single_instance : -1 | 0
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock111
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: gprof_rtee---invoke_command!!!
+I/TC: gprof_rtee---gprof_send!!!
+I/TC: gprof_rtee---gprof_send_rpc_rtee!!!
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+��[  446.551425] BUG: scheduling while atomic: optee_example_h/3714/0x0000000b
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee---gprof_send_rpc_rtee( mobj )
+I/TC: gprof_rtee---gprof_send_rpc_rtee( va )
+I/TC: gprof_rtee---gprof_send_rpc_rtee( before for )
+��[  446.663164] BUG: scheduling while atomic: optee_example_h/3714/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 1
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 01 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA b6c53aba-9669-4668-a7f2-205629d00f01
+D/TC:?? 01 tee_ta_init_pseudo_ta_session:309 Open gprof_rtee_1
+D/TC:?? 01 tee_ta_init_pseudo_ta_session:326 gprof_rtee_1 : b6c53aba-9669-4668-a7f2-205629d00f01
+I/TC: after tee_ta_init_pseudo_ta_session
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: lock_single_instance : 0 | 1
+I/TC: lock_single_instance : condvar_wait
+I/TC: __condvar_wait
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  466.649528] BUG: scheduling while atomic: optee_example_h/3747/0x00000008
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: cpu_spin_lock_xsave
+I/TC: cpu_spin_unlock_xrestore
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  467.259353] BUG: scheduling while atomic: optee_example_h/3747/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: cpu_spin_lock_xsave
+I/TC: cpu_spin_unlock_xrestore
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x84
+��[  467.883298] BUG: scheduling while atomic: optee_example_h/3747/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: cpu_spin_lock_xsave
+I/TC: cpu_spin_unlock_xrestore
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  468.511387] BUG: scheduling while atomic: optee_example_h/3747/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: cpu_spin_lock_xsave
+I/TC: cpu_spin_unlock_xrestore
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  469.115395] BUG: scheduling while atomic: optee_example_h/3747/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: cpu_spin_lock_xsave
+I/TC: cpu_spin_unlock_xrestore
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  469.723429] BUG: scheduling while atomic: optee_example_h/3747/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: cpu_spin_lock_xsave
+I/TC: cpu_spin_unlock_xrestore
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x27
+��[  470.351059] BUG: scheduling while atomic: optee_example_h/3747/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: cpu_spin_lock_xsave
+I/TC: cpu_spin_unlock_xrestore
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  470.971311] BUG: scheduling while atomic: optee_example_h/3747/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: cpu_spin_lock_xsave
+I/TC: cpu_spin_unlock_xrestore
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  471.579503] BUG: scheduling while atomic: optee_example_h/3747/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: cpu_spin_lock_xsave
+I/TC: cpu_spin_unlock_xrestore
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  472.187362] BUG: scheduling while atomic: optee_example_h/3747/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: cpu_spin_lock_xsave
+I/TC: cpu_spin_unlock_xrestore
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xFA
+��[  472.811177] BUG: scheduling while atomic: optee_example_h/3747/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: cpu_spin_lock_xsave
+I/TC: cpu_spin_unlock_xrestore
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  473.435448] BUG: scheduling while atomic: optee_example_h/3747/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: cpu_spin_lock_xsave
+I/TC: cpu_spin_unlock_xrestore
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  474.047527] BUG: scheduling while atomic: optee_example_h/3747/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: cpu_spin_lock_xsave
+I/TC: cpu_spin_unlock_xrestore
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  474.651376] BUG: scheduling while atomic: optee_example_h/3747/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: cpu_spin_lock_xsave
+I/TC: cpu_spin_unlock_xrestore
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xF7
+��[  475.275041] BUG: scheduling while atomic: optee_example_h/3747/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: cpu_spin_lock_xsave
+I/TC: cpu_spin_unlock_xrestore
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  475.899473] BUG: scheduling while atomic: optee_example_h/3747/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: cpu_spin_lock_xsave
+I/TC: cpu_spin_unlock_xrestore
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  476.507398] BUG: scheduling while atomic: optee_example_h/3747/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: cpu_spin_lock_xsave
+I/TC: cpu_spin_unlock_xrestore
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  477.115426] BUG: scheduling while atomic: optee_example_h/3747/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: cpu_spin_lock_xsave
+I/TC: cpu_spin_unlock_xrestore
+I/TC: wq_wait_final
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x85
+��[  477.738815] BUG: scheduling while atomic: optee_example_h/3747/0x00000005
+

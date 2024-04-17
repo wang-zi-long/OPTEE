@@ -60,6 +60,7 @@ static void __mutex_lock(struct mutex *m, const char *fname, int lineno)
 			 * Someone else is holding the lock, wait in normal
 			 * world for the lock to become available.
 			 */
+			IMSG("__mutex_lock\n");
 			wq_wait_final(&m->wq, &wqe, m, fname, lineno);
 		} else
 			return;
@@ -205,6 +206,7 @@ static void __mutex_read_lock(struct mutex *m, const char *fname, int lineno)
 			 * Someone else is holding the lock, wait in normal
 			 * world for the lock to become available.
 			 */
+			IMSG("__mutex_read_lock\n");
 			wq_wait_final(&m->wq, &wqe, m, fname, lineno);
 		} else
 			return;
@@ -434,12 +436,17 @@ static void __condvar_wait(struct condvar *cv, struct mutex *m,
 	if (!new_state)
 		wq_wake_next(&m->wq, m, fname, lineno);
 
+	IMSG("__condvar_wait\n");
 	wq_wait_final(&m->wq, &wqe, m, fname, lineno);
 
-	if (old_state > 0)
+	if (old_state > 0){
+		IMSG("mutex_read_lock\n");
 		mutex_read_lock(m);
-	else
+	}
+	else{
+		IMSG("mutex_lock\n");
 		mutex_lock(m);
+	}
 }
 
 #ifdef CFG_MUTEX_DEBUG
