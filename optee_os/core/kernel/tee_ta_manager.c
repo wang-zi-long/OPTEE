@@ -59,6 +59,8 @@ struct mutex tee_ta_mutex = MUTEX_INITIALIZER;
 struct condvar tee_ta_init_cv = CONDVAR_INITIALIZER;
 struct tee_ta_ctx_head tee_ctxes = TAILQ_HEAD_INITIALIZER(tee_ctxes);
 
+#define CFG_CONCURRENT_SINGLE_INSTANCE_TA
+
 #ifndef CFG_CONCURRENT_SINGLE_INSTANCE_TA
 static struct condvar tee_ta_cv = CONDVAR_INITIALIZER;
 static short int tee_ta_single_instance_thread = THREAD_ID_INVALID;

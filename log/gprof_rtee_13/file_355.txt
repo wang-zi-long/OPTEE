@@ -1,0 +1,1135 @@
+| 1679939760258271712 |  355 | 6 | main()---before if(argv[optind])
+| 1679939760258743648 |  355 | 6 | main()---dev == NULL
+| 1679939760263004480 |  355 | 3 | main()---before while
+| 1679939760263010176 |  355 | 3 | process_one_request---start
+| 1679939760263013568 |  355 | 3 | num_waiters_inc---num_waiters : 1
+| 1679939760263016000 |  355 | 3 | read_request---before ioctl
+| 1476918191328 |  355 | 0 | process_one_request---after read_request
+| 1476918216928 |  355 | 0 | num_waiters_dec---num_waiters : 0
+| 1476918219168 |  355 | 0 | spawn_thread---start 281473084134912
+| 1476918231488 |  355 | 0 | num_waiters_inc---num_waiters : 1
+| 1476918380000 |  355 | 0 | spawn_thread---tid : 281473081836000
+| 1476918384544 |  355 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_ALLOC
+| 1476918432608 |  355 | 0 | process_one_request---before write_response
+| 1476918434848 |  355 | 0 | write_response---before ioctl
+| 1476918432608 | 3158 | 7 | thread_main---start
+| 1476918445856 | 3158 | 7 | num_waiters_dec---num_waiters : 0
+| 1476918450912 | 3158 | 7 | process_one_request---start
+| 1476918451840 |  355 | 0 | main()---arg.abort == false
+| 1476918457792 |  355 | 0 | process_one_request---start
+| 1476918458112 | 3158 | 7 | num_waiters_inc---num_waiters : 1
+| 1476918470080 | 3158 | 7 | read_request---before ioctl
+| 1476918475232 |  355 | 0 | num_waiters_inc---num_waiters : 2
+| 1476918478784 |  355 | 0 | read_request---before ioctl
+| 1477029908384 |  355 | 0 | process_one_request---after read_request
+| 1477029920864 |  355 | 0 | num_waiters_dec---num_waiters : 1
+| 1477029922752 |  355 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|355|prof_process()---start!
+| 1504206483776 | 3158 | 7 | process_one_request---after read_request
+| 1504206509920 | 3158 | 7 | num_waiters_dec---num_waiters : 0
+| 1504206514080 | 3158 | 7 | spawn_thread---start 281473081836000
+| 1504206517568 | 3158 | 7 | num_waiters_inc---num_waiters : 1
+| 1504206695520 | 3158 | 7 | spawn_thread---tid : 281473073443296
+| 1504206698688 | 3158 | 7 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_ALLOC
+| 1504206730592 | 3162 | 2 | thread_main---start
+| 1504206738624 | 3158 | 7 | process_one_request---before write_response
+| 1504206743200 | 3162 | 2 | num_waiters_dec---num_waiters : 0
+| 1504206743904 | 3158 | 7 | write_response---before ioctl
+| 1504206746848 | 3162 | 2 | process_one_request---start
+| 1504206748448 | 3162 | 2 | num_waiters_inc---num_waiters : 1
+| 1504206750080 | 3162 | 2 | read_request---before ioctl
+| 1504206780128 | 3158 | 7 | thread_main---arg->abort == false
+| 1504206783360 | 3158 | 7 | process_one_request---start
+| 1504206784896 | 3158 | 7 | num_waiters_inc---num_waiters : 2
+| 1504206786464 | 3158 | 7 | read_request---before ioctl
+| 1504335649664 | 3162 | 0 | process_one_request---after read_request
+| 1504335658720 | 3162 | 0 | num_waiters_dec---num_waiters : 1
+| 1504335660864 | 3162 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|3162|prof_process()---start!
+| 1537030045120 |  355 | 0 | process_one_request---before write_response
+| 1537030075872 |  355 | 0 | write_response---before ioctl
+| 1537030143360 |  355 | 0 | main()---arg.abort == false
+| 1537030148128 |  355 | 0 | process_one_request---start
+| 1537030153536 |  355 | 0 | num_waiters_inc---num_waiters : 2
+| 1537030157440 |  355 | 0 | read_request---before ioctl
+| 1537113760160 | 3158 | 7 | process_one_request---after read_request
+| 1537113775232 | 3158 | 7 | num_waiters_dec---num_waiters : 1
+| 1537113781280 | 3158 | 7 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|3158|prof_process()---start!
+| 1564335775264 | 3162 | 0 | process_one_request---before write_response
+| 1564335804480 | 3162 | 0 | write_response---before ioctl
+| 1564335867904 | 3162 | 0 | thread_main---arg->abort == false
+| 1564335872032 | 3162 | 0 | process_one_request---start
+| 1564335877024 | 3162 | 0 | num_waiters_inc---num_waiters : 2
+| 1564335880896 | 3162 | 0 | read_request---before ioctl
+| 1564420100160 |  355 | 2 | process_one_request---after read_request
+| 1564420112384 |  355 | 2 | num_waiters_dec---num_waiters : 1
+| 1564420115136 |  355 | 2 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|355|prof_process()---start!
+| 1597113906528 | 3158 | 7 | process_one_request---before write_response
+| 1597113934112 | 3158 | 7 | write_response---before ioctl
+| 1597114028544 | 3158 | 7 | thread_main---arg->abort == false
+| 1597114035104 | 3158 | 7 | process_one_request---start
+| 1597114042112 | 3158 | 7 | num_waiters_inc---num_waiters : 2
+| 1597114047296 | 3158 | 7 | read_request---before ioctl
+| 1597197648384 | 3162 | 0 | process_one_request---after read_request
+| 1597197657344 | 3162 | 0 | num_waiters_dec---num_waiters : 1
+| 1597197659232 | 3162 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|3162|prof_process()---start!
+| 1624420332448 |  355 | 2 | process_one_request---before write_response
+| 1624420359872 |  355 | 2 | write_response---before ioctl
+| 1624420428672 |  355 | 2 | main()---arg.abort == false
+| 1624420434848 |  355 | 2 | process_one_request---start
+| 1624420441792 |  355 | 2 | num_waiters_inc---num_waiters : 2
+| 1624420447200 |  355 | 2 | read_request---before ioctl
+| 1624520153216 | 3158 | 7 | process_one_request---after read_request
+| 1624520168512 | 3158 | 7 | num_waiters_dec---num_waiters : 1
+| 1624520171008 | 3158 | 7 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|3158|prof_process()---start!
+| 1657197780000 | 3162 | 0 | process_one_request---before write_response
+| 1657197809952 | 3162 | 0 | write_response---before ioctl
+| 1657197879808 | 3162 | 0 | thread_main---arg->abort == false
+| 1657197884256 | 3162 | 0 | process_one_request---start
+| 1657197889632 | 3162 | 0 | num_waiters_inc---num_waiters : 2
+| 1657197893920 | 3162 | 0 | read_request---before ioctl
+| 1657281533408 |  355 | 3 | process_one_request---after read_request
+| 1657281541856 |  355 | 3 | num_waiters_dec---num_waiters : 1
+| 1657281544480 |  355 | 3 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|355|prof_process()---start!
+| 1684520261600 | 3158 | 7 | process_one_request---before write_response
+| 1684520287168 | 3158 | 7 | write_response---before ioctl
+| 1684520348832 | 3158 | 7 | thread_main---arg->abort == false
+| 1684520354144 | 3158 | 7 | process_one_request---start
+| 1684520359648 | 3158 | 7 | num_waiters_inc---num_waiters : 2
+| 1684520363552 | 3158 | 7 | read_request---before ioctl
+| 1684604566720 | 3162 | 0 | process_one_request---after read_request
+| 1684604575808 | 3162 | 0 | num_waiters_dec---num_waiters : 1
+| 1684604578400 | 3162 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|3162|prof_process()---start!
+| 1717281874080 |  355 | 3 | process_one_request---before write_response
+| 1717281902080 |  355 | 3 | write_response---before ioctl
+| 1717282005280 |  355 | 3 | main()---arg.abort == false
+| 1717282009792 |  355 | 3 | process_one_request---start
+| 1717282014816 |  355 | 3 | num_waiters_inc---num_waiters : 2
+| 1717282018784 |  355 | 3 | read_request---before ioctl
+| 1717365619200 | 3158 | 7 | process_one_request---after read_request
+| 1717365635808 | 3158 | 7 | num_waiters_dec---num_waiters : 1
+| 1717365641664 | 3158 | 7 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|3158|prof_process()---start!
+| 1744604676576 | 3162 | 0 | process_one_request---before write_response
+| 1744604698272 | 3162 | 0 | write_response---before ioctl
+| 1744604761952 | 3162 | 0 | thread_main---arg->abort == false
+| 1744604766944 | 3162 | 0 | process_one_request---start
+| 1744604772672 | 3162 | 0 | num_waiters_inc---num_waiters : 2
+| 1744604777536 | 3162 | 0 | read_request---before ioctl
+| 1744704443072 |  355 | 0 | process_one_request---after read_request
+| 1744704452832 |  355 | 0 | num_waiters_dec---num_waiters : 1
+| 1744704455328 |  355 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|355|prof_process()---start!
+| 1777365731968 | 3158 | 7 | process_one_request---before write_response
+| 1777365759680 | 3158 | 7 | write_response---before ioctl
+| 1777365827136 | 3158 | 7 | thread_main---arg->abort == false
+| 1777365833024 | 3158 | 7 | process_one_request---start
+| 1777365838848 | 3158 | 7 | num_waiters_inc---num_waiters : 2
+| 1777365842912 | 3158 | 7 | read_request---before ioctl
+| 1777449490752 | 3162 | 0 | process_one_request---after read_request
+| 1777449503168 | 3162 | 0 | num_waiters_dec---num_waiters : 1
+| 1777449506464 | 3162 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_FREE
+| 1777449632320 | 3162 | 0 | process_one_request---before write_response
+| 1777449634528 | 3162 | 0 | write_response---before ioctl
+| 1777449696768 | 3162 | 0 | thread_main---arg->abort == false
+| 1777449699072 | 3162 | 0 | process_one_request---start
+| 1777449700096 | 3162 | 0 | num_waiters_inc---num_waiters : 2
+| 1777449701312 | 3162 | 0 | read_request---before ioctl
+| 1804704556256 |  355 | 0 | process_one_request---before write_response
+| 1804704584032 |  355 | 0 | write_response---before ioctl
+| 1804704652672 |  355 | 0 | main()---arg.abort == false
+| 1804704658112 |  355 | 0 | process_one_request---start
+| 1804704663840 |  355 | 0 | num_waiters_inc---num_waiters : 3
+| 1804704668032 |  355 | 0 | read_request---before ioctl
+| 1804788688416 | 3158 | 7 | process_one_request---after read_request
+| 1804788703936 | 3158 | 7 | num_waiters_dec---num_waiters : 2
+| 1804788709536 | 3158 | 7 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_FREE
+| 1804788752192 | 3158 | 7 | process_one_request---before write_response
+| 1804788755904 | 3158 | 7 | write_response---before ioctl
+| 1804788789408 | 3158 | 7 | thread_main---arg->abort == false
+| 1804788792960 | 3158 | 7 | process_one_request---start
+| 1804788795712 | 3158 | 7 | num_waiters_inc---num_waiters : 3
+| 1804788798304 | 3158 | 7 | read_request---before ioctl
+| 2460221520416 | 3162 | 0 | process_one_request---after read_request
+| 2460221539296 | 3162 | 0 | num_waiters_dec---num_waiters : 2
+| 2460221542464 | 3162 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_ALLOC
+| 2460221639456 | 3162 | 0 | process_one_request---before write_response
+| 2460221641568 | 3162 | 0 | write_response---before ioctl
+| 2460221670912 | 3162 | 0 | thread_main---arg->abort == false
+| 2460221673184 | 3162 | 0 | process_one_request---start
+| 2460221674112 | 3162 | 0 | num_waiters_inc---num_waiters : 3
+| 2460221676096 | 3162 | 0 | read_request---before ioctl
+| 2460348823040 |  355 | 3 | process_one_request---after read_request
+| 2460348837632 |  355 | 3 | num_waiters_dec---num_waiters : 2
+| 2460348841312 |  355 | 3 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|355|prof_process()---start!
+| 2474310685472 | 3158 | 7 | process_one_request---after read_request
+| 2474310705728 | 3158 | 7 | num_waiters_dec---num_waiters : 1
+| 2474310710496 | 3158 | 7 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_ALLOC
+| 2474310765600 | 3158 | 7 | process_one_request---before write_response
+| 2474310769248 | 3158 | 7 | write_response---before ioctl
+| 2474310797504 | 3158 | 7 | thread_main---arg->abort == false
+| 2474310800768 | 3158 | 7 | process_one_request---start
+| 2474310802848 | 3158 | 7 | num_waiters_inc---num_waiters : 2
+| 2474310805312 | 3158 | 7 | read_request---before ioctl
+| 2474424100032 | 3162 | 0 | process_one_request---after read_request
+| 2474424109952 | 3162 | 0 | num_waiters_dec---num_waiters : 1
+| 2474424112448 | 3162 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|3162|prof_process()---start!
+| 2493738444640 | 3158 | 4 | process_one_request---after read_request
+| 2493738468704 | 3158 | 4 | num_waiters_dec---num_waiters : 0
+| 2493738471744 | 3158 | 4 | spawn_thread---start 281473081836000
+| 2493738473568 | 3158 | 4 | num_waiters_inc---num_waiters : 1
+| 2493738665408 | 3158 | 4 | spawn_thread---tid : 281473065050592
+| 2493738669248 | 3158 | 4 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_ALLOC
+| 2493738690528 | 4095 | 6 | thread_main---start
+| 2493738695776 | 4095 | 6 | num_waiters_dec---num_waiters : 0
+| 2493738697888 | 4095 | 6 | process_one_request---start
+| 2493738699232 | 4095 | 6 | num_waiters_inc---num_waiters : 1
+| 2493738700832 | 4095 | 6 | read_request---before ioctl
+| 2493738715104 | 3158 | 4 | process_one_request---before write_response
+| 2493738716576 | 3158 | 4 | write_response---before ioctl
+| 2493738734848 | 3158 | 4 | thread_main---arg->abort == false
+| 2493738837184 | 3158 | 4 | process_one_request---start
+| 2493738839200 | 3158 | 4 | num_waiters_inc---num_waiters : 2
+| 2493738840256 | 3158 | 4 | read_request---before ioctl
+| 2493867287552 | 4095 | 4 | process_one_request---after read_request
+| 2493867314432 | 4095 | 4 | num_waiters_dec---num_waiters : 1
+| 2493867317760 | 4095 | 4 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4095|prof_process()---start!
+| 2520349175264 |  355 | 3 | process_one_request---before write_response
+| 2520349204032 |  355 | 3 | write_response---before ioctl
+| 2520349272992 |  355 | 3 | main()---arg.abort == false
+| 2520349277184 |  355 | 3 | process_one_request---start
+| 2520349282240 |  355 | 3 | num_waiters_inc---num_waiters : 2
+| 2520349286176 |  355 | 3 | read_request---before ioctl
+| 2520432707360 | 3158 | 4 | process_one_request---after read_request
+| 2520432728544 | 3158 | 4 | num_waiters_dec---num_waiters : 1
+| 2520432733760 | 3158 | 4 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|3158|prof_process()---start!
+| 2534424209184 | 3162 | 0 | process_one_request---before write_response
+| 2534424234400 | 3162 | 0 | write_response---before ioctl
+| 2534424302528 | 3162 | 0 | thread_main---arg->abort == false
+| 2534424305984 | 3162 | 0 | process_one_request---start
+| 2534424311136 | 3162 | 0 | num_waiters_inc---num_waiters : 2
+| 2534424314976 | 3162 | 0 | read_request---before ioctl
+| 2534508508672 |  355 | 0 | process_one_request---after read_request
+| 2534508521408 |  355 | 0 | num_waiters_dec---num_waiters : 1
+| 2534508524064 |  355 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|355|prof_process()---start!
+| 2553867672576 | 4095 | 4 | process_one_request---before write_response
+| 2553867699040 | 4095 | 4 | write_response---before ioctl
+| 2553867759040 | 4095 | 4 | thread_main---arg->abort == false
+| 2553867763008 | 4095 | 4 | process_one_request---start
+| 2553867768128 | 4095 | 4 | num_waiters_inc---num_waiters : 2
+| 2553867772032 | 4095 | 4 | read_request---before ioctl
+| 2553951813152 | 3162 | 0 | process_one_request---after read_request
+| 2553951827488 | 3162 | 0 | num_waiters_dec---num_waiters : 1
+| 2553951830304 | 3162 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|3162|prof_process()---start!
+| 2580433067392 | 3158 | 4 | process_one_request---before write_response
+| 2580433095808 | 3158 | 4 | write_response---before ioctl
+| 2580433155104 | 3158 | 4 | thread_main---arg->abort == false
+| 2580433159168 | 3158 | 4 | process_one_request---start
+| 2580433164480 | 3158 | 4 | num_waiters_inc---num_waiters : 2
+| 2580433168256 | 3158 | 4 | read_request---before ioctl
+| 2580532206112 | 4095 | 4 | process_one_request---after read_request
+| 2580532222016 | 4095 | 4 | num_waiters_dec---num_waiters : 1
+| 2580532227840 | 4095 | 4 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4095|prof_process()---start!
+| 2594508622816 |  355 | 0 | process_one_request---before write_response
+| 2594508659744 |  355 | 0 | write_response---before ioctl
+| 2594508730336 |  355 | 0 | main()---arg.abort == false
+| 2594508735392 |  355 | 0 | process_one_request---start
+| 2594508740896 |  355 | 0 | num_waiters_inc---num_waiters : 2
+| 2594508744704 |  355 | 0 | read_request---before ioctl
+| 2594592773792 | 3158 | 4 | process_one_request---after read_request
+| 2594592792320 | 3158 | 4 | num_waiters_dec---num_waiters : 1
+| 2594592797760 | 3158 | 4 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|3158|prof_process()---start!
+| 2599474014976 |  355 | 0 | process_one_request---after read_request
+| 2599474045696 |  355 | 0 | num_waiters_dec---num_waiters : 0
+| 2599474050240 |  355 | 0 | spawn_thread---start 281473084134912
+| 2599474054048 |  355 | 0 | num_waiters_inc---num_waiters : 1
+| 2599474287040 |  355 | 0 | spawn_thread---tid : 281473056657888
+| 2599474291936 |  355 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_ALLOC
+| 2599474317888 | 4296 | 4 | thread_main---start
+| 2599474326240 | 4296 | 4 | num_waiters_dec---num_waiters : 0
+| 2599474328256 | 4296 | 4 | process_one_request---start
+| 2599474329408 | 4296 | 4 | num_waiters_inc---num_waiters : 1
+| 2599474417856 | 4296 | 4 | read_request---before ioctl
+| 2599474343232 |  355 | 0 | process_one_request---before write_response
+| 2599474428544 |  355 | 0 | write_response---before ioctl
+| 2599474454848 |  355 | 0 | main()---arg.abort == false
+| 2599474458016 |  355 | 0 | process_one_request---start
+| 2599474460192 |  355 | 0 | num_waiters_inc---num_waiters : 2
+| 2599474462400 |  355 | 0 | read_request---before ioctl
+| 2599587831968 | 4296 | 4 | process_one_request---after read_request
+| 2599587848384 | 4296 | 4 | num_waiters_dec---num_waiters : 1
+| 2599587851744 | 4296 | 4 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4296|prof_process()---start!
+| 2611304947136 |  355 | 0 | process_one_request---after read_request
+| 2611304974240 |  355 | 0 | num_waiters_dec---num_waiters : 0
+| 2611304979680 |  355 | 0 | spawn_thread---start 281473084134912
+| 2611304984832 |  355 | 0 | num_waiters_inc---num_waiters : 1
+| 2611305178240 |  355 | 0 | spawn_thread---tid : 281473048265184
+| 2611305184032 |  355 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_ALLOC
+| 2611305212320 | 4364 | 1 | thread_main---start
+| 2611305221408 | 4364 | 1 | num_waiters_dec---num_waiters : 0
+| 2611305226432 | 4364 | 1 | process_one_request---start
+| 2611305230336 | 4364 | 1 | num_waiters_inc---num_waiters : 1
+| 2611305234752 | 4364 | 1 | read_request---before ioctl
+| 2611305239520 |  355 | 0 | process_one_request---before write_response
+| 2611305242880 |  355 | 0 | write_response---before ioctl
+| 2611305276928 |  355 | 0 | main()---arg.abort == false
+| 2611305280480 |  355 | 0 | process_one_request---start
+| 2611305282912 |  355 | 0 | num_waiters_inc---num_waiters : 2
+| 2611305285248 |  355 | 0 | read_request---before ioctl
+| 2611418593312 | 4364 | 1 | process_one_request---after read_request
+| 2611418602752 | 4364 | 1 | num_waiters_dec---num_waiters : 1
+| 2611418604640 | 4364 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4364|prof_process()---start!
+| 2613951918720 | 3162 | 0 | process_one_request---before write_response
+| 2613951939936 | 3162 | 0 | write_response---before ioctl
+| 2613951992800 | 3162 | 0 | thread_main---arg->abort == false
+| 2613951997600 | 3162 | 0 | process_one_request---start
+| 2613952002432 | 3162 | 0 | num_waiters_inc---num_waiters : 2
+| 2613952006720 | 3162 | 0 | read_request---before ioctl
+| 2614035989504 |  355 | 0 | process_one_request---after read_request
+| 2614035999584 |  355 | 0 | num_waiters_dec---num_waiters : 1
+| 2614036002368 |  355 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|355|prof_process()---start!
+| 2622722883424 | 3162 | 0 | process_one_request---after read_request
+| 2622722912416 | 3162 | 0 | num_waiters_dec---num_waiters : 0
+| 2622722917728 | 3162 | 0 | spawn_thread---start 281473073443296
+| 2622722921984 | 3162 | 0 | num_waiters_inc---num_waiters : 1
+| 2622723086720 | 3162 | 0 | spawn_thread---tid : 281473039872480
+| 2622723092736 | 3162 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_ALLOC
+| 2622723118592 | 4408 | 4 | thread_main---start
+| 2622723127264 | 4408 | 4 | num_waiters_dec---num_waiters : 0
+| 2622723129216 | 4408 | 4 | process_one_request---start
+| 2622723130368 | 4408 | 4 | num_waiters_inc---num_waiters : 1
+| 2622723132064 | 4408 | 4 | read_request---before ioctl
+| 2622723144832 | 3162 | 0 | process_one_request---before write_response
+| 2622723148800 | 3162 | 0 | write_response---before ioctl
+| 2622723180000 | 3162 | 0 | thread_main---arg->abort == false
+| 2622723183712 | 3162 | 0 | process_one_request---start
+| 2622723186080 | 3162 | 0 | num_waiters_inc---num_waiters : 2
+| 2622723188512 | 3162 | 0 | read_request---before ioctl
+| 2622851749088 | 4408 | 5 | process_one_request---after read_request
+| 2622851763424 | 4408 | 5 | num_waiters_dec---num_waiters : 1
+| 2622851768960 | 4408 | 5 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4408|prof_process()---start!
+| 2634577854848 | 3162 | 0 | process_one_request---after read_request
+| 2634577878464 | 3162 | 0 | num_waiters_dec---num_waiters : 0
+| 2634577881280 | 3162 | 0 | spawn_thread---start 281473073443296
+| 2634577883456 | 3162 | 0 | num_waiters_inc---num_waiters : 1
+| 2634578414656 | 3162 | 0 | spawn_thread---tid : 281472963441120
+| 2634578420832 | 3162 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_ALLOC
+| 2634578427872 | 4453 | 3 | thread_main---start
+| 2634578436672 | 4453 | 3 | num_waiters_dec---num_waiters : 0
+| 2634578439360 | 4453 | 3 | process_one_request---start
+| 2634578441248 | 4453 | 3 | num_waiters_inc---num_waiters : 1
+| 2634578443648 | 4453 | 3 | read_request---before ioctl
+| 2634578474688 | 3162 | 0 | process_one_request---before write_response
+| 2634578477056 | 3162 | 0 | write_response---before ioctl
+| 2634578495392 | 3162 | 0 | thread_main---arg->abort == false
+| 2634578497728 | 3162 | 0 | process_one_request---start
+| 2634578498944 | 3162 | 0 | num_waiters_inc---num_waiters : 2
+| 2634578500160 | 3162 | 0 | read_request---before ioctl
+| 2634691823392 | 4453 | 0 | process_one_request---after read_request
+| 2634691836064 | 4453 | 0 | num_waiters_dec---num_waiters : 1
+| 2634691839008 | 4453 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4453|prof_process()---start!
+| 2640532571808 | 4095 | 4 | process_one_request---before write_response
+| 2640532598720 | 4095 | 4 | write_response---before ioctl
+| 2640532660672 | 4095 | 4 | thread_main---arg->abort == false
+| 2640532664896 | 4095 | 4 | process_one_request---start
+| 2640532670304 | 4095 | 4 | num_waiters_inc---num_waiters : 2
+| 2640532674208 | 4095 | 4 | read_request---before ioctl
+| 2640616359584 | 3162 | 1 | process_one_request---after read_request
+| 2640616381440 | 3162 | 1 | num_waiters_dec---num_waiters : 1
+| 2640616384896 | 3162 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|3162|prof_process()---start!
+| 2647521022080 | 4095 | 4 | process_one_request---after read_request
+| 2647521050304 | 4095 | 4 | num_waiters_dec---num_waiters : 0
+| 2647521055552 | 4095 | 4 | spawn_thread---start 281473065050592
+| 2647521059648 | 4095 | 4 | num_waiters_inc---num_waiters : 1
+| 2647521281376 | 4095 | 4 | spawn_thread---tid : 281472955048416
+| 2647521287712 | 4095 | 4 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_ALLOC
+| 2647521336064 | 4095 | 4 | process_one_request---before write_response
+| 2647521339808 | 4095 | 4 | write_response---before ioctl
+| 2647521339520 | 4523 | 1 | thread_main---start
+| 2647521351264 | 4523 | 1 | num_waiters_dec---num_waiters : 0
+| 2647521353600 | 4523 | 1 | process_one_request---start
+| 2647521354848 | 4523 | 1 | num_waiters_inc---num_waiters : 1
+| 2647521357216 | 4523 | 1 | read_request---before ioctl
+| 2647521370464 | 4095 | 4 | thread_main---arg->abort == false
+| 2647521374464 | 4095 | 4 | process_one_request---start
+| 2647521376704 | 4095 | 4 | num_waiters_inc---num_waiters : 2
+| 2647521379296 | 4095 | 4 | read_request---before ioctl
+| 2647627721056 | 4523 | 1 | process_one_request---after read_request
+| 2647627736864 | 4523 | 1 | num_waiters_dec---num_waiters : 1
+| 2647627739424 | 4523 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4523|prof_process()---start!
+| 2654592886496 | 3158 | 4 | process_one_request---before write_response
+| 2654592902976 | 3158 | 4 | write_response---before ioctl
+| 2654592956384 | 3158 | 4 | thread_main---arg->abort == false
+| 2654592961440 | 3158 | 4 | process_one_request---start
+| 2654592966688 | 3158 | 4 | num_waiters_inc---num_waiters : 2
+| 2654592971488 | 3158 | 4 | read_request---before ioctl
+| 2654677161152 | 4095 | 4 | process_one_request---after read_request
+| 2654677172288 | 4095 | 4 | num_waiters_dec---num_waiters : 1
+| 2654677174496 | 4095 | 4 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4095|prof_process()---start!
+| 2659587940864 | 4296 | 4 | process_one_request---before write_response
+| 2659587965024 | 4296 | 4 | write_response---before ioctl
+| 2659588013856 | 4296 | 4 | thread_main---arg->abort == false
+| 2659588017856 | 4296 | 4 | process_one_request---start
+| 2659588021600 | 4296 | 4 | num_waiters_inc---num_waiters : 2
+| 2659588025088 | 4296 | 4 | read_request---before ioctl
+| 2659672188416 | 3158 | 4 | process_one_request---after read_request
+| 2659672213024 | 3158 | 4 | num_waiters_dec---num_waiters : 1
+| 2659672380832 | 3158 | 4 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|3158|prof_process()---start!
+| 2661720548448 | 4296 | 5 | process_one_request---after read_request
+| 2661720569664 | 4296 | 5 | num_waiters_dec---num_waiters : 0
+| 2661720571712 | 4296 | 5 | spawn_thread---start 281473056657888
+| 2661720573888 | 4296 | 5 | num_waiters_inc---num_waiters : 1
+| 2661720743264 | 4296 | 5 | spawn_thread---tid : 281472946655712
+| 2661720745760 | 4296 | 5 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_ALLOC
+| 2661720771552 | 4567 | 2 | thread_main---start
+| 2661720780832 | 4567 | 2 | num_waiters_dec---num_waiters : 0
+| 2661720782784 | 4567 | 2 | process_one_request---start
+| 2661720783936 | 4567 | 2 | num_waiters_inc---num_waiters : 1
+| 2661720785664 | 4567 | 2 | read_request---before ioctl
+| 2661720788544 | 4296 | 5 | process_one_request---before write_response
+| 2661720791104 | 4296 | 5 | write_response---before ioctl
+| 2661720831328 | 4296 | 5 | thread_main---arg->abort == false
+| 2661720833856 | 4296 | 5 | process_one_request---start
+| 2661720835424 | 4296 | 5 | num_waiters_inc---num_waiters : 2
+| 2661720836640 | 4296 | 5 | read_request---before ioctl
+| 2661826938816 | 4567 | 2 | process_one_request---after read_request
+| 2661826966848 | 4567 | 2 | num_waiters_dec---num_waiters : 1
+| 2661826971136 | 4567 | 2 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4567|prof_process()---start!
+| 2671418699872 | 4364 | 1 | process_one_request---before write_response
+| 2671418717536 | 4364 | 1 | write_response---before ioctl
+| 2671418760736 | 4364 | 1 | thread_main---arg->abort == false
+| 2671418765952 | 4364 | 1 | process_one_request---start
+| 2671418770624 | 4364 | 1 | num_waiters_inc---num_waiters : 2
+| 2671418774624 | 4364 | 1 | read_request---before ioctl
+| 2671495735584 | 4296 | 7 | process_one_request---after read_request
+| 2671495754688 | 4296 | 7 | num_waiters_dec---num_waiters : 1
+| 2671495757952 | 4296 | 7 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4296|prof_process()---start!
+| 2672450221952 | 4364 | 1 | process_one_request---after read_request
+| 2672450248416 | 4364 | 1 | num_waiters_dec---num_waiters : 0
+| 2672450252448 | 4364 | 1 | spawn_thread---start 281473048265184
+| 2672450256384 | 4364 | 1 | num_waiters_inc---num_waiters : 1
+| 2672450476064 | 4364 | 1 | spawn_thread---tid : 281472938263008
+| 2672450481280 | 4364 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_ALLOC
+| 2672450509664 | 4631 | 7 | thread_main---start
+| 2672450518944 | 4631 | 7 | num_waiters_dec---num_waiters : 0
+| 2672450520896 | 4631 | 7 | process_one_request---start
+| 2672450522112 | 4631 | 7 | num_waiters_inc---num_waiters : 1
+| 2672450523936 | 4631 | 7 | read_request---before ioctl
+| 2672450536128 | 4364 | 1 | process_one_request---before write_response
+| 2672450540000 | 4364 | 1 | write_response---before ioctl
+| 2672450562752 | 4364 | 1 | thread_main---arg->abort == false
+| 2672450565696 | 4364 | 1 | process_one_request---start
+| 2672450567936 | 4364 | 1 | num_waiters_inc---num_waiters : 2
+| 2672450570208 | 4364 | 1 | read_request---before ioctl
+| 2672586264896 | 4364 | 2 | process_one_request---after read_request
+| 2672586283936 | 4364 | 2 | num_waiters_dec---num_waiters : 1
+| 2672586287808 | 4364 | 2 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4364|prof_process()---start!
+| 2674036088064 |  355 | 0 | process_one_request---before write_response
+| 2674036106016 |  355 | 0 | write_response---before ioctl
+| 2674036164992 |  355 | 0 | main()---arg.abort == false
+| 2674036170624 |  355 | 0 | process_one_request---start
+| 2674036175968 |  355 | 0 | num_waiters_inc---num_waiters : 2
+| 2674036180128 |  355 | 0 | read_request---before ioctl
+| 2674120108512 | 4631 | 7 | process_one_request---after read_request
+| 2674120126016 | 4631 | 7 | num_waiters_dec---num_waiters : 1
+| 2674120131360 | 4631 | 7 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4631|prof_process()---start!
+| 2682851883584 | 4408 | 5 | process_one_request---before write_response
+| 2682851911424 | 4408 | 5 | write_response---before ioctl
+| 2682852199840 | 4408 | 5 | thread_main---arg->abort == false
+| 2682852206304 | 4408 | 5 | process_one_request---start
+| 2682852212672 | 4408 | 5 | num_waiters_inc---num_waiters : 2
+| 2682852217184 | 4408 | 5 | read_request---before ioctl
+| 2682936432384 |  355 | 0 | process_one_request---after read_request
+| 2682936444928 |  355 | 0 | num_waiters_dec---num_waiters : 1
+| 2682936448128 |  355 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|355|prof_process()---start!
+| 2684701329248 | 4408 | 5 | process_one_request---after read_request
+| 2684701350336 | 4408 | 5 | num_waiters_dec---num_waiters : 0
+| 2684701352416 | 4408 | 5 | spawn_thread---start 281473039872480
+| 2684701354272 | 4408 | 5 | num_waiters_inc---num_waiters : 1
+| 2684701492864 | 4408 | 5 | spawn_thread---tid : 281472929870304
+| 2684701495904 | 4408 | 5 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_ALLOC
+| 2684701534176 | 4408 | 5 | process_one_request---before write_response
+| 2684701536032 | 4408 | 5 | write_response---before ioctl
+| 2684701533600 | 4676 | 1 | thread_main---start
+| 2684701547488 | 4676 | 1 | num_waiters_dec---num_waiters : 0
+| 2684701552832 | 4676 | 1 | process_one_request---start
+| 2684701556800 | 4676 | 1 | num_waiters_inc---num_waiters : 1
+| 2684701561216 | 4408 | 5 | thread_main---arg->abort == false
+| 2684701566016 | 4408 | 5 | process_one_request---start
+| 2684701561280 | 4676 | 1 | read_request---before ioctl
+| 2684701569312 | 4408 | 5 | num_waiters_inc---num_waiters : 2
+| 2684701572832 | 4408 | 5 | read_request---before ioctl
+| 2684831590912 | 4408 | 5 | process_one_request---after read_request
+| 2684831602528 | 4408 | 5 | num_waiters_dec---num_waiters : 1
+| 2684831604320 | 4408 | 5 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4408|prof_process()---start!
+| 2694691934784 | 4453 | 0 | process_one_request---before write_response
+| 2694691964224 | 4453 | 0 | write_response---before ioctl
+| 2694692021184 | 4453 | 0 | thread_main---arg->abort == false
+| 2694692026752 | 4453 | 0 | process_one_request---start
+| 2694692033280 | 4453 | 0 | num_waiters_inc---num_waiters : 2
+| 2694692037920 | 4453 | 0 | read_request---before ioctl
+| 2694776088416 | 4676 | 1 | process_one_request---after read_request
+| 2694776106080 | 4676 | 1 | num_waiters_dec---num_waiters : 1
+| 2694776108896 | 4676 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4676|prof_process()---start!
+| 2697132739296 | 4453 | 1 | process_one_request---after read_request
+| 2697132760224 | 4453 | 1 | num_waiters_dec---num_waiters : 0
+| 2697132762368 | 4453 | 1 | spawn_thread---start 281472963441120
+| 2697132764096 | 4453 | 1 | num_waiters_inc---num_waiters : 1
+| 2697132924064 | 4453 | 1 | spawn_thread---tid : 281472921477600
+| 2697132927232 | 4453 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_ALLOC
+| 2697132965600 | 4453 | 1 | process_one_request---before write_response
+| 2697132967872 | 4453 | 1 | write_response---before ioctl
+| 2697132965312 | 4742 | 7 | thread_main---start
+| 2697132981280 | 4742 | 7 | num_waiters_dec---num_waiters : 0
+| 2697132986080 | 4742 | 7 | process_one_request---start
+| 2697132988704 | 4742 | 7 | num_waiters_inc---num_waiters : 1
+| 2697132991744 | 4742 | 7 | read_request---before ioctl
+| 2697132993088 | 4453 | 1 | thread_main---arg->abort == false
+| 2697132995520 | 4453 | 1 | process_one_request---start
+| 2697132996608 | 4453 | 1 | num_waiters_inc---num_waiters : 2
+| 2697132997920 | 4453 | 1 | read_request---before ioctl
+| 2697247592256 | 4742 | 7 | process_one_request---after read_request
+| 2697247604416 | 4742 | 7 | num_waiters_dec---num_waiters : 1
+| 2697247609184 | 4742 | 7 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4742|prof_process()---start!
+| 2700616491744 | 3162 | 0 | process_one_request---before write_response
+| 2700616519456 | 3162 | 0 | write_response---before ioctl
+| 2700616591648 | 3162 | 0 | thread_main---arg->abort == false
+| 2700616596672 | 3162 | 0 | process_one_request---start
+| 2700616602112 | 3162 | 0 | num_waiters_inc---num_waiters : 2
+| 2700616605984 | 3162 | 0 | read_request---before ioctl
+| 2700708462080 | 4453 | 1 | process_one_request---after read_request
+| 2700708623232 | 4453 | 1 | num_waiters_dec---num_waiters : 1
+| 2700708626048 | 4453 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4453|prof_process()---start!
+| 2707627849856 | 4523 | 1 | process_one_request---before write_response
+| 2707627881952 | 4523 | 1 | write_response---before ioctl
+| 2707627944288 | 4523 | 1 | thread_main---arg->abort == false
+| 2707627948832 | 4523 | 1 | process_one_request---start
+| 2707627954464 | 4523 | 1 | num_waiters_inc---num_waiters : 2
+| 2707627958272 | 4523 | 1 | read_request---before ioctl
+| 2707712193024 | 3162 | 0 | process_one_request---after read_request
+| 2707712210208 | 3162 | 0 | num_waiters_dec---num_waiters : 1
+| 2707712213312 | 3162 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|3162|prof_process()---start!
+| 2714677511136 | 4095 | 4 | process_one_request---before write_response
+| 2714677541088 | 4095 | 4 | write_response---before ioctl
+| 2714677607552 | 4095 | 4 | thread_main---arg->abort == false
+| 2714677612192 | 4095 | 4 | process_one_request---start
+| 2714677617184 | 4095 | 4 | num_waiters_inc---num_waiters : 2
+| 2714677620896 | 4095 | 4 | read_request---before ioctl
+| 2714761803040 | 4523 | 1 | process_one_request---after read_request
+| 2714761823584 | 4523 | 1 | num_waiters_dec---num_waiters : 1
+| 2714761829376 | 4523 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4523|prof_process()---start!
+| 2719672706848 | 3158 | 4 | process_one_request---before write_response
+| 2719672738336 | 3158 | 4 | write_response---before ioctl
+| 2719672792576 | 3158 | 4 | thread_main---arg->abort == false
+| 2719672795968 | 3158 | 4 | process_one_request---start
+| 2719672801024 | 3158 | 4 | num_waiters_inc---num_waiters : 2
+| 2719672804864 | 3158 | 4 | read_request---before ioctl
+| 2719757055808 | 4095 | 4 | process_one_request---after read_request
+| 2719757071616 | 4095 | 4 | num_waiters_dec---num_waiters : 1
+| 2719757077504 | 4095 | 4 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4095|prof_process()---start!
+| 2721827072768 | 4567 | 2 | process_one_request---before write_response
+| 2721827091680 | 4567 | 2 | write_response---before ioctl
+| 2721827148256 | 4567 | 2 | thread_main---arg->abort == false
+| 2721827153728 | 4567 | 2 | process_one_request---start
+| 2721827159200 | 4567 | 2 | num_waiters_inc---num_waiters : 2
+| 2721827163488 | 4567 | 2 | read_request---before ioctl
+| 2721926884800 | 3158 | 4 | process_one_request---after read_request
+| 2721926901024 | 3158 | 4 | num_waiters_dec---num_waiters : 1
+| 2721926907264 | 3158 | 4 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|3158|prof_process()---start!
+| 2731495849504 | 4296 | 7 | process_one_request---before write_response
+| 2731495873984 | 4296 | 7 | write_response---before ioctl
+| 2731495949664 | 4296 | 7 | thread_main---arg->abort == false
+| 2731495955264 | 4296 | 7 | process_one_request---start
+| 2731495961280 | 4296 | 7 | num_waiters_inc---num_waiters : 2
+| 2731495966816 | 4296 | 7 | read_request---before ioctl
+| 2731580188608 | 4567 | 2 | process_one_request---after read_request
+| 2731580211200 | 4567 | 2 | num_waiters_dec---num_waiters : 1
+| 2731580217632 | 4567 | 2 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4567|prof_process()---start!
+| 2732586609280 | 4364 | 2 | process_one_request---before write_response
+| 2732586632992 | 4364 | 2 | write_response---before ioctl
+| 2732586676608 | 4364 | 2 | thread_main---arg->abort == false
+| 2732586681280 | 4364 | 2 | process_one_request---start
+| 2732586685184 | 4364 | 2 | num_waiters_inc---num_waiters : 2
+| 2732586688544 | 4364 | 2 | read_request---before ioctl
+| 2732670859424 | 4296 | 7 | process_one_request---after read_request
+| 2732670870080 | 4296 | 7 | num_waiters_dec---num_waiters : 1
+| 2732670873504 | 4296 | 7 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4296|prof_process()---start!
+| 2734120245056 | 4631 | 7 | process_one_request---before write_response
+| 2734120267072 | 4631 | 7 | write_response---before ioctl
+| 2734120335104 | 4631 | 7 | thread_main---arg->abort == false
+| 2734120340576 | 4631 | 7 | process_one_request---start
+| 2734120550624 | 4631 | 7 | num_waiters_inc---num_waiters : 2
+| 2734120556352 | 4631 | 7 | read_request---before ioctl
+| 2734197657248 | 4364 | 3 | process_one_request---after read_request
+| 2734197675776 | 4364 | 3 | num_waiters_dec---num_waiters : 1
+| 2734197681120 | 4364 | 3 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4364|prof_process()---start!
+| 2742936550912 |  355 | 0 | process_one_request---before write_response
+| 2742936582240 |  355 | 0 | write_response---before ioctl
+| 2742936646432 |  355 | 0 | main()---arg.abort == false
+| 2742936650656 |  355 | 0 | process_one_request---start
+| 2742936656000 |  355 | 0 | num_waiters_inc---num_waiters : 2
+| 2742936659872 |  355 | 0 | read_request---before ioctl
+| 2743036182944 | 4631 | 7 | process_one_request---after read_request
+| 2743036205120 | 4631 | 7 | num_waiters_dec---num_waiters : 1
+| 2743036210624 | 4631 | 7 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4631|prof_process()---start!
+| 2744831697632 | 4408 | 5 | process_one_request---before write_response
+| 2744831719040 | 4408 | 5 | write_response---before ioctl
+| 2744831770112 | 4408 | 5 | thread_main---arg->abort == false
+| 2744831775648 | 4408 | 5 | process_one_request---start
+| 2744831779936 | 4408 | 5 | num_waiters_inc---num_waiters : 2
+| 2744831783936 | 4408 | 5 | read_request---before ioctl
+| 2744916389632 |  355 | 0 | process_one_request---after read_request
+| 2744916413984 |  355 | 0 | num_waiters_dec---num_waiters : 1
+| 2744916418336 |  355 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|355|prof_process()---start!
+| 2754776454336 | 4676 | 1 | process_one_request---before write_response
+| 2754776480576 | 4676 | 1 | write_response---before ioctl
+| 2754776540576 | 4676 | 1 | thread_main---arg->abort == false
+| 2754776545120 | 4676 | 1 | process_one_request---start
+| 2754776550272 | 4676 | 1 | num_waiters_inc---num_waiters : 2
+| 2754776554048 | 4676 | 1 | read_request---before ioctl
+| 2754853873408 | 4408 | 7 | process_one_request---after read_request
+| 2754853889568 | 4408 | 7 | num_waiters_dec---num_waiters : 1
+| 2754853895456 | 4408 | 7 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4408|prof_process()---start!
+| 2757247712320 | 4742 | 7 | process_one_request---before write_response
+| 2757247730816 | 4742 | 7 | write_response---before ioctl
+| 2757247783520 | 4742 | 7 | thread_main---arg->abort == false
+| 2757247788864 | 4742 | 7 | process_one_request---start
+| 2757247793952 | 4742 | 7 | num_waiters_inc---num_waiters : 2
+| 2757247798944 | 4742 | 7 | read_request---before ioctl
+| 2757332403168 | 4676 | 1 | process_one_request---after read_request
+| 2757332418432 | 4676 | 1 | num_waiters_dec---num_waiters : 1
+| 2757332422176 | 4676 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4676|prof_process()---start!
+| 2760708955808 | 4453 | 1 | process_one_request---before write_response
+| 2760708989632 | 4453 | 1 | write_response---before ioctl
+| 2760709047200 | 4453 | 1 | thread_main---arg->abort == false
+| 2760709050784 | 4453 | 1 | process_one_request---start
+| 2760709055488 | 4453 | 1 | num_waiters_inc---num_waiters : 2
+| 2760709059296 | 4453 | 1 | read_request---before ioctl
+| 2760792715488 | 4742 | 7 | process_one_request---after read_request
+| 2760792731840 | 4742 | 7 | num_waiters_dec---num_waiters : 1
+| 2760792737632 | 4742 | 7 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_FREE
+| 2760792901728 | 4742 | 7 | process_one_request---before write_response
+| 2760792906368 | 4742 | 7 | write_response---before ioctl
+| 2760792941216 | 4742 | 7 | thread_main---arg->abort == false
+| 2760792944704 | 4742 | 7 | process_one_request---start
+| 2760792947488 | 4742 | 7 | num_waiters_inc---num_waiters : 2
+| 2760792950368 | 4742 | 7 | read_request---before ioctl
+| 2761593677376 | 4453 | 1 | process_one_request---after read_request
+| 2761593711488 | 4453 | 1 | num_waiters_dec---num_waiters : 1
+| 2761593717568 | 4453 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_ALLOC
+| 2761593800864 | 4453 | 1 | process_one_request---before write_response
+| 2761593805440 | 4453 | 1 | write_response---before ioctl
+| 2761594031904 | 4453 | 1 | thread_main---arg->abort == false
+| 2761594036928 | 4453 | 1 | process_one_request---start
+| 2761594039840 | 4453 | 1 | num_waiters_inc---num_waiters : 2
+| 2761594043232 | 4453 | 1 | read_request---before ioctl
+| 2761708138560 | 4742 | 5 | process_one_request---after read_request
+| 2761708153600 | 4742 | 5 | num_waiters_dec---num_waiters : 1
+| 2761708155584 | 4742 | 5 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4742|prof_process()---start!
+| 2767712321664 | 3162 | 0 | process_one_request---before write_response
+| 2767712349376 | 3162 | 0 | write_response---before ioctl
+| 2767712417984 | 3162 | 0 | thread_main---arg->abort == false
+| 2767712424256 | 3162 | 0 | process_one_request---start
+| 2767712430368 | 3162 | 0 | num_waiters_inc---num_waiters : 2
+| 2767712434592 | 3162 | 0 | read_request---before ioctl
+| 2767796613152 | 4453 | 1 | process_one_request---after read_request
+| 2767796622336 | 4453 | 1 | num_waiters_dec---num_waiters : 1
+| 2767796625824 | 4453 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4453|prof_process()---start!
+| 2774761927200 | 4523 | 1 | process_one_request---before write_response
+| 2774761978752 | 4523 | 1 | write_response---before ioctl
+| 2774762048864 | 4523 | 1 | thread_main---arg->abort == false
+| 2774762055200 | 4523 | 1 | process_one_request---start
+| 2774762061440 | 4523 | 1 | num_waiters_inc---num_waiters : 2
+| 2774762065984 | 4523 | 1 | read_request---before ioctl
+| 2774846161088 | 3162 | 0 | process_one_request---after read_request
+| 2774846173856 | 3162 | 0 | num_waiters_dec---num_waiters : 1
+| 2774846176800 | 3162 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_FREE
+| 2774846225792 | 3162 | 0 | process_one_request---before write_response
+| 2774846227264 | 3162 | 0 | write_response---before ioctl
+| 2774846273632 | 3162 | 0 | thread_main---arg->abort == false
+| 2774846275584 | 3162 | 0 | process_one_request---start
+| 2774846276672 | 3162 | 0 | num_waiters_inc---num_waiters : 2
+| 2774846278368 | 3162 | 0 | read_request---before ioctl
+| 2779757190560 | 4095 | 4 | process_one_request---before write_response
+| 2779757218048 | 4095 | 4 | write_response---before ioctl
+| 2779757281504 | 4095 | 4 | thread_main---arg->abort == false
+| 2779757286720 | 4095 | 4 | process_one_request---start
+| 2779757292544 | 4095 | 4 | num_waiters_inc---num_waiters : 3
+| 2779757297056 | 4095 | 4 | read_request---before ioctl
+| 2779834516384 | 4523 | 2 | process_one_request---after read_request
+| 2779834528192 | 4523 | 2 | num_waiters_dec---num_waiters : 2
+| 2779834530624 | 4523 | 2 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4523|prof_process()---start!
+| 2781927235520 | 3158 | 4 | process_one_request---before write_response
+| 2781927264160 | 3158 | 4 | write_response---before ioctl
+| 2781927321472 | 3158 | 4 | thread_main---arg->abort == false
+| 2781927325536 | 3158 | 4 | process_one_request---start
+| 2781927330624 | 3158 | 4 | num_waiters_inc---num_waiters : 3
+| 2781927334432 | 3158 | 4 | read_request---before ioctl
+| 2782004531040 | 3162 | 0 | process_one_request---after read_request
+| 2782004564352 | 3162 | 0 | num_waiters_dec---num_waiters : 2
+| 2782004572224 | 3162 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|3162|prof_process()---start!
+| 2791580555392 | 4567 | 2 | process_one_request---before write_response
+| 2791580585120 | 4567 | 2 | write_response---before ioctl
+| 2791580645120 | 4567 | 2 | thread_main---arg->abort == false
+| 2791580649056 | 4567 | 2 | process_one_request---start
+| 2791580654176 | 4567 | 2 | num_waiters_inc---num_waiters : 3
+| 2791580657920 | 4567 | 2 | read_request---before ioctl
+| 2791665020704 | 4095 | 4 | process_one_request---after read_request
+| 2791665039168 | 4095 | 4 | num_waiters_dec---num_waiters : 2
+| 2791665044384 | 4095 | 4 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4095|prof_process()---start!
+| 2792670949984 | 4296 | 7 | process_one_request---before write_response
+| 2792670962432 | 4296 | 7 | write_response---before ioctl
+| 2792671005376 | 4296 | 7 | thread_main---arg->abort == false
+| 2792671132576 | 4296 | 7 | process_one_request---start
+| 2792671138656 | 4296 | 7 | num_waiters_inc---num_waiters : 3
+| 2792671142240 | 4296 | 7 | read_request---before ioctl
+| 2792763541024 | 3158 | 4 | process_one_request---after read_request
+| 2792763548352 | 3158 | 4 | num_waiters_dec---num_waiters : 2
+| 2792763550688 | 3158 | 4 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|3158|prof_process()---start!
+| 2794197775360 | 4364 | 3 | process_one_request---before write_response
+| 2794197795200 | 4364 | 3 | write_response---before ioctl
+| 2794197844768 | 4364 | 3 | thread_main---arg->abort == false
+| 2794197849408 | 4364 | 3 | process_one_request---start
+| 2794197853376 | 4364 | 3 | num_waiters_inc---num_waiters : 3
+| 2794197857248 | 4364 | 3 | read_request---before ioctl
+| 2794282144384 | 4567 | 0 | process_one_request---after read_request
+| 2794282154304 | 4567 | 0 | num_waiters_dec---num_waiters : 2
+| 2794282156704 | 4567 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_FREE
+| 2794282351072 | 4567 | 0 | process_one_request---before write_response
+| 2794282353504 | 4567 | 0 | write_response---before ioctl
+| 2794282370368 | 4567 | 0 | thread_main---arg->abort == false
+| 2794282372832 | 4567 | 0 | process_one_request---start
+| 2794282373792 | 4567 | 0 | num_waiters_inc---num_waiters : 3
+| 2794282375264 | 4567 | 0 | read_request---before ioctl
+| 2803036303424 | 4631 | 7 | process_one_request---before write_response
+| 2803036329248 | 4631 | 7 | write_response---before ioctl
+| 2803036392160 | 4631 | 7 | thread_main---arg->abort == false
+| 2803036397920 | 4631 | 7 | process_one_request---start
+| 2803036404480 | 4631 | 7 | num_waiters_inc---num_waiters : 4
+| 2803036409696 | 4631 | 7 | read_request---before ioctl
+| 2803120615904 | 4296 | 7 | process_one_request---after read_request
+| 2803120623744 | 4296 | 7 | num_waiters_dec---num_waiters : 3
+| 2803120627200 | 4296 | 7 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4296|prof_process()---start!
+| 2804916512512 |  355 | 0 | process_one_request---before write_response
+| 2804916533632 |  355 | 0 | write_response---before ioctl
+| 2804916588512 |  355 | 0 | main()---arg.abort == false
+| 2804916593728 |  355 | 0 | process_one_request---start
+| 2804916598112 |  355 | 0 | num_waiters_inc---num_waiters : 4
+| 2804916602496 |  355 | 0 | read_request---before ioctl
+| 2805001223072 | 4364 | 3 | process_one_request---after read_request
+| 2805001233088 | 4364 | 3 | num_waiters_dec---num_waiters : 3
+| 2805001236832 | 4364 | 3 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4364|prof_process()---start!
+| 2814853994496 | 4408 | 7 | process_one_request---before write_response
+| 2814854023808 | 4408 | 7 | write_response---before ioctl
+| 2814854093888 | 4408 | 7 | thread_main---arg->abort == false
+| 2814854099808 | 4408 | 7 | process_one_request---start
+| 2814854106592 | 4408 | 7 | num_waiters_inc---num_waiters : 4
+| 2814854110848 | 4408 | 7 | read_request---before ioctl
+| 2814953934016 | 4567 | 0 | process_one_request---after read_request
+| 2814953946368 | 4567 | 0 | num_waiters_dec---num_waiters : 3
+| 2814953950240 | 4567 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4567|prof_process()---start!
+| 2817332752512 | 4676 | 1 | process_one_request---before write_response
+| 2817332786496 | 4676 | 1 | write_response---before ioctl
+| 2817332844096 | 4676 | 1 | thread_main---arg->abort == false
+| 2817332848256 | 4676 | 1 | process_one_request---start
+| 2817332853376 | 4676 | 1 | num_waiters_inc---num_waiters : 4
+| 2817332857184 | 4676 | 1 | read_request---before ioctl
+| 2817417673792 | 4631 | 7 | process_one_request---after read_request
+| 2817417693952 | 4631 | 7 | num_waiters_dec---num_waiters : 3
+| 2817417700064 | 4631 | 7 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4631|prof_process()---start!
+| 2821708271584 | 4742 | 5 | process_one_request---before write_response
+| 2821708299456 | 4742 | 5 | write_response---before ioctl
+| 2821708365600 | 4742 | 5 | thread_main---arg->abort == false
+| 2821708371072 | 4742 | 5 | process_one_request---start
+| 2821708375904 | 4742 | 5 | num_waiters_inc---num_waiters : 4
+| 2821708537408 | 4742 | 5 | read_request---before ioctl
+| 2821792662240 |  355 | 0 | process_one_request---after read_request
+| 2821792679712 |  355 | 0 | num_waiters_dec---num_waiters : 3
+| 2821792685504 |  355 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|355|prof_process()---start!
+| 2827796727424 | 4453 | 1 | process_one_request---before write_response
+| 2827796753952 | 4453 | 1 | write_response---before ioctl
+| 2827796819424 | 4453 | 1 | thread_main---arg->abort == false
+| 2827796823488 | 4453 | 1 | process_one_request---start
+| 2827796828640 | 4453 | 1 | num_waiters_inc---num_waiters : 4
+| 2827796832736 | 4453 | 1 | read_request---before ioctl
+| 2827881084256 | 4408 | 7 | process_one_request---after read_request
+| 2827881099744 | 4408 | 7 | num_waiters_dec---num_waiters : 3
+| 2827881105120 | 4408 | 7 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4408|prof_process()---start!
+| 2839834624896 | 4523 | 2 | process_one_request---before write_response
+| 2839834651744 | 4523 | 2 | write_response---before ioctl
+| 2839834716288 | 4523 | 2 | thread_main---arg->abort == false
+| 2839834721408 | 4523 | 2 | process_one_request---start
+| 2839834727200 | 4523 | 2 | num_waiters_inc---num_waiters : 4
+| 2839834730368 | 4523 | 2 | read_request---before ioctl
+| 2839927393984 | 4676 | 2 | process_one_request---after read_request
+| 2839927406176 | 4676 | 2 | num_waiters_dec---num_waiters : 3
+| 2839927409312 | 4676 | 2 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4676|prof_process()---start!
+| 2842004667712 | 3162 | 0 | process_one_request---before write_response
+| 2842004693728 | 3162 | 0 | write_response---before ioctl
+| 2842004753056 | 3162 | 0 | thread_main---arg->abort == false
+| 2842004757632 | 3162 | 0 | process_one_request---start
+| 2842004763040 | 3162 | 0 | num_waiters_inc---num_waiters : 4
+| 2842004766976 | 3162 | 0 | read_request---before ioctl
+| 2842088978912 | 4742 | 5 | process_one_request---after read_request
+| 2842088996768 | 4742 | 5 | num_waiters_dec---num_waiters : 3
+| 2842089001728 | 4742 | 5 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4742|prof_process()---start!
+| 2851665388448 | 4095 | 4 | process_one_request---before write_response
+| 2851665415680 | 4095 | 4 | write_response---before ioctl
+| 2851665486304 | 4095 | 4 | thread_main---arg->abort == false
+| 2851665490272 | 4095 | 4 | process_one_request---start
+| 2851665495392 | 4095 | 4 | num_waiters_inc---num_waiters : 4
+| 2851665499168 | 4095 | 4 | read_request---before ioctl
+| 2851749741152 | 4453 | 1 | process_one_request---after read_request
+| 2851749758336 | 4453 | 1 | num_waiters_dec---num_waiters : 3
+| 2851749763680 | 4453 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4453|prof_process()---start!
+| 2852763632448 | 3158 | 4 | process_one_request---before write_response
+| 2852763646528 | 3158 | 4 | write_response---before ioctl
+| 2852763692864 | 3158 | 4 | thread_main---arg->abort == false
+| 2852763697920 | 3158 | 4 | process_one_request---start
+| 2852763703648 | 3158 | 4 | num_waiters_inc---num_waiters : 4
+| 2852763708064 | 3158 | 4 | read_request---before ioctl
+| 2852847911200 | 4523 | 2 | process_one_request---after read_request
+| 2852847925984 | 4523 | 2 | num_waiters_dec---num_waiters : 3
+| 2852847930944 | 4523 | 2 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4523|prof_process()---start!
+| 2863120717376 | 4296 | 7 | process_one_request---before write_response
+| 2863120743840 | 4296 | 7 | write_response---before ioctl
+| 2863120810400 | 4296 | 7 | thread_main---arg->abort == false
+| 2863120816576 | 4296 | 7 | process_one_request---start
+| 2863120823040 | 4296 | 7 | num_waiters_inc---num_waiters : 4
+| 2863120828544 | 4296 | 7 | read_request---before ioctl
+| 2863220681824 | 3162 | 0 | process_one_request---after read_request
+| 2863220702912 | 3162 | 0 | num_waiters_dec---num_waiters : 3
+| 2863220708832 | 3162 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|3162|prof_process()---start!
+| 2865001565376 | 4364 | 3 | process_one_request---before write_response
+| 2865001586432 | 4364 | 3 | write_response---before ioctl
+| 2865001807904 | 4364 | 3 | thread_main---arg->abort == false
+| 2865001812736 | 4364 | 3 | process_one_request---start
+| 2865001817056 | 4364 | 3 | num_waiters_inc---num_waiters : 4
+| 2865001820896 | 4364 | 3 | read_request---before ioctl
+| 2865086680960 | 4095 | 4 | process_one_request---after read_request
+| 2865086693440 | 4095 | 4 | num_waiters_dec---num_waiters : 3
+| 2865086695648 | 4095 | 4 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4095|prof_process()---start!
+| 2874954056896 | 4567 | 0 | process_one_request---before write_response
+| 2874954081696 | 4567 | 0 | write_response---before ioctl
+| 2874954142464 | 4567 | 0 | thread_main---arg->abort == false
+| 2874954148032 | 4567 | 0 | process_one_request---start
+| 2874954154400 | 4567 | 0 | num_waiters_inc---num_waiters : 4
+| 2874954158880 | 4567 | 0 | read_request---before ioctl
+| 2875031465632 | 3158 | 5 | process_one_request---after read_request
+| 2875031481184 | 3158 | 5 | num_waiters_dec---num_waiters : 3
+| 2875031487136 | 3158 | 5 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|3158|prof_process()---start!
+| 2877417798944 | 4631 | 7 | process_one_request---before write_response
+| 2877417825056 | 4631 | 7 | write_response---before ioctl
+| 2877417894976 | 4631 | 7 | thread_main---arg->abort == false
+| 2877417900544 | 4631 | 7 | process_one_request---start
+| 2877417907008 | 4631 | 7 | num_waiters_inc---num_waiters : 4
+| 2877417912608 | 4631 | 7 | read_request---before ioctl
+| 2877502991296 | 4296 | 4 | process_one_request---after read_request
+| 2877503005856 | 4296 | 4 | num_waiters_dec---num_waiters : 3
+| 2877503011744 | 4296 | 4 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4296|prof_process()---start!
+| 2881792786144 |  355 | 0 | process_one_request---before write_response
+| 2881792811616 |  355 | 0 | write_response---before ioctl
+| 2881792877440 |  355 | 0 | main()---arg.abort == false
+| 2881792883424 |  355 | 0 | process_one_request---start
+| 2881792889536 |  355 | 0 | num_waiters_inc---num_waiters : 4
+| 2881792894976 |  355 | 0 | read_request---before ioctl
+| 2881892697056 | 4364 | 3 | process_one_request---after read_request
+| 2881892710496 | 4364 | 3 | num_waiters_dec---num_waiters : 3
+| 2881892715744 | 4364 | 3 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4364|prof_process()---start!
+| 2887881198912 | 4408 | 7 | process_one_request---before write_response
+| 2887881228032 | 4408 | 7 | write_response---before ioctl
+| 2887881291744 | 4408 | 7 | thread_main---arg->abort == false
+| 2887881297184 | 4408 | 7 | process_one_request---start
+| 2887881302592 | 4408 | 7 | num_waiters_inc---num_waiters : 4
+| 2887881306432 | 4408 | 7 | read_request---before ioctl
+| 2887958619520 | 4567 | 0 | process_one_request---after read_request
+| 2887958652672 | 4567 | 0 | num_waiters_dec---num_waiters : 3
+| 2887958664576 | 4567 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4567|prof_process()---start!
+| 2899927730368 | 4676 | 2 | process_one_request---before write_response
+| 2899927758496 | 4676 | 2 | write_response---before ioctl
+| 2899927821408 | 4676 | 2 | thread_main---arg->abort == false
+| 2899927826176 | 4676 | 2 | process_one_request---start
+| 2899927831232 | 4676 | 2 | num_waiters_inc---num_waiters : 4
+| 2899927834976 | 4676 | 2 | read_request---before ioctl
+| 2900011898208 | 4631 | 7 | process_one_request---after read_request
+| 2900011918112 | 4631 | 7 | num_waiters_dec---num_waiters : 3
+| 2900011925696 | 4631 | 7 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_FREE
+| 2900012080416 | 4631 | 7 | process_one_request---before write_response
+| 2900012085312 | 4631 | 7 | write_response---before ioctl
+| 2900012119168 | 4631 | 7 | thread_main---arg->abort == false
+| 2900012123360 | 4631 | 7 | process_one_request---start
+| 2900012126080 | 4631 | 7 | num_waiters_inc---num_waiters : 4
+| 2900012129408 | 4631 | 7 | read_request---before ioctl
+| 2902089333280 | 4742 | 5 | process_one_request---before write_response
+| 2902089363808 | 4742 | 5 | write_response---before ioctl
+| 2902089425792 | 4742 | 5 | thread_main---arg->abort == false
+| 2902089660896 | 4742 | 5 | process_one_request---start
+| 2902089669056 | 4742 | 5 | num_waiters_inc---num_waiters : 5
+| 2902089673408 | 4742 | 5 | read_request---before ioctl
+| 2902173811424 |  355 | 2 | process_one_request---after read_request
+| 2902173829952 |  355 | 2 | num_waiters_dec---num_waiters : 4
+| 2902173836064 |  355 | 2 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|355|prof_process()---start!
+| 2911750103744 | 4453 | 1 | process_one_request---before write_response
+| 2911750132320 | 4453 | 1 | write_response---before ioctl
+| 2911750201280 | 4453 | 1 | thread_main---arg->abort == false
+| 2911750205728 | 4453 | 1 | process_one_request---start
+| 2911750210496 | 4453 | 1 | num_waiters_inc---num_waiters : 5
+| 2911750214240 | 4453 | 1 | read_request---before ioctl
+| 2911827461280 | 4408 | 7 | process_one_request---after read_request
+| 2911827472352 | 4408 | 7 | num_waiters_dec---num_waiters : 4
+| 2911827475040 | 4408 | 7 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_FREE
+| 2911827519616 | 4408 | 7 | process_one_request---before write_response
+| 2911827521440 | 4408 | 7 | write_response---before ioctl
+| 2911834518464 | 4408 | 7 | thread_main---arg->abort == false
+| 2911834520704 | 4408 | 7 | process_one_request---start
+| 2911834521632 | 4408 | 7 | num_waiters_inc---num_waiters : 5
+| 2911834523840 | 4408 | 7 | read_request---before ioctl
+| 2912848031616 | 4523 | 2 | process_one_request---before write_response
+| 2912848063776 | 4523 | 2 | write_response---before ioctl
+| 2912848123584 | 4523 | 2 | thread_main---arg->abort == false
+| 2912848127136 | 4523 | 2 | process_one_request---start
+| 2912848132832 | 4523 | 2 | num_waiters_inc---num_waiters : 6
+| 2912848136672 | 4523 | 2 | read_request---before ioctl
+| 2912932355296 | 4676 | 2 | process_one_request---after read_request
+| 2912932368256 | 4676 | 2 | num_waiters_dec---num_waiters : 5
+| 2912932373600 | 4676 | 2 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4676|prof_process()---start!
+| 2923220808896 | 3162 | 0 | process_one_request---before write_response
+| 2923220841888 | 3162 | 0 | write_response---before ioctl
+| 2923220910400 | 3162 | 0 | thread_main---arg->abort == false
+| 2923220914688 | 3162 | 0 | process_one_request---start
+| 2923220920288 | 3162 | 0 | num_waiters_inc---num_waiters : 6
+| 2923220924640 | 3162 | 0 | read_request---before ioctl
+| 2923305177312 | 4631 | 7 | process_one_request---after read_request
+| 2923305191360 | 4631 | 7 | num_waiters_dec---num_waiters : 5
+| 2923305197024 | 4631 | 7 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_FREE
+| 2923305248672 | 4631 | 7 | process_one_request---before write_response
+| 2923305253120 | 4631 | 7 | write_response---before ioctl
+| 2923305294656 | 4631 | 7 | thread_main---arg->abort == false
+| 2923305298880 | 4631 | 7 | process_one_request---start
+| 2923305301760 | 4631 | 7 | num_waiters_inc---num_waiters : 6
+| 2923305304128 | 4631 | 7 | read_request---before ioctl
+| 2925086793120 | 4095 | 4 | process_one_request---before write_response
+| 2925086822080 | 4095 | 4 | write_response---before ioctl
+| 2925086900256 | 4095 | 4 | thread_main---arg->abort == false
+| 2925086905600 | 4095 | 4 | process_one_request---start
+| 2925086912000 | 4095 | 4 | num_waiters_inc---num_waiters : 7
+| 2925086917504 | 4095 | 4 | read_request---before ioctl
+| 2925171766592 | 4742 | 5 | process_one_request---after read_request
+| 2925171786752 | 4742 | 5 | num_waiters_dec---num_waiters : 6
+| 2925171790368 | 4742 | 5 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4742|prof_process()---start!
+| 2935031822016 | 3158 | 5 | process_one_request---before write_response
+| 2935031858016 | 3158 | 5 | write_response---before ioctl
+| 2935031922368 | 3158 | 5 | thread_main---arg->abort == false
+| 2935031927008 | 3158 | 5 | process_one_request---start
+| 2935031932032 | 3158 | 5 | num_waiters_inc---num_waiters : 7
+| 2935031935808 | 3158 | 5 | read_request---before ioctl
+| 2935116231744 | 4453 | 1 | process_one_request---after read_request
+| 2935116258048 | 4453 | 1 | num_waiters_dec---num_waiters : 6
+| 2935116263200 | 4453 | 1 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_FREE
+| 2935116492448 | 4453 | 1 | process_one_request---before write_response
+| 2935116496544 | 4453 | 1 | write_response---before ioctl
+| 2935116525696 | 4453 | 1 | thread_main---arg->abort == false
+| 2935116529792 | 4453 | 1 | process_one_request---start
+| 2935116532672 | 4453 | 1 | num_waiters_inc---num_waiters : 7
+| 2935116535872 | 4453 | 1 | read_request---before ioctl
+| 2937503104544 | 4296 | 4 | process_one_request---before write_response
+| 2937503123200 | 4296 | 4 | write_response---before ioctl
+| 2937503173312 | 4296 | 4 | thread_main---arg->abort == false
+| 2937503175264 | 4296 | 4 | process_one_request---start
+| 2937503179040 | 4296 | 4 | num_waiters_inc---num_waiters : 8
+| 2937503181280 | 4296 | 4 | read_request---before ioctl
+| 2937587816032 | 4408 | 7 | process_one_request---after read_request
+| 2937587839520 | 4408 | 7 | num_waiters_dec---num_waiters : 7
+| 2937587843520 | 4408 | 7 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4408|prof_process()---start!
+| 2941892817792 | 4364 | 3 | process_one_request---before write_response
+| 2941892843360 | 4364 | 3 | write_response---before ioctl
+| 2941892910432 | 4364 | 3 | thread_main---arg->abort == false
+| 2941892916000 | 4364 | 3 | process_one_request---start
+| 2941892921600 | 4364 | 3 | num_waiters_inc---num_waiters : 8
+| 2941892925600 | 4364 | 3 | read_request---before ioctl
+| 2941977288672 | 4523 | 2 | process_one_request---after read_request
+| 2941977313760 | 4523 | 2 | num_waiters_dec---num_waiters : 7
+| 2941977317376 | 4523 | 2 | process_one_request---OPTEE_MSG_RPC_CMD_GPROF
+
+|4523|prof_process()---start!
+| 2947958783008 | 4567 | 0 | process_one_request---before write_response
+| 2947958812896 | 4567 | 0 | write_response---before ioctl
+| 2947958879168 | 4567 | 0 | thread_main---arg->abort == false
+| 2947958884032 | 4567 | 0 | process_one_request---start
+| 2947958889920 | 4567 | 0 | num_waiters_inc---num_waiters : 8
+| 2947958893856 | 4567 | 0 | read_request---before ioctl
+| 2948036107744 | 3162 | 0 | process_one_request---after read_request
+| 2948036112864 | 3162 | 0 | num_waiters_dec---num_waiters : 7
+| 2948036115136 | 3162 | 0 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_FREE
+| 2948036183168 | 3162 | 0 | process_one_request---before write_response
+| 2948036184608 | 3162 | 0 | write_response---before ioctl
+| 2948043233440 | 3162 | 0 | thread_main---arg->abort == false
+| 2948043236640 | 3162 | 0 | process_one_request---start
+| 2948043238400 | 3162 | 0 | num_waiters_inc---num_waiters : 8
+| 2948043240544 | 3162 | 0 | read_request---before ioctl
+| 2962173936704 |  355 | 2 | process_one_request---before write_response
+| 2962173990784 |  355 | 2 | write_response---before ioctl
+| 2962174064480 |  355 | 2 | main()---arg.abort == false
+| 2962174071616 |  355 | 2 | process_one_request---start
+| 2962174079168 |  355 | 2 | num_waiters_inc---num_waiters : 9
+| 2962174086720 |  355 | 2 | read_request---before ioctl
+| 2962258406720 | 4631 | 7 | process_one_request---after read_request
+| 2962258425792 | 4631 | 7 | num_waiters_dec---num_waiters : 8
+| 2962258429760 | 4631 | 7 | process_one_request---OPTEE_MSG_RPC_CMD_SHM_FREE
+| 2962258474752 | 4631 | 7 | process_one_request---before write_response
+| 2962258477440 | 4631 | 7 | write_response---before ioctl
+| 2962258506688 | 4631 | 7 | thread_main---arg->abort == false
+| 2962258509248 | 4631 | 7 | process_one_request---start
+| 2962258511264 | 4631 | 7 | num_waiters_inc---num_waiters : 9
+| 2962258513024 | 4631 | 7 | read_request---before ioctl
+| 2972932714176 | 4676 | 2 | process_one_request---before write_response
+| 2972932741952 | 4676 | 2 | write_response---before ioctl
+| 2972932802944 | 4676 | 2 | thread_main---arg->abort == false
+| 2972932808544 | 4676 | 2 | process_one_request---start
+| 2972932815520 | 4676 | 2 | num_waiters_inc---num_waiters : 10
+| 2972932820096 | 4676 | 2 | read_request---before ioctl
+| 2973017248672 | 4095 | 4 | process_one_request---after read_request
+| 2973017266432 | 4095 | 4 | num_waiters_dec---num_waiters : 9
+| 2973017272864 | 4095 | 4 | process_one_r

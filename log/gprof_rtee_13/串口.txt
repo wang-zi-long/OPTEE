@@ -1,0 +1,1986 @@
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 00 tee_ta_init_session_with_context:637 Re-open TA b6c53aba-9669-4668-a7f2-205629d00f86
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: gprof_rtee---open_session!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 1549.217311] BUG: scheduling while atomic: optee_example_h/3970/0x00000008
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: gprof_rtee---invoke_command!!!
+I/TC: gprof_rtee---gprof_send!!!
+I/TC: gprof_rtee---gprof_send_rpc_rtee!!!
+��[ 1549.381653] BUG: scheduling while atomic: optee_example_h/3970/0x00000007
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee---gprof_send_rpc_rtee( mobj )
+I/TC: gprof_rtee---gprof_send_rpc_rtee( va )
+I/TC: gprof_rtee---gprof_send_rpc_rtee( before for )
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0xB2
+��[ 1549.508967] BUG: scheduling while atomic: optee_example_h/3970/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 1
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 01 tee_ta_init_session_with_context:637 Re-open TA b6c53aba-9669-4668-a7f2-205629d00f01
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: gprof_rtee_1---open_session!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 1563.304568] BUG: scheduling while atomic: optee_example_h/4015/0x00000008
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 1
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: gprof_rtee_1---invoke_command!!!
+I/TC: gprof_rtee_1---gprof_send!!!
+I/TC: gprof_rtee_1---gprof_send_rpc_rtee!!!
+��[ 1563.470809] BUG: scheduling while atomic: optee_example_h/4015/0x00000007
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_1---gprof_send_rpc_rtee( mobj )
+I/TC: gprof_rtee_1---gprof_send_rpc_rtee( va )
+I/TC: gprof_rtee_1---gprof_send_rpc_rtee( before for )
+��[ 1563.584246] BUG: scheduling while atomic: optee_example_h/4015/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 2
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 02 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA b6c53aba-9669-4668-a7f2-205629d00f02
+D/TC:?? 02 tee_ta_init_pseudo_ta_session:309 Open gprof_rtee_2
+D/TC:?? 02 tee_ta_init_pseudo_ta_session:326 gprof_rtee_2 : b6c53aba-9669-4668-a7f2-205629d00f02
+I/TC: after tee_ta_init_pseudo_ta_session
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: gprof_rtee_2---open_session!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 1582.674860] BUG: scheduling while atomic: optee_example_h/4087/0x00000008
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 2
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: gprof_rtee_2---invoke_command!!!
+I/TC: gprof_rtee_2---gprof_send!!!
+I/TC: gprof_rtee_2---gprof_send_rpc_rtee!!!
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 2
+I/TC: thread_resume_from_rpc()---thread_resume
+��[ 1582.898565] BUG: scheduling while atomic: optee_example_h/4087/0x0000000b
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 2
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_2---gprof_send_rpc_rtee( mobj )
+I/TC: gprof_rtee_2---gprof_send_rpc_rtee( va )
+I/TC: gprof_rtee_2---gprof_send_rpc_rtee( before for )
+F/TC:?? 02 plat_prng_add_jitter_entropy:72 0x93
+��[ 1583.027415] BUG: scheduling while atomic: optee_example_h/4087/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_init_session_with_context:637 Re-open TA ed32d533-99e6-4209-9cc0-2d72cdd998a7
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+D/TC:?? 03 spm_handle_scall:960 Received FFA direct response
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_close_session:542 csess 0x103c195850 id 4
+D/TC:?? 03 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_init_session_with_context:637 Re-open TA ed32d533-99e6-4209-9cc0-2d72cdd998a7
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+D/TC:?? 03 spm_handle_scall:960 Received FFA direct response
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+F/TC:?? 03 plat_prng_add_jitter_entropy:72 0x6D
+D/TC:?? 03 tee_ta_close_session:542 csess 0x103c195850 id 4
+D/TC:?? 03 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_init_session_with_context:637 Re-open TA ed32d533-99e6-4209-9cc0-2d72cdd998a7
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+D/TC:?? 03 spm_handle_scall:960 Received FFA direct response
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_close_session:542 csess 0x103c195850 id 4
+D/TC:?? 03 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_init_session_with_context:637 Re-open TA ed32d533-99e6-4209-9cc0-2d72cdd998a7
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+D/TC:?? 03 spm_handle_scall:960 Received FFA direct response
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+F/TC:?? 03 plat_prng_add_jitter_entropy:72 0xF0
+D/TC:?? 03 tee_ta_close_session:542 csess 0x103c195850 id 4
+D/TC:?? 03 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_init_session_with_context:637 Re-open TA ed32d533-99e6-4209-9cc0-2d72cdd998a7
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+D/TC:?? 03 spm_handle_scall:960 Received FFA direct response
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_close_session:542 csess 0x103c195850 id 4
+D/TC:?? 03 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_init_session_with_context:637 Re-open TA ed32d533-99e6-4209-9cc0-2d72cdd998a7
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+D/TC:?? 03 spm_handle_scall:960 Received FFA direct response
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+F/TC:?? 03 plat_prng_add_jitter_entropy:72 0x3E
+D/TC:?? 03 tee_ta_close_session:542 csess 0x103c195850 id 4
+D/TC:?? 03 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_init_session_with_context:637 Re-open TA ed32d533-99e6-4209-9cc0-2d72cdd998a7
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+D/TC:?? 03 spm_handle_scall:960 Received FFA direct response
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_close_session:542 csess 0x103c195850 id 4
+D/TC:?? 03 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_init_session_with_context:637 Re-open TA ed32d533-99e6-4209-9cc0-2d72cdd998a7
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+D/TC:?? 03 spm_handle_scall:960 Received FFA direct response
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+F/TC:?? 03 plat_prng_add_jitter_entropy:72 0x4E
+D/TC:?? 03 tee_ta_close_session:542 csess 0x103c195850 id 4
+D/TC:?? 03 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_init_session_with_context:637 Re-open TA ed32d533-99e6-4209-9cc0-2d72cdd998a7
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+D/TC:?? 03 spm_handle_scall:960 Received FFA direct response
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_close_session:542 csess 0x103c195850 id 4
+D/TC:?? 03 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_init_session_with_context:637 Re-open TA ed32d533-99e6-4209-9cc0-2d72cdd998a7
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+D/TC:?? 03 spm_handle_scall:960 Received FFA direct response
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+F/TC:?? 03 plat_prng_add_jitter_entropy:72 0x7F
+D/TC:?? 03 tee_ta_close_session:542 csess 0x103c195850 id 4
+D/TC:?? 03 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_init_session_with_context:637 Re-open TA ed32d533-99e6-4209-9cc0-2d72cdd998a7
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+D/TC:?? 03 spm_handle_scall:960 Received FFA direct response
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_close_session:542 csess 0x103c195850 id 4
+D/TC:?? 03 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_init_session_with_context:637 Re-open TA ed32d533-99e6-4209-9cc0-2d72cdd998a7
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+D/TC:?? 03 spm_handle_scall:960 Received FFA direct response
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+F/TC:?? 03 plat_prng_add_jitter_entropy:72 0x77
+D/TC:?? 03 tee_ta_close_session:542 csess 0x103c195850 id 4
+D/TC:?? 03 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1609.592815] BUG: scheduling while atomic: optee_example_h/3970/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_1---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1623.668630] BUG: scheduling while atomic: optee_example_h/4015/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 2
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_2---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1643.111896] BUG: scheduling while atomic: optee_example_h/4087/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_init_session_with_context:637 Re-open TA ed32d533-99e6-4209-9cc0-2d72cdd998a7
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+F/TC:?? 03 plat_prng_add_jitter_entropy:72 0xF0
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+D/TC:?? 03 spm_handle_scall:960 Received FFA direct response
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_close_session:542 csess 0x103c195850 id 4
+D/TC:?? 03 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_init_session_with_context:637 Re-open TA ed32d533-99e6-4209-9cc0-2d72cdd998a7
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+D/TC:?? 03 spm_handle_scall:960 Received FFA direct response
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_close_session:542 csess 0x103c195850 id 4
+D/TC:?? 03 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_init_session_with_context:637 Re-open TA ed32d533-99e6-4209-9cc0-2d72cdd998a7
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+F/TC:?? 03 plat_prng_add_jitter_entropy:72 0x34
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+D/TC:?? 03 spm_handle_scall:960 Received FFA direct response
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_close_session:542 csess 0x103c195850 id 4
+D/TC:?? 03 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_init_session_with_context:637 Re-open TA ed32d533-99e6-4209-9cc0-2d72cdd998a7
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+D/TC:?? 03 spm_handle_scall:960 Received FFA direct response
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_close_session:542 csess 0x103c195850 id 4
+D/TC:?? 03 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee---gprof_send_rpc_rtee( not TEE_SUCCESS )
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0x8C
+��[ 1669.692315] BUG: scheduling while atomic: optee_example_h/3970/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_1---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1683.752878] BUG: scheduling while atomic: optee_example_h/4015/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 03 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA b6c53aba-9669-4668-a7f2-205629d00f03
+D/TC:?? 03 tee_ta_init_pseudo_ta_session:309 Open gprof_rtee_3
+D/TC:?? 03 tee_ta_init_pseudo_ta_session:326 gprof_rtee_3 : b6c53aba-9669-4668-a7f2-205629d00f03
+I/TC: after tee_ta_init_pseudo_ta_session
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: gprof_rtee_3---open_session!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 1688.410235] BUG: scheduling while atomic: optee_example_h/4295/0x00000008
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 3
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: gprof_rtee_3---invoke_command!!!
+I/TC: gprof_rtee_3---gprof_send!!!
+I/TC: gprof_rtee_3---gprof_send_rpc_rtee!!!
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 3
+I/TC: thread_resume_from_rpc()---thread_resume
+��[ 1688.634137] BUG: scheduling while atomic: optee_example_h/4295/0x0000000b
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 3
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_3---gprof_send_rpc_rtee( mobj )
+I/TC: gprof_rtee_3---gprof_send_rpc_rtee( va )
+I/TC: gprof_rtee_3---gprof_send_rpc_rtee( before for )
+��[ 1688.747960] BUG: scheduling while atomic: optee_example_h/4295/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 4
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 04 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA b6c53aba-9669-4668-a7f2-205629d00f04
+D/TC:?? 04 tee_ta_init_pseudo_ta_session:309 Open gprof_rtee_4
+D/TC:?? 04 tee_ta_init_pseudo_ta_session:326 gprof_rtee_4 : b6c53aba-9669-4668-a7f2-205629d00f04
+I/TC: after tee_ta_init_pseudo_ta_session
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: gprof_rtee_4---open_session!!!
+F/TC:?? 04 plat_prng_add_jitter_entropy:72 0x38
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 1700.240841] BUG: scheduling while atomic: optee_example_h/4363/0x00000008
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 4
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: gprof_rtee_4---invoke_command!!!
+I/TC: gprof_rtee_4---gprof_send!!!
+I/TC: gprof_rtee_4---gprof_send_rpc_rtee!!!
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 4
+I/TC: thread_resume_from_rpc()---thread_resume
+��[ 1700.464962] BUG: scheduling while atomic: optee_example_h/4363/0x0000000b
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 4
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_4---gprof_send_rpc_rtee( mobj )
+I/TC: gprof_rtee_4---gprof_send_rpc_rtee( va )
+I/TC: gprof_rtee_4---gprof_send_rpc_rtee( before for )
+��[ 1700.578748] BUG: scheduling while atomic: optee_example_h/4363/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 2
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_2---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1703.196065] BUG: scheduling while atomic: optee_example_h/4087/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 5
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 05 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA b6c53aba-9669-4668-a7f2-205629d00f05
+D/TC:?? 05 tee_ta_init_pseudo_ta_session:309 Open gprof_rtee_5
+D/TC:?? 05 tee_ta_init_pseudo_ta_session:326 gprof_rtee_5 : b6c53aba-9669-4668-a7f2-205629d00f05
+I/TC: after tee_ta_init_pseudo_ta_session
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: gprof_rtee_5---open_session!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 1711.658966] BUG: scheduling while atomic: optee_example_h/4407/0x00000008
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 5
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: gprof_rtee_5---invoke_command!!!
+I/TC: gprof_rtee_5---gprof_send!!!
+I/TC: gprof_rtee_5---gprof_send_rpc_rtee!!!
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 5
+I/TC: thread_resume_from_rpc()---thread_resume
+��[ 1711.882995] BUG: scheduling while atomic: optee_example_h/4407/0x0000000b
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 5
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_5---gprof_send_rpc_rtee( mobj )
+I/TC: gprof_rtee_5---gprof_send_rpc_rtee( va )
+I/TC: gprof_rtee_5---gprof_send_rpc_rtee( before for )
+F/TC:?? 05 plat_prng_add_jitter_entropy:72 0xD8
+��[ 1712.011880] BUG: scheduling while atomic: optee_example_h/4407/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 6
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 06 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA b6c53aba-9669-4668-a7f2-205629d00f06
+D/TC:?? 06 tee_ta_init_pseudo_ta_session:309 Open gprof_rtee_6
+D/TC:?? 06 tee_ta_init_pseudo_ta_session:326 gprof_rtee_6 : b6c53aba-9669-4668-a7f2-205629d00f06
+I/TC: after tee_ta_init_pseudo_ta_session
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: gprof_rtee_6---open_session!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 1723.513934] BUG: scheduling while atomic: optee_example_h/4452/0x00000008
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 6
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: gprof_rtee_6---invoke_command!!!
+I/TC: gprof_rtee_6---gprof_send!!!
+I/TC: gprof_rtee_6---gprof_send_rpc_rtee!!!
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 6
+I/TC: thread_resume_from_rpc()---thread_resume
+��[ 1723.737966] BUG: scheduling while atomic: optee_example_h/4452/0x0000000b
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 6
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_6---gprof_send_rpc_rtee( mobj )
+I/TC: gprof_rtee_6---gprof_send_rpc_rtee( va )
+I/TC: gprof_rtee_6---gprof_send_rpc_rtee( before for )
+��[ 1723.851952] BUG: scheduling while atomic: optee_example_h/4452/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1729.776482] BUG: scheduling while atomic: optee_example_h/3970/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 7
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 07 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA b6c53aba-9669-4668-a7f2-205629d00f07
+D/TC:?? 07 tee_ta_init_pseudo_ta_session:309 Open gprof_rtee_7
+D/TC:?? 07 tee_ta_init_pseudo_ta_session:326 gprof_rtee_7 : b6c53aba-9669-4668-a7f2-205629d00f07
+I/TC: after tee_ta_init_pseudo_ta_session
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: gprof_rtee_7---open_session!!!
+F/TC:?? 07 plat_prng_add_jitter_entropy:72 0x5F
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 1736.457484] BUG: scheduling while atomic: optee_example_h/4522/0x00000008
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 7
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: gprof_rtee_7---invoke_command!!!
+I/TC: gprof_rtee_7---gprof_send!!!
+I/TC: gprof_rtee_7---gprof_send_rpc_rtee!!!
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 7
+I/TC: thread_resume_from_rpc()---thread_resume
+��[ 1736.681144] BUG: scheduling while atomic: optee_example_h/4522/0x0000000b
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 7
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_7---gprof_send_rpc_rtee( mobj )
+I/TC: gprof_rtee_7---gprof_send_rpc_rtee( va )
+I/TC: gprof_rtee_7---gprof_send_rpc_rtee( before for )
+��[ 1736.794864] BUG: scheduling while atomic: optee_example_h/4522/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_1---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1743.837269] BUG: scheduling while atomic: optee_example_h/4015/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 3
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_3---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1748.832301] BUG: scheduling while atomic: optee_example_h/4295/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 8
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 08 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA b6c53aba-9669-4668-a7f2-205629d00f08
+D/TC:?? 08 tee_ta_init_pseudo_ta_session:309 Open gprof_rtee_8
+D/TC:?? 08 tee_ta_init_pseudo_ta_session:326 gprof_rtee_8 : b6c53aba-9669-4668-a7f2-205629d00f08
+I/TC: after tee_ta_init_pseudo_ta_session
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: gprof_rtee_8---open_session!!!
+F/TC:?? 08 plat_prng_add_jitter_entropy:72 0x39
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 1750.657040] BUG: scheduling while atomic: optee_example_h/4564/0x00000008
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 8
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: gprof_rtee_8---invoke_command!!!
+I/TC: gprof_rtee_8---gprof_send!!!
+I/TC: gprof_rtee_8---gprof_send_rpc_rtee!!!
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 8
+I/TC: thread_resume_from_rpc()---thread_resume
+��[ 1750.880669] BUG: scheduling while atomic: optee_example_h/4564/0x0000000b
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 8
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_8---gprof_send_rpc_rtee( mobj )
+I/TC: gprof_rtee_8---gprof_send_rpc_rtee( va )
+I/TC: gprof_rtee_8---gprof_send_rpc_rtee( before for )
+��[ 1750.994069] BUG: scheduling while atomic: optee_example_h/4564/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 4
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_4---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1760.662872] BUG: scheduling while atomic: optee_example_h/4363/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 9
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 09 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA b6c53aba-9669-4668-a7f2-205629d00f09
+D/TC:?? 09 tee_ta_init_pseudo_ta_session:309 Open gprof_rtee_9
+D/TC:?? 09 tee_ta_init_pseudo_ta_session:326 gprof_rtee_9 : b6c53aba-9669-4668-a7f2-205629d00f09
+I/TC: after tee_ta_init_pseudo_ta_session
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: gprof_rtee_9---open_session!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 1761.393618] BUG: scheduling while atomic: optee_example_h/4630/0x00000008
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 9
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: gprof_rtee_9---invoke_command!!!
+I/TC: gprof_rtee_9---gprof_send!!!
+I/TC: gprof_rtee_9---gprof_send_rpc_rtee!!!
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 9
+I/TC: thread_resume_from_rpc()---thread_resume
+��[ 1761.617342] BUG: scheduling while atomic: optee_example_h/4630/0x0000000b
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 9
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_9---gprof_send_rpc_rtee( mobj )
+I/TC: gprof_rtee_9---gprof_send_rpc_rtee( va )
+I/TC: gprof_rtee_9---gprof_send_rpc_rtee( before for )
+F/TC:?? 09 plat_prng_add_jitter_entropy:72 0x8B
+��[ 1761.746393] BUG: scheduling while atomic: optee_example_h/4630/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 2
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_2---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1763.280228] BUG: scheduling while atomic: optee_example_h/4087/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 5
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_5---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1772.096543] BUG: scheduling while atomic: optee_example_h/4407/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 10
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 10 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA b6c53aba-9669-4668-a7f2-205629d00f10
+D/TC:?? 10 tee_ta_init_pseudo_ta_session:309 Open gprof_rtee_10
+D/TC:?? 10 tee_ta_init_pseudo_ta_session:326 gprof_rtee_10 : b6c53aba-9669-4668-a7f2-205629d00f10
+I/TC: after tee_ta_init_pseudo_ta_session
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: gprof_rtee_10---open_session!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 1773.635915] BUG: scheduling while atomic: optee_example_h/4675/0x00000008
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 10
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: gprof_rtee_10---invoke_command!!!
+I/TC: gprof_rtee_10---gprof_send!!!
+I/TC: gprof_rtee_10---gprof_send_rpc_rtee!!!
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 10
+I/TC: thread_resume_from_rpc()---thread_resume
+��[ 1773.861466] BUG: scheduling while atomic: optee_example_h/4675/0x0000000b
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 10
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_10---gprof_send_rpc_rtee( mobj )
+I/TC: gprof_rtee_10---gprof_send_rpc_rtee( va )
+I/TC: gprof_rtee_10---gprof_send_rpc_rtee( before for )
+F/TC:?? 10 plat_prng_add_jitter_entropy:72 0x75
+��[ 1773.991741] BUG: scheduling while atomic: optee_example_h/4675/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 6
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_6---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1783.936153] BUG: scheduling while atomic: optee_example_h/4452/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 11
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 11 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA b6c53aba-9669-4668-a7f2-205629d00f11
+D/TC:?? 11 tee_ta_init_pseudo_ta_session:309 Open gprof_rtee_11
+D/TC:?? 11 tee_ta_init_pseudo_ta_session:326 gprof_rtee_11 : b6c53aba-9669-4668-a7f2-205629d00f11
+I/TC: after tee_ta_init_pseudo_ta_session
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: gprof_rtee_11---open_session!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 1786.067463] BUG: scheduling while atomic: optee_example_h/4741/0x00000008
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 11
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: gprof_rtee_11---invoke_command!!!
+I/TC: gprof_rtee_11---gprof_send!!!
+I/TC: gprof_rtee_11---gprof_send_rpc_rtee!!!
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 11
+I/TC: thread_resume_from_rpc()---thread_resume
+��[ 1786.292890] BUG: scheduling while atomic: optee_example_h/4741/0x0000000b
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 11
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_11---gprof_send_rpc_rtee( mobj )
+I/TC: gprof_rtee_11---gprof_send_rpc_rtee( va )
+I/TC: gprof_rtee_11---gprof_send_rpc_rtee( before for )
+��[ 1786.407722] BUG: scheduling while atomic: optee_example_h/4741/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee---gprof_send_rpc_rtee( not TEE_SUCCESS )
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0xF5
+��[ 1789.875595] BUG: scheduling while atomic: optee_example_h/3970/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 7
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_7---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1796.872303] BUG: scheduling while atomic: optee_example_h/4522/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_1---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1803.921889] BUG: scheduling while atomic: optee_example_h/4015/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+��[ 1805.652723] BUG: scheduling while atomic: optee_example_h/4806/0x00000007
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 3
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_3---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1808.917169] BUG: scheduling while atomic: optee_example_h/4295/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 8
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_8---gprof_send_rpc_rtee( not TEE_SUCCESS )
+F/TC:?? 08 plat_prng_add_jitter_entropy:72 0xFA
+��[ 1811.086954] BUG: scheduling while atomic: optee_example_h/4564/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 4
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_4---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1820.740294] BUG: scheduling while atomic: optee_example_h/4363/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 9
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_9---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1821.830998] BUG: scheduling while atomic: optee_example_h/4630/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 2
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_2---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1823.364787] BUG: scheduling while atomic: optee_example_h/4087/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 5
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_5---gprof_send_rpc_rtee( not TEE_SUCCESS )
+F/TC:?? 05 plat_prng_add_jitter_entropy:72 0x59
+��[ 1832.196279] BUG: scheduling while atomic: optee_example_h/4407/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 10
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_10---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1834.076503] BUG: scheduling while atomic: optee_example_h/4675/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 6
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_6---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1844.021006] BUG: scheduling while atomic: optee_example_h/4452/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 11
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_11---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1846.492525] BUG: scheduling while atomic: optee_example_h/4741/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1849.952805] BUG: scheduling while atomic: optee_example_h/3970/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee---gprof_send_rpc_rtee not success!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 1850.049790] BUG: scheduling while atomic: optee_example_h/3970/0x00000004
+��I/TC: thread_handle_std_smc()---start
+*I/TC: thread_handle_std_smc()---start
+*I/TC: thread_handle_std_smc()---thread_alloc_and_run
+*I/TC: thread_handle_std_smc()---thread_alloc_and_run
+*I/TC: __thread_alloc_and_run()---n : 0
+��[ 1850.12941����3] BUG: schedul��I��ing while atomic: opt��/��ee_example_h/3970/0x0000��T��0005
+��C: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 00 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA b6c53aba-9669-4668-a7f2-205629d00f12
+D/TC:?? 00 tee_ta_init_pseudo_ta_session:309 Open gprof_rtee_12
+D/TC:?? 00 tee_ta_init_pseudo_ta_session:326 gprof_rtee_12 : b6c53aba-9669-4668-a7f2-205629d00f12
+I/TC: after tee_ta_init_pseudo_ta_session
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: gprof_rtee_12---open_session!!!
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0xAF
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 1850.378896] BUG: scheduling while atomic: optee_example_h/4806/0x00000005
+��I/TC: thread_handle_std_smc()---start
+*I/TC: thread_handle_std_smc()---start
+*I/TC: thread_handle_std_smc()---thread_alloc_and_run
+*I/TC: thread_handle_std_smc()---thread_alloc_and_run
+*I/TC: __thread_alloc_and_run()---n : 0
+��[ 1850.45����8528] BUG: sche��I��duling while atomic: ��/��optee_example_h/4806/0x0��T��0000006
+��C: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 00 tee_ta_close_session:542 csess 0x103c1960d0 id 1
+D/TC:?? 00 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 1850.587219] BUG: scheduling while atomic: optee_example_h/3970/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: gprof_rtee_12---invoke_command!!!
+I/TC: gprof_rtee_12---gprof_send!!!
+I/TC: gprof_rtee_12---gprof_send_rpc_rtee!!!
+��[ 1850.753765] BUG: scheduling while atomic: optee_example_h/4806/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_12---gprof_send_rpc_rtee( mobj )
+I/TC: gprof_rtee_12---gprof_send_rpc_rtee( va )
+I/TC: gprof_rtee_12---gprof_send_rpc_rtee( before for )
+��[ 1850.868272] BUG: scheduling while atomic: optee_example_h/4806/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 7
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_7---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1856.956751] BUG: scheduling while atomic: optee_example_h/4522/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_1---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1864.006210] BUG: scheduling while atomic: optee_example_h/4015/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_1---gprof_send_rpc_rtee not success!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 1864.103814] BUG: scheduling while atomic: optee_example_h/4015/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 1
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xFD
+D/TC:?? 01 tee_ta_close_session:542 csess 0x103c195e50 id 2
+D/TC:?? 01 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 1864.296827] BUG: scheduling while atomic: optee_example_h/4015/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 3
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_3---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1869.001655] BUG: scheduling while atomic: optee_example_h/4295/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 8
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_8---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1871.171663] BUG: scheduling while atomic: optee_example_h/4564/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 4
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_4---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1880.825116] BUG: scheduling while atomic: optee_example_h/4363/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 9
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_9---gprof_send_rpc_rtee( not TEE_SUCCESS )
+F/TC:?? 09 plat_prng_add_jitter_entropy:72 0x78
+��[ 1881.930685] BUG: scheduling while atomic: optee_example_h/4630/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 2
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_2---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1883.442211] BUG: scheduling while atomic: optee_example_h/4087/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 2
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_2---gprof_send_rpc_rtee not success!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 1883.539751] BUG: scheduling while atomic: optee_example_h/4087/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 1
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 01 tee_ta_close_session:542 csess 0x103c195bd0 id 3
+D/TC:?? 01 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 1883.717298] BUG: scheduling while atomic: optee_example_h/4087/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 5
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_5---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1892.280737] BUG: scheduling while atomic: optee_example_h/4407/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 10
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_10---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1894.161308] BUG: scheduling while atomic: optee_example_h/4675/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 6
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_6---gprof_send_rpc_rtee( not TEE_SUCCESS )
+F/TC:?? 06 plat_prng_add_jitter_entropy:72 0x62
+��[ 1904.114000] BUG: scheduling while atomic: optee_example_h/4452/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 11
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_11---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1906.577775] BUG: scheduling while atomic: optee_example_h/4741/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_12---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1910.952780] BUG: scheduling while atomic: optee_example_h/4806/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 7
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_7---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1917.041182] BUG: scheduling while atomic: optee_example_h/4522/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 3
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_3---gprof_send_rpc_rtee( not TEE_SUCCESS )
+F/TC:?? 03 plat_prng_add_jitter_entropy:72 0x14
+��[ 1929.094534] BUG: scheduling while atomic: optee_example_h/4295/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 8
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_8---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1931.249098] BUG: scheduling while atomic: optee_example_h/4564/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 4
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_4---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1940.909830] BUG: scheduling while atomic: optee_example_h/4363/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 9
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_9---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1942.007993] BUG: scheduling while atomic: optee_example_h/4630/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 5
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_5---gprof_send_rpc_rtee( not TEE_SUCCESS )
+F/TC:?? 05 plat_prng_add_jitter_entropy:72 0x9E
+��[ 1952.380767] BUG: scheduling while atomic: optee_example_h/4407/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 10
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_10---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1954.246815] BUG: scheduling while atomic: optee_example_h/4675/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 6
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_6---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1964.198597] BUG: scheduling while atomic: optee_example_h/4452/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 11
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_11---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1966.663054] BUG: scheduling while atomic: optee_example_h/4741/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_12---gprof_send_rpc_rtee( not TEE_SUCCESS )
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0x1E
+��[ 1971.052803] BUG: scheduling while atomic: optee_example_h/4806/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 7
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_7---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1977.125750] BUG: scheduling while atomic: optee_example_h/4522/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 3
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_3---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1989.171987] BUG: scheduling while atomic: optee_example_h/4295/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 3
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_3---gprof_send_rpc_rtee not success!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 1989.269549] BUG: scheduling while atomic: optee_example_h/4295/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 1
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 01 tee_ta_close_session:542 csess 0x103c195850 id 4
+D/TC:?? 01 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 1989.447276] BUG: scheduling while atomic: optee_example_h/4295/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 8
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_8---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 1991.333893] BUG: scheduling while atomic: optee_example_h/4564/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 4
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_4---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 2000.994601] BUG: scheduling while atomic: optee_example_h/4363/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 4
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_4---gprof_send_rpc_rtee not success!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 2001.092266] BUG: scheduling while atomic: optee_example_h/4363/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 1
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xF4
+D/TC:?? 01 tee_ta_close_session:542 csess 0x103c1954d0 id 5
+D/TC:?? 01 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 2001.285476] BUG: scheduling while atomic: optee_example_h/4363/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 9
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_9---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 2002.092481] BUG: scheduling while atomic: optee_example_h/4630/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 5
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_5---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 2012.465283] BUG: scheduling while atomic: optee_example_h/4407/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 5
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_5---gprof_send_rpc_rtee not success!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 2012.562876] BUG: scheduling while atomic: optee_example_h/4407/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 1
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 01 tee_ta_close_session:542 csess 0x103c195150 id 6
+D/TC:?? 01 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 2012.740621] BUG: scheduling while atomic: optee_example_h/4407/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 10
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_10---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 2014.331870] BUG: scheduling while atomic: optee_example_h/4675/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 6
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_6---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 2024.276293] BUG: scheduling while atomic: optee_example_h/4452/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 6
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_6---gprof_send_rpc_rtee not success!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 2024.373910] BUG: scheduling while atomic: optee_example_h/4452/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 1
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x7D
+D/TC:?? 01 tee_ta_close_session:542 csess 0x103c194dd0 id 7
+D/TC:?? 01 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 2024.566851] BUG: scheduling while atomic: optee_example_h/4452/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 11
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_11---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 2026.747909] BUG: scheduling while atomic: optee_example_h/4741/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_12---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 2031.137378] BUG: scheduling while atomic: optee_example_h/4806/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 7
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_7---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 2037.203252] BUG: scheduling while atomic: optee_example_h/4522/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 7
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_7---gprof_send_rpc_rtee not success!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 2037.300808] BUG: scheduling while atomic: optee_example_h/4522/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 1
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 01 tee_ta_close_session:542 csess 0x103c194a50 id 8
+D/TC:?? 01 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 2037.478057] BUG: scheduling while atomic: optee_example_h/4522/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 8
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_8---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 2051.418451] BUG: scheduling while atomic: optee_example_h/4564/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 8
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_8---gprof_send_rpc_rtee not success!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 2051.516062] BUG: scheduling while atomic: optee_example_h/4564/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 1
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xAD
+D/TC:?? 01 tee_ta_close_session:542 csess 0x103c1946d0 id 9
+D/TC:?? 01 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 2051.709286] BUG: scheduling while atomic: optee_example_h/4564/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 9
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_9---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 2062.177331] BUG: scheduling while atomic: optee_example_h/4630/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 9
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_9---gprof_send_rpc_rtee not success!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 1
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 01 tee_ta_close_session:542 csess 0x103c194350 id 10
+D/TC:?? 01 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 2062.446167] BUG: scheduling while atomic: optee_example_h/4630/0x00000008
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 10
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_10---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 2074.417213] BUG: scheduling while atomic: optee_example_h/4675/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 10
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_10---gprof_send_rpc_rtee not success!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 2074.515449] BUG: scheduling while atomic: optee_example_h/4675/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 1
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 01 tee_ta_close_session:542 csess 0x103c193fd0 id 11
+D/TC:?? 01 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 2074.693507] BUG: scheduling while atomic: optee_example_h/4675/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 11
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_11---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 2086.832822] BUG: scheduling while atomic: optee_example_h/4741/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 11
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_11---gprof_send_rpc_rtee not success!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 2086.931037] BUG: scheduling while atomic: optee_example_h/4741/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 1
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 01 tee_ta_close_session:542 csess 0x103c193c50 id 12
+D/TC:?? 01 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 2087.108921] BUG: scheduling while atomic: optee_example_h/4741/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_12---gprof_send_rpc_rtee( not TEE_SUCCESS )
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0x61
+��[ 2091.237507] BUG: scheduling while atomic: optee_example_h/4806/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_12---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[ 2151.315293] BUG: scheduling while atomic: optee_example_h/4806/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_12---gprof_send_rpc_rtee not success!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 2151.413202] BUG: scheduling while atomic: optee_example_h/4806/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 00 tee_ta_close_session:542 csess 0x103c1938d0 id 13
+D/TC:?? 00 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[ 2151.591288] BUG: scheduling while atomic: optee_example_h/4806/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 00 tee_ta_init_session_with_context:637 Re-open TA ed32d533-99e6-4209-9cc0-2d72cdd998a7
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+D/TC:?? 00 spm_handle_scall:960 Received FFA direct response
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 00 tee_ta_close_session:542 csess 0x103c193720 id 1
+D/TC:?? 00 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 00 tee_ta_init_session_with_context:637 Re-open TA ed32d533-99e6-4209-9cc0-2d72cdd998a7
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0x91
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+D/TC:?? 00 spm_handle_scall:960 Received FFA direct response
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 00 tee_ta_close_session:542 csess 0x103c193720 id 1
+D/TC:?? 00 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 00 tee_ta_init_session_with_context:637 Re-open TA ed32d533-99e6-4209-9cc0-2d72cdd998a7
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock                                              +-----------------------------+
+D/TC:?? 00 spm_handle_scall:960 Received FFA direct response                          |                             |
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK                                          |  Cannot open /dev/ttyACM0!  |
+I/TC: thread_handle_std_smc()---start                                                 |                             |
+I/TC: thread_handle_std_smc()---thread_alloc_and_run                                  +-----------------------------+
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 00 tee_ta_close_session:542 csess 0x103c193720 id 1
+D/TC:?? 00 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 00 tee_ta_init_session_with_context:637 Re-open TA ed32d533-99e6-4209-9cc0-2d72cdd998a7
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+F/TC:?? 00 plat_prng_add_jitter_entropy:72 0x28
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+D/TC:?? 00 spm_handle_scall:960 Received FFA direct response
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 00 tee_ta_close_session:542 csess 0x103c193720 id 1
+D/TC:?? 00 tee_ta_close_session:561 Destroy session
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+
