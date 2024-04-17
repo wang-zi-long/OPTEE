@@ -1,0 +1,87 @@
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 00 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA b6c53aba-9669-4668-a7f2-205629d00f86
+D/TC:?? 00 tee_ta_init_pseudo_ta_session:309 Open gprof_rtee
+D/TC:?? 00 tee_ta_init_pseudo_ta_session:326 gprof_rtee : b6c53aba-9669-4668-a7f2-205629d00f86
+I/TC: after tee_ta_init_pseudo_ta_session
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: gprof_rtee---open_session!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[  565.856285] BUG: scheduling while atomic: optee_example_h/3157/0x00000008
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 0
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: gprof_rtee---invoke_command!!!
+I/TC: gprof_rtee---gprof_send!!!
+I/TC: gprof_rtee---gprof_send_rpc_rtee!!!
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+��[  566.078314] BUG: scheduling while atomic: optee_example_h/3157/0x0000000b
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee---gprof_send_rpc_rtee( mobj )
+I/TC: gprof_rtee---gprof_send_rpc_rtee( va )
+I/TC: gprof_rtee---gprof_send_rpc_rtee( before for )
+��[  566.190063] BUG: scheduling while atomic: optee_example_h/3157/0x00000004
+
+
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 1
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 01 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA b6c53aba-9669-4668-a7f2-205629d00f01
+D/TC:?? 01 tee_ta_init_pseudo_ta_session:309 Open gprof_rtee_1
+D/TC:?? 01 tee_ta_init_pseudo_ta_session:326 gprof_rtee_1 : b6c53aba-9669-4668-a7f2-205629d00f01
+I/TC: after tee_ta_init_pseudo_ta_session
+I/TC: after tee_ta_init_session
+I/TC: before tee_ta_try_set_busy
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: after tee_ta_try_set_busy111
+I/TC: gprof_rtee_1---open_session!!!
+I/TC: call_entry_std()---OPTEE_SMC_RETURN_OK
+��[  593.200401] BUG: scheduling while atomic: optee_example_h/3161/0x00000008
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 1
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+I/TC: tee_ta_try_set_busy---mutex_lock
+I/TC: has_single_instance_lock
+I/TC: has_single_instance_lock222
+I/TC: tee_ta_try_set_busy---mutex_unlock
+I/TC: gprof_rtee_1---invoke_command!!!
+I/TC: gprof_rtee_1---gprof_send!!!
+I/TC: gprof_rtee_1---gprof_send_rpc_rtee!!!
+��[  593.366592] BUG: scheduling while atomic: optee_example_h/3161/0x00000007
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee_1---gprof_send_rpc_rtee( mobj )
+I/TC: gprof_rtee_1---gprof_send_rpc_rtee( va )
+I/TC: gprof_rtee_1---gprof_send_rpc_rtee( before for )
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xE9
+��[  593.495748] BUG: scheduling while atomic: optee_example_h/3161/0x00000005
