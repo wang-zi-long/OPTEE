@@ -1,0 +1,1243 @@
+I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_alloc_and_run
+I/TC: __thread_alloc_and_run()---n : 1
+I/TC: __thread_alloc_and_run()---thread_resume
+I/TC: std_entry_with_parg()---call_entry_std222
+D/TC:?? 01 tee_ta_init_pseudo_ta_session:296 Lookup pseudo TA b6c53aba-9669-4668-a7f2-205629d00f01
+D/TC:?? 01 tee_ta_init_pseudo_ta_session:309 Open gprof_rtee_1
+D/TC:?? 01 tee_ta_init_pseudo_ta_session:326 gprof_rtee_1 : b6c53aba-9669-4668-a7f2-205629d00f01
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  378.692068] BUG: scheduling while atomic: optee_example_h/3230/0x00000008
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xD7
+��[  379.312118] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  379.904685] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  380.480430] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  381.056424] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xAD
+��[  381.647934] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  382.240559] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  382.820471] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  383.424669] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x8D
+��[  384.016148] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  384.608324] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  385.184660] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  385.760628] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x8D
+��[  386.351937] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  386.944696] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  387.520458] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  388.096489] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x5D
+��[  388.688123] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  389.280429] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  389.856625] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  390.432627] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x1F
+��[  391.023890] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  391.616503] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  392.192647] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  392.768406] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x22
+��[  393.359861] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  393.952467] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  394.528406] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  395.104405] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x31
+��[  395.695924] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  396.288589] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  396.864687] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  397.440499] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xB8
+��[  398.032091] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  398.624632] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  399.200600] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  399.776631] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x9A
+��[  400.368105] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  400.960610] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  401.536607] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  402.112518] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x31
+��[  402.703932] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  403.296399] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[  403.487507] BUG: scheduling while atomic: optee_example_h/3097/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  403.872401] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x00
+��[  404.464090] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  405.056610] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  405.632607] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  406.208638] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x72
+��[  406.800154] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  407.392378] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  407.968586] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  408.544597] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xD9
+��[  409.136098] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  409.728599] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  410.304599] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  410.880601] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x42
+��[  411.472085] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  412.064603] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  412.640603] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  413.216602] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x10
+��[  413.808071] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  414.400506] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  414.976609] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  415.552650] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x4A
+��[  416.144076] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  416.736447] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  417.312412] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  417.888671] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x2A
+��[  418.480103] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  419.072590] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  419.648692] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  420.224467] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x44
+��[  420.816160] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  421.408718] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  421.984617] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  422.560670] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x62
+��[  423.152235] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  423.744649] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  424.320641] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  424.896665] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xDA
+��[  425.488194] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  426.080699] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  426.656495] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  427.232738] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xEB
+��[  427.824364] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  428.416691] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  428.992622] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  429.568631] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x02
+��[  430.160087] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  430.752617] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  431.328607] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  431.904603] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x84
+��[  432.496009] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  433.088440] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  433.664474] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  434.240370] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xCF
+��[  434.831926] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  435.424484] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  436.000518] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  436.576519] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xF8
+��[  437.167869] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  437.760454] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  438.336444] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  438.912378] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xFF
+��[  439.503917] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  440.096434] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  440.672424] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  441.248443] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xF9
+��[  441.839936] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  442.432446] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  443.008392] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  443.584417] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xB6
+��[  444.175862] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  444.768375] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  445.344441] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  445.920433] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x83
+��[  446.511902] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  447.104405] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  447.680431] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  448.256444] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x5D
+��[  448.847914] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  449.440425] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  450.016377] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  450.592375] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xF1
+��[  451.183909] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  451.776356] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  452.352393] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  452.928424] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x9B
+��[  453.519975] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  454.112466] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  454.688362] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  455.264400] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x3D
+��[  455.855867] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  456.448407] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  457.024453] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  457.600456] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x42
+��[  458.191930] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  458.784449] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  459.360380] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  459.936437] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x20
+��[  460.527880] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  461.120481] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  461.696463] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  462.272405] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xD8
+��[  462.863924] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  463.456389] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 0
+I/TC: thread_resume_from_rpc()---thread_resume
+I/TC: gprof_rtee---gprof_send_rpc_rtee( not TEE_SUCCESS )
+��[  463.564008] BUG: scheduling while atomic: optee_example_h/3097/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  464.032447] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xEF
+��[  464.623913] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  465.216472] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  465.792399] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  466.368442] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x04
+��[  466.959904] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  467.552366] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  468.128446] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  468.704381] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xB0
+��[  469.296099] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  469.888610] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  470.464618] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  471.040389] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x0E
+��[  471.632076] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  472.224623] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  472.800618] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  473.376600] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xD0
+��[  473.968059] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  474.560394] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  475.136597] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  475.712604] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x0F
+��[  476.304095] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  476.896400] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  477.472632] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  478.048590] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x34
+��[  478.640094] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  479.232603] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  479.808632] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  480.384621] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xED
+��[  480.976086] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  481.568750] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  482.144612] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  482.720635] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x7E
+��[  483.311911] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  483.904468] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  484.480480] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  485.056464] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x8C
+��[  485.647907] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  486.240606] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  486.816432] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  487.392388] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070                                                                   
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0xDE                                                                      
+��[  487.983895] BUG: scheduling while atomic: optee_example_h/3230/0x00000004                                       
+��I/TC: thread_handle_std_smc()---start                                                                              
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc                                                               
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  488.576606] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  489.152594] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  489.728388] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x52
+��[  490.320101] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  490.912597] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  491.488626] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+��[  492.064395] BUG: scheduling while atomic: optee_example_h/3230/0x00000004
+��I/TC: thread_handle_std_smc()---start
+I/TC: thread_handle_std_smc()---thread_resume_from_rpc
+I/TC: thread_resume_from_rpc()---n : 1
+I/TC: thread_resume_from_rpc()---thread_resume
+D/TC:?? 01 do_notif:36 sleep thread 1 0x103c167070
+F/TC:?? 01 plat_prng_add_jitter_entropy:72 0x66
+��[  492.656090] BUG: scheduling while atomic: optee_example_h/3230/0x00000005
+
