@@ -990,6 +990,18 @@ CFG_TEE_BENCHMARK ?= y
 CFG_WITH_STATS ?= y
 CFG_RTC_PTA_HELLO_WORLD ?= y
 CFG_RTC_PTA_GPROF_RTEE ?= y
+CFG_RTC_PTA_GPROF_RTEE1 ?= y
+CFG_RTC_PTA_GPROF_RTEE2 ?= y
+CFG_RTC_PTA_GPROF_RTEE3 ?= y
+CFG_RTC_PTA_GPROF_RTEE4 ?= y
+CFG_RTC_PTA_GPROF_RTEE5 ?= y
+CFG_RTC_PTA_GPROF_RTEE6 ?= y
+CFG_RTC_PTA_GPROF_RTEE7 ?= y
+CFG_RTC_PTA_GPROF_RTEE8 ?= y
+CFG_RTC_PTA_GPROF_RTEE9 ?= y
+CFG_RTC_PTA_GPROF_RTEE10 ?= y
+CFG_RTC_PTA_GPROF_RTEE11 ?= y
+CFG_RTC_PTA_GPROF_RTEE12 ?= y
 
 # Pointer Authentication (part of ARMv8.3 Extensions) provides instructions
 # for signing and authenticating pointers against secret keys. These can

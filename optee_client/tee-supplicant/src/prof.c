@@ -35,11 +35,15 @@
 #include <tee_client_api.h>
 #include <tee_supplicant.h>
 #include "prof.h"
+#include <sys/syscall.h>
+#include <linux/sched.h>
 
 #ifndef __aligned
 #define __aligned(x) __attribute__((__aligned__(x)))
 #endif
 #include <linux/tee.h>
+
+#define gettid() ((pid_t)syscall(SYS_gettid))
 
 TEEC_Result prof_process(size_t num_params, struct tee_ioctl_param *params,
 			 const char *prefix)
@@ -54,6 +58,9 @@ TEEC_Result prof_process(size_t num_params, struct tee_ioctl_param *params,
 	int id = 0;
 	int st = 0;
 	int n = 0;
+
+	printf("\n|%d|prof_process()---start!\n",  gettid());
+	sleep(60);
 
 	if (num_params != 3 ||
 	    (params[0].attr & TEE_IOCTL_PARAM_ATTR_TYPE_MASK) !=
